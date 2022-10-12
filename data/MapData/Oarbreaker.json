@@ -1,0 +1,580 @@
+{
+  "regionId": 16,
+  "scorchedVictoryTowns": 0,
+  "mapItems": [
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.53628147,
+      "y": 0.30581596,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.4888493,
+      "y": 0.44127893,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.49817908,
+      "y": 0.64936936,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.5644756,
+      "y": 0.4738627,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.6707246,
+      "y": 0.75126326,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.58688843,
+      "y": 0.62731886,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.354146,
+      "y": 0.30437222,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.69558537,
+      "y": 0.27774402,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.8277038,
+      "y": 0.41928202,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.83128065,
+      "y": 0.4245906,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.6493647,
+      "y": 0.84786344,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.6561324,
+      "y": 0.8568733,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.75672835,
+      "y": 0.64956516,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.75076175,
+      "y": 0.6441898,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.58385,
+      "y": 0.34966794,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.5780074,
+      "y": 0.35041216,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.5204603,
+      "y": 0.58576643,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.5404816,
+      "y": 0.58288825,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 39,
+      "x": 0.53326094,
+      "y": 0.65977466,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 39,
+      "x": 0.6141359,
+      "y": 0.42735568,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 11,
+      "x": 0.67469406,
+      "y": 0.81016773,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 34,
+      "x": 0.5217664,
+      "y": 0.64756036,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 33,
+      "x": 0.86532193,
+      "y": 0.37488404,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 33,
+      "x": 0.6450023,
+      "y": 0.7927612,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.6699788,
+      "y": 0.8723174,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.67913693,
+      "y": 0.8589085,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.72505826,
+      "y": 0.08750534,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.51201695,
+      "y": 0.84336245,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.8047635,
+      "y": 0.70466286,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.5966319,
+      "y": 0.74342406,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.52818936,
+      "y": 0.22038373,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.6736149,
+      "y": 0.39159304,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.70852524,
+      "y": 0.063785434,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.7620195,
+      "y": 0.16573335,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.24742474,
+      "y": 0.28794873,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.7169975,
+      "y": 0.075949036,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 28,
+      "x": 0.44362652,
+      "y": 0.6338236,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 28,
+      "x": 0.43294656,
+      "y": 0.77974063,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 28,
+      "x": 0.65221125,
+      "y": 0.32143074,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 28,
+      "x": 0.4251086,
+      "y": 0.34104404,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 28,
+      "x": 0.6182004,
+      "y": 0.78928536,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 28,
+      "x": 0.25074664,
+      "y": 0.49319705,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.49630594,
+      "y": 0.6080038,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.8280678,
+      "y": 0.66587305,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 52,
+      "x": 0.6895769,
+      "y": 0.41887784,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 53,
+      "x": 0.6672187,
+      "y": 0.41077906,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.64954484,
+      "y": 0.4154229,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.86179715,
+      "y": 0.39631894,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 57,
+      "x": 0.6703624,
+      "y": 0.7749264,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.798034,
+      "y": 0.6727881,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.511674,
+      "y": 0.63292116,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.58430445,
+      "y": 0.425012,
+      "flags": 41
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 45,
+      "x": 0.32819682,
+      "y": 0.89733094,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 46,
+      "x": 0.65257984,
+      "y": 0.2150671,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 46,
+      "x": 0.91365945,
+      "y": 0.5127741,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 47,
+      "x": 0.48080972,
+      "y": 0.1657336,
+      "flags": 8
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.65195143,
+      "y": 0.8308372,
+      "flags": 0
+    }
+  ],
+  "mapTextItems": [
+    {
+      "text": "Barrenson",
+      "x": 0.20925796,
+      "y": 0.58191305,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Base Akri",
+      "x": 0.9117557,
+      "y": 0.51201063,
+      "mapMarkerType": "Major",
+      "location": 54
+    },
+    {
+      "text": "Castor",
+      "x": 0.25655335,
+      "y": 0.503573,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Crach Woods",
+      "x": 0.44473228,
+      "y": 0.35592464,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Fogwood",
+      "x": 0.72000915,
+      "y": 0.13007016,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Gold",
+      "x": 0.49749142,
+      "y": 0.16744888,
+      "mapMarkerType": "Major",
+      "location": 55
+    },
+    {
+      "text": "Grisly Refuge",
+      "x": 0.306169,
+      "y": 0.6532009,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Integrum",
+      "x": 0.6686882,
+      "y": 0.773776,
+      "mapMarkerType": "Major",
+      "location": 48
+    },
+    {
+      "text": "Kofteri Channel",
+      "x": 0.45819038,
+      "y": 0.83506876,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Lion's Head",
+      "x": 0.32835937,
+      "y": 0.89686215,
+      "mapMarkerType": "Major",
+      "location": 52
+    },
+    {
+      "text": "Martius",
+      "x": 0.84350735,
+      "y": 0.2846215,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Mount Marce",
+      "x": 0.5775114,
+      "y": 0.31234464,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Neptune's Throne",
+      "x": 0.60160726,
+      "y": 0.17799203,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Oasis",
+      "x": 0.5653536,
+      "y": 0.916719,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Obitum",
+      "x": 0.5717222,
+      "y": 0.7513693,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Pollux",
+      "x": 0.2113825,
+      "y": 0.5136759,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Posterus",
+      "x": 0.79465634,
+      "y": 0.6755905,
+      "mapMarkerType": "Major",
+      "location": 49
+    },
+    {
+      "text": "Reliqua",
+      "x": 0.6536689,
+      "y": 0.21361786,
+      "mapMarkerType": "Major",
+      "location": 53
+    },
+    {
+      "text": "Sandalwood Beach",
+      "x": 0.5139656,
+      "y": 0.2979552,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Sheep's Head",
+      "x": 0.4270079,
+      "y": 0.9615619,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Silver",
+      "x": 0.27285343,
+      "y": 0.2775804,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Skelter Course",
+      "x": 0.60323334,
+      "y": 0.42578885,
+      "mapMarkerType": "Major",
+      "location": 51
+    },
+    {
+      "text": "Skull Beach",
+      "x": 0.48592106,
+      "y": 0.45108822,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Conclave",
+      "x": 0.51089185,
+      "y": 0.624818,
+      "mapMarkerType": "Major",
+      "location": 50
+    },
+    {
+      "text": "The Dirk",
+      "x": 0.43934482,
+      "y": 0.7884207,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Emblem",
+      "x": 0.72488797,
+      "y": 0.25433928,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Ides",
+      "x": 0.85254693,
+      "y": 0.3931426,
+      "mapMarkerType": "Major",
+      "location": 47
+    }
+  ],
+  "lastUpdated": 1665516095501,
+  "version": 60
+}

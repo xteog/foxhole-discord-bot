@@ -1,0 +1,466 @@
+{
+  "regionId": 6,
+  "scorchedVictoryTowns": 0,
+  "mapItems": [
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.49756974,
+      "y": 0.53746825,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.44422612,
+      "y": 0.2949546,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.5552595,
+      "y": 0.22210737,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.73274225,
+      "y": 0.3465977,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.2245317,
+      "y": 0.5737394,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.59904265,
+      "y": 0.7576504,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.3550817,
+      "y": 0.8626851,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.37817258,
+      "y": 0.3679923,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.6542913,
+      "y": 0.67563003,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.6609517,
+      "y": 0.67811656,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.36666167,
+      "y": 0.800342,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.33681,
+      "y": 0.24567598,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.35698938,
+      "y": 0.79624695,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.19818373,
+      "y": 0.52714574,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.7952968,
+      "y": 0.34679604,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.7749027,
+      "y": 0.34400842,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.64326245,
+      "y": 0.14719673,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.34848115,
+      "y": 0.55161226,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 17,
+      "x": 0.23821412,
+      "y": 0.23759703,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 33,
+      "x": 0.706882,
+      "y": 0.5851084,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 18,
+      "x": 0.37567443,
+      "y": 0.5063906,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 28,
+      "x": 0.5791237,
+      "y": 0.29203984,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 28,
+      "x": 0.39510673,
+      "y": 0.6285213,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.3522121,
+      "y": 0.51474017,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 52,
+      "x": 0.38494265,
+      "y": 0.5281526,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 53,
+      "x": 0.36807582,
+      "y": 0.48966938,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.29659617,
+      "y": 0.20919815,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.36771867,
+      "y": 0.851968,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.25690275,
+      "y": 0.27458,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.7189587,
+      "y": 0.15455404,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.7843395,
+      "y": 0.34234712,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.72513956,
+      "y": 0.5972756,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.3270634,
+      "y": 0.5042822,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.8173422,
+      "y": 0.3911512,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.6773155,
+      "y": 0.18471293,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.39592376,
+      "y": 0.8253471,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.27540454,
+      "y": 0.22465473,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.6728855,
+      "y": 0.617137,
+      "flags": 41
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 45,
+      "x": 0.6169395,
+      "y": 0.32338613,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 45,
+      "x": 0.5738648,
+      "y": 0.78683656,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 46,
+      "x": 0.50832754,
+      "y": 0.16155227,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 47,
+      "x": 0.15611213,
+      "y": 0.5520258,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 47,
+      "x": 0.8390266,
+      "y": 0.54753554,
+      "flags": 8
+    }
+  ],
+  "mapTextItems": [
+    {
+      "text": "Adze Crossroads",
+      "x": 0.357383,
+      "y": 0.38652703,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Amethyst",
+      "x": 0.8178504,
+      "y": 0.38884524,
+      "mapMarkerType": "Major",
+      "location": 33
+    },
+    {
+      "text": "Atropos' Fate",
+      "x": 0.5730031,
+      "y": 0.7843336,
+      "mapMarkerType": "Major",
+      "location": 39
+    },
+    {
+      "text": "Clotho's Refuge",
+      "x": 0.61337584,
+      "y": 0.32398352,
+      "mapMarkerType": "Major",
+      "location": 38
+    },
+    {
+      "text": "Dredgefield",
+      "x": 0.7840042,
+      "y": 0.85631174,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Golden Concourse",
+      "x": 0.15095828,
+      "y": 0.71263796,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "GoldenRoot Ranch",
+      "x": 0.15671077,
+      "y": 0.5505076,
+      "mapMarkerType": "Major",
+      "location": 41
+    },
+    {
+      "text": "Hermit's Rest",
+      "x": 0.67122585,
+      "y": 0.6176634,
+      "mapMarkerType": "Major",
+      "location": 37
+    },
+    {
+      "text": "Lachesis' Tally ",
+      "x": 0.840556,
+      "y": 0.54475015,
+      "mapMarkerType": "Major",
+      "location": 42
+    },
+    {
+      "text": "Leatherback Pathway",
+      "x": 0.7109991,
+      "y": 0.37403926,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Sentry",
+      "x": 0.395983,
+      "y": 0.8252861,
+      "mapMarkerType": "Major",
+      "location": 35
+    },
+    {
+      "text": "Steely Fields",
+      "x": 0.16732694,
+      "y": 0.32295418,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Stray",
+      "x": 0.6767252,
+      "y": 0.1845278,
+      "mapMarkerType": "Major",
+      "location": 34
+    },
+    {
+      "text": "Terrapin Woods",
+      "x": 0.73006326,
+      "y": 0.49094966,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Dredgewood",
+      "x": 0.78483456,
+      "y": 0.66172403,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Foundry",
+      "x": 0.27597004,
+      "y": 0.2246597,
+      "mapMarkerType": "Major",
+      "location": 36
+    },
+    {
+      "text": "The Frontier",
+      "x": 0.61156416,
+      "y": 0.721657,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Gap",
+      "x": 0.42371795,
+      "y": 0.5318492,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Strands",
+      "x": 0.5069804,
+      "y": 0.23784174,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Thunder Row",
+      "x": 0.26085073,
+      "y": 0.66316617,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Thunderfoot",
+      "x": 0.34593302,
+      "y": 0.51468116,
+      "mapMarkerType": "Major",
+      "location": 32
+    },
+    {
+      "text": "Vagrant Bastion",
+      "x": 0.5076587,
+      "y": 0.1616039,
+      "mapMarkerType": "Major",
+      "location": 40
+    },
+    {
+      "text": "Wasting Holt",
+      "x": 0.5504174,
+      "y": 0.9400169,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Weaver's Trail",
+      "x": 0.55006844,
+      "y": 0.44620684,
+      "mapMarkerType": "Minor"
+    }
+  ],
+  "lastUpdated": 1665516038261,
+  "version": 147
+}

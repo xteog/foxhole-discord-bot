@@ -1,0 +1,508 @@
+{
+  "regionId": 8,
+  "scorchedVictoryTowns": 0,
+  "mapItems": [
+    {
+      "teamId": "NONE",
+      "iconType": 62,
+      "x": 0.26758635,
+      "y": 0.2436707,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 62,
+      "x": 0.5715766,
+      "y": 0.56627166,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 62,
+      "x": 0.530991,
+      "y": 0.8442226,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 62,
+      "x": 0.3103965,
+      "y": 0.5100408,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 23,
+      "x": 0.4230732,
+      "y": 0.72900635,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.8051284,
+      "y": 0.56940955,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.6886921,
+      "y": 0.46887997,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.55921334,
+      "y": 0.31922296,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.638196,
+      "y": 0.80817467,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.711064,
+      "y": 0.18490134,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.63300216,
+      "y": 0.80279803,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.7203148,
+      "y": 0.41045237,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.36264816,
+      "y": 0.23492251,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.3547904,
+      "y": 0.23917641,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.2304616,
+      "y": 0.47613987,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.22374271,
+      "y": 0.47236624,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 32,
+      "x": 0.72260636,
+      "y": 0.41759607,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 32,
+      "x": 0.8178694,
+      "y": 0.5077687,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 11,
+      "x": 0.5304334,
+      "y": 0.4494142,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 34,
+      "x": 0.545614,
+      "y": 0.50764734,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 34,
+      "x": 0.5453505,
+      "y": 0.4837032,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 33,
+      "x": 0.5580951,
+      "y": 0.4612715,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 33,
+      "x": 0.74905604,
+      "y": 0.25103223,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 12,
+      "x": 0.54444724,
+      "y": 0.45485583,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 28,
+      "x": 0.44686,
+      "y": 0.3536249,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.5550076,
+      "y": 0.44715905,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.6646957,
+      "y": 0.4356884,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.57395345,
+      "y": 0.51803905,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.5510443,
+      "y": 0.5242956,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.7761842,
+      "y": 0.23082347,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.69056714,
+      "y": 0.7854223,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.2793282,
+      "y": 0.47027332,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.8379772,
+      "y": 0.5089585,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.371708,
+      "y": 0.22816648,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.7320484,
+      "y": 0.20392722,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.82587856,
+      "y": 0.4930835,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.24212168,
+      "y": 0.43381315,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.65089536,
+      "y": 0.8345275,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.35968706,
+      "y": 0.2751983,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.6010976,
+      "y": 0.46054745,
+      "flags": 41
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 45,
+      "x": 0.3740044,
+      "y": 0.11081247,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 46,
+      "x": 0.54859823,
+      "y": 0.25411654,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 46,
+      "x": 0.39276963,
+      "y": 0.40708846,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 47,
+      "x": 0.75169164,
+      "y": 0.37775528,
+      "flags": 8
+    }
+  ],
+  "mapTextItems": [
+    {
+      "text": "18th Sideroad",
+      "x": 0.5635743,
+      "y": 0.07919855,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Barronshire ",
+      "x": 0.30404317,
+      "y": 0.5293029,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Barronswall",
+      "x": 0.39372203,
+      "y": 0.40942293,
+      "mapMarkerType": "Major",
+      "location": 42
+    },
+    {
+      "text": "Barrony Ranch",
+      "x": 0.3733477,
+      "y": 0.1098376,
+      "mapMarkerType": "Major",
+      "location": 40
+    },
+    {
+      "text": "Barrony Road",
+      "x": 0.4902308,
+      "y": 0.20186654,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Cageroad",
+      "x": 0.08390267,
+      "y": 0.58169395,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Crater Basin",
+      "x": 0.27787402,
+      "y": 0.20430255,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Deeplaw Post",
+      "x": 0.24315597,
+      "y": 0.43437782,
+      "mapMarkerType": "Major",
+      "location": 36
+    },
+    {
+      "text": "Erimos Ranch",
+      "x": 0.5130686,
+      "y": 0.84595346,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Fort Providence",
+      "x": 0.75807965,
+      "y": 0.3792637,
+      "mapMarkerType": "Major",
+      "location": 43
+    },
+    {
+      "text": "Greenfield Orchard",
+      "x": 0.7317328,
+      "y": 0.20453982,
+      "mapMarkerType": "Major",
+      "location": 34
+    },
+    {
+      "text": "Harvester's Range",
+      "x": 0.47385046,
+      "y": 0.5450412,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Janus Field",
+      "x": 0.41109726,
+      "y": 0.87362325,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Kos Meadows",
+      "x": 0.23384759,
+      "y": 0.87482136,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Loftmire",
+      "x": 0.5516043,
+      "y": 0.44199702,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Lower Barrony Field",
+      "x": 0.4626953,
+      "y": 0.31559077,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Oleander Fields",
+      "x": 0.67658395,
+      "y": 0.639753,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Oleander Homestead",
+      "x": 0.8278165,
+      "y": 0.4906847,
+      "mapMarkerType": "Major",
+      "location": 35
+    },
+    {
+      "text": "Pandora Compound",
+      "x": 0.44034275,
+      "y": 0.7100705,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Proex\u00ed",
+      "x": 0.65262276,
+      "y": 0.8350459,
+      "mapMarkerType": "Major",
+      "location": 37
+    },
+    {
+      "text": "Providence Field",
+      "x": 0.6118128,
+      "y": 0.3481131,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Blemish",
+      "x": 0.6491603,
+      "y": 0.4668125,
+      "mapMarkerType": "Major",
+      "location": 39
+    },
+    {
+      "text": "The Breach",
+      "x": 0.36424437,
+      "y": 0.2708485,
+      "mapMarkerType": "Major",
+      "location": 38
+    },
+    {
+      "text": "The Fuming Pen",
+      "x": 0.19509101,
+      "y": 0.6871336,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Orchard Wall",
+      "x": 0.69853735,
+      "y": 0.24974519,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Plough",
+      "x": 0.54745007,
+      "y": 0.24971269,
+      "mapMarkerType": "Major",
+      "location": 41
+    },
+    {
+      "text": "The Rollcage",
+      "x": 0.15662682,
+      "y": 0.34313864,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Salt Crossing",
+      "x": 0.78533167,
+      "y": 0.07084702,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Upper Barrony Field",
+      "x": 0.47143874,
+      "y": 0.092723675,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Upper Heartlands",
+      "x": 0.32511675,
+      "y": 0.11369127,
+      "mapMarkerType": "Minor"
+    }
+  ],
+  "lastUpdated": 1665513239013,
+  "version": 89
+}

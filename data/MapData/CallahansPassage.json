@@ -1,0 +1,518 @@
+{
+  "regionId": 4,
+  "scorchedVictoryTowns": 0,
+  "mapItems": [
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.42866498,
+      "y": 0.31521624,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.7752597,
+      "y": 0.7788177,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.29068244,
+      "y": 0.5592148,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.69450885,
+      "y": 0.18510464,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.36454913,
+      "y": 0.704127,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.19572978,
+      "y": 0.48508638,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.7183622,
+      "y": 0.4097605,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.487454,
+      "y": 0.64387715,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.38500333,
+      "y": 0.8090057,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.38832903,
+      "y": 0.8031959,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.61201745,
+      "y": 0.43795303,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.60546136,
+      "y": 0.43512326,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.5076392,
+      "y": 0.18628371,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.80949235,
+      "y": 0.26425487,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.77989984,
+      "y": 0.68702537,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.7810866,
+      "y": 0.6686761,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.46443444,
+      "y": 0.62729794,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.1705694,
+      "y": 0.37125826,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 60,
+      "x": 0.25856596,
+      "y": 0.7290013,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 59,
+      "x": 0.8456875,
+      "y": 0.61482084,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 59,
+      "x": 0.8333186,
+      "y": 0.61626595,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 59,
+      "x": 0.82204014,
+      "y": 0.61585146,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 17,
+      "x": 0.35394865,
+      "y": 0.7420829,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 33,
+      "x": 0.18699402,
+      "y": 0.32167327,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.5895159,
+      "y": 0.49579316,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.59513336,
+      "y": 0.5048537,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 28,
+      "x": 0.24098583,
+      "y": 0.4202878,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 28,
+      "x": 0.56195647,
+      "y": 0.58907086,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 52,
+      "x": 0.5354749,
+      "y": 0.46569824,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 53,
+      "x": 0.5433421,
+      "y": 0.43610266,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.5288644,
+      "y": 0.41532257,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.48605213,
+      "y": 0.60116243,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.7755067,
+      "y": 0.2568444,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.37174794,
+      "y": 0.7166492,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.70218134,
+      "y": 0.6787971,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.5286723,
+      "y": 0.10401088,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.54637444,
+      "y": 0.6545017,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.198595,
+      "y": 0.34188128,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.5342922,
+      "y": 0.14695603,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.19712242,
+      "y": 0.2771197,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.57734734,
+      "y": 0.42436516,
+      "flags": 41
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.74514246,
+      "y": 0.25519842,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.7307939,
+      "y": 0.66947925,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.36178783,
+      "y": 0.7547044,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.5269085,
+      "y": 0.60501665,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 45,
+      "x": 0.44807312,
+      "y": 0.7688043,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 46,
+      "x": 0.2988137,
+      "y": 0.55940205,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 47,
+      "x": 0.7507168,
+      "y": 0.43888697,
+      "flags": 8
+    }
+  ],
+  "mapTextItems": [
+    {
+      "text": "Callahan's Eye",
+      "x": 0.30864334,
+      "y": 0.26224336,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Chapel Access",
+      "x": 0.8670075,
+      "y": 0.52318686,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Cragsfield",
+      "x": 0.5690361,
+      "y": 0.19898543,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Cragsroad",
+      "x": 0.44606456,
+      "y": 0.35310647,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Cragstown",
+      "x": 0.51669085,
+      "y": 0.13976866,
+      "mapMarkerType": "Major",
+      "location": 38
+    },
+    {
+      "text": "Crumbling Post",
+      "x": 0.35385895,
+      "y": 0.7248818,
+      "mapMarkerType": "Major",
+      "location": 43
+    },
+    {
+      "text": "Lingering Lashes",
+      "x": 0.39600572,
+      "y": 0.16319244,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Lochan",
+      "x": 0.54940885,
+      "y": 0.5079033,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Lochan Berth",
+      "x": 0.56270015,
+      "y": 0.42374668,
+      "mapMarkerType": "Major",
+      "location": 40
+    },
+    {
+      "text": "Lost Tops",
+      "x": 0.2450918,
+      "y": 0.87107843,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Overlook Hill",
+      "x": 0.5252302,
+      "y": 0.6481513,
+      "mapMarkerType": "Major",
+      "location": 44
+    },
+    {
+      "text": "Sc\u00e1th Passing",
+      "x": 0.34909955,
+      "y": 0.53184307,
+      "mapMarkerType": "Major",
+      "location": 46
+    },
+    {
+      "text": "Sioc Approach",
+      "x": 0.6218272,
+      "y": 0.67211956,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Solas Gateway",
+      "x": 0.23241858,
+      "y": 0.42319626,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Solas Gorge",
+      "x": 0.19406947,
+      "y": 0.33073047,
+      "mapMarkerType": "Major",
+      "location": 39
+    },
+    {
+      "text": "Soured Fields",
+      "x": 0.09100611,
+      "y": 0.532157,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Crumbling Passage",
+      "x": 0.45544657,
+      "y": 0.7847246,
+      "mapMarkerType": "Major",
+      "location": 45
+    },
+    {
+      "text": "The Key",
+      "x": 0.7205697,
+      "y": 0.9363465,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Lance",
+      "x": 0.38485914,
+      "y": 0.07471772,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Latch",
+      "x": 0.72713715,
+      "y": 0.68313295,
+      "mapMarkerType": "Major",
+      "location": 42
+    },
+    {
+      "text": "The Procession",
+      "x": 0.7513888,
+      "y": 0.43929663,
+      "mapMarkerType": "Major",
+      "location": 47
+    },
+    {
+      "text": "The Rust Road",
+      "x": 0.20239393,
+      "y": 0.69895375,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Stern",
+      "x": 0.7807102,
+      "y": 0.7850171,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Twisted Mumble",
+      "x": 0.6754054,
+      "y": 0.17212075,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Whispering Gulch",
+      "x": 0.49615276,
+      "y": 1.0449303,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "White Chapel",
+      "x": 0.7634679,
+      "y": 0.2669874,
+      "mapMarkerType": "Major",
+      "location": 41
+    },
+    {
+      "text": "Winding Crag",
+      "x": 0.52042425,
+      "y": 0.24549948,
+      "mapMarkerType": "Minor"
+    }
+  ],
+  "lastUpdated": 1665488866997,
+  "version": 38
+}

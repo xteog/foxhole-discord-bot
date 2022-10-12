@@ -1,0 +1,539 @@
+{
+  "regionId": 19,
+  "scorchedVictoryTowns": 0,
+  "mapItems": [
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.17738153,
+      "y": 0.68671423,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.53096956,
+      "y": 0.4654299,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.64998686,
+      "y": 0.64509773,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.3889944,
+      "y": 0.66478914,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.73430806,
+      "y": 0.22538398,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.3960783,
+      "y": 0.17734778,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.24271965,
+      "y": 0.44183478,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.4611075,
+      "y": 0.7477816,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.23132683,
+      "y": 0.2862599,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.51577497,
+      "y": 0.59301484,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.5111313,
+      "y": 0.5995012,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.2043918,
+      "y": 0.39931884,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.21670085,
+      "y": 0.39610246,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.28563997,
+      "y": 0.8093718,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.5857937,
+      "y": 0.18290523,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.60365444,
+      "y": 0.16468078,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.61158055,
+      "y": 0.7694761,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.2844573,
+      "y": 0.8178435,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 39,
+      "x": 0.20340459,
+      "y": 0.34537554,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 60,
+      "x": 0.5784784,
+      "y": 0.3481567,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 59,
+      "x": 0.5773121,
+      "y": 0.35710287,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 33,
+      "x": 0.5848359,
+      "y": 0.26738614,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.18442251,
+      "y": 0.32613453,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 28,
+      "x": 0.46856657,
+      "y": 0.73529917,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 28,
+      "x": 0.65685356,
+      "y": 0.6084646,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 28,
+      "x": 0.41892356,
+      "y": 0.52266586,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.5866598,
+      "y": 0.17244838,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.2734551,
+      "y": 0.29280752,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 52,
+      "x": 0.18767786,
+      "y": 0.3065313,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 53,
+      "x": 0.2130699,
+      "y": 0.3185539,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.5953421,
+      "y": 0.24608661,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 56,
+      "x": 0.33043855,
+      "y": 0.8057894,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 56,
+      "x": 0.24400268,
+      "y": 0.33234283,
+      "flags": 41
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 57,
+      "x": 0.61848885,
+      "y": 0.81188035,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 56,
+      "x": 0.53989124,
+      "y": 0.63773024,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 45,
+      "x": 0.16551383,
+      "y": 0.50796336,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 46,
+      "x": 0.6596337,
+      "y": 0.8948827,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 47,
+      "x": 0.3313227,
+      "y": 0.92398024,
+      "flags": 8
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 11,
+      "x": 0.30705127,
+      "y": 0.7987079,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.6046075,
+      "y": 0.7720458,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 39,
+      "x": 0.5147383,
+      "y": 0.6124487,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 33,
+      "x": 0.32180145,
+      "y": 0.7875715,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 34,
+      "x": 0.5539018,
+      "y": 0.593494,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 18,
+      "x": 0.52045876,
+      "y": 0.85219336,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 18,
+      "x": 0.44220898,
+      "y": 0.93287873,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 18,
+      "x": 0.42410213,
+      "y": 0.7830564,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 18,
+      "x": 0.30004522,
+      "y": 0.84368813,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 18,
+      "x": 0.2904848,
+      "y": 0.84677964,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 18,
+      "x": 0.28067335,
+      "y": 0.85074526,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 18,
+      "x": 0.25574863,
+      "y": 0.82743526,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.36398038,
+      "y": 0.79735136,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.5418317,
+      "y": 0.5984095,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.56947345,
+      "y": 0.77751446,
+      "flags": 0
+    }
+  ],
+  "mapTextItems": [
+    {
+      "text": "Anchor Beach",
+      "x": 0.33879337,
+      "y": 0.91907495,
+      "mapMarkerType": "Major",
+      "location": 37
+    },
+    {
+      "text": "Argosa",
+      "x": 0.44553587,
+      "y": 0.4629214,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Bagh M\u00f2r",
+      "x": 0.45754752,
+      "y": 0.8384563,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Barreller's Bay",
+      "x": 0.65878975,
+      "y": 0.45934907,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Blackwatch",
+      "x": 0.3415074,
+      "y": 0.7991088,
+      "mapMarkerType": "Major",
+      "location": 31
+    },
+    {
+      "text": "Chamil Ravine",
+      "x": 0.47395247,
+      "y": 0.30361375,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Den of Thieves",
+      "x": 0.3221958,
+      "y": 0.63976383,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Exile",
+      "x": 0.41336396,
+      "y": 0.6418172,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Isawa",
+      "x": 0.62136436,
+      "y": 0.80811846,
+      "mapMarkerType": "Major",
+      "location": 33
+    },
+    {
+      "text": "Kolas",
+      "x": 0.1527959,
+      "y": 0.64679915,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Lipsia",
+      "x": 0.45892027,
+      "y": 0.21390341,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Peripti Depths",
+      "x": 0.26073462,
+      "y": 0.75151116,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Perpetua Channel",
+      "x": 0.11155792,
+      "y": 0.34458795,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Primus Trames",
+      "x": 0.321166,
+      "y": 0.47223058,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Promithiens",
+      "x": 0.5415761,
+      "y": 0.6364856,
+      "mapMarkerType": "Major",
+      "location": 34
+    },
+    {
+      "text": "Protos",
+      "x": 0.1703909,
+      "y": 0.5030786,
+      "mapMarkerType": "Major",
+      "location": 35
+    },
+    {
+      "text": "Saegio",
+      "x": 0.4568375,
+      "y": 0.42920688,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Skodio",
+      "x": 0.5933204,
+      "y": 0.24777809,
+      "mapMarkerType": "Major",
+      "location": 30
+    },
+    {
+      "text": "The Axehead",
+      "x": 0.24177985,
+      "y": 0.33301017,
+      "mapMarkerType": "Major",
+      "location": 32
+    },
+    {
+      "text": "The Dice Road",
+      "x": 0.56302696,
+      "y": 0.33521596,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Fleece Road",
+      "x": 0.6615385,
+      "y": 0.8981667,
+      "mapMarkerType": "Major",
+      "location": 36
+    },
+    {
+      "text": "The Kris Ford",
+      "x": 0.5956406,
+      "y": 0.72609246,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Kris Ford",
+      "x": 0.5956406,
+      "y": 0.72609246,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Ursa Trail",
+      "x": 0.5877143,
+      "y": 0.94025785,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Vicit Lagoon",
+      "x": 0.33476177,
+      "y": 0.36637142,
+      "mapMarkerType": "Minor"
+    }
+  ],
+  "lastUpdated": 1665515864568,
+  "version": 629
+}

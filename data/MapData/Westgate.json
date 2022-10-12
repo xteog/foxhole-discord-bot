@@ -1,0 +1,662 @@
+{
+  "regionId": 14,
+  "scorchedVictoryTowns": 0,
+  "mapItems": [
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.38851893,
+      "y": 0.2718872,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.32489282,
+      "y": 0.91156524,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.58338183,
+      "y": 0.8897878,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.7011061,
+      "y": 0.37683538,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 21,
+      "x": 0.5181911,
+      "y": 0.73518527,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 21,
+      "x": 0.8682402,
+      "y": 0.58109593,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.6703444,
+      "y": 0.18543194,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.5895563,
+      "y": 0.31530687,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 40,
+      "x": 0.23386304,
+      "y": 0.30619657,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 40,
+      "x": 0.8761802,
+      "y": 0.43665138,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.34995392,
+      "y": 0.19626266,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.8761802,
+      "y": 0.44467622,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.5912989,
+      "y": 0.7567863,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.5880745,
+      "y": 0.7634089,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.691483,
+      "y": 0.42889658,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.6869959,
+      "y": 0.42457956,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.24170144,
+      "y": 0.3148788,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.35444626,
+      "y": 0.20301218,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 39,
+      "x": 0.6551737,
+      "y": 0.7254567,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 60,
+      "x": 0.6542518,
+      "y": 0.58054215,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 59,
+      "x": 0.8181646,
+      "y": 0.59732133,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 17,
+      "x": 0.35298705,
+      "y": 0.16559282,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 33,
+      "x": 0.6003015,
+      "y": 0.4080687,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 33,
+      "x": 0.3494906,
+      "y": 0.18082806,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 18,
+      "x": 0.59110034,
+      "y": 0.34946874,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.25936526,
+      "y": 0.324238,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 18,
+      "x": 0.5526405,
+      "y": 0.72065485,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 18,
+      "x": 0.3136909,
+      "y": 0.17018978,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 28,
+      "x": 0.33503935,
+      "y": 0.45825,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 28,
+      "x": 0.46555015,
+      "y": 0.71643674,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 28,
+      "x": 0.5813814,
+      "y": 0.3359842,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.34789592,
+      "y": 0.5090838,
+      "flags": 4
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.21709894,
+      "y": 0.3031159,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 52,
+      "x": 0.5787915,
+      "y": 0.7050541,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 53,
+      "x": 0.59991884,
+      "y": 0.7233288,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 53,
+      "x": 0.5078291,
+      "y": 0.30984128,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.61625427,
+      "y": 0.7687798,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.64532363,
+      "y": 0.41324255,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.8503467,
+      "y": 0.46627107,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.37592232,
+      "y": 0.12548439,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.32488868,
+      "y": 0.14818512,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 27,
+      "x": 0.59581673,
+      "y": 0.56256765,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.62238723,
+      "y": 0.41819575,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.83058965,
+      "y": 0.43285465,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 57,
+      "x": 0.23622711,
+      "y": 0.26830125,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.36611205,
+      "y": 0.10292217,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.6449199,
+      "y": 0.72488564,
+      "flags": 41
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 45,
+      "x": 0.5833475,
+      "y": 0.5633541,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 45,
+      "x": 0.4659777,
+      "y": 0.2784664,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 46,
+      "x": 0.8175303,
+      "y": 0.5774834,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 46,
+      "x": 0.68701494,
+      "y": 0.18085708,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 46,
+      "x": 0.29063615,
+      "y": 0.8161705,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 47,
+      "x": 0.4551282,
+      "y": 0.80820113,
+      "flags": 8
+    }
+  ],
+  "mapTextItems": [
+    {
+      "text": "Ash Step",
+      "x": 0.64588916,
+      "y": 1.041789,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Candle Hills",
+      "x": 0.3809478,
+      "y": 0.876076,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Cattle March",
+      "x": 0.43200865,
+      "y": 0.178799,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Ceo Highlands",
+      "x": 0.6742479,
+      "y": 0.9047628,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Cinder Road",
+      "x": 0.41563344,
+      "y": 1.0379049,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Coasthill",
+      "x": 0.7492962,
+      "y": 0.5232728,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Coastway",
+      "x": 0.5137713,
+      "y": 0.98847944,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Cobber's Lane",
+      "x": 0.81818783,
+      "y": 0.3048373,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Cobber's Lane",
+      "x": 0.81818783,
+      "y": 0.3048373,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Ember Hills",
+      "x": 0.555335,
+      "y": 1.0591571,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Fand's Chain",
+      "x": 0.25625902,
+      "y": 0.14081238,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Fields of Badb",
+      "x": 0.51419544,
+      "y": 0.15018566,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Fields of Badb",
+      "x": 0.51419544,
+      "y": 0.15018566,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Flidais' Pasture",
+      "x": 0.6924164,
+      "y": 0.22017962,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Handsome Hideaway",
+      "x": 0.33405593,
+      "y": 0.4992943,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Hillcrest",
+      "x": 0.64205915,
+      "y": 0.6253394,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Holdfast",
+      "x": 0.46443552,
+      "y": 0.27771717,
+      "mapMarkerType": "Major",
+      "location": 45
+    },
+    {
+      "text": "Inkwell Lane",
+      "x": 0.5928621,
+      "y": 0.10583429,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Kardia Road",
+      "x": 0.5908896,
+      "y": 0.178799,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Killian Quarter",
+      "x": 0.7891662,
+      "y": 0.16007636,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Kingstone",
+      "x": 0.64355624,
+      "y": 0.41088805,
+      "mapMarkerType": "Major",
+      "location": 39
+    },
+    {
+      "text": "Longstone",
+      "x": 0.6454746,
+      "y": 0.7234395,
+      "mapMarkerType": "Major",
+      "location": 43
+    },
+    {
+      "text": "Lord's Mouth",
+      "x": 0.82933867,
+      "y": 0.4307491,
+      "mapMarkerType": "Major",
+      "location": 40
+    },
+    {
+      "text": "Lost Partition",
+      "x": 0.8150013,
+      "y": 0.5756538,
+      "mapMarkerType": "Major",
+      "location": 46
+    },
+    {
+      "text": "Rancher's Fast",
+      "x": 0.69447815,
+      "y": 0.18181983,
+      "mapMarkerType": "Major",
+      "location": 47
+    },
+    {
+      "text": "Reaver's Cove",
+      "x": 0.4750435,
+      "y": 0.5243521,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Sanctified Path",
+      "x": 0.63349,
+      "y": 0.8222307,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Sanctuary",
+      "x": 0.23537217,
+      "y": 0.26691732,
+      "mapMarkerType": "Major",
+      "location": 41
+    },
+    {
+      "text": "S\u00edoch\u00e1na Valley",
+      "x": 0.5804643,
+      "y": 0.8998509,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Taswell Point",
+      "x": 0.54965186,
+      "y": 0.79319614,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Aging Ocean",
+      "x": 0.114025585,
+      "y": 0.663528,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Bulwark",
+      "x": 0.76893073,
+      "y": 0.6432597,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Divide",
+      "x": 0.48302627,
+      "y": 0.8998509,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Gallows",
+      "x": 0.3637351,
+      "y": 0.1061458,
+      "mapMarkerType": "Major",
+      "location": 42
+    },
+    {
+      "text": "The Hem",
+      "x": 0.7906987,
+      "y": 0.74425286,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The King's Road",
+      "x": 0.7325495,
+      "y": 0.4098496,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The King's Road",
+      "x": 0.7325495,
+      "y": 0.4098496,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Knight's Edge",
+      "x": 0.579454,
+      "y": 0.28919458,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Triton's Curse",
+      "x": 0.2009395,
+      "y": 0.88355315,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Warden Walk",
+      "x": 0.8698958,
+      "y": 0.5327038,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Western Heartlands",
+      "x": 0.7199143,
+      "y": 0.343739,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Westgate Keep",
+      "x": 0.59599173,
+      "y": 0.56367874,
+      "mapMarkerType": "Major",
+      "location": 44
+    },
+    {
+      "text": "Wire Road",
+      "x": 0.69118434,
+      "y": 0.2610858,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Wyattwick",
+      "x": 0.29039592,
+      "y": 0.81640434,
+      "mapMarkerType": "Major",
+      "location": 48
+    },
+    {
+      "text": "Zeus' Demise",
+      "x": 0.4019617,
+      "y": 0.7723668,
+      "mapMarkerType": "Major",
+      "location": 49
+    }
+  ],
+  "lastUpdated": 1665514330151,
+  "version": 184
+}

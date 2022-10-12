@@ -1,0 +1,559 @@
+{
+  "regionId": 11,
+  "scorchedVictoryTowns": 0,
+  "mapItems": [
+    {
+      "teamId": "NONE",
+      "iconType": 23,
+      "x": 0.6376325,
+      "y": 0.42206565,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 23,
+      "x": 0.15643384,
+      "y": 0.6269618,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 21,
+      "x": 0.44802865,
+      "y": 0.88609993,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.3238098,
+      "y": 0.4125529,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.82161593,
+      "y": 0.6331351,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 40,
+      "x": 0.13617668,
+      "y": 0.4275585,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 40,
+      "x": 0.3273391,
+      "y": 0.52955425,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.7399397,
+      "y": 0.3967131,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.3551193,
+      "y": 0.7659329,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.86671275,
+      "y": 0.5429474,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.5669964,
+      "y": 0.7113208,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 32,
+      "x": 0.13645872,
+      "y": 0.43940014,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 32,
+      "x": 0.43769777,
+      "y": 0.31125546,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 32,
+      "x": 0.869023,
+      "y": 0.5329453,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 32,
+      "x": 0.3451181,
+      "y": 0.5325018,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 39,
+      "x": 0.45813623,
+      "y": 0.34975725,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 19,
+      "x": 0.43272385,
+      "y": 0.38144228,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 11,
+      "x": 0.5349955,
+      "y": 0.73914856,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 17,
+      "x": 0.46007308,
+      "y": 0.32707208,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 34,
+      "x": 0.4516623,
+      "y": 0.36613575,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 34,
+      "x": 0.4469763,
+      "y": 0.38458696,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 33,
+      "x": 0.3877119,
+      "y": 0.7469151,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 33,
+      "x": 0.5657784,
+      "y": 0.68223727,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 33,
+      "x": 0.4709184,
+      "y": 0.34759852,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 12,
+      "x": 0.4565106,
+      "y": 0.35863176,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 51,
+      "x": 0.46048728,
+      "y": 0.38430437,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 28,
+      "x": 0.841185,
+      "y": 0.52723134,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.34101012,
+      "y": 0.7204225,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.84611714,
+      "y": 0.5166548,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.51303613,
+      "y": 0.7174306,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.762725,
+      "y": 0.3840681,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.14389616,
+      "y": 0.44018567,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.37080652,
+      "y": 0.51586705,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.4057424,
+      "y": 0.33769244,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.37480512,
+      "y": 0.7449996,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.32864854,
+      "y": 0.49624902,
+      "flags": 41
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.543078,
+      "y": 0.67843205,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.8392175,
+      "y": 0.54724175,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.15210344,
+      "y": 0.36358878,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.70331603,
+      "y": 0.38726288,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.4481316,
+      "y": 0.3247305,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 45,
+      "x": 0.44212052,
+      "y": 0.9175624,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 46,
+      "x": 0.70440733,
+      "y": 0.8502494,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 47,
+      "x": 0.7420497,
+      "y": 0.5600989,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 47,
+      "x": 0.29298434,
+      "y": 0.15638539,
+      "flags": 8
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 37,
+      "x": 0.29706043,
+      "y": 0.7078255,
+      "flags": 0
+    }
+  ],
+  "mapTextItems": [
+    {
+      "text": "Brodytown",
+      "x": 0.44412765,
+      "y": 0.3227743,
+      "mapMarkerType": "Major",
+      "location": 40
+    },
+    {
+      "text": "Camp Eos",
+      "x": 0.7520739,
+      "y": 0.70374876,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Caragtais",
+      "x": 0.45057085,
+      "y": 0.5294064,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Duffy's Farm",
+      "x": 0.2719318,
+      "y": 0.56807905,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Dugan's Approach",
+      "x": 0.6922709,
+      "y": 0.1538672,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Dwyersfield",
+      "x": 0.2087289,
+      "y": 0.26713523,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Dwyerstown",
+      "x": 0.15061852,
+      "y": 0.36391303,
+      "mapMarkerType": "Major",
+      "location": 38
+    },
+    {
+      "text": "Elksford",
+      "x": 0.33049652,
+      "y": 0.4971746,
+      "mapMarkerType": "Major",
+      "location": 35
+    },
+    {
+      "text": "Featherfield",
+      "x": 0.4406717,
+      "y": 0.798611,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Fisherman's Floe",
+      "x": 0.6400806,
+      "y": 0.5572313,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Fort Mac Conaill",
+      "x": 0.70212996,
+      "y": 0.8482764,
+      "mapMarkerType": "Major",
+      "location": 42
+    },
+    {
+      "text": "Harpy",
+      "x": 0.44333068,
+      "y": 0.9163655,
+      "mapMarkerType": "Major",
+      "location": 41
+    },
+    {
+      "text": "Hookhall",
+      "x": 0.36672696,
+      "y": 0.6498256,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Humidus",
+      "x": 0.27232808,
+      "y": 0.66734344,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Ice Ranch",
+      "x": 0.70420206,
+      "y": 0.3878927,
+      "mapMarkerType": "Major",
+      "location": 39
+    },
+    {
+      "text": "Limestone Holdfast",
+      "x": 0.29389253,
+      "y": 0.15557751,
+      "mapMarkerType": "Major",
+      "location": 44
+    },
+    {
+      "text": "Mac Conaill's Pass",
+      "x": 0.61724085,
+      "y": 0.985965,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Mousetrap",
+      "x": 0.8401006,
+      "y": 0.53316337,
+      "mapMarkerType": "Major",
+      "location": 37
+    },
+    {
+      "text": "Nightchurch",
+      "x": 0.37822467,
+      "y": 0.74487805,
+      "mapMarkerType": "Major",
+      "location": 34
+    },
+    {
+      "text": "Pitfall",
+      "x": 0.87784535,
+      "y": 0.37858298,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Puncta",
+      "x": 0.18530942,
+      "y": 0.5888269,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Reprieve",
+      "x": 0.54468614,
+      "y": 0.67606056,
+      "mapMarkerType": "Major",
+      "location": 36
+    },
+    {
+      "text": "Scorpion",
+      "x": 0.33854625,
+      "y": 0.86316854,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Ark",
+      "x": 0.74158484,
+      "y": 0.5578975,
+      "mapMarkerType": "Major",
+      "location": 43
+    },
+    {
+      "text": "The Bait",
+      "x": 0.708999,
+      "y": 0.5577328,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Cairns",
+      "x": 0.60312855,
+      "y": 0.23888308,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Chicken Coop",
+      "x": 0.32071957,
+      "y": 0.4145506,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Deckard",
+      "x": 0.4275156,
+      "y": 0.041210115,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Knot",
+      "x": 0.44904447,
+      "y": 0.6583204,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Reaching Heights",
+      "x": 0.546316,
+      "y": 0.547519,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Rime Ledge",
+      "x": 0.89936477,
+      "y": 0.74528646,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Rousing Fields",
+      "x": 0.23695965,
+      "y": 0.46786177,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Scar",
+      "x": 0.29426545,
+      "y": 0.5436782,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Squeeze",
+      "x": 0.3175878,
+      "y": 1.0565143,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Th\u00fdlak",
+      "x": 0.11808629,
+      "y": 0.7405652,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Windy Way",
+      "x": 0.22708872,
+      "y": 0.078611076,
+      "mapMarkerType": "Minor"
+    }
+  ],
+  "lastUpdated": 1665509581381,
+  "version": 38
+}

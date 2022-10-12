@@ -1,0 +1,414 @@
+{
+  "regionId": 41,
+  "scorchedVictoryTowns": 0,
+  "mapItems": [
+    {
+      "teamId": "NONE",
+      "iconType": 62,
+      "x": 0.71827936,
+      "y": 0.26565194,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 62,
+      "x": 0.58771306,
+      "y": 0.34260184,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 62,
+      "x": 0.42095983,
+      "y": 0.59092396,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 62,
+      "x": 0.7105791,
+      "y": 0.6575036,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 62,
+      "x": 0.45787603,
+      "y": 0.7315123,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 62,
+      "x": 0.57468694,
+      "y": 0.5103039,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.5648738,
+      "y": 0.6372773,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.7956515,
+      "y": 0.42006084,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.40710223,
+      "y": 0.33367094,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.7469102,
+      "y": 0.42523932,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.43697566,
+      "y": 0.61763024,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.43008384,
+      "y": 0.616283,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.4228105,
+      "y": 0.6148567,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.55944383,
+      "y": 0.121843554,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.7147049,
+      "y": 0.70936793,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.5543029,
+      "y": 0.12753019,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.28310853,
+      "y": 0.21661113,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.5505907,
+      "y": 0.13636856,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.2689982,
+      "y": 0.45922664,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 39,
+      "x": 0.55243677,
+      "y": 0.53997105,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 19,
+      "x": 0.53528947,
+      "y": 0.5339119,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 17,
+      "x": 0.5431967,
+      "y": 0.54501057,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 34,
+      "x": 0.5752032,
+      "y": 0.55215013,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 34,
+      "x": 0.5701839,
+      "y": 0.54382277,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 33,
+      "x": 0.4612679,
+      "y": 0.10260662,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 18,
+      "x": 0.55609006,
+      "y": 0.47476107,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 18,
+      "x": 0.6249545,
+      "y": 0.49941716,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 18,
+      "x": 0.620742,
+      "y": 0.48968172,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 12,
+      "x": 0.556506,
+      "y": 0.5792948,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 51,
+      "x": 0.58920246,
+      "y": 0.5663284,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 28,
+      "x": 0.51475734,
+      "y": 0.30673742,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.5685149,
+      "y": 0.57419956,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.47595552,
+      "y": 0.1793009,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.5414061,
+      "y": 0.522048,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 52,
+      "x": 0.5363015,
+      "y": 0.4727113,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 53,
+      "x": 0.56222796,
+      "y": 0.48567957,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.51394373,
+      "y": 0.55316997,
+      "flags": 41
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.4620786,
+      "y": 0.1338624,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 45,
+      "x": 0.27930403,
+      "y": 0.226455,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 45,
+      "x": 0.7568681,
+      "y": 0.42460316,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 46,
+      "x": 0.26999527,
+      "y": 0.4480086,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 47,
+      "x": 0.7197802,
+      "y": 0.7264551,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 47,
+      "x": 0.70718867,
+      "y": 0.12619044,
+      "flags": 8
+    }
+  ],
+  "mapTextItems": [
+    {
+      "text": "Ashtown",
+      "x": 0.5143172,
+      "y": 0.5525154,
+      "mapMarkerType": "Major",
+      "location": 36
+    },
+    {
+      "text": "Camp Omega",
+      "x": 0.7096968,
+      "y": 0.12712017,
+      "mapMarkerType": "Major",
+      "location": 42
+    },
+    {
+      "text": "Cometa",
+      "x": 0.27839515,
+      "y": 0.22447485,
+      "mapMarkerType": "Major",
+      "location": 38
+    },
+    {
+      "text": "Electi",
+      "x": 0.46130008,
+      "y": 0.133538,
+      "mapMarkerType": "Major",
+      "location": 37
+    },
+    {
+      "text": "Gunslinger's Pass",
+      "x": 0.40480655,
+      "y": 0.91855067,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Mount Blackmoth",
+      "x": 0.59724534,
+      "y": 0.2234254,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Mount Brimstone",
+      "x": 0.41860235,
+      "y": 0.8069577,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Omega Valley",
+      "x": 0.75688833,
+      "y": 0.30764285,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Sootflow",
+      "x": 0.71663564,
+      "y": 0.72119087,
+      "mapMarkerType": "Major",
+      "location": 41
+    },
+    {
+      "text": "Tar Creek",
+      "x": 0.25911945,
+      "y": 0.5969615,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Ashfort",
+      "x": 0.75574505,
+      "y": 0.42160434,
+      "mapMarkerType": "Major",
+      "location": 39
+    },
+    {
+      "text": "The Calamity",
+      "x": 0.26671404,
+      "y": 0.44761574,
+      "mapMarkerType": "Major",
+      "location": 40
+    },
+    {
+      "text": "The Red River",
+      "x": 0.51841533,
+      "y": 0.3471736,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "The Stillness",
+      "x": 0.37764594,
+      "y": 0.41737863,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Twin Flames",
+      "x": 0.7930806,
+      "y": 0.5975344,
+      "mapMarkerType": "Minor"
+    },
+    {
+      "text": "Wasteful Calm",
+      "x": 0.45589614,
+      "y": 0.6622806,
+      "mapMarkerType": "Minor"
+    }
+  ],
+  "lastUpdated": 1665500115250,
+  "version": 62
+}
