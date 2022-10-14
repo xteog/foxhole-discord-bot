@@ -130,6 +130,13 @@
     },
     {
       "teamId": "WARDENS",
+      "iconType": 33,
+      "x": 0.43260074,
+      "y": 0.8874075,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
       "iconType": 18,
       "x": 0.5747319,
       "y": 0.69509035,
@@ -189,7 +196,7 @@
       "iconType": 35,
       "x": 0.47235534,
       "y": 0.5780035,
-      "flags": 8
+      "flags": 0
     },
     {
       "teamId": "WARDENS",
@@ -245,28 +252,21 @@
       "iconType": 35,
       "x": 0.43570814,
       "y": 0.6889955,
-      "flags": 8
+      "flags": 0
     },
     {
       "teamId": "WARDENS",
       "iconType": 35,
       "x": 0.4857814,
       "y": 0.6582382,
-      "flags": 8
+      "flags": 0
     },
     {
       "teamId": "WARDENS",
       "iconType": 35,
       "x": 0.44630954,
       "y": 0.5763262,
-      "flags": 8
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 35,
-      "x": 0.7335979,
-      "y": 0.78461206,
-      "flags": 8
+      "flags": 0
     },
     {
       "teamId": "WARDENS",
@@ -291,7 +291,7 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 57,
+      "iconType": 56,
       "x": 0.7033106,
       "y": 0.77943027,
       "flags": 8
@@ -312,7 +312,7 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 57,
+      "iconType": 58,
       "x": 0.43736944,
       "y": 0.6446073,
       "flags": 41
@@ -361,13 +361,6 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 33,
-      "x": 0.43260074,
-      "y": 0.8874075,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
       "iconType": 18,
       "x": 0.36822945,
       "y": 0.84082,
@@ -385,6 +378,13 @@
       "iconType": 35,
       "x": 0.40274325,
       "y": 0.87629473,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.7335979,
+      "y": 0.78461206,
       "flags": 0
     }
   ],
@@ -430,14 +430,14 @@
       "x": 0.5860919,
       "y": 0.56278074,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 39
     },
     {
       "text": "Iuxta Homestead",
       "x": 0.7127172,
       "y": 0.19546622,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 38
     },
     {
       "text": "Kardia",
@@ -456,14 +456,14 @@
       "x": 0.70205057,
       "y": 0.7824685,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 41
     },
     {
       "text": "Mara",
       "x": 0.8549706,
       "y": 0.48427492,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 43
     },
     {
       "text": "McCarthy Fields",
@@ -482,21 +482,21 @@
       "x": 0.6262762,
       "y": 0.71746904,
       "mapMarkerType": "Major",
-      "location": 45
+      "location": 49
     },
     {
       "text": "Scarp of Ambrose",
       "x": 0.4770394,
       "y": 0.37934086,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 45
     },
     {
       "text": "Scythe",
       "x": 0.78855526,
       "y": 0.34850213,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 47
     },
     {
       "text": "Sickle Hill",
@@ -521,7 +521,7 @@
       "x": 0.6119086,
       "y": 0.40515536,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 48
     },
     {
       "text": "The Bay of Artemis",
@@ -534,7 +534,7 @@
       "x": 0.49903932,
       "y": 0.20359577,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 46
     },
     {
       "text": "The Heart Road",
@@ -553,7 +553,7 @@
       "x": 0.4322609,
       "y": 0.6490256,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 44
     },
     {
       "text": "The Mirror",
@@ -584,7 +584,7 @@
       "x": 0.25413433,
       "y": 0.2014643,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 42
     },
     {
       "text": "The Winged Walk",
@@ -603,9 +603,9 @@
       "x": 0.4417568,
       "y": 0.8744741,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 40
     }
   ],
-  "lastUpdated": 1665510510316,
-  "version": 234
+  "lastUpdated": 1665753823895,
+  "version": 138
 }

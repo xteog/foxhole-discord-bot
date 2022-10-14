@@ -137,6 +137,27 @@
     },
     {
       "teamId": "WARDENS",
+      "iconType": 60,
+      "x": 0.67215645,
+      "y": 0.7962874,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 59,
+      "x": 0.6677506,
+      "y": 0.67204547,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 59,
+      "x": 0.6725801,
+      "y": 0.69540274,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
       "iconType": 17,
       "x": 0.70064,
       "y": 0.6861896,
@@ -296,7 +317,7 @@
       "x": 0.51059383,
       "y": 0.5146678,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 36
     },
     {
       "text": "Daihbi Point",
@@ -309,7 +330,7 @@
       "x": 0.73406035,
       "y": 0.69156134,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 35
     },
     {
       "text": "Longing",
@@ -322,21 +343,21 @@
       "x": 0.5624944,
       "y": 0.69426215,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 39
     },
     {
       "text": "The Dais",
       "x": 0.59315604,
       "y": 0.102234095,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 42
     },
     {
       "text": "The Heir's Knife",
       "x": 0.27641714,
       "y": 0.7720462,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 37
     },
     {
       "text": "The Loneliest Shore",
@@ -349,7 +370,7 @@
       "x": 0.41714057,
       "y": 0.8898146,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 41
     },
     {
       "text": "The Pram",
@@ -362,7 +383,7 @@
       "x": 0.701072,
       "y": 0.20528859,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 43
     },
     {
       "text": "The Roiling Comets",
@@ -381,16 +402,16 @@
       "x": 0.77552485,
       "y": 0.46081984,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 40
     },
     {
       "text": "World's End",
       "x": 0.2149299,
       "y": 0.55217665,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 38
     }
   ],
-  "lastUpdated": 1665515717466,
-  "version": 47
+  "lastUpdated": 1665753515130,
+  "version": 58
 }

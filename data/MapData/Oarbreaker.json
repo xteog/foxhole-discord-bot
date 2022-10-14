@@ -173,29 +173,29 @@
     {
       "teamId": "WARDENS",
       "iconType": 18,
-      "x": 0.6699788,
-      "y": 0.8723174,
+      "x": 0.7169975,
+      "y": 0.075949036,
       "flags": 0
     },
     {
       "teamId": "WARDENS",
       "iconType": 18,
-      "x": 0.67913693,
-      "y": 0.8589085,
+      "x": 0.24742474,
+      "y": 0.28794873,
       "flags": 0
     },
     {
       "teamId": "WARDENS",
       "iconType": 18,
-      "x": 0.72505826,
-      "y": 0.08750534,
+      "x": 0.7620195,
+      "y": 0.16573335,
       "flags": 0
     },
     {
       "teamId": "WARDENS",
       "iconType": 18,
-      "x": 0.51201695,
-      "y": 0.84336245,
+      "x": 0.70852524,
+      "y": 0.063785434,
       "flags": 0
     },
     {
@@ -229,29 +229,29 @@
     {
       "teamId": "WARDENS",
       "iconType": 18,
-      "x": 0.70852524,
-      "y": 0.063785434,
+      "x": 0.51201695,
+      "y": 0.84336245,
       "flags": 0
     },
     {
       "teamId": "WARDENS",
       "iconType": 18,
-      "x": 0.7620195,
-      "y": 0.16573335,
+      "x": 0.72505826,
+      "y": 0.08750534,
       "flags": 0
     },
     {
       "teamId": "WARDENS",
       "iconType": 18,
-      "x": 0.24742474,
-      "y": 0.28794873,
+      "x": 0.67913693,
+      "y": 0.8589085,
       "flags": 0
     },
     {
       "teamId": "WARDENS",
       "iconType": 18,
-      "x": 0.7169975,
-      "y": 0.075949036,
+      "x": 0.6699788,
+      "y": 0.8723174,
       "flags": 0
     },
     {
@@ -333,6 +333,13 @@
     },
     {
       "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.65195143,
+      "y": 0.8308372,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
       "iconType": 58,
       "x": 0.86179715,
       "y": 0.39631894,
@@ -340,7 +347,7 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 57,
+      "iconType": 58,
       "x": 0.6703624,
       "y": 0.7749264,
       "flags": 8
@@ -393,13 +400,6 @@
       "x": 0.48080972,
       "y": 0.1657336,
       "flags": 8
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.65195143,
-      "y": 0.8308372,
-      "flags": 0
     }
   ],
   "mapTextItems": [
@@ -414,7 +414,7 @@
       "x": 0.9117557,
       "y": 0.51201063,
       "mapMarkerType": "Major",
-      "location": 54
+      "location": 55
     },
     {
       "text": "Castor",
@@ -439,7 +439,7 @@
       "x": 0.49749142,
       "y": 0.16744888,
       "mapMarkerType": "Major",
-      "location": 55
+      "location": 56
     },
     {
       "text": "Grisly Refuge",
@@ -452,7 +452,7 @@
       "x": 0.6686882,
       "y": 0.773776,
       "mapMarkerType": "Major",
-      "location": 48
+      "location": 49
     },
     {
       "text": "Kofteri Channel",
@@ -465,7 +465,7 @@
       "x": 0.32835937,
       "y": 0.89686215,
       "mapMarkerType": "Major",
-      "location": 52
+      "location": 53
     },
     {
       "text": "Martius",
@@ -508,14 +508,14 @@
       "x": 0.79465634,
       "y": 0.6755905,
       "mapMarkerType": "Major",
-      "location": 49
+      "location": 50
     },
     {
       "text": "Reliqua",
       "x": 0.6536689,
       "y": 0.21361786,
       "mapMarkerType": "Major",
-      "location": 53
+      "location": 54
     },
     {
       "text": "Sandalwood Beach",
@@ -540,7 +540,7 @@
       "x": 0.60323334,
       "y": 0.42578885,
       "mapMarkerType": "Major",
-      "location": 51
+      "location": 52
     },
     {
       "text": "Skull Beach",
@@ -553,7 +553,7 @@
       "x": 0.51089185,
       "y": 0.624818,
       "mapMarkerType": "Major",
-      "location": 50
+      "location": 51
     },
     {
       "text": "The Dirk",
@@ -572,9 +572,9 @@
       "x": 0.85254693,
       "y": 0.3931426,
       "mapMarkerType": "Major",
-      "location": 47
+      "location": 48
     }
   ],
-  "lastUpdated": 1665516095501,
-  "version": 60
+  "lastUpdated": 1665749749478,
+  "version": 38
 }

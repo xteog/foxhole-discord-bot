@@ -8,10 +8,11 @@ DB = {
 	'serverIcon': PATH + '/data/serverIcon.png',
 	'dynamicData': 'https://war-service-live.foxholeservices.com/api/worldconquest/maps/{}/dynamic/public',
 	'staticData': 'https://war-service-live.foxholeservices.com/api/worldconquest/maps/{}/static',
-	'channelId': 881662982160003113,
+	'eventThread': 881662982160003113,
+  'serverId': 881632566589915177,
 	'mapReport': 'https://war-service-live.foxholeservices.com/api/worldconquest/warReport/{}',
 	'warReport': 'https://war-service-live.foxholeservices.com/api/worldconquest/war',
-	'Token': 'ODgxNjMyODI5NTQ3NjQyOTcy.YSvqjg.5P4X8VvYQB7580c4p2j8fGTm_mI',
+	'Token': 'ODgxNjMyODI5NTQ3NjQyOTcy.GCb_U4.AcOcHxTXWm0jU2YVo4MziJ1PosDHj2LGxDUCmg',
 	'startWar': 1664389802386,
   'iconFilter': [45,46,47, 56, 57, 58]
 }
