@@ -165,6 +165,13 @@
     },
     {
       "teamId": "COLONIALS",
+      "iconType": 28,
+      "x": 0.444826,
+      "y": 0.21084654,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 35,
       "x": 0.57063013,
       "y": 0.37798974,
@@ -239,13 +246,6 @@
       "x": 0.80988437,
       "y": 0.5906784,
       "flags": 8
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 28,
-      "x": 0.444826,
-      "y": 0.21084654,
-      "flags": 0
     },
     {
       "teamId": "NONE",

@@ -1,4 +1,3 @@
-from multiprocessing.sharedctypes import Value
 import defs
 import discord
 from testRequest import read
@@ -40,7 +39,10 @@ class SelectZone(discord.ui.Select):
             self.em.description += f'\n\n``{self.values[0]} ({self.map})``'
         else:
             self.em.add_field(name = self.map, value=8)
-        await interaction.response.send_message(embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions(everyone=True))
+
+        view = make_view(self.map, self.values[0])
+        await interaction.response.edit_message(view=view)
+        await interaction.followup.send(embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions(everyone=True))
 
 
 class SelectRegion(discord.ui.Select):
@@ -69,6 +71,8 @@ class SelectRegion(discord.ui.Select):
         if self.values[0] != 'Nessuna':
             await interaction.response.edit_message(view=SelectViewRegion(self.em, self.emojis, self.values[0]))
         else:
+            view = make_view('Nessuna', 'Nessuna')
+            await interaction.response.edit_message(view=view)
             await interaction.response.send_message(embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions(everyone=True))
 
 
@@ -97,8 +101,15 @@ class Presenze(discord.ui.Modal, title='Presenze'):
         await interaction.response.send_message('Seleziona la regione:', view=SelectViewRegion(em, self.emojis, ''), ephemeral=True)
 
 
+def make_view(map, region):
+    view = discord.ui.View()
+    view.add_item(discord.ui.Select(options=[discord.SelectOption(label=map, default=True)], disabled=True))
+    view.add_item(discord.ui.Select(options=[discord.SelectOption(label=region, default=True)], disabled=True))
+    return view
+
+
 def get_presenze():
     try:
         return presenze
     except:
-        return ['Usa /presenze per fare un annuncio']
+        return ['Usa ``/presenze`` per fare un annuncio']

@@ -1,7 +1,6 @@
-from secrets import choice
+import traceback
 import discord
 from discord import app_commands
-from discord.ext import tasks
 from testRequest import updateData, downloadData, updateMapL, read, setName
 from testImage import updateMap, addCircle, changeColor
 import time
@@ -30,73 +29,73 @@ class MyClient(discord.Client):
   async def background_task(self):
     await self.wait_until_ready()
     while not self.is_closed():
+      
       await asyncio.sleep(10)
-      mapName = defs.MAP_NAME
-      for map in mapName:
-        list = []
-        print(map)
-        data = downloadData(map, 1)
-        newData = data
-        oldData = read(defs.DB['mapData'].format(map))
-        if oldData == 0: #aggiusta
-          updateData(map, newData, 1)
-        else:
-          if newData['lastUpdated'] != oldData['lastUpdated']:
-            l = len(oldData['mapItems'])
-            for i in range(l):
-              j = search_item(oldData['mapItems'][i], newData['mapItems'])
-              if j == -1:
-                print(f"object destroyed: {oldData['mapItems'][i]['iconType']}, {map}") #print message INtel center
-              elif newData['mapItems'][j]['teamId'] != oldData['mapItems'][i]['teamId'] and newData['mapItems'][j]['flags'] != 4:
-                list.append(j)
-
-          if len(list) > 0:
-            newData = newData['mapItems']
-            oldData = oldData['mapItems']
-            data = downloadData(map, 0)
-            data['mapItems'] = newData
+      try:
+        mapName = defs.MAP_NAME
+        for map in mapName:
+          list = []
+          print(map)
+          data = downloadData(map, 1)
+          newData = data
+          oldData = read(defs.DB['mapData'].format(map))
+          if oldData == 0: #aggiusta
             updateData(map, newData, 1)
-            updateMap(map, data, -1)
+          else:
+            if newData['lastUpdated'] != oldData['lastUpdated']:
+              l = len(oldData['mapItems'])
+              for i in range(l):
+                j = search_item(oldData['mapItems'][i], newData['mapItems'])
+                if j == -1:
+                  print(f"object destroyed: {oldData['mapItems'][i]['iconType']}, {map}") #print message INtel center
+                elif newData['mapItems'][j]['teamId'] != oldData['mapItems'][i]['teamId'] and newData['mapItems'][j]['flags'] != 4:
+                  list.append(j)
 
-          for i in list:
-            if newData[i]['iconType'] in defs.DB['iconFilter']:
-              channel = self.get_channel(defs.DB['eventThread'])
+            if len(list) > 0:
+              newData = newData['mapItems']
+              oldData = oldData['mapItems']
+              data = downloadData(map, 0)
+              data['mapItems'] = newData
+              updateData(map, newData, 1)
+              updateMap(map, data, -1)
 
-              addCircle(map, (newData[i]['x'], newData[i]['y']))
-              icon = defs.ICON_ID[newData[i]['iconType']]
-              j = search_item(newData[i], oldData)
-              message, color = switch(map, newData[i]['teamId'], oldData[j]['teamId'], i, newData[i]['flags'])
+            for i in list:
+              if newData[i]['iconType'] in defs.DB['iconFilter']:
+                channel = self.get_channel(defs.DB['eventThread'])
 
-              if color:
-                color = 0x65875E
-              else:
-                color = 0x2D6CA1
+                addCircle(map, (newData[i]['x'], newData[i]['y']))
+                icon = defs.ICON_ID[newData[i]['iconType']]
+                j = search_item(newData[i], oldData)
+                message, color = switch(map, newData[i]['teamId'], oldData[j]['teamId'], i, newData[i]['flags'])
 
-              description = icon + message
-              if newData[i]['teamId'] == 'COLONIALS':
-                changeColor(Image.open(defs.DB['iconImage'].format(icon)), True).save(defs.PATH + '/data/tempIcon.png')
-                fileIcon = discord.File(defs.PATH + '/data/tempIcon.png')
-              elif newData[i]['teamId'] == 'WARDENS':
-                changeColor(Image.open(defs.DB['iconImage'].format(icon)), False).save(defs.PATH + '/data/tempIcon.png')
-                fileIcon = discord.File(defs.PATH + '/data/tempIcon.png')
-              else:
-                fileIcon = discord.File(defs.DB['iconImage'].format(icon))
-              fileMap = discord.File(defs.PATH + '/data/tempImage.png')
-              embed=discord.Embed(title=description, color=color)
-              embed.set_author(name=map, icon_url='attachment://{}.png'.format(icon))
-              embed.set_thumbnail(url='attachment://tempImage.png')
-              d, h, m = timeWar(data['lastUpdated'])
-              embed.set_footer(text = f'{d}d {h}h {m}m')
+                if color:
+                  color = 0x65875E
+                else:
+                  color = 0x2D6CA1
+                  
+                description = icon + message
+                if newData[i]['teamId'] == 'COLONIALS':
+                  changeColor(Image.open(defs.DB['iconImage'].format(icon)), True).save(defs.PATH + '/data/tempIcon.png')
+                  fileIcon = discord.File(defs.PATH + '/data/tempIcon.png')
+                elif newData[i]['teamId'] == 'WARDENS':
+                  changeColor(Image.open(defs.DB['iconImage'].format(icon)), False).save(defs.PATH + '/data/tempIcon.png')
+                  fileIcon = discord.File(defs.PATH + '/data/tempIcon.png')
+                else:
+                  fileIcon = discord.File(defs.DB['iconImage'].format(icon))
+                fileMap = discord.File(defs.PATH + '/data/tempImage.png')
+                embed=discord.Embed(title=description, color=color)
+                embed.set_author(name=map, icon_url='attachment://{}.png'.format(icon))
+                embed.set_thumbnail(url='attachment://tempImage.png')
+                d, h, m = timeWar(data['lastUpdated'])
+                embed.set_footer(text = f'{d}d {h}h {m}m')
 
-              await channel.send(files = [fileMap, fileIcon], embed=embed)
+                await channel.send(files = [fileMap, fileIcon], embed=embed)
 
-        await asyncio.sleep(1)
+          await asyncio.sleep(1)
 
-    '''
-    except:
-      with open('./data/errors.txt', 'a') as file:
-        file.write(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
-    '''
+      except:
+        with open('./data/errors.txt', 'a') as file:
+          file.write(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
 
 
   async def on_message(self, message):
@@ -165,17 +164,22 @@ def switch(map, newTeam, oldTeam, index, flag):
     msg[0] = message + '\nLa regione {} è stata persa!'.format(map)
     msg[1] = message + '\nLa regione {} è stata conquistata!'.format(map)
 
-  #icona vicina a dove
-  if newTeam == 'NONE':
-    if oldTeam == 'COLONIALS':
-      return msg[0].format(' è stato distrutto dai Wardens'), 0
+  try:
+    #icona vicina a dove
+    if newTeam == 'NONE':
+      if oldTeam == 'COLONIALS':
+        return msg[0].format(' è stato distrutto dai Wardens'), 0
+      else:
+        return msg[1].format(' è stato distrutto dai Colonials'), 1
     else:
-      return msg[1].format(' è stato distrutto dai Colonials'), 1
-  else:
-    if newTeam == 'COLONIALS':
-      return msg[1].format(' è stato conquistato dai Colonials'), 1
-    else:
-      return msg[0].format(' è stato conquistato dai Wardens'), 0
+      if newTeam == 'COLONIALS':
+        return msg[1].format(' è stato conquistato dai Colonials'), 1
+      else:
+        return msg[0].format(' è stato conquistato dai Wardens'), 0
+  except:
+    with open('./data/errors.txt', 'a') as file:
+          file.write(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
+
 
 def timeWar(end):
   start = defs.DB['startWar']
@@ -214,7 +218,7 @@ tree= app_commands.CommandTree(client)
 @tree.command(name='presenze', description='test', guild=discord.Object(id=client.server))
 @discord.app_commands.describe(mode='prova')
 @discord.app_commands.choices(mode=[
-  discord.app_commands.Choice(name='init', value=0),
+  discord.app_commands.Choice(name='new', value=0),
   discord.app_commands.Choice(name='list_users', value=1)
 ])
 async def presenze(interaction: discord.Interaction, mode: discord.app_commands.Choice[int]):
@@ -225,6 +229,17 @@ async def presenze(interaction: discord.Interaction, mode: discord.app_commands.
   else:
     await interaction.response.send_modal(classes.Presenze(client.emojis))
 
+@tree.command(name='annuncio', description='Crea un annuncio personalizzato', guild=discord.Object(id=client.server))
+@discord.app_commands.describe(
+  fields='Inserisci il numero dei campi (max 25)',
+  image="Vuoi inserire un'immagine?"
+)
+@discord.app_commands.choices(image=[
+  discord.app_commands.Choice(name='yes', value=1),
+  discord.app_commands.Choice(name='no', value=0)
+])
+async def annuncio(interaction: discord.Interaction, fields: int, image: discord.app_commands.Choice[int]):
+  await interaction.response.send_message('ciao')
 
 @tree.command(name='reset', description='test', guild=discord.Object(id=client.server))
 async def reset(interaction: discord.Interaction):
