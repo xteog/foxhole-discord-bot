@@ -35,7 +35,6 @@ class MyClient(discord.Client):
         mapName = defs.MAP_NAME
         for map in mapName:
           list = []
-          print(map)
           data = downloadData(map, 1)
           newData = data
           oldData = read(defs.DB['mapData'].format(map))
@@ -94,6 +93,7 @@ class MyClient(discord.Client):
           await asyncio.sleep(1)
 
       except:
+        print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
         with open('./data/errors.txt', 'a') as file:
           file.write(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
 
@@ -177,6 +177,7 @@ def switch(map, newTeam, oldTeam, index, flag):
       else:
         return msg[0].format(' è stato conquistato dai Wardens'), 0
   except:
+    print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
     with open('./data/errors.txt', 'a') as file:
           file.write(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
 
