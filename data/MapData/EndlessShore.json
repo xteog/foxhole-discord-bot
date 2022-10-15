@@ -143,20 +143,6 @@
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 59,
-      "x": 0.2721265,
-      "y": 0.14826196,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 59,
-      "x": 0.27397636,
-      "y": 0.15939792,
-      "flags": 0
-    },
-    {
       "teamId": "COLONIALS",
       "iconType": 34,
       "x": 0.27156994,
@@ -214,6 +200,13 @@
     },
     {
       "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.27244592,
+      "y": 0.4443189,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 52,
       "x": 0.37635487,
       "y": 0.4064241,
@@ -248,11 +241,25 @@
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 35,
-      "x": 0.29528016,
-      "y": 0.13804345,
-      "flags": 0
+      "x": 0.35732844,
+      "y": 0.3714645,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.28320757,
+      "y": 0.32936507,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.34103724,
+      "y": 0.4414021,
+      "flags": 8
     },
     {
       "teamId": "COLONIALS",
@@ -291,14 +298,14 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 57,
+      "iconType": 58,
       "x": 0.70067424,
       "y": 0.7346744,
       "flags": 8
     },
     {
       "teamId": "WARDENS",
-      "iconType": 56,
+      "iconType": 57,
       "x": 0.6193358,
       "y": 0.15711984,
       "flags": 8
@@ -376,34 +383,6 @@
     {
       "teamId": "NONE",
       "iconType": 35,
-      "x": 0.27244592,
-      "y": 0.4443189,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.34103724,
-      "y": 0.4414021,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.35732844,
-      "y": 0.3714645,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.28320757,
-      "y": 0.32936507,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
       "x": 0.79828924,
       "y": 0.54820734,
       "flags": 0
@@ -420,6 +399,13 @@
       "iconType": 35,
       "x": 0.6216396,
       "y": 0.19538192,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.29528016,
+      "y": 0.13804345,
       "flags": 0
     }
   ],
@@ -441,14 +427,14 @@
       "x": 0.30299953,
       "y": 0.15477471,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 40
     },
     {
       "text": "Dannan Ridge",
       "x": 0.7488712,
       "y": 0.22403175,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 46
     },
     {
       "text": "Dearg's Fang",
@@ -461,14 +447,14 @@
       "x": 0.20581831,
       "y": 0.6122418,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 41
     },
     {
       "text": "Iron Junction",
       "x": 0.35952666,
       "y": 0.7956661,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 37
     },
     {
       "text": "Kelpie's Mane",
@@ -499,7 +485,7 @@
       "x": 0.303757,
       "y": 0.38162574,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 44
     },
     {
       "text": "S\u00eddhe Fall",
@@ -524,7 +510,7 @@
       "x": 0.74394375,
       "y": 0.45933223,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 48
     },
     {
       "text": "The North Star",
@@ -537,14 +523,14 @@
       "x": 0.12129593,
       "y": 0.50606096,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 45
     },
     {
       "text": "The Overland",
       "x": 0.57504135,
       "y": 0.79666007,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 47
     },
     {
       "text": "The Selkie Bluffs",
@@ -569,30 +555,30 @@
       "x": 0.853922,
       "y": 0.5507405,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 38
     },
     {
       "text": "Vulpine Watch",
       "x": 0.62842077,
       "y": 0.1475563,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 43
     },
     {
       "text": "Wellchurch",
       "x": 0.5146297,
       "y": 0.45945293,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 39
     },
     {
       "text": "Woodbind",
       "x": 0.6993119,
       "y": 0.7336695,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 42
     }
   ],
-  "lastUpdated": 1665754856938,
-  "version": 948
+  "lastUpdated": 1665849580625,
+  "version": 425
 }

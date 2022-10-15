@@ -35,7 +35,6 @@ class MyClient(discord.Client):
         mapName = defs.MAP_NAME
         for map in mapName:
           list = []
-          print(map)
           data = downloadData(map, 1)
           newData = data
           oldData = read(defs.DB['mapData'].format(map))
@@ -94,6 +93,7 @@ class MyClient(discord.Client):
           await asyncio.sleep(1)
 
       except:
+        print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
         with open('./data/errors.txt', 'a') as file:
           file.write(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
 
@@ -177,6 +177,7 @@ def switch(map, newTeam, oldTeam, index, flag):
       else:
         return msg[0].format(' è stato conquistato dai Wardens'), 0
   except:
+    print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
     with open('./data/errors.txt', 'a') as file:
           file.write(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
 
@@ -229,6 +230,7 @@ async def presenze(interaction: discord.Interaction, mode: discord.app_commands.
   else:
     await interaction.response.send_modal(classes.Presenze(client.emojis))
 
+
 @tree.command(name='annuncio', description='Crea un annuncio personalizzato', guild=discord.Object(id=client.server))
 @discord.app_commands.describe(
   fields='Inserisci il numero dei campi (max 25)',
@@ -241,10 +243,11 @@ async def presenze(interaction: discord.Interaction, mode: discord.app_commands.
 async def annuncio(interaction: discord.Interaction, fields: int, image: discord.app_commands.Choice[int]):
   await interaction.response.send_message('ciao')
 
+
 @tree.command(name='reset', description='test', guild=discord.Object(id=client.server))
 async def reset(interaction: discord.Interaction):
   await client.change_presence(status=discord.Status.idle)
-  await interaction.response.defer(ephemeral=True, thinking=False)
+  await interaction.response.defer(ephemeral=True, thinking=True)
   updateMapL()
   mapName = defs.MAP_NAME
 
@@ -272,7 +275,7 @@ async def reset(interaction: discord.Interaction):
   print("Maps updated")
   str_2 = 'Maps updated\n' + str_2 + '\n\n'
   await interaction.edit_original_response(content=str_1 + str_2 +'Reset e update dati effettuati')
-  await interaction.edit_original_response('Reset e update dati effettuati')
+  await interaction.edit_original_response(content='Reset e update dati effettuati')
   await client.change_presence(status=discord.Status.online)
 
   #DB['startWar'] = requests.get(DB['warReport']).json()['conquestStartTime']

@@ -130,6 +130,13 @@
     },
     {
       "teamId": "COLONIALS",
+      "iconType": 60,
+      "x": 0.550824,
+      "y": 0.5156904,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 59,
       "x": 0.3219195,
       "y": 0.11620739,
@@ -323,21 +330,21 @@
       "x": 0.8178504,
       "y": 0.38884524,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 35
     },
     {
       "text": "Atropos' Fate",
       "x": 0.5730031,
       "y": 0.7843336,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 41
     },
     {
       "text": "Clotho's Refuge",
       "x": 0.61337584,
       "y": 0.32398352,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 40
     },
     {
       "text": "Dredgefield",
@@ -356,21 +363,21 @@
       "x": 0.15671077,
       "y": 0.5505076,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 43
     },
     {
       "text": "Hermit's Rest",
       "x": 0.67122585,
       "y": 0.6176634,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 39
     },
     {
       "text": "Lachesis' Tally ",
       "x": 0.840556,
       "y": 0.54475015,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 44
     },
     {
       "text": "Leatherback Pathway",
@@ -383,7 +390,7 @@
       "x": 0.395983,
       "y": 0.8252861,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 37
     },
     {
       "text": "Steely Fields",
@@ -396,7 +403,7 @@
       "x": 0.6767252,
       "y": 0.1845278,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 36
     },
     {
       "text": "Terrapin Woods",
@@ -415,7 +422,7 @@
       "x": 0.27597004,
       "y": 0.2246597,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 38
     },
     {
       "text": "The Frontier",
@@ -446,14 +453,14 @@
       "x": 0.34593302,
       "y": 0.51468116,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 34
     },
     {
       "text": "Vagrant Bastion",
       "x": 0.5076587,
       "y": 0.1616039,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 42
     },
     {
       "text": "Wasting Holt",
@@ -468,6 +475,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1665744373476,
-  "version": 80
+  "lastUpdated": 1665848977627,
+  "version": 40
 }

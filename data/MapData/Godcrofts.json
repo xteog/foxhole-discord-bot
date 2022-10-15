@@ -68,13 +68,6 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.5111313,
-      "y": 0.5995012,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
       "x": 0.2043918,
       "y": 0.39931884,
       "flags": 0
@@ -110,22 +103,8 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.61158055,
-      "y": 0.7694761,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
       "x": 0.2844573,
       "y": 0.8178435,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.6046075,
-      "y": 0.7720458,
       "flags": 0
     },
     {
@@ -137,9 +116,9 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 39,
-      "x": 0.5147383,
-      "y": 0.6124487,
+      "iconType": 11,
+      "x": 0.30705127,
+      "y": 0.7987079,
       "flags": 0
     },
     {
@@ -213,17 +192,10 @@
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 28,
       "x": 0.65685356,
       "y": 0.6084646,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 28,
-      "x": 0.41892356,
-      "y": 0.52266586,
       "flags": 0
     },
     {
@@ -284,14 +256,14 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 57,
+      "iconType": 58,
       "x": 0.61848885,
       "y": 0.81188035,
       "flags": 8
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 57,
+      "iconType": 56,
       "x": 0.53989124,
       "y": 0.63773024,
       "flags": 8
@@ -319,9 +291,9 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 11,
-      "x": 0.30705127,
-      "y": 0.7987079,
+      "iconType": 28,
+      "x": 0.41892356,
+      "y": 0.52266586,
       "flags": 0
     },
     {
@@ -329,6 +301,34 @@
       "iconType": 38,
       "x": 0.51577497,
       "y": 0.59301484,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.5111313,
+      "y": 0.5995012,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.61158055,
+      "y": 0.7694761,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.6046075,
+      "y": 0.7720458,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 39,
+      "x": 0.5147383,
+      "y": 0.6124487,
       "flags": 0
     },
     {
@@ -343,13 +343,6 @@
       "iconType": 18,
       "x": 0.44220898,
       "y": 0.93287873,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 18,
-      "x": 0.42410213,
-      "y": 0.7830564,
       "flags": 0
     },
     {
@@ -382,6 +375,13 @@
     },
     {
       "teamId": "NONE",
+      "iconType": 18,
+      "x": 0.42410213,
+      "y": 0.7830564,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
       "iconType": 35,
       "x": 0.36398038,
       "y": 0.79735136,
@@ -401,7 +401,7 @@
       "x": 0.33879337,
       "y": 0.91907495,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 40
     },
     {
       "text": "Argosa",
@@ -426,7 +426,7 @@
       "x": 0.3415074,
       "y": 0.7991088,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 34
     },
     {
       "text": "Chamil Ravine",
@@ -451,7 +451,7 @@
       "x": 0.62136436,
       "y": 0.80811846,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 36
     },
     {
       "text": "Kolas",
@@ -488,14 +488,14 @@
       "x": 0.5415761,
       "y": 0.6364856,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 37
     },
     {
       "text": "Protos",
       "x": 0.1703909,
       "y": 0.5030786,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 38
     },
     {
       "text": "Saegio",
@@ -508,14 +508,14 @@
       "x": 0.5933204,
       "y": 0.24777809,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 33
     },
     {
       "text": "The Axehead",
       "x": 0.24177985,
       "y": 0.33301017,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 35
     },
     {
       "text": "The Dice Road",
@@ -528,7 +528,7 @@
       "x": 0.6615385,
       "y": 0.8981667,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 39
     },
     {
       "text": "The Kris Ford",
@@ -555,6 +555,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1665752747775,
-  "version": 595
+  "lastUpdated": 1665849515148,
+  "version": 570
 }

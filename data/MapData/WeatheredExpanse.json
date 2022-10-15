@@ -138,13 +138,6 @@
     {
       "teamId": "WARDENS",
       "iconType": 60,
-      "x": 0.1981709,
-      "y": 0.6058835,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 60,
       "x": 0.67139816,
       "y": 0.76765203,
       "flags": 0
@@ -166,15 +159,29 @@
     {
       "teamId": "WARDENS",
       "iconType": 59,
-      "x": 0.22166952,
-      "y": 0.6160696,
+      "x": 0.6962562,
+      "y": 0.5899699,
       "flags": 0
     },
     {
       "teamId": "WARDENS",
       "iconType": 59,
-      "x": 0.6962562,
-      "y": 0.5899699,
+      "x": 0.68793803,
+      "y": 0.59728175,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 59,
+      "x": 0.6845804,
+      "y": 0.7437908,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 59,
+      "x": 0.7033457,
+      "y": 0.7390261,
       "flags": 0
     },
     {
@@ -357,7 +364,7 @@
       "x": 0.27000988,
       "y": 0.52244484,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 40
     },
     {
       "text": "Dullahan's Crest",
@@ -376,21 +383,21 @@
       "x": 0.5164818,
       "y": 0.7780801,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 39
     },
     {
       "text": "Frostmarch",
       "x": 0.15492144,
       "y": 0.4631941,
       "mapMarkerType": "Major",
-      "location": 46
+      "location": 47
     },
     {
       "text": "Huntsfort",
       "x": 0.48584694,
       "y": 0.5349745,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 45
     },
     {
       "text": "Kirkyard",
@@ -403,14 +410,14 @@
       "x": 0.34740227,
       "y": 0.688721,
       "mapMarkerType": "Major",
-      "location": 45
+      "location": 46
     },
     {
       "text": "Port of Rime",
       "x": 0.68206143,
       "y": 0.12976617,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 43
     },
     {
       "text": "Revenant's Path",
@@ -429,14 +436,14 @@
       "x": 0.38944197,
       "y": 0.30851248,
       "mapMarkerType": "Major",
-      "location": 47
+      "location": 48
     },
     {
       "text": "Spirit Watch",
       "x": 0.6523898,
       "y": 0.7255189,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 44
     },
     {
       "text": "The Ivory Bank",
@@ -473,14 +480,14 @@
       "x": 0.46095482,
       "y": 0.157184,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 41
     },
     {
       "text": "Wightwalk",
       "x": 0.69054574,
       "y": 0.49786863,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 42
     },
     {
       "text": "Wraith's Gate",
@@ -489,6 +496,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1665755005295,
-  "version": 105
+  "lastUpdated": 1665847903289,
+  "version": 97
 }
