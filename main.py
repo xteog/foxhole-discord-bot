@@ -151,7 +151,7 @@ def updt():
 
 
 def switch(map, newTeam, oldTeam, index, flag):
-  message = '{}'
+  message = ''
   data = read(defs.DB['mapData'].format(map))
 
   for item in data['mapTextItems']:
@@ -177,7 +177,7 @@ def switch(map, newTeam, oldTeam, index, flag):
       else:
         return msg[0].format(' è stato conquistato dai Wardens'), 0
   except:
-    print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n' + msg + '\n')
+    print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n', msg, '\n')
     with open('./data/errors.txt', 'a') as file:
           file.write(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
 
