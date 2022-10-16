@@ -1,10 +1,10 @@
-PATH = r'/app'
+PATH = '/app'
 DB = {
 	'mapName': PATH + '/data/mapName.json',
 	'iconId': PATH + '/data/iconId.json',
 	'mapData': PATH + '/data/MapData/{}.json',
 	'mapImage': PATH + '/data/MapImage/{}.png',
-	'iconImage': PATH + r'/Icon/{}.png',
+	'iconImage': PATH + '/Icon/{}.png',
 	'serverIcon': PATH + '/data/serverIcon.png',
 	'dynamicData': 'https://war-service-live.foxholeservices.com/api/worldconquest/maps/{}/dynamic/public',
 	'staticData': 'https://war-service-live.foxholeservices.com/api/worldconquest/maps/{}/static',
@@ -47,7 +47,7 @@ ICON_ID = {
   37: 'RocketSite',
   38: 'SalvageMine',
   39: 'ConstructionYard',
-  40: 'ComponentMine',
+  40: 'Component Mine',
   45: 'RelicBase1',
   46: 'RelicBase2',
   47: 'RelicBase3',
