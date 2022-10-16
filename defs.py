@@ -1,10 +1,10 @@
-PATH = ''
+PATH = r'/app'
 DB = {
 	'mapName': PATH + '/data/mapName.json',
 	'iconId': PATH + '/data/iconId.json',
 	'mapData': PATH + '/data/MapData/{}.json',
 	'mapImage': PATH + '/data/MapImage/{}.png',
-	'iconImage': PATH + '/Icon/{}.png',
+	'iconImage': PATH + r'/Icon/{}.png',
 	'serverIcon': PATH + '/data/serverIcon.png',
 	'dynamicData': 'https://war-service-live.foxholeservices.com/api/worldconquest/maps/{}/dynamic/public',
 	'staticData': 'https://war-service-live.foxholeservices.com/api/worldconquest/maps/{}/static',
