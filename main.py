@@ -177,7 +177,7 @@ def switch(map, newTeam, oldTeam, index, flag):
       else:
         return msg[0].format(' è stato conquistato dai Wardens'), 0
   except:
-    print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
+    print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n' + msg + '\n')
     with open('./data/errors.txt', 'a') as file:
           file.write(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
 
@@ -241,7 +241,7 @@ async def presenze(interaction: discord.Interaction, mode: discord.app_commands.
   discord.app_commands.Choice(name='no', value=0)
 ])
 async def annuncio(interaction: discord.Interaction, fields: int, image: discord.app_commands.Choice[int]):
-  await interaction.response.send_message('ciao')
+  await interaction.response.send_modal(classes.Annuncio(fields, image))
 
 
 @tree.command(name='reset', description='test', guild=discord.Object(id=client.server))

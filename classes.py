@@ -101,6 +101,31 @@ class Presenze(discord.ui.Modal, title='Presenze'):
         await interaction.response.send_message('Seleziona la regione:', view=SelectViewRegion(em, self.emojis, ''), ephemeral=True)
 
 
+class Annuncio(discord.ui.Modal, title='Annuncio'):
+    def __init__(self, fields, image):
+        super().__init__()
+        self.fieldsTitolo = []
+        self.fieldsDescrizione = []
+        self.titolo = discord.ui.TextInput(label="Titolo", placeholder="Inserisci il titolo dellannuncio")
+        self.descrizione = discord.ui.TextInput(label="Descrizione", required=False, placeholder="Inserisci la descrizione dellannuncio",  style=discord.TextStyle.paragraph)
+        self.add_item(self.titolo)
+        self.add_item(self.descrizione)
+        for i in range(fields):
+            self.fieldsTitolo.append(discord.ui.TextInput(label=f"Titolo field {i+1}", placeholder=f"Inserisci il titolo del field"))
+            self.fieldsDescrizione.append(discord.ui.TextInput(label=f"Descrizione field {i+1}", required=False, placeholder="Inserisci la descrizione del field",  style=discord.TextStyle.paragraph))
+            self.add_item(self.fieldsTitolo[-1])
+            self.add_item(self.fieldsDescrizione[-1])
+
+    async def on_submit(self, interaction: discord.Interaction):
+        embed = discord.Embed(title=self.titolo.value, description='@everyone '+self.descrizione.value)
+        embed.set_author(name=interaction.user.name, icon_url=interaction.user.avatar.url)
+        for i in range(len(fieldsTitolo)):
+            embed.add_field(name=self.fieldsTitolo[i], value=self.fieldsDescrizione[i])
+        #file = discord.File(DB['mapImage'].format(map))
+        #embed.set_image(url='attachment://{}.png'.format)
+        await interaction.response.send_message(embed=embed)
+
+
 def make_view(map, region):
     view = discord.ui.View()
     view.add_item(discord.ui.Select(options=[discord.SelectOption(label=map, default=True)], disabled=True))

@@ -262,3 +262,251 @@ Traceback (most recent call last):
     self._sslobj.do_handshake()
 KeyboardInterrupt
 
+Sun Oct 16 20:37:00 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 40, in background_task
+    oldData = read(defs.DB['mapData'].format(map))
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\testRequest.py", line 77, in read
+    with open(path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/app/data/MapData/TheFingers.json'
+
+Sun Oct 16 20:37:11 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 40, in background_task
+    oldData = read(defs.DB['mapData'].format(map))
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\testRequest.py", line 77, in read
+    with open(path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/app/data/MapData/TheFingers.json'
+
+Sun Oct 16 20:37:23 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 40, in background_task
+    oldData = read(defs.DB['mapData'].format(map))
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\testRequest.py", line 77, in read
+    with open(path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/app/data/MapData/TheFingers.json'
+
+Sun Oct 16 20:37:50 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 40, in background_task
+    oldData = read(defs.DB['mapData'].format(map))
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\testRequest.py", line 77, in read
+    with open(path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/data/MapData/TheFingers.json'
+
+Sun Oct 16 20:38:02 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 40, in background_task
+    oldData = read(defs.DB['mapData'].format(map))
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\testRequest.py", line 77, in read
+    with open(path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/data/MapData/TheFingers.json'
+
+Sun Oct 16 20:38:14 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 40, in background_task
+    oldData = read(defs.DB['mapData'].format(map))
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\testRequest.py", line 77, in read
+    with open(path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/data/MapData/TheFingers.json'
+
+Sun Oct 16 20:38:26 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 40, in background_task
+    oldData = read(defs.DB['mapData'].format(map))
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\testRequest.py", line 77, in read
+    with open(path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/data/MapData/TheFingers.json'
+
+Sun Oct 16 20:38:39 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 40, in background_task
+    oldData = read(defs.DB['mapData'].format(map))
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\testRequest.py", line 77, in read
+    with open(path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/data/MapData/TheFingers.json'
+
+Sun Oct 16 20:38:51 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 40, in background_task
+    oldData = read(defs.DB['mapData'].format(map))
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\testRequest.py", line 77, in read
+    with open(path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/data/MapData/TheFingers.json'
+
+Sun Oct 16 20:39:03 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 40, in background_task
+    oldData = read(defs.DB['mapData'].format(map))
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\testRequest.py", line 77, in read
+    with open(path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/data/MapData/TheFingers.json'
+
+Sun Oct 16 20:39:14 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 40, in background_task
+    oldData = read(defs.DB['mapData'].format(map))
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\testRequest.py", line 77, in read
+    with open(path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/data/MapData/TheFingers.json'
+
+Sun Oct 16 20:41:48 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 91, in background_task
+    await channel.send(files = [fileMap, fileIcon], embed=embed)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\abc.py", line 1536, in send
+    data = await state.http.send_message(channel.id, params=params)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\http.py", line 624, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 544, in _request
+    await resp.start(conn)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client_reqrep.py", line 890, in start
+    message, payload = await self._protocol.read()  # type: ignore
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\streams.py", line 604, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+Sun Oct 16 20:42:20 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 91, in background_task
+    await channel.send(files = [fileMap, fileIcon], embed=embed)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\abc.py", line 1536, in send
+    data = await state.http.send_message(channel.id, params=params)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\http.py", line 624, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 381, in _request
+    raise RuntimeError("Session is closed")
+RuntimeError: Session is closed
+
+Sun Oct 16 23:15:12 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 173, in switch
+    return msg[1].format(' è stato distrutto dai Colonials'), 1
+IndexError: Replacement index 1 out of range for positional args tuple
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 68, in background_task
+    message, color = switch(map, newData[i]['teamId'], oldData[j]['teamId'], i, newData[i]['flags'])
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 180, in switch
+    print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n' + msg + '\n')
+TypeError: can only concatenate str (not "list") to str
+
+Sun Oct 16 23:15:38 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 171, in switch
+    return msg[0].format(' è stato distrutto dai Wardens'), 0
+IndexError: Replacement index 1 out of range for positional args tuple
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 68, in background_task
+    message, color = switch(map, newData[i]['teamId'], oldData[j]['teamId'], i, newData[i]['flags'])
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 180, in switch
+    print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n' + msg + '\n')
+TypeError: can only concatenate str (not "list") to str
+
+Sun Oct 16 23:16:25 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 171, in switch
+    return msg[0].format(' è stato distrutto dai Wardens'), 0
+IndexError: Replacement index 1 out of range for positional args tuple
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 68, in background_task
+    message, color = switch(map, newData[i]['teamId'], oldData[j]['teamId'], i, newData[i]['flags'])
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 180, in switch
+    print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n' + msg + '\n')
+TypeError: can only concatenate str (not "list") to str
+
+Sun Oct 16 23:19:01 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 171, in switch
+    return msg[0].format(' è stato distrutto dai Wardens'), 0
+IndexError: Replacement index 1 out of range for positional args tuple
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 68, in background_task
+    message, color = switch(map, newData[i]['teamId'], oldData[j]['teamId'], i, newData[i]['flags'])
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 180, in switch
+    print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n' + msg + '\n')
+TypeError: can only concatenate str (not "list") to str
+
+Sun Oct 16 23:23:38 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 171, in switch
+    return msg[0].format(' è stato distrutto dai Wardens'), 0
+IndexError: Replacement index 1 out of range for positional args tuple
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 68, in background_task
+    message, color = switch(map, newData[i]['teamId'], oldData[j]['teamId'], i, newData[i]['flags'])
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 180, in switch
+    print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n' + msg + '\n')
+TypeError: can only concatenate str (not "list") to str
+
+Sun Oct 16 23:35:50 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 173, in switch
+    return msg[1].format(' è stato distrutto dai Colonials'), 1
+IndexError: Replacement index 1 out of range for positional args tuple
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 68, in background_task
+    message, color = switch(map, newData[i]['teamId'], oldData[j]['teamId'], i, newData[i]['flags'])
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 180, in switch
+    print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n' + msg + '\n')
+TypeError: can only concatenate str (not "list") to str
+

@@ -1,4 +1,4 @@
-PATH = '/app'
+PATH = '.'
 DB = {
 	'mapName': PATH + '/data/mapName.json',
 	'iconId': PATH + '/data/iconId.json',
@@ -47,7 +47,7 @@ ICON_ID = {
   37: 'RocketSite',
   38: 'SalvageMine',
   39: 'ConstructionYard',
-  40: 'Component Mine',
+  40: 'ComponentMine',
   45: 'RelicBase1',
   46: 'RelicBase2',
   47: 'RelicBase3',

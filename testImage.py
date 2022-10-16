@@ -101,3 +101,30 @@ def addCircle(map, pos):
   img.close()
   circle.close()
   mask.close()
+
+
+def highlight_name(map, name):
+  with Image.open(defs.PATH + defs.DB['mapImage'].format(map)) as img:
+    bg_w, bg_h = img.size
+    txt = Image.new('RGBA', background.size, (255,255,255,0))
+    draw = ImageDraw.Draw(txt)
+    myFont = ImageFont.truetype(defs.PATH + '/data/Clarendon.ttf', 25)
+    draw = ImageDraw.Draw(txt)
+
+    data = read(defs.DB['mapData'].format(map))['mapTextItems']
+    x = round(data['x'] * bg_w)
+    y = round(data['y'] * bg_h)
+    size = draw.textsize(name, font=myFont)
+    x = x - size[0]/2
+    y = y - size[1]/2
+
+    c = (0, 0, 0, 0)
+    draw.text((x-1, y-1), text, font=myFont, fill=c)
+    draw.text((x+1, y-1), text, font=myFont, fill=c)
+    draw.text((x-1, y+1), text, font=myFont, fill=c)
+    draw.text((x+1, y+1), text, font=myFont, fill=c)
+    draw.text((x, y), text, fill=(255, 255, 255, 255), font=myFont)
+
+    background = Image.alpha_composite(img, txt)
+
+  return background

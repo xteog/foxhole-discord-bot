@@ -54,20 +54,6 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.6052026,
-      "y": 0.19946255,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.6048619,
-      "y": 0.21057399,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
       "x": 0.8400266,
       "y": 0.5688764,
       "flags": 0
@@ -214,6 +200,13 @@
     },
     {
       "teamId": "COLONIALS",
+      "iconType": 53,
+      "x": 0.39126503,
+      "y": 0.38871032,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 35,
       "x": 0.37262577,
       "y": 0.7858744,
@@ -270,13 +263,6 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 56,
-      "x": 0.8525794,
-      "y": 0.5295663,
-      "flags": 8
-    },
-    {
-      "teamId": "COLONIALS",
       "iconType": 58,
       "x": 0.51437455,
       "y": 0.4648978,
@@ -284,9 +270,16 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 56,
+      "iconType": 57,
       "x": 0.33467504,
       "y": 0.16557847,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 57,
+      "x": 0.8525794,
+      "y": 0.5295663,
       "flags": 8
     },
     {
@@ -304,8 +297,8 @@
       "flags": 8
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 57,
+      "teamId": "COLONIALS",
+      "iconType": 56,
       "x": 0.6193358,
       "y": 0.15711984,
       "flags": 8
@@ -325,7 +318,7 @@
       "flags": 8
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 45,
       "x": 0.7501106,
       "y": 0.22816029,
@@ -347,16 +340,23 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 53,
-      "x": 0.39126503,
-      "y": 0.38871032,
+      "iconType": 38,
+      "x": 0.33763966,
+      "y": 0.20582664,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.33763966,
-      "y": 0.20582664,
+      "x": 0.6048619,
+      "y": 0.21057399,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.6052026,
+      "y": 0.19946255,
       "flags": 0
     },
     {
