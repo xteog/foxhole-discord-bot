@@ -1,4 +1,4 @@
-PATH = '/app'
+PATH = './app'
 DB = {
 	'mapName': PATH + '/data/mapName.json',
 	'iconId': PATH + '/data/iconId.json',
