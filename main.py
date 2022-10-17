@@ -45,9 +45,7 @@ class MyClient(discord.Client):
               l = len(oldData['mapItems'])
               for i in range(l):
                 j = search_item(oldData['mapItems'][i], newData['mapItems'])
-                if j == -1:
-                  print(f"object destroyed: {oldData['mapItems'][i]['iconType']}, {map}") #print message INtel center
-                elif newData['mapItems'][j]['teamId'] != oldData['mapItems'][i]['teamId'] and newData['mapItems'][j]['flags'] != 4:
+                if newData['mapItems'][j]['teamId'] != oldData['mapItems'][i]['teamId'] and newData['mapItems'][j]['flags'] != 4:
                   list.append(j)
 
             if len(list) > 0:
@@ -59,7 +57,7 @@ class MyClient(discord.Client):
               updateMap(map, data, -1)
 
             for i in list:
-              if newData[i]['iconType'] in defs.DB['iconFilter']:
+              if i >= 0 and newData[i]['iconType'] in defs.DB['iconFilter']:
                 channel = self.get_channel(defs.DB['eventThread'])
 
                 addCircle(map, (newData[i]['x'], newData[i]['y']))
@@ -90,6 +88,7 @@ class MyClient(discord.Client):
 
                 await channel.send(files = [fileMap, fileIcon], embed=embed)
 
+
           await asyncio.sleep(1)
 
       except:
@@ -104,32 +103,6 @@ class MyClient(discord.Client):
       presenze = message
 
     msg = message.content
-
-    if msg.startswith('$map'):
-      for map in self.mapName:
-        data = read(defs.DB['mapData'].format(map))
-        updateMap(map, data, -1)
-        print(map + "finished")
-
-    elif msg.startswith('$embed'):
-      msg = message
-      await message.delete()
-      channel = self.get_channel(channelId)
-      title = ''
-      desc = ''
-      com = msg.content.split('-')
-      l = len(com)
-      for i in range(l):
-        if com[i].startswith('title'):
-          title = com[i].split('"')[1]
-        if com[i].startswith('desc'):
-          desc = com[i].split('"')[1]
-      embed=discord.Embed(title=title, description=desc, color=0xFF5733)
-      embed.set_author(name=message.author.display_name, icon_url=message.author.avatar_url)
-      #file = discord.File(DB['mapImage'].format(map))
-      #embed.set_thumbnail(url=message.client.icon_url)
-      #embed.set_image(url='attachment://{}.png'.format)
-      await channel.send(embed=embed)
 
 
 def updt():
@@ -223,12 +196,15 @@ tree= app_commands.CommandTree(client)
   discord.app_commands.Choice(name='list_users', value=1)
 ])
 async def presenze(interaction: discord.Interaction, mode: discord.app_commands.Choice[int]):
-  if mode.value:
-    list = classes.get_presenze()
-    str = '\n'.join(list)
-    await interaction.response.send_message(str)
+  if interaction.user.id in defs.DB['permission']:
+    if mode.value:
+      list = classes.get_presenze()
+      str = '\n'.join(list)
+      await interaction.response.send_message(str)
+    else:
+      await interaction.response.send_modal(classes.Presenze(  ))
   else:
-    await interaction.response.send_modal(classes.Presenze(client.emojis))
+    await interaction.response.send_message('Non hai i permessi', ephemeral=True)
 
 
 @tree.command(name='annuncio', description='Crea un annuncio personalizzato', guild=discord.Object(id=client.server))
@@ -281,4 +257,5 @@ async def reset(interaction: discord.Interaction):
   #DB['startWar'] = requests.get(DB['warReport']).json()['conquestStartTime']
 
 
+updt()
 client.run(defs.DB['Token'])

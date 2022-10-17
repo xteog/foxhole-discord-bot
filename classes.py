@@ -25,10 +25,19 @@ class SelectZone(discord.ui.Select):
         self.map = map
         if map != '':
             options = [discord.SelectOption(label='Nessuna')]
-            data = read(defs.DB['mapData'].format(map))['mapTextItems']
-            for name in data:
+            data = read(defs.DB['mapData'].format(map))
+            for name in data['mapTextItems']:
                 if name['mapMarkerType'] == 'Major':
-                    options.append(discord.SelectOption(label=name['text'], description='Colonials'))
+                    item = data['mapItems'][name['location']]
+                    icon = item['iconType']
+                    if item['teamId'] == 'COLONIALS':
+                        str = f'{icon}C' 
+                    elif item['teamId'] == 'WARDENS':
+                        str = f'{icon}W' 
+                    else:
+                        str = f'{icon}'
+                    emoji = discord.PartialEmoji(name=defs.DB['emojis'][str][0], id=defs.DB['emojis'][str][1])
+                    options.append(discord.SelectOption(label=name['text'], description='Colonials', emoji=emoji))
             super().__init__(placeholder=f'Provincia di {map}', min_values=1, max_values=1, options=options)
         else:
             options = [discord.SelectOption(label='Nessuna')]
@@ -42,13 +51,12 @@ class SelectZone(discord.ui.Select):
 
         view = make_view(self.map, self.values[0])
         await interaction.response.edit_message(view=view)
-        await interaction.followup.send(embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions(everyone=True))
+        await interaction.followup.send('@everyone', embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions(everyone=True))
 
 
 class SelectRegion(discord.ui.Select):
-    def __init__(self, em, emojis, default):
+    def __init__(self, em, default):
         self.em = em
-        self.emojis = emojis
         options = [discord.SelectOption(label='Nessuna')]
         for map in defs.MAP_NAME[0:24]:
             desc = ''
@@ -57,10 +65,10 @@ class SelectRegion(discord.ui.Select):
                 if i['flags'] == 41:
                     if i['teamId'] == 'COLONIALS':
                         desc = 'Colonials'
-                        icon = emojis[0]
+                        icon = discord.PartialEmoji(name=defs.DB['emojis']['ColonialLogo'][0], id=defs.DB['emojis']['ColonialLogo'][1])
                     elif i['teamId'] == 'WARDENS':
                         desc = 'Wardens'
-                        icon = emojis[1]
+                        icon = discord.PartialEmoji(name=defs.DB['emojis']['WardenLogo'][0], id=defs.DB['emojis']['WardenLogo'][1])
             if default == map:
                 options.append(discord.SelectOption(label=map, description=desc, emoji=icon, default=True))
             else:
@@ -69,7 +77,7 @@ class SelectRegion(discord.ui.Select):
 
     async def callback(self, interaction: discord.Interaction):
         if self.values[0] != 'Nessuna':
-            await interaction.response.edit_message(view=SelectViewRegion(self.em, self.emojis, self.values[0]))
+            await interaction.response.edit_message(view=SelectViewRegion(self.em, self.values[0]))
         else:
             view = make_view('Nessuna', 'Nessuna')
             await interaction.response.edit_message(view=view)
@@ -77,28 +85,27 @@ class SelectRegion(discord.ui.Select):
 
 
 class SelectViewRegion(discord.ui.View):
-    def __init__(self, em, emojis, map):
+    def __init__(self, em, map):
         super().__init__()
-        self.add_item(SelectRegion(em, emojis, map))
+        self.add_item(SelectRegion(em, map))
         self.add_item(SelectZone(em, map))
 
 
 class Presenze(discord.ui.Modal, title='Presenze'):
-    def __init__(self, emojis):
+    def __init__(self):
         super().__init__()
         global presenze
         presenze = []
-        self.emojis = emojis
         self.titolo = discord.ui.TextInput(label="Titolo", placeholder="Inserisci il titolo dellannuncio")
         self.descrizione = discord.ui.TextInput(label="Descrizione", required=False, placeholder="Inserisci la descrizione dellannuncio",  style=discord.TextStyle.paragraph)
         self.add_item(self.titolo)
         self.add_item(self.descrizione)
 
     async def on_submit(self, interaction: discord.Interaction):
-        em = discord.Embed(title=self.titolo.value, description='@everyone '+self.descrizione.value)
+        em = discord.Embed(title=self.titolo.value, description=self.descrizione.value, color=0xFAA81A)
         em.set_author(name=interaction.user.name, icon_url=interaction.user.avatar.url)
         em.set_footer(text='Joined: 0')
-        await interaction.response.send_message('Seleziona la regione:', view=SelectViewRegion(em, self.emojis, ''), ephemeral=True)
+        await interaction.response.send_message('Seleziona la regione:', view=SelectViewRegion(em, ''), ephemeral=True)
 
 
 class Annuncio(discord.ui.Modal, title='Annuncio'):
@@ -106,8 +113,8 @@ class Annuncio(discord.ui.Modal, title='Annuncio'):
         super().__init__()
         self.fieldsTitolo = []
         self.fieldsDescrizione = []
-        self.titolo = discord.ui.TextInput(label="Titolo", placeholder="Inserisci il titolo dellannuncio")
-        self.descrizione = discord.ui.TextInput(label="Descrizione", required=False, placeholder="Inserisci la descrizione dellannuncio",  style=discord.TextStyle.paragraph)
+        self.titolo = discord.ui.TextInput(label="Titolo", placeholder="Inserisci il titolo dell'annuncio")
+        self.descrizione = discord.ui.TextInput(label="Descrizione", required=False, placeholder="Inserisci la descrizione dell'annuncio",  style=discord.TextStyle.paragraph)
         self.add_item(self.titolo)
         self.add_item(self.descrizione)
         for i in range(fields):
@@ -117,9 +124,9 @@ class Annuncio(discord.ui.Modal, title='Annuncio'):
             self.add_item(self.fieldsDescrizione[-1])
 
     async def on_submit(self, interaction: discord.Interaction):
-        embed = discord.Embed(title=self.titolo.value, description='@everyone '+self.descrizione.value)
+        embed = discord.Embed(title=self.titolo.value, description='@everyone '+self.descrizione.value, color=0xFAA81A)
         embed.set_author(name=interaction.user.name, icon_url=interaction.user.avatar.url)
-        for i in range(len(fieldsTitolo)):
+        for i in range(len(self.fieldsTitolo)):
             embed.add_field(name=self.fieldsTitolo[i], value=self.fieldsDescrizione[i])
         #file = discord.File(DB['mapImage'].format(map))
         #embed.set_image(url='attachment://{}.png'.format)
@@ -127,9 +134,29 @@ class Annuncio(discord.ui.Modal, title='Annuncio'):
 
 
 def make_view(map, region):
+    data = read(defs.DB['mapData'].format(map))
+    for i in data['mapItems']:
+        if i['flags'] == 41:
+            if i['teamId'] == 'COLONIALS':
+                desc = 'Colonials'
+                icon = discord.PartialEmoji(name=defs.DB['emojis']['ColonialLogo'][0], id=defs.DB['emojis']['ColonialLogo'][1])
+            elif i['teamId'] == 'WARDENS':
+                desc = 'Wardens'
+                icon = discord.PartialEmoji(name=defs.DB['emojis']['WardenLogo'][0], id=defs.DB['emojis']['WardenLogo'][1])
     view = discord.ui.View()
-    view.add_item(discord.ui.Select(options=[discord.SelectOption(label=map, default=True)], disabled=True))
-    view.add_item(discord.ui.Select(options=[discord.SelectOption(label=region, default=True)], disabled=True))
+    view.add_item(discord.ui.Select(options=[discord.SelectOption(label=map, emoji=icon, default=True)], disabled=True))
+    for name in data['mapTextItems']:
+        if name['text'] == region:
+            item = data['mapItems'][name['location']]
+            icon = item['iconType']
+            if item['teamId'] == 'COLONIALS':
+                str = f'{icon}C' 
+            elif item['teamId'] == 'WARDENS':
+                str = f'{icon}W' 
+            else:
+                str = f'{icon}'
+            icon = discord.PartialEmoji(name=defs.DB['emojis'][str][0], id=defs.DB['emojis'][str][1])
+    view.add_item(discord.ui.Select(options=[discord.SelectOption(label=region, emoji=icon, default=True)], disabled=True))
     return view
 
 

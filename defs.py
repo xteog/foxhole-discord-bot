@@ -1,4 +1,4 @@
-PATH = '.'
+PATH = '/app'
 DB = {
 	'mapName': PATH + '/data/mapName.json',
 	'iconId': PATH + '/data/iconId.json',
@@ -14,7 +14,26 @@ DB = {
 	'warReport': 'https://war-service-live.foxholeservices.com/api/worldconquest/war',
 	'Token': 'ODgxNjMyODI5NTQ3NjQyOTcy.GCb_U4.AcOcHxTXWm0jU2YVo4MziJ1PosDHj2LGxDUCmg',
 	'startWar': 1664389802386,
-  'iconFilter': [45,46,47, 56, 57, 58]
+  'iconFilter': [45, 46, 47, 56, 57, 58, 59, 60],
+  'permission': [493028834640396289, 256556507460534273, 296350639611445248, 353826723550461972, 329637567693848580, 305342466545025025],
+  'emojis': {
+              'ColonialLogo': ['ColonialFaction', 1030064520418295818], 
+              'WardenLogo': ['WardenFaction', 1030064521588506655],
+              '45': ['RelicBase', 1031540708978458674],
+              '45C': ['RelicBaseColonial', 1030505659222986813],
+              '45W': ['RelicBaseWarden', 1030505660317712459],
+              '46C': ['RelicBaseColonial', 1030505659222986813],
+              '46W': ['RelicBaseWarden', 1030505660317712459],
+              '47C': ['RelicBaseColonial', 1030505659222986813],
+              '47W': ['RelicBaseWarden', 1030505660317712459],
+              '56': ['TownBase', 1031540584466350171],
+              '56C': ['TownBase1Colonial', 1030505662008021122],
+              '56W': ['TownBase1Warden', 1030505663203381289],
+              '57C': ['TownBase2Colonial', 1030505665036296263],
+              '57W': ['TownBase2Warden', 1030505666395258982],
+              '58C': ['TownBase3Colonial', 1030505668555309107],
+              '58W': ['TownBase3Warden', 1030505671231295588]
+            }
 }
 
 ICON_ID = {

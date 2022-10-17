@@ -119,11 +119,11 @@ def highlight_name(map, name):
     y = y - size[1]/2
 
     c = (0, 0, 0, 0)
-    draw.text((x-1, y-1), text, font=myFont, fill=c)
-    draw.text((x+1, y-1), text, font=myFont, fill=c)
-    draw.text((x-1, y+1), text, font=myFont, fill=c)
-    draw.text((x+1, y+1), text, font=myFont, fill=c)
-    draw.text((x, y), text, fill=(255, 255, 255, 255), font=myFont)
+    draw.text((x-1, y-1), name, font=myFont, fill=c)
+    draw.text((x+1, y-1), name, font=myFont, fill=c)
+    draw.text((x-1, y+1), name, font=myFont, fill=c)
+    draw.text((x+1, y+1), name, font=myFont, fill=c)
+    draw.text((x, y), name, fill=(255, 255, 255, 255), font=myFont)
 
     background = Image.alpha_composite(img, txt)
 
