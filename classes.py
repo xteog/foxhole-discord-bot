@@ -1,7 +1,7 @@
 from testImage import highlight_name
 import defs
 import discord
-from testRequest import read
+from testRequest import read, write
 
 class JoinButton(discord.ui.View):
     def __init__(self, em):
@@ -74,6 +74,8 @@ class SelectRegion(discord.ui.Select):
                     elif i['teamId'] == 'WARDENS':
                         desc = 'Wardens'
                         icon = discord.PartialEmoji(name=defs.DB['emojis']['WardenLogo'][0], id=defs.DB['emojis']['WardenLogo'][1])
+                    else:
+                        icon = None
             if default == map:
                 options.append(discord.SelectOption(label=map, description=desc, emoji=icon, default=True))
             else:
@@ -141,6 +143,38 @@ class Annuncio(discord.ui.Modal, title='Annuncio'):
         #file = discord.File(DB['mapImage'].format(map))
         #embed.set_image(url='attachment://{}.png'.format)
         await interaction.response.send_message(embed=embed)
+
+
+class EventFilter(discord.ui.Select):
+    def __init__(self):
+        options = [discord.SelectOption(label='Tutte')]
+        for map in defs.MAP_NAME[0:24]:
+            desc = ''
+            data = read(defs.DB['mapData'].format(map))
+            for i in data['mapItems']:
+                if i['flags'] == 41:
+                    if i['teamId'] == 'COLONIALS':
+                        desc = 'Colonials'
+                        icon = discord.PartialEmoji(name=defs.DB['emojis']['ColonialLogo'][0], id=defs.DB['emojis']['ColonialLogo'][1])
+                    elif i['teamId'] == 'WARDENS':
+                        desc = 'Wardens'
+                        icon = discord.PartialEmoji(name=defs.DB['emojis']['WardenLogo'][0], id=defs.DB['emojis']['WardenLogo'][1])
+                    else:
+                        icon = None
+            options.append(discord.SelectOption(label=map, description=desc, emoji=icon))
+        super().__init__(placeholder='Regione', min_values=1, max_values=25, options=options)
+
+    async def callback(self, interaction: discord.Interaction):
+        with open(defs.DB['mapName'], 'w') as f:
+            if 'Tutte' in self.values:
+                write(defs.DB['mapName'], defs.MAP_NAME)
+                await interaction.response.send_message('Regioni di interesse:\nTutte')
+            else:
+                write(defs.DB['mapName'], self.values)
+                str = 'Regioni di interesse:\n' + self.values[0]
+                for i in range(1, len(self.values)):
+                    str += ', ' + self.values[i]
+                await interaction.response.send_message(str)
 
 
 def make_view(map, region):

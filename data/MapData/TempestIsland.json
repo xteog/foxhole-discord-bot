@@ -187,6 +187,13 @@
     {
       "teamId": "COLONIALS",
       "iconType": 18,
+      "x": 0.66512305,
+      "y": 0.70668423,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 18,
       "x": 0.43002462,
       "y": 0.4769599,
       "flags": 0
@@ -203,13 +210,6 @@
       "iconType": 18,
       "x": 0.36296245,
       "y": 0.09858285,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 18,
-      "x": 0.66512305,
-      "y": 0.70668423,
       "flags": 0
     },
     {
@@ -298,7 +298,7 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 56,
+      "iconType": 57,
       "x": 0.3076558,
       "y": 0.09509289,
       "flags": 8
@@ -373,7 +373,7 @@
       "x": 0.30793568,
       "y": 0.09539125,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 42
     },
     {
       "text": "Cirris Valve",
@@ -392,21 +392,21 @@
       "x": 0.25516355,
       "y": 0.7106062,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 41
     },
     {
       "text": "Liar's Haven",
       "x": 0.6746311,
       "y": 0.6596021,
       "mapMarkerType": "Major",
-      "location": 45
+      "location": 44
     },
     {
       "text": "Lost Airchal",
       "x": 0.60527116,
       "y": 0.09963542,
       "mapMarkerType": "Major",
-      "location": 47
+      "location": 46
     },
     {
       "text": "Plana Fada",
@@ -419,7 +419,7 @@
       "x": 0.715016,
       "y": 0.31315425,
       "mapMarkerType": "Major",
-      "location": 49
+      "location": 48
     },
     {
       "text": "Sclera",
@@ -444,21 +444,21 @@
       "x": 0.40114728,
       "y": 0.43872398,
       "mapMarkerType": "Major",
-      "location": 48
+      "location": 47
     },
     {
       "text": "The Gale",
       "x": 0.48670572,
       "y": 0.7953114,
       "mapMarkerType": "Major",
-      "location": 46
+      "location": 45
     },
     {
       "text": "The Iris",
       "x": 0.6266644,
       "y": 0.48053998,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 43
     },
     {
       "text": "The Outwood",
@@ -471,9 +471,9 @@
       "x": 0.52295,
       "y": 0.37489086,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 40
     }
   ],
-  "lastUpdated": 1666113584982,
-  "version": 55
+  "lastUpdated": 1666215523329,
+  "version": 15
 }

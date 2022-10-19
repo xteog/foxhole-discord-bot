@@ -2282,3 +2282,127 @@ Traceback (most recent call last):
     return await future
 asyncio.exceptions.CancelledError
 
+Thu Oct 20 00:45:22 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 107, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Thu Oct 20 00:50:03 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 107, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Thu Oct 20 00:51:03 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 41, in background_task
+    oldData = read(defs.DB['mapData'].format(map))
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\testRequest.py", line 77, in read
+    with open(path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './data/MapData/Tutte.json'
+
+Thu Oct 20 00:51:20 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 41, in background_task
+    oldData = read(defs.DB['mapData'].format(map))
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\testRequest.py", line 77, in read
+    with open(path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './data/MapData/Tutte.json'
+
+Thu Oct 20 00:51:42 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 107, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Thu Oct 20 00:52:43 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gallo\Code\Programmi\FoxHoleApi\main.py", line 107, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+

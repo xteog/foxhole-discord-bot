@@ -315,7 +315,7 @@
       "x": 0.6373692,
       "y": 0.4179943,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 38
     },
     {
       "text": "Deepfleet Valley",
@@ -334,7 +334,7 @@
       "x": 0.6407603,
       "y": 0.8987701,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 34
     },
     {
       "text": "Lockheed Breakers",
@@ -353,7 +353,7 @@
       "x": 0.51757264,
       "y": 0.5214072,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 35
     },
     {
       "text": "Mount Mac Tire",
@@ -366,14 +366,14 @@
       "x": 0.71036744,
       "y": 0.11743515,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 36
     },
     {
       "text": "Oster Wall",
       "x": 0.7994043,
       "y": 0.47127146,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 40
     },
     {
       "text": "Pilgrimage",
@@ -386,7 +386,7 @@
       "x": 0.22553757,
       "y": 0.2721918,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 39
     },
     {
       "text": "Slender Cove",
@@ -417,9 +417,9 @@
       "x": 0.3551116,
       "y": 0.7273359,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 37
     }
   ],
-  "lastUpdated": 1666126624592,
-  "version": 383
+  "lastUpdated": 1666219790326,
+  "version": 16
 }

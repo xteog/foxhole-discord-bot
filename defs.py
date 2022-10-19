@@ -94,7 +94,7 @@ MAP_NAME = [
   "Westgate",
   "Oarbreaker",
   "Acrithia",
-  "WeatheredExpanse",
+  
   "LochMor",
   "AllodsBight",
   "Kalokai",
@@ -107,7 +107,6 @@ MAP_NAME = [
   "Godcrofts",
   "FishermansRow",
   "UmbralWildwood",
-  "CallahansPassage",
   "DrownedVale",
   "FarranacCoast",
   "BasinSionnach",
@@ -120,5 +119,7 @@ MAP_NAME = [
   "MooringCounty",
   "ViperPit",
   "MorgensCrossing",
-  "Stonecradle"
+  "Stonecradle",
+  "CallahansPassage",
+  "WeatheredExpanse"
 ]

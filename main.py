@@ -1,3 +1,4 @@
+from multiprocessing import Event
 import traceback
 import discord
 from discord import app_commands
@@ -32,7 +33,7 @@ class MyClient(discord.Client):
       
       await asyncio.sleep(10)
       try:
-        mapName = defs.MAP_NAME
+        mapName = read(defs.DB['mapName'])
         for map in mapName:
           list = []
           data = downloadData(map, 1)
@@ -254,13 +255,23 @@ async def presenze(interaction: discord.Interaction, mode: discord.app_commands.
 async def annuncio(interaction: discord.Interaction, image: discord.app_commands.Choice[int]):
   if interaction.user.id in defs.DB['permission']:
     await interaction.response.send_modal(classes.Annuncio(image))
+  else:
+    await interaction.response.send_message('Non hai i permessi', ephemeral=True)
 
 
-@tree.command(name='reset', description='test', guild=discord.Object(id=client.server))
+@tree.command(name='event_filter', description='Filtra gli eventi per regione', guild=discord.Object(id=client.server))
+async def filter(interaction: discord.Interaction):
+  if interaction.user.id in defs.DB['permission']:
+    view = discord.ui.View()
+    view.add_item(classes.EventFilter())
+    await interaction.response.send_message('Seleziona le regioni di interesse:', view=view, ephemeral=True)
+
+
+@tree.command(name='reset', description='Fai un reset del bot', guild=discord.Object(id=client.server))
 async def reset(interaction: discord.Interaction):
   await client.change_presence(status=discord.Status.idle)
   await interaction.response.defer(ephemeral=True, thinking=True)
-  updateMapL()
+  #updateMapL()
   mapName = defs.MAP_NAME
 
   first = True

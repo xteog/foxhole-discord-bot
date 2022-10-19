@@ -312,16 +312,16 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 57,
-      "x": 0.83708376,
-      "y": 0.48810115,
+      "iconType": 58,
+      "x": 0.6171802,
+      "y": 0.7410978,
       "flags": 8
     },
     {
       "teamId": "WARDENS",
-      "iconType": 58,
-      "x": 0.6171802,
-      "y": 0.7410978,
+      "iconType": 57,
+      "x": 0.83708376,
+      "y": 0.48810115,
       "flags": 8
     },
     {
@@ -424,7 +424,7 @@
       "x": 0.8370126,
       "y": 0.4868126,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 45
     },
     {
       "text": "Rotdust",
@@ -484,7 +484,7 @@
       "x": 0.6143232,
       "y": 0.7404008,
       "mapMarkerType": "Major",
-      "location": 45
+      "location": 44
     },
     {
       "text": "The River Mercy",
@@ -500,6 +500,6 @@
       "location": 47
     }
   ],
-  "lastUpdated": 1666126086148,
-  "version": 60
+  "lastUpdated": 1666199841076,
+  "version": 13
 }

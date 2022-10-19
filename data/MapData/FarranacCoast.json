@@ -437,14 +437,14 @@
       "x": 0.5860919,
       "y": 0.56278074,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 42
     },
     {
       "text": "Iuxta Homestead",
       "x": 0.7127172,
       "y": 0.19546622,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 41
     },
     {
       "text": "Kardia",
@@ -463,14 +463,14 @@
       "x": 0.70205057,
       "y": 0.7824685,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 44
     },
     {
       "text": "Mara",
       "x": 0.8549706,
       "y": 0.48427492,
       "mapMarkerType": "Major",
-      "location": 45
+      "location": 46
     },
     {
       "text": "McCarthy Fields",
@@ -489,21 +489,21 @@
       "x": 0.6262762,
       "y": 0.71746904,
       "mapMarkerType": "Major",
-      "location": 51
+      "location": 52
     },
     {
       "text": "Scarp of Ambrose",
       "x": 0.4770394,
       "y": 0.37934086,
       "mapMarkerType": "Major",
-      "location": 47
+      "location": 48
     },
     {
       "text": "Scythe",
       "x": 0.78855526,
       "y": 0.34850213,
       "mapMarkerType": "Major",
-      "location": 49
+      "location": 50
     },
     {
       "text": "Sickle Hill",
@@ -528,7 +528,7 @@
       "x": 0.6119086,
       "y": 0.40515536,
       "mapMarkerType": "Major",
-      "location": 50
+      "location": 51
     },
     {
       "text": "The Bay of Artemis",
@@ -541,7 +541,7 @@
       "x": 0.49903932,
       "y": 0.20359577,
       "mapMarkerType": "Major",
-      "location": 48
+      "location": 49
     },
     {
       "text": "The Heart Road",
@@ -560,7 +560,7 @@
       "x": 0.4322609,
       "y": 0.6490256,
       "mapMarkerType": "Major",
-      "location": 46
+      "location": 47
     },
     {
       "text": "The Mirror",
@@ -591,7 +591,7 @@
       "x": 0.25413433,
       "y": 0.2014643,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 45
     },
     {
       "text": "The Winged Walk",
@@ -610,9 +610,9 @@
       "x": 0.4417568,
       "y": 0.8744741,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 43
     }
   ],
-  "lastUpdated": 1666121297502,
-  "version": 79
+  "lastUpdated": 1666219011672,
+  "version": 27
 }

@@ -150,20 +150,6 @@
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 28,
-      "x": 0.444826,
-      "y": 0.21084654,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 56,
-      "x": 0.32092577,
-      "y": 0.7802855,
-      "flags": 5
-    },
-    {
       "teamId": "COLONIALS",
       "iconType": 35,
       "x": 0.57063013,
@@ -206,6 +192,13 @@
       "flags": 8
     },
     {
+      "teamId": "WARDENS",
+      "iconType": 56,
+      "x": 0.32092577,
+      "y": 0.7802855,
+      "flags": 41
+    },
+    {
       "teamId": "COLONIALS",
       "iconType": 45,
       "x": 0.6364469,
@@ -225,6 +218,13 @@
       "x": 0.80988437,
       "y": 0.5906784,
       "flags": 8
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 28,
+      "x": 0.444826,
+      "y": 0.21084654,
+      "flags": 0
     },
     {
       "teamId": "NONE",
@@ -296,7 +296,7 @@
       "x": 0.42231798,
       "y": 0.4634689,
       "mapMarkerType": "Major",
-      "location": 27
+      "location": 29
     },
     {
       "text": "Cado",
@@ -309,7 +309,7 @@
       "x": 0.8107748,
       "y": 0.59095985,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 30
     },
     {
       "text": "Exorior",
@@ -322,21 +322,21 @@
       "x": 0.25865927,
       "y": 0.28809413,
       "mapMarkerType": "Major",
-      "location": 23
+      "location": 25
     },
     {
       "text": "Initium",
       "x": 0.6155851,
       "y": 0.3369217,
       "mapMarkerType": "Major",
-      "location": 24
+      "location": 26
     },
     {
       "text": "Teichotima",
       "x": 0.32080472,
       "y": 0.78004307,
       "mapMarkerType": "Major",
-      "location": 25
+      "location": 27
     },
     {
       "text": "Temple Field",
@@ -367,9 +367,9 @@
       "x": 0.63621795,
       "y": 0.7767595,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 28
     }
   ],
-  "lastUpdated": 1666127597628,
-  "version": 568
+  "lastUpdated": 1666219826970,
+  "version": 220
 }
