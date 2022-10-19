@@ -1,4 +1,4 @@
-PATH = '.'
+PATH = '/app'
 DB = {
 	'mapName': PATH + '/data/mapName.json',
 	'iconId': PATH + '/data/iconId.json',
@@ -8,8 +8,8 @@ DB = {
 	'serverIcon': PATH + '/data/serverIcon.png',
 	'dynamicData': 'https://war-service-live.foxholeservices.com/api/worldconquest/maps/{}/dynamic/public',
 	'staticData': 'https://war-service-live.foxholeservices.com/api/worldconquest/maps/{}/static',
-	'eventThread': 881662982160003113,
-  'serverId': 881632566589915177,
+	'eventThread': 1032345776300490882,
+  'serverId': 844513454835499041,
 	'mapReport': 'https://war-service-live.foxholeservices.com/api/worldconquest/warReport/{}',
 	'warReport': 'https://war-service-live.foxholeservices.com/api/worldconquest/war',
 	'Token': 'ODgxNjMyODI5NTQ3NjQyOTcy.GCb_U4.AcOcHxTXWm0jU2YVo4MziJ1PosDHj2LGxDUCmg',
