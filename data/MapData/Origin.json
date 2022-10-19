@@ -68,20 +68,6 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.3893639,
-      "y": 0.84386563,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.3985966,
-      "y": 0.84728515,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
       "x": 0.2185657,
       "y": 0.32237515,
       "flags": 0
@@ -116,16 +102,16 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 32,
-      "x": 0.3844008,
-      "y": 0.8434145,
+      "iconType": 38,
+      "x": 0.22787358,
+      "y": 0.33070502,
       "flags": 0
     },
     {
-      "teamId": "COLONIALS",
-      "iconType": 39,
-      "x": 0.3030008,
-      "y": 0.75448006,
+      "teamId": "NONE",
+      "iconType": 32,
+      "x": 0.22154047,
+      "y": 0.33145356,
       "flags": 0
     },
     {
@@ -144,23 +130,9 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 33,
-      "x": 0.30871195,
-      "y": 0.7751747,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
       "iconType": 18,
       "x": 0.68829256,
       "y": 0.31760225,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 12,
-      "x": 0.28628835,
-      "y": 0.7449154,
       "flags": 0
     },
     {
@@ -179,13 +151,6 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 35,
-      "x": 0.26756296,
-      "y": 0.73133636,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
       "iconType": 52,
       "x": 0.6819059,
       "y": 0.29572725,
@@ -200,7 +165,7 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 56,
+      "iconType": 57,
       "x": 0.25808465,
       "y": 0.28879777,
       "flags": 8
@@ -213,8 +178,8 @@
       "flags": 8
     },
     {
-      "teamId": "COLONIALS",
-      "iconType": 58,
+      "teamId": "WARDENS",
+      "iconType": 56,
       "x": 0.32092577,
       "y": 0.7802855,
       "flags": 41
@@ -250,15 +215,22 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.22787358,
-      "y": 0.33070502,
+      "x": 0.3893639,
+      "y": 0.84386563,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.3985966,
+      "y": 0.84728515,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 32,
-      "x": 0.22154047,
-      "y": 0.33145356,
+      "x": 0.3844008,
+      "y": 0.8434145,
       "flags": 0
     },
     {
@@ -277,6 +249,13 @@
     },
     {
       "teamId": "NONE",
+      "iconType": 39,
+      "x": 0.3030008,
+      "y": 0.75448006,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
       "iconType": 33,
       "x": 0.27551195,
       "y": 0.25122583,
@@ -284,9 +263,30 @@
     },
     {
       "teamId": "NONE",
+      "iconType": 33,
+      "x": 0.30871195,
+      "y": 0.7751747,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 12,
+      "x": 0.28628835,
+      "y": 0.7449154,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
       "iconType": 35,
       "x": 0.29528445,
       "y": 0.32076338,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.26756296,
+      "y": 0.73133636,
       "flags": 0
     }
   ],
@@ -296,7 +296,7 @@
       "x": 0.42231798,
       "y": 0.4634689,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 27
     },
     {
       "text": "Cado",
@@ -309,7 +309,7 @@
       "x": 0.8107748,
       "y": 0.59095985,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 28
     },
     {
       "text": "Exorior",
@@ -322,21 +322,21 @@
       "x": 0.25865927,
       "y": 0.28809413,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 23
     },
     {
       "text": "Initium",
       "x": 0.6155851,
       "y": 0.3369217,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 24
     },
     {
       "text": "Teichotima",
       "x": 0.32080472,
       "y": 0.78004307,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 25
     },
     {
       "text": "Temple Field",
@@ -367,9 +367,9 @@
       "x": 0.63621795,
       "y": 0.7767595,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 26
     }
   ],
-  "lastUpdated": 1665849195592,
-  "version": 207
+  "lastUpdated": 1666127597628,
+  "version": 568
 }

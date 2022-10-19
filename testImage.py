@@ -47,7 +47,7 @@ def updateMap(map, data, index):
 
     txt = Image.new('RGBA', background.size, (255,255,255,0))
     draw = ImageDraw.Draw(txt)
-    myFont = ImageFont.truetype(defs.PATH + '/data/Clarendon.ttf', 23) 
+    myFont = ImageFont.truetype(defs.PATH + '/data/Clarendon.ttf', 28) 
 
     for item in data['mapTextItems']:
       if item['mapMarkerType'] == 'Major':
@@ -59,12 +59,12 @@ def updateMap(map, data, index):
         x = x - size[0]/2
         y = y - size[1]/2
 
-        c = (0, 0, 0, 100)
+        c = (0, 0, 0, 200)
         draw.text((x-1, y-1), text, font=myFont, fill=c)
         draw.text((x+1, y-1), text, font=myFont, fill=c)
         draw.text((x-1, y+1), text, font=myFont, fill=c)
         draw.text((x+1, y+1), text, font=myFont, fill=c)
-        draw.text((x, y), text, fill=(255, 255, 255, 100), font=myFont)
+        draw.text((x, y), text, fill=(255, 255, 255, 200), font=myFont)
 
     background = Image.alpha_composite(background, txt)
 
@@ -103,28 +103,29 @@ def addCircle(map, pos):
   mask.close()
 
 
-def highlight_name(map, name):
-  with Image.open(defs.PATH + defs.DB['mapImage'].format(map)) as img:
+def highlight_name(map, i):
+  with Image.open(defs.DB['mapImage'].format(map)) as img:
     bg_w, bg_h = img.size
-    txt = Image.new('RGBA', background.size, (255,255,255,0))
+    txt = Image.new('RGBA', img.size, (255,255,255,0))
     draw = ImageDraw.Draw(txt)
-    myFont = ImageFont.truetype(defs.PATH + '/data/Clarendon.ttf', 25)
+    myFont = ImageFont.truetype(defs.PATH + '/data/Clarendon.ttf', 35)
     draw = ImageDraw.Draw(txt)
 
-    data = read(defs.DB['mapData'].format(map))['mapTextItems']
+    data = read(defs.DB['mapData'].format(map))['mapTextItems'][i]
+
     x = round(data['x'] * bg_w)
     y = round(data['y'] * bg_h)
-    size = draw.textsize(name, font=myFont)
+    size = draw.textsize(data['text'], font=myFont)
     x = x - size[0]/2
     y = y - size[1]/2
 
-    c = (0, 0, 0, 0)
-    draw.text((x-1, y-1), name, font=myFont, fill=c)
-    draw.text((x+1, y-1), name, font=myFont, fill=c)
-    draw.text((x-1, y+1), name, font=myFont, fill=c)
-    draw.text((x+1, y+1), name, font=myFont, fill=c)
-    draw.text((x, y), name, fill=(255, 255, 255, 255), font=myFont)
+    c = (0, 0, 0, 255)
+    draw.text((x-1, y-1), data['text'], font=myFont, fill=c)
+    draw.text((x+1, y-1), data['text'], font=myFont, fill=c)
+    draw.text((x-1, y+1), data['text'], font=myFont, fill=c)
+    draw.text((x+1, y+1), data['text'], font=myFont, fill=c)
+    draw.text((x, y), data['text'], fill=(255, 255, 255, 255), font=myFont)
 
     background = Image.alpha_composite(img, txt)
 
-  return background
+  background.save(defs.PATH + '/data/tempImage.png')

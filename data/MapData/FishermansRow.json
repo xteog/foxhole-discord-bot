@@ -165,6 +165,34 @@
     },
     {
       "teamId": "WARDENS",
+      "iconType": 60,
+      "x": 0.4623781,
+      "y": 0.7092756,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 59,
+      "x": 0.42622992,
+      "y": 0.75312704,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 59,
+      "x": 0.43565387,
+      "y": 0.7555262,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 59,
+      "x": 0.43877232,
+      "y": 0.7332111,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
       "iconType": 34,
       "x": 0.6866246,
       "y": 0.3947453,
@@ -182,6 +210,13 @@
       "iconType": 33,
       "x": 0.7584116,
       "y": 0.5286025,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 33,
+      "x": 0.6766339,
+      "y": 0.18296771,
       "flags": 0
     },
     {
@@ -382,7 +417,7 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 57,
+      "iconType": 58,
       "x": 0.39192638,
       "y": 0.7305457,
       "flags": 8
@@ -414,13 +449,6 @@
       "x": 0.6756619,
       "y": 0.64609945,
       "flags": 8
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 33,
-      "x": 0.6766339,
-      "y": 0.18296771,
-      "flags": 0
     }
   ],
   "mapTextItems": [
@@ -435,7 +463,7 @@
       "x": 0.38920873,
       "y": 0.73095393,
       "mapMarkerType": "Major",
-      "location": 50
+      "location": 59
     },
     {
       "text": "Bident Crossroads",
@@ -448,7 +476,7 @@
       "x": 0.38849574,
       "y": 0.3066156,
       "mapMarkerType": "Major",
-      "location": 48
+      "location": 57
     },
     {
       "text": "Cat Step",
@@ -467,21 +495,21 @@
       "x": 0.46337467,
       "y": 0.52302,
       "mapMarkerType": "Major",
-      "location": 49
+      "location": 58
     },
     {
       "text": "Fort Ember",
       "x": 0.50422376,
       "y": 0.70527685,
       "mapMarkerType": "Major",
-      "location": 52
+      "location": 61
     },
     {
       "text": "Hangmen's Court",
       "x": 0.77422845,
       "y": 0.5360584,
       "mapMarkerType": "Major",
-      "location": 47
+      "location": 56
     },
     {
       "text": "Heart of Rites",
@@ -512,21 +540,21 @@
       "x": 0.53076994,
       "y": 0.3338183,
       "mapMarkerType": "Major",
-      "location": 51
+      "location": 60
     },
     {
       "text": "Partisan Island",
       "x": 0.6703404,
       "y": 0.20176351,
       "mapMarkerType": "Major",
-      "location": 45
+      "location": 54
     },
     {
       "text": "Peripti Landing",
       "x": 0.29418412,
       "y": 0.4540274,
       "mapMarkerType": "Major",
-      "location": 53
+      "location": 62
     },
     {
       "text": "Progonos Watch",
@@ -551,14 +579,14 @@
       "x": 0.67093605,
       "y": 0.6439194,
       "mapMarkerType": "Major",
-      "location": 54
+      "location": 63
     },
     {
       "text": "The Three Sisters",
       "x": 0.684986,
       "y": 0.3528056,
       "mapMarkerType": "Major",
-      "location": 46
+      "location": 55
     },
     {
       "text": "Torch of Demeter",
@@ -567,6 +595,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1665849073289,
-  "version": 327
+  "lastUpdated": 1666125629243,
+  "version": 78
 }

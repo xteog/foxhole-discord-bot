@@ -106,8 +106,8 @@ class MyClient(discord.Client):
 
 
 def updt():
-  updateMapL()
-  mapName = read(defs.DB['mapName'])
+  #updateMapL()
+  mapName = defs.MAP_NAME
 
   for map in mapName:
     newData = downloadData(map, 2)

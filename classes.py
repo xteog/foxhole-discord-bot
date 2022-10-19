@@ -1,3 +1,4 @@
+from testImage import highlight_name
 import defs
 import discord
 from testRequest import read
@@ -25,10 +26,10 @@ class SelectZone(discord.ui.Select):
         self.map = map
         if map != '':
             options = [discord.SelectOption(label='Nessuna')]
-            data = read(defs.DB['mapData'].format(map))
-            for name in data['mapTextItems']:
+            self.data = read(defs.DB['mapData'].format(map))
+            for name in self.data['mapTextItems']:
                 if name['mapMarkerType'] == 'Major':
-                    item = data['mapItems'][name['location']]
+                    item = self.data['mapItems'][name['location']]
                     icon = item['iconType']
                     if item['teamId'] == 'COLONIALS':
                         str = f'{icon}C' 
@@ -37,7 +38,7 @@ class SelectZone(discord.ui.Select):
                     else:
                         str = f'{icon}'
                     emoji = discord.PartialEmoji(name=defs.DB['emojis'][str][0], id=defs.DB['emojis'][str][1])
-                    options.append(discord.SelectOption(label=name['text'], description='Colonials', emoji=emoji))
+                    options.append(discord.SelectOption(label=name['text'], value=self.data['mapTextItems'].index(name),description='Colonials', emoji=emoji))
             super().__init__(placeholder=f'Provincia di {map}', min_values=1, max_values=1, options=options)
         else:
             options = [discord.SelectOption(label='Nessuna')]
@@ -45,13 +46,17 @@ class SelectZone(discord.ui.Select):
 
     async def callback(self, interaction: discord.Interaction):
         if self.values[0] != 'Nessuna':
-            self.em.description += f'\n\n``{self.values[0]} ({self.map})``'
+            self.em.description += f"\n\n``{self.data['mapTextItems'][int(self.values[0])]['text']} ({self.map})``"
+            highlight_name(self.map, int(self.values[0]))
+            fileMap = discord.File(defs.PATH + '/data/tempImage.png')
+            self.em.set_thumbnail(url='attachment://tempImage.png')
         else:
             self.em.add_field(name = self.map, value=8)
 
-        view = make_view(self.map, self.values[0])
+        view = make_view(self.map, self.data['mapTextItems'][int(self.values[0])]['text'])
+        
         await interaction.response.edit_message(view=view)
-        await interaction.followup.send('@everyone', embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions(everyone=True))
+        await interaction.followup.send(file=fileMap, content='@everyone', embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions(everyone=True))
 
 
 class SelectRegion(discord.ui.Select):
