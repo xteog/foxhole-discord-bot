@@ -17,8 +17,8 @@ def updateMap(map, data, index):
         
         img_w, img_h = img.size
         if item['flags'] == 0 and index != data['mapItems'].index(item):
-          img_w = img_w * 2 // 4
-          img_h = img_h * 2 // 4
+          img_w = img_w * 2 // 3
+          img_h = img_h * 2 // 3
           img = img.resize((img_w, img_h))
         elif index != data['mapItems'].index(item):
           img_w = img_w * 3 // 4
@@ -47,7 +47,7 @@ def updateMap(map, data, index):
 
     txt = Image.new('RGBA', background.size, (255,255,255,0))
     draw = ImageDraw.Draw(txt)
-    myFont = ImageFont.truetype(defs.PATH + '/data/Clarendon.ttf', 28) 
+    myFont = ImageFont.truetype(defs.PATH + '/data/Clarendon.ttf', 25) 
 
     for item in data['mapTextItems']:
       if item['mapMarkerType'] == 'Major':
@@ -59,17 +59,17 @@ def updateMap(map, data, index):
         x = x - size[0]/2
         y = y - size[1]/2
 
-        c = (0, 0, 0, 200)
+        c = (0, 0, 0, 180)
         draw.text((x-1, y-1), text, font=myFont, fill=c)
         draw.text((x+1, y-1), text, font=myFont, fill=c)
         draw.text((x-1, y+1), text, font=myFont, fill=c)
         draw.text((x+1, y+1), text, font=myFont, fill=c)
-        draw.text((x, y), text, fill=(255, 255, 255, 200), font=myFont)
+        draw.text((x, y), text, fill=(255, 255, 255, 180), font=myFont)
 
     background = Image.alpha_composite(background, txt)
 
     background.save(defs.DB['mapImage'].format(map))
-    print(map + " updated")
+    #print(map + " updated")
 
 
     

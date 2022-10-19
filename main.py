@@ -1,3 +1,5 @@
+from re import search
+from sys import flags
 import traceback
 import discord
 from discord import app_commands
@@ -55,6 +57,7 @@ class MyClient(discord.Client):
               data['mapItems'] = newData
               updateData(map, newData, 1)
               updateMap(map, data, -1)
+              faction = search_faction(newData)
 
             for i in list:
               if i >= 0 and newData[i]['iconType'] in defs.DB['iconFilter']:
@@ -62,6 +65,7 @@ class MyClient(discord.Client):
 
                 addCircle(map, (newData[i]['x'], newData[i]['y']))
                 icon = defs.ICON_ID[newData[i]['iconType']]
+                
                 j = search_item(newData[i], oldData)
                 message, color = switch(map, newData[i]['teamId'], oldData[j]['teamId'], i, newData[i]['flags'])
 
@@ -69,24 +73,36 @@ class MyClient(discord.Client):
                   color = 0x65875E
                 else:
                   color = 0x2D6CA1
-                  
+                
                 description = icon + message
+                embed=discord.Embed(title=description, color=color)
                 if newData[i]['teamId'] == 'COLONIALS':
                   changeColor(Image.open(defs.DB['iconImage'].format(icon)), True).save(defs.PATH + '/data/tempIcon.png')
                   fileIcon = discord.File(defs.PATH + '/data/tempIcon.png')
+                  embed.set_image(url='attachment://tempIcon.png'.format(icon))
                 elif newData[i]['teamId'] == 'WARDENS':
                   changeColor(Image.open(defs.DB['iconImage'].format(icon)), False).save(defs.PATH + '/data/tempIcon.png')
                   fileIcon = discord.File(defs.PATH + '/data/tempIcon.png')
+                  embed.set_image(url='attachment://tempIcon.png'.format(icon))
                 else:
                   fileIcon = discord.File(defs.DB['iconImage'].format(icon))
+                  embed.set_image(url='attachment://{}.png'.format(icon))
                 fileMap = discord.File(defs.PATH + '/data/tempImage.png')
-                embed=discord.Embed(title=description, color=color)
-                embed.set_author(name=map, icon_url='attachment://{}.png'.format(icon))
+                
                 embed.set_thumbnail(url='attachment://tempImage.png')
+
+                if faction == None:
+                  embed.set_author(name=map)
+                  files = [fileMap, fileIcon]
+                else:
+                  fileFaction = discord.File(defs.DB['iconImage'].format(faction))
+                  embed.set_author(name=map, icon_url='attachment://{}.png'.format(faction))
+                  files = [fileMap, fileIcon, fileFaction]
+
                 d, h, m = timeWar(data['lastUpdated'])
                 embed.set_footer(text = f'{d}d {h}h {m}m')
 
-                await channel.send(files = [fileMap, fileIcon], embed=embed)
+                await channel.send(files = files, embed=embed)
 
 
           await asyncio.sleep(1)
@@ -172,6 +188,25 @@ def search_item(item, data):
   return found
 
 
+def search_faction(data):
+  found = -1
+  for i in range(len(data)):
+    if data[i]['flags'] == 41:
+      found = i
+  
+  if found != -1:
+    if data[found]['teamId'] == 'COLONIALS':
+      str = 'ColonialFaction'
+    elif data[found]['teamId'] == 'WARDENS':
+      str = 'WardenFaction'
+    else:
+      return None
+  else:
+    return None
+  return str
+    
+
+
 def loading(i, len):
   j = 0
   str = '|'
@@ -189,8 +224,11 @@ def loading(i, len):
 client = MyClient(intents=discord.Intents.default())
 tree= app_commands.CommandTree(client)
 
-@tree.command(name='presenze', description='test', guild=discord.Object(id=client.server))
-@discord.app_commands.describe(mode='prova')
+#@tree.command(name='help', description='test', guild=discord.Object(id=client.server))
+
+
+@tree.command(name='presenze', description='Crea un annuncio per reclutare', guild=discord.Object(id=client.server))
+@discord.app_commands.describe(mode='Vuoi creare un nuovo annuncio o stampare la lista delle presenze?')
 @discord.app_commands.choices(mode=[
   discord.app_commands.Choice(name='new', value=0),
   discord.app_commands.Choice(name='list_users', value=1)
@@ -200,7 +238,7 @@ async def presenze(interaction: discord.Interaction, mode: discord.app_commands.
     if mode.value:
       list = classes.get_presenze()
       str = '\n'.join(list)
-      await interaction.response.send_message(str)
+      await interaction.response.send_message(str, ephemeral=True)
     else:
       await interaction.response.send_modal(classes.Presenze(  ))
   else:
@@ -209,15 +247,15 @@ async def presenze(interaction: discord.Interaction, mode: discord.app_commands.
 
 @tree.command(name='annuncio', description='Crea un annuncio personalizzato', guild=discord.Object(id=client.server))
 @discord.app_commands.describe(
-  fields='Inserisci il numero dei campi (max 25)',
-  image="Vuoi inserire un'immagine?"
+  image="Vuoi inserire un'immagine? (Non ancora disponibile)"
 )
 @discord.app_commands.choices(image=[
   discord.app_commands.Choice(name='yes', value=1),
   discord.app_commands.Choice(name='no', value=0)
 ])
-async def annuncio(interaction: discord.Interaction, fields: int, image: discord.app_commands.Choice[int]):
-  await interaction.response.send_modal(classes.Annuncio(fields, image))
+async def annuncio(interaction: discord.Interaction, image: discord.app_commands.Choice[int]):
+  if interaction.user.id in defs.DB['permission']:
+    await interaction.response.send_modal(classes.Annuncio(image))
 
 
 @tree.command(name='reset', description='test', guild=discord.Object(id=client.server))
@@ -257,5 +295,5 @@ async def reset(interaction: discord.Interaction):
   #DB['startWar'] = requests.get(DB['warReport']).json()['conquestStartTime']
 
 
-updt()
+#updt()
 client.run(defs.DB['Token'])

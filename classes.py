@@ -1,3 +1,4 @@
+from dis import disco
 from testImage import highlight_name
 import defs
 import discord
@@ -114,25 +115,30 @@ class Presenze(discord.ui.Modal, title='Presenze'):
 
 
 class Annuncio(discord.ui.Modal, title='Annuncio'):
-    def __init__(self, fields, image):
+    def __init__(self, image):
         super().__init__()
+        self.image = image
         self.fieldsTitolo = []
         self.fieldsDescrizione = []
         self.titolo = discord.ui.TextInput(label="Titolo", placeholder="Inserisci il titolo dell'annuncio")
         self.descrizione = discord.ui.TextInput(label="Descrizione", required=False, placeholder="Inserisci la descrizione dell'annuncio",  style=discord.TextStyle.paragraph)
         self.add_item(self.titolo)
         self.add_item(self.descrizione)
-        for i in range(fields):
-            self.fieldsTitolo.append(discord.ui.TextInput(label=f"Titolo field {i+1}", placeholder=f"Inserisci il titolo del field"))
-            self.fieldsDescrizione.append(discord.ui.TextInput(label=f"Descrizione field {i+1}", required=False, placeholder="Inserisci la descrizione del field",  style=discord.TextStyle.paragraph))
-            self.add_item(self.fieldsTitolo[-1])
-            self.add_item(self.fieldsDescrizione[-1])
+
 
     async def on_submit(self, interaction: discord.Interaction):
-        embed = discord.Embed(title=self.titolo.value, description='@everyone '+self.descrizione.value, color=0xFAA81A)
+        embed = discord.Embed(title=self.titolo.value, description=self.descrizione.value, color=0xFAA81A)
         embed.set_author(name=interaction.user.name, icon_url=interaction.user.avatar.url)
         for i in range(len(self.fieldsTitolo)):
             embed.add_field(name=self.fieldsTitolo[i], value=self.fieldsDescrizione[i])
+        
+        if self.image:
+            print('Non ancora disponibile')
+            '''
+            view = discord.ui.View()
+            view.add_item(discord.ui.TextInput(label='ciao'))
+            await interaction.response.send_message('Seleziona la regione:',view=view)
+        '''
         #file = discord.File(DB['mapImage'].format(map))
         #embed.set_image(url='attachment://{}.png'.format)
         await interaction.response.send_message(embed=embed)

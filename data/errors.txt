@@ -1299,3 +1299,986 @@ Traceback (most recent call last):
     return await future
 asyncio.exceptions.CancelledError
 
+Wed Oct 19 12:01:59 2022
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 76, in background_task
+    emoji = defs.DB['emoji'][f"{newData[i]['iconType']}C"]
+KeyError: 'emoji'
+
+Wed Oct 19 12:02:23 2022
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 80, in background_task
+    emoji = defs.DB['emoji'][f"{newData[i]['iconType']}W"]
+KeyError: 'emoji'
+
+Wed Oct 19 12:02:54 2022
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 87, in background_task
+    embed=discord.Embed(title=emoji+description, color=color)
+TypeError: can only concatenate list (not "str") to list
+
+Wed Oct 19 12:03:15 2022
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 87, in background_task
+    embed=discord.Embed(title=emoji+description, color=color)
+TypeError: can only concatenate list (not "str") to list
+
+Wed Oct 19 12:03:47 2022
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 87, in background_task
+    embed=discord.Embed(title=emoji+description, color=color)
+TypeError: can only concatenate list (not "str") to list
+
+Wed Oct 19 12:05:55 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 96, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 12:07:17 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 96, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 12:08:11 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 96, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 12:08:36 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 38, in background_task
+    data = downloadData(map, 1)
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\testRequest.py", line 29, in downloadData
+    data = requests.get(url[1].format(map)).json()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 353, in connect
+    conn = self._new_conn()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\connection.py", line 86, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
+
+Wed Oct 19 12:11:10 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 96, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 12:17:25 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 96, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 12:24:39 2022
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 94, in background_task
+    await channel.send(files = [fileMap, fileIcon, fileIcon], embed=embed)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\abc.py", line 1536, in send
+    data = await state.http.send_message(channel.id, params=params)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\http.py", line 624, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 544, in _request
+    await resp.start(conn)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client_reqrep.py", line 890, in start
+    message, payload = await self._protocol.read()  # type: ignore
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\streams.py", line 604, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [WinError 64] Il nome di rete specificato non è più disponibile
+
+Wed Oct 19 12:25:30 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 97, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 12:35:54 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 97, in background_task
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 13:01:05 2022
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 54, in background_task
+    newData = newData['mapItems']
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\testRequest.py", line 27, in downloadData
+    data = requests.get(url[0].format(map)).json()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 411, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\ssl_.py", line 428, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\ssl_.py", line 472, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+KeyboardInterrupt
+
+Wed Oct 19 13:01:27 2022
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 60, in background_task
+    faction = search_faction(newData)
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 194, in search_faction
+    for i in range(len(data['mapItems'])):
+TypeError: list indices must be integers or slices, not str
+
+Wed Oct 19 13:02:28 2022
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 40, in background_task
+    data = downloadData(map, 1)
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\testRequest.py", line 29, in downloadData
+    data = requests.get(url[1].format(map)).json()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+
+Wed Oct 19 13:03:07 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 109, in background_task
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 13:06:07 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 108, in background_task
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 13:08:37 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 106, in background_task
+    await channel.send(files = files, embed=embed)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\abc.py", line 1536, in send
+    data = await state.http.send_message(channel.id, params=params)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\http.py", line 624, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 544, in _request
+    await resp.start(conn)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client_reqrep.py", line 890, in start
+    message, payload = await self._protocol.read()  # type: ignore
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\streams.py", line 604, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 14:39:52 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 109, in background_task
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 14:41:05 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 108, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 14:53:05 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 108, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 14:53:53 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 108, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 14:54:45 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 108, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 14:56:43 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 108, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 14:58:04 2022
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 40, in background_task
+    data = downloadData(map, 1)
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\testRequest.py", line 29, in downloadData
+    data = requests.get(url[1].format(map)).json()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 411, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\ssl_.py", line 428, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\ssl_.py", line 472, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+KeyboardInterrupt
+
+Wed Oct 19 15:51:40 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 40, in background_task
+    data = downloadData(map, 1)
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\testRequest.py", line 29, in downloadData
+    data = requests.get(url[1].format(map)).json()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+Wed Oct 19 15:52:01 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 40, in background_task
+    data = downloadData(map, 1)
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\testRequest.py", line 29, in downloadData
+    data = requests.get(url[1].format(map)).json()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+Wed Oct 19 15:52:21 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 40, in background_task
+    data = downloadData(map, 1)
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\testRequest.py", line 29, in downloadData
+    data = requests.get(url[1].format(map)).json()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+Wed Oct 19 15:52:42 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 40, in background_task
+    data = downloadData(map, 1)
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\testRequest.py", line 29, in downloadData
+    data = requests.get(url[1].format(map)).json()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+Wed Oct 19 15:53:02 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 40, in background_task
+    data = downloadData(map, 1)
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\testRequest.py", line 29, in downloadData
+    data = requests.get(url[1].format(map)).json()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+Wed Oct 19 15:53:23 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 40, in background_task
+    data = downloadData(map, 1)
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\testRequest.py", line 29, in downloadData
+    data = requests.get(url[1].format(map)).json()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+Wed Oct 19 15:53:43 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 40, in background_task
+    data = downloadData(map, 1)
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\testRequest.py", line 29, in downloadData
+    data = requests.get(url[1].format(map)).json()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+Wed Oct 19 15:54:04 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 40, in background_task
+    data = downloadData(map, 1)
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\testRequest.py", line 29, in downloadData
+    data = requests.get(url[1].format(map)).json()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+Wed Oct 19 15:54:24 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 40, in background_task
+    data = downloadData(map, 1)
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\testRequest.py", line 29, in downloadData
+    data = requests.get(url[1].format(map)).json()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+Wed Oct 19 15:54:44 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 40, in background_task
+    data = downloadData(map, 1)
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\testRequest.py", line 29, in downloadData
+    data = requests.get(url[1].format(map)).json()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+Wed Oct 19 16:52:19 2022
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 105, in background_task
+    await channel.send(files = files, embed=embed)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\abc.py", line 1536, in send
+    data = await state.http.send_message(channel.id, params=params)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\http.py", line 738, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+
+Wed Oct 19 16:53:15 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 108, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 16:53:38 2022
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 105, in background_task
+    await channel.send(files = files, embed=embed)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\abc.py", line 1536, in send
+    data = await state.http.send_message(channel.id, params=params)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\http.py", line 738, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+
+Wed Oct 19 16:55:02 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 108, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+Wed Oct 19 18:09:38 2022
+Traceback (most recent call last):
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 434, in select
+    self._poll(timeout)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 783, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\gallo\Code\Programmi\FoxholeApi\main.py", line 108, in background_task
+    await asyncio.sleep(1)
+  File "C:\Users\gallo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 649, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+

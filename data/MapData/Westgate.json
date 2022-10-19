@@ -61,15 +61,15 @@
     {
       "teamId": "NONE",
       "iconType": 40,
-      "x": 0.23386304,
-      "y": 0.30619657,
+      "x": 0.8761802,
+      "y": 0.43665138,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 40,
-      "x": 0.8761802,
-      "y": 0.43665138,
+      "x": 0.23386304,
+      "y": 0.30619657,
       "flags": 0
     },
     {
@@ -137,9 +137,16 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 18,
-      "x": 0.34789592,
-      "y": 0.5090838,
+      "iconType": 28,
+      "x": 0.5813814,
+      "y": 0.3359842,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 28,
+      "x": 0.33503935,
+      "y": 0.45825,
       "flags": 0
     },
     {
@@ -151,34 +158,20 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 28,
-      "x": 0.5813814,
-      "y": 0.3359842,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 35,
-      "x": 0.21709894,
-      "y": 0.3031159,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
       "iconType": 35,
       "x": 0.32488868,
       "y": 0.14818512,
-      "flags": 8
+      "flags": 0
     },
     {
       "teamId": "WARDENS",
       "iconType": 35,
       "x": 0.37592232,
       "y": 0.12548439,
-      "flags": 8
+      "flags": 0
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 27,
       "x": 0.59581673,
       "y": 0.56256765,
@@ -186,23 +179,16 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 58,
+      "iconType": 56,
       "x": 0.23622711,
       "y": 0.26830125,
       "flags": 8
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 56,
       "x": 0.62238723,
       "y": 0.41819575,
-      "flags": 8
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 56,
-      "x": 0.83058965,
-      "y": 0.43285465,
       "flags": 8
     },
     {
@@ -213,7 +199,7 @@
       "flags": 8
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 56,
       "x": 0.6449199,
       "y": 0.72488564,
@@ -227,7 +213,7 @@
       "flags": 8
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 45,
       "x": 0.5833475,
       "y": 0.5633541,
@@ -263,13 +249,6 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 28,
-      "x": 0.33503935,
-      "y": 0.45825,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
       "iconType": 53,
       "x": 0.5078291,
       "y": 0.30984128,
@@ -285,15 +264,15 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.5880745,
-      "y": 0.7634089,
+      "x": 0.5912989,
+      "y": 0.7567863,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.5912989,
-      "y": 0.7567863,
+      "x": 0.5880745,
+      "y": 0.7634089,
       "flags": 0
     },
     {
@@ -308,6 +287,20 @@
       "iconType": 33,
       "x": 0.6003015,
       "y": 0.4080687,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 56,
+      "x": 0.83058965,
+      "y": 0.43285465,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 18,
+      "x": 0.25936526,
+      "y": 0.324238,
       "flags": 0
     },
     {
@@ -327,8 +320,15 @@
     {
       "teamId": "NONE",
       "iconType": 18,
-      "x": 0.25936526,
-      "y": 0.324238,
+      "x": 0.34789592,
+      "y": 0.5090838,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.21709894,
+      "y": 0.3031159,
       "flags": 0
     },
     {
