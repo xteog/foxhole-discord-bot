@@ -295,5 +295,5 @@ async def reset(interaction: discord.Interaction):
   #DB['startWar'] = requests.get(DB['warReport']).json()['conquestStartTime']
 
 
-#updt()
+updt()
 client.run(defs.DB['Token'])
