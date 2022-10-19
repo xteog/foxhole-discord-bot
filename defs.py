@@ -10,6 +10,7 @@ DB = {
 	'staticData': 'https://war-service-live.foxholeservices.com/api/worldconquest/maps/{}/static',
 	'eventThread': 1032345776300490882,
   'serverId': 844513454835499041, #881632566589915177,
+  'errorThread': 1032428103861026897,
 	'mapReport': 'https://war-service-live.foxholeservices.com/api/worldconquest/warReport/{}',
 	'warReport': 'https://war-service-live.foxholeservices.com/api/worldconquest/war',
 	'Token': 'ODgxNjMyODI5NTQ3NjQyOTcy.GCb_U4.AcOcHxTXWm0jU2YVo4MziJ1PosDHj2LGxDUCmg',

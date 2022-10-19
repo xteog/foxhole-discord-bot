@@ -108,9 +108,7 @@ class MyClient(discord.Client):
 
       except:
         print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
-        with open('./data/errors.txt', 'a') as file:
-          file.write(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
-
+        self.get_channel(defs.DB['errorChannel']).send(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
 
   async def on_message(self, message):
     global presenze
@@ -166,8 +164,8 @@ def switch(map, newTeam, oldTeam, index, flag):
         return msg[0].format(' è stato conquistato dai Wardens'), 0
   except:
     print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n', msg, '\n')
-    with open('./data/errors.txt', 'a') as file:
-          file.write(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
+    client.get_channel(defs.DB['errorChannel']).send(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n', msg, '\n')
+
 
 
 def timeWar(end):
