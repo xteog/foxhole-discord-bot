@@ -1,5 +1,3 @@
-from re import search
-from sys import flags
 import traceback
 import discord
 from discord import app_commands
@@ -47,7 +45,7 @@ class MyClient(discord.Client):
               l = len(oldData['mapItems'])
               for i in range(l):
                 j = search_item(oldData['mapItems'][i], newData['mapItems'])
-                if newData['mapItems'][j]['teamId'] != oldData['mapItems'][i]['teamId'] and newData['mapItems'][j]['flags'] != 4:
+                if newData['mapItems'][j]['teamId'] != oldData['mapItems'][i]['teamId'] and newData['mapItems'][j]['flags'] != 4 and newData['mapItems'][j]['flags'] != 5:
                   list.append(j)
 
             if len(list) > 0:

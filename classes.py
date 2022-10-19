@@ -1,4 +1,3 @@
-from dis import disco
 from testImage import highlight_name
 import defs
 import discord
