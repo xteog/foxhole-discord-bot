@@ -52,7 +52,7 @@ def updateMap(map, data, index):
     for item in data['mapTextItems']:
       if item['mapMarkerType'] == 'Major':
         x = round(item['x'] * bg_w)
-        y = round(item['y'] * bg_h)
+        y = round(item['y'] * bg_h-5) #TODO aggiusta offset
         text = item['text']
 
         size = draw.textsize(text, font=myFont)
