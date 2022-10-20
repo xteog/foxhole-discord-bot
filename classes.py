@@ -50,13 +50,13 @@ class SelectZone(discord.ui.Select):
             highlight_name(self.map, int(self.values[0]))
             fileMap = discord.File(defs.PATH + '/data/tempImage.png')
             self.em.set_thumbnail(url='attachment://tempImage.png')
+            view = make_view(self.map, self.data['mapTextItems'][int(self.values[0])]['text'])
         else:
-            self.em.add_field(name = self.map, value=8)
+            self.em.description += f"\n\n``{self.map}``"
+            view = make_view(self.map, self.values[0])
 
-        view = make_view(self.map, self.data['mapTextItems'][int(self.values[0])]['text'])
-        
         await interaction.response.edit_message(view=view)
-        await interaction.followup.send(file=fileMap, content='@Miles', embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions(roles=True))
+        await interaction.followup.send(file=fileMap, content='@Miles', embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions.all)
 
 
 class SelectRegion(discord.ui.Select):
@@ -88,7 +88,7 @@ class SelectRegion(discord.ui.Select):
         else:
             view = make_view('Nessuna', 'Nessuna')
             await interaction.response.edit_message(view=view)
-            await interaction.followup.send(embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions(roles=True))
+            await interaction.followup.send(embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions.all)
 
 
 class SelectViewRegion(discord.ui.View):
