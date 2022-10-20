@@ -56,7 +56,7 @@ class SelectZone(discord.ui.Select):
         view = make_view(self.map, self.data['mapTextItems'][int(self.values[0])]['text'])
         
         await interaction.response.edit_message(view=view)
-        await interaction.followup.send(file=fileMap, content='@Miles', embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions(everyone=True))
+        await interaction.followup.send(file=fileMap, content='@Miles', embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions(roles=True))
 
 
 class SelectRegion(discord.ui.Select):
