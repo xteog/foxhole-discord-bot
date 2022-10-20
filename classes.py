@@ -88,7 +88,7 @@ class SelectRegion(discord.ui.Select):
         else:
             view = make_view('Nessuna', 'Nessuna')
             await interaction.response.edit_message(view=view)
-            await interaction.followup.send(embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions(everyone=True))
+            await interaction.followup.send(embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions(roles=True))
 
 
 class SelectViewRegion(discord.ui.View):
