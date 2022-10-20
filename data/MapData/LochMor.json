@@ -52,21 +52,14 @@
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 33,
-      "x": 0.4851815,
-      "y": 0.1567667,
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.7659887,
+      "y": 0.5321604,
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 18,
-      "x": 0.47335187,
-      "y": 0.17510778,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 28,
       "x": 0.50903887,
       "y": 0.54814804,
@@ -74,14 +67,14 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 57,
+      "iconType": 56,
       "x": 0.45294976,
       "y": 0.12990755,
       "flags": 8
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 57,
+      "teamId": "COLONIALS",
+      "iconType": 56,
       "x": 0.48602152,
       "y": 0.42252004,
       "flags": 41
@@ -101,7 +94,7 @@
       "flags": 8
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 46,
       "x": 0.63026834,
       "y": 0.15598437,
@@ -145,13 +138,6 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.7659887,
-      "y": 0.5321604,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
       "x": 0.38437063,
       "y": 0.10818631,
       "flags": 0
@@ -186,6 +172,13 @@
     },
     {
       "teamId": "NONE",
+      "iconType": 33,
+      "x": 0.4851815,
+      "y": 0.1567667,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
       "iconType": 34,
       "x": 0.50556993,
       "y": 0.4462096,
@@ -203,6 +196,13 @@
       "iconType": 18,
       "x": 0.51676923,
       "y": 0.34965107,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 18,
+      "x": 0.47335187,
+      "y": 0.17510778,
       "flags": 0
     },
     {
@@ -264,7 +264,7 @@
       "x": 0.5025071,
       "y": 0.43424636,
       "mapMarkerType": "Major",
-      "location": 11
+      "location": 10
     },
     {
       "text": "Lake Severspring",
@@ -283,14 +283,14 @@
       "x": 0.20417798,
       "y": 0.5151306,
       "mapMarkerType": "Major",
-      "location": 16
+      "location": 15
     },
     {
       "text": "Mercy's Wish",
       "x": 0.45450157,
       "y": 0.13036008,
       "mapMarkerType": "Major",
-      "location": 10
+      "location": 9
     },
     {
       "text": "Missing Bones",
@@ -303,7 +303,7 @@
       "x": 0.77075344,
       "y": 0.5080013,
       "mapMarkerType": "Major",
-      "location": 13
+      "location": 12
     },
     {
       "text": "Ousterdown",
@@ -352,21 +352,21 @@
       "x": 0.5841027,
       "y": 0.75919765,
       "mapMarkerType": "Major",
-      "location": 12
+      "location": 11
     },
     {
       "text": "Tomb of the First",
       "x": 0.26635438,
       "y": 0.20696227,
       "mapMarkerType": "Major",
-      "location": 15
+      "location": 14
     },
     {
       "text": "Westmarch",
       "x": 0.62941134,
       "y": 0.15675731,
       "mapMarkerType": "Major",
-      "location": 14
+      "location": 13
     },
     {
       "text": "Widow's Wail",
@@ -375,6 +375,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1666219593934,
-  "version": 137
+  "lastUpdated": 1666283169530,
+  "version": 511
 }

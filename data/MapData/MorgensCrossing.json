@@ -109,27 +109,6 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.24870521,
-      "y": 0.30378404,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.25968823,
-      "y": 0.30831778,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 32,
-      "x": 0.25416064,
-      "y": 0.30603603,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
       "iconType": 32,
       "x": 0.6654579,
       "y": 0.5525658,
@@ -284,6 +263,27 @@
     },
     {
       "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.25968823,
+      "y": 0.30831778,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.24870521,
+      "y": 0.30378404,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 32,
+      "x": 0.25416064,
+      "y": 0.30603603,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
       "iconType": 37,
       "x": 0.49012032,
       "y": 0.44990277,
@@ -296,14 +296,14 @@
       "x": 0.5831203,
       "y": 0.14839464,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 33
     },
     {
       "text": "Bastard's Block",
       "x": 0.60732245,
       "y": 0.3378211,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 35
     },
     {
       "text": "Callum's Descent",
@@ -322,21 +322,21 @@
       "x": 0.3591508,
       "y": 0.121744014,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 34
     },
     {
       "text": "Lividus",
       "x": 0.61497265,
       "y": 0.5383431,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 31
     },
     {
       "text": "Quietus",
       "x": 0.29447103,
       "y": 0.36270502,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 32
     },
     {
       "text": "Rising Calm",
@@ -367,9 +367,9 @@
       "x": 0.6094126,
       "y": 0.8513195,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 36
     }
   ],
-  "lastUpdated": 1666187774775,
-  "version": 5
+  "lastUpdated": 1666281670293,
+  "version": 87
 }

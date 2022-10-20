@@ -172,13 +172,6 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 33,
-      "x": 0.3065375,
-      "y": 0.2222808,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
       "iconType": 35,
       "x": 0.6582095,
       "y": 0.15554194,
@@ -207,7 +200,14 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 57,
+      "iconType": 56,
+      "x": 0.54768586,
+      "y": 0.49890614,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 56,
       "x": 0.32011017,
       "y": 0.23638314,
       "flags": 8
@@ -228,17 +228,10 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 56,
+      "iconType": 57,
       "x": 0.22500837,
       "y": 0.5298937,
       "flags": 8
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 56,
-      "x": 0.4199947,
-      "y": 0.48241508,
-      "flags": 41
     },
     {
       "teamId": "COLONIALS",
@@ -305,6 +298,13 @@
     },
     {
       "teamId": "NONE",
+      "iconType": 33,
+      "x": 0.3065375,
+      "y": 0.2222808,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
       "iconType": 34,
       "x": 0.40574417,
       "y": 0.5116363,
@@ -313,9 +313,9 @@
     {
       "teamId": "NONE",
       "iconType": 56,
-      "x": 0.54768586,
-      "y": 0.49890614,
-      "flags": 0
+      "x": 0.4199947,
+      "y": 0.48241508,
+      "flags": 1
     },
     {
       "teamId": "NONE",
@@ -380,7 +380,7 @@
       "x": 0.4065897,
       "y": 0.4973474,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 33
     },
     {
       "text": "Biting Tarn",
@@ -405,7 +405,7 @@
       "x": 0.72561765,
       "y": 0.7220242,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 30
     },
     {
       "text": "Callahan's Belt",
@@ -418,14 +418,14 @@
       "x": 0.5475686,
       "y": 0.4907771,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 28
     },
     {
       "text": "Callahan's Gate",
       "x": 0.62483287,
       "y": 0.110333465,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 31
     },
     {
       "text": "Carpal Trail",
@@ -468,7 +468,7 @@
       "x": 0.46120775,
       "y": 0.26207438,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 36
     },
     {
       "text": "Jaspar Range",
@@ -481,7 +481,7 @@
       "x": 0.24296169,
       "y": 0.5517707,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 32
     },
     {
       "text": "Mandible Crossroads",
@@ -530,7 +530,7 @@
       "x": 0.27335224,
       "y": 0.7215378,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 34
     },
     {
       "text": "Sunhaven Gateway",
@@ -591,7 +591,7 @@
       "x": 0.4651194,
       "y": 0.6297798,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 33
     },
     {
       "text": "The Plaza",
@@ -604,14 +604,14 @@
       "x": 0.4569705,
       "y": 0.8376134,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 27
     },
     {
       "text": "The Salt March",
       "x": 0.82289404,
       "y": 0.48192352,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 35
     },
     {
       "text": "The Salt Trail",
@@ -630,7 +630,7 @@
       "x": 0.30697387,
       "y": 0.23582822,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 29
     },
     {
       "text": "The Steppes",
@@ -639,6 +639,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1666219755574,
-  "version": 227
+  "lastUpdated": 1666283377570,
+  "version": 570
 }

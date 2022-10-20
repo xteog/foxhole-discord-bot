@@ -33,7 +33,7 @@ class MyClient(discord.Client):
       
       await asyncio.sleep(10)
       try:
-        mapName = read(defs.DB['mapName'])
+        mapName = get_topic(self.get_channel(defs.DB['eventThread']))
         for map in mapName:
           list = []
           data = downloadData(map, 1)
@@ -167,6 +167,16 @@ def switch(map, newTeam, oldTeam, index, flag):
     client.get_channel(defs.DB['errorChannel']).send(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n', msg, '\n')
 
 
+def get_topic(channel):
+  str = channel.topic
+  str = str.split('\n')[1]
+  list = str.split(', ')
+  maps = []
+  for map in defs.MAP_NAME:
+    if map in list:
+      maps.append(map)
+  return maps
+
 
 def timeWar(end):
   start = defs.DB['startWar']
@@ -261,7 +271,7 @@ async def annuncio(interaction: discord.Interaction, image: discord.app_commands
 async def filter(interaction: discord.Interaction):
   if interaction.user.id in defs.DB['permission']:
     view = discord.ui.View()
-    view.add_item(classes.EventFilter())
+    view.add_item(classes.EventFilter(client.get_channel(defs.DB['eventThread'])))
     await interaction.response.send_message('Seleziona le regioni di interesse:', view=view, ephemeral=True)
 
 

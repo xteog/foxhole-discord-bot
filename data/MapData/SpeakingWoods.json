@@ -159,8 +159,8 @@
     {
       "teamId": "WARDENS",
       "iconType": 59,
-      "x": 0.7328342,
-      "y": 0.79570276,
+      "x": 0.4815843,
+      "y": 0.15069239,
       "flags": 0
     },
     {
@@ -433,6 +433,6 @@
       "location": 47
     }
   ],
-  "lastUpdated": 1666200150398,
-  "version": 20
+  "lastUpdated": 1666269772822,
+  "version": 30
 }

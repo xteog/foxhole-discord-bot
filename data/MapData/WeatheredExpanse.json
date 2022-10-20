@@ -298,7 +298,7 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 56,
+      "iconType": 57,
       "x": 0.6731974,
       "y": 0.11913274,
       "flags": 41
@@ -496,6 +496,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1666218599617,
-  "version": 65
+  "lastUpdated": 1666282515900,
+  "version": 230
 }

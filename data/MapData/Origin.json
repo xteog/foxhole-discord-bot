@@ -150,6 +150,13 @@
       "flags": 0
     },
     {
+      "teamId": "WARDENS",
+      "iconType": 28,
+      "x": 0.444826,
+      "y": 0.21084654,
+      "flags": 0
+    },
+    {
       "teamId": "COLONIALS",
       "iconType": 35,
       "x": 0.57063013,
@@ -221,13 +228,6 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 28,
-      "x": 0.444826,
-      "y": 0.21084654,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
       "iconType": 38,
       "x": 0.3893639,
       "y": 0.84386563,
@@ -296,7 +296,7 @@
       "x": 0.42231798,
       "y": 0.4634689,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 30
     },
     {
       "text": "Cado",
@@ -309,7 +309,7 @@
       "x": 0.8107748,
       "y": 0.59095985,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 31
     },
     {
       "text": "Exorior",
@@ -322,21 +322,21 @@
       "x": 0.25865927,
       "y": 0.28809413,
       "mapMarkerType": "Major",
-      "location": 25
+      "location": 26
     },
     {
       "text": "Initium",
       "x": 0.6155851,
       "y": 0.3369217,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 27
     },
     {
       "text": "Teichotima",
       "x": 0.32080472,
       "y": 0.78004307,
       "mapMarkerType": "Major",
-      "location": 27
+      "location": 28
     },
     {
       "text": "Temple Field",
@@ -367,9 +367,9 @@
       "x": 0.63621795,
       "y": 0.7767595,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 29
     }
   ],
-  "lastUpdated": 1666219826970,
-  "version": 220
+  "lastUpdated": 1666282275326,
+  "version": 507
 }

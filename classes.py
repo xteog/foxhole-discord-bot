@@ -56,7 +56,7 @@ class SelectZone(discord.ui.Select):
             view = make_view(self.map, self.values[0])
 
         await interaction.response.edit_message(view=view)
-        await interaction.followup.send(file=fileMap, content='@Miles', embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions.all())
+        await interaction.followup.send(file=fileMap, content='<@&876824302593384480>', embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions.all())
 
 
 class SelectRegion(discord.ui.Select):
@@ -88,7 +88,7 @@ class SelectRegion(discord.ui.Select):
         else:
             view = make_view('Nessuna', 'Nessuna')
             await interaction.response.edit_message(view=view)
-            await interaction.followup.send(embed=self.em, view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions.all())
+            await interaction.followup.send(embed=self.em, content='<@&876824302593384480>', view=JoinButton(self.em), allowed_mentions=discord.AllowedMentions.all())
 
 
 class SelectViewRegion(discord.ui.View):
@@ -146,7 +146,8 @@ class Annuncio(discord.ui.Modal, title='Annuncio'):
 
 
 class EventFilter(discord.ui.Select):
-    def __init__(self):
+    def __init__(self, channel):
+        self.channel = channel
         options = [discord.SelectOption(label='Tutte')]
         for map in defs.MAP_NAME[0:24]:
             desc = ''
@@ -168,12 +169,14 @@ class EventFilter(discord.ui.Select):
         with open(defs.DB['mapName'], 'w') as f:
             if 'Tutte' in self.values:
                 write(defs.DB['mapName'], defs.MAP_NAME)
+                await self.channel.edit(topic='Regioni di interesse:\nTutte')
                 await interaction.response.send_message('Regioni di interesse:\nTutte')
             else:
                 write(defs.DB['mapName'], self.values)
                 str = 'Regioni di interesse:\n' + self.values[0]
                 for i in range(1, len(self.values)):
                     str += ', ' + self.values[i]
+                await self.channel.edit(topic=str)
                 await interaction.response.send_message(str)
 
 
