@@ -331,5 +331,5 @@ async def reset(interaction: discord.Interaction):
 if __name__ == '__main__':
   client = MyClient(intents=discord.Intents.default())
   tree= app_commands.CommandTree(client)
-  #updt()
+  updt()
   client.run(defs.DB['Token'])
