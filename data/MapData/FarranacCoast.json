@@ -89,13 +89,6 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.72852075,
-      "y": 0.8215876,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
       "x": 0.725803,
       "y": 0.81372535,
       "flags": 0
@@ -112,6 +105,13 @@
       "iconType": 59,
       "x": 0.7123656,
       "y": 0.46212748,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 37,
+      "x": 0.4811421,
+      "y": 0.39435127,
       "flags": 0
     },
     {
@@ -133,20 +133,6 @@
       "iconType": 33,
       "x": 0.8244344,
       "y": 0.50429,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 33,
-      "x": 0.43260074,
-      "y": 0.8874075,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 18,
-      "x": 0.5747319,
-      "y": 0.69509035,
       "flags": 0
     },
     {
@@ -173,22 +159,8 @@
     {
       "teamId": "WARDENS",
       "iconType": 18,
-      "x": 0.5319899,
-      "y": 0.6734402,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 18,
       "x": 0.4594351,
       "y": 0.729173,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 18,
-      "x": 0.36822945,
-      "y": 0.84082,
       "flags": 0
     },
     {
@@ -210,20 +182,6 @@
       "iconType": 35,
       "x": 0.47235534,
       "y": 0.5780035,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 52,
-      "x": 0.52663344,
-      "y": 0.6521365,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 53,
-      "x": 0.5242693,
-      "y": 0.6801819,
       "flags": 0
     },
     {
@@ -284,20 +242,6 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 35,
-      "x": 0.40274325,
-      "y": 0.87629473,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 35,
-      "x": 0.7335979,
-      "y": 0.78461206,
-      "flags": 8
-    },
-    {
-      "teamId": "WARDENS",
       "iconType": 58,
       "x": 0.7163114,
       "y": 0.19734809,
@@ -311,15 +255,15 @@
       "flags": 8
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 58,
+      "teamId": "COLONIALS",
+      "iconType": 56,
       "x": 0.4331847,
       "y": 0.8723874,
       "flags": 8
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 57,
+      "teamId": "COLONIALS",
+      "iconType": 56,
       "x": 0.7033106,
       "y": 0.77943027,
       "flags": 8
@@ -374,7 +318,7 @@
       "flags": 8
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 47,
       "x": 0.62800795,
       "y": 0.71707416,
@@ -382,9 +326,23 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 37,
-      "x": 0.4811421,
-      "y": 0.39435127,
+      "iconType": 53,
+      "x": 0.5242693,
+      "y": 0.6801819,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.72852075,
+      "y": 0.8215876,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 33,
+      "x": 0.43260074,
+      "y": 0.8874075,
       "flags": 0
     },
     {
@@ -392,6 +350,48 @@
       "iconType": 18,
       "x": 0.81684816,
       "y": 0.6795851,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 18,
+      "x": 0.5747319,
+      "y": 0.69509035,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 18,
+      "x": 0.36822945,
+      "y": 0.84082,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 18,
+      "x": 0.5319899,
+      "y": 0.6734402,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 52,
+      "x": 0.52663344,
+      "y": 0.6521365,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.7335979,
+      "y": 0.78461206,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.40274325,
+      "y": 0.87629473,
       "flags": 0
     }
   ],
@@ -437,14 +437,14 @@
       "x": 0.5860919,
       "y": 0.56278074,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 35
     },
     {
       "text": "Iuxta Homestead",
       "x": 0.7127172,
       "y": 0.19546622,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 34
     },
     {
       "text": "Kardia",
@@ -463,14 +463,14 @@
       "x": 0.70205057,
       "y": 0.7824685,
       "mapMarkerType": "Major",
-      "location": 45
+      "location": 37
     },
     {
       "text": "Mara",
       "x": 0.8549706,
       "y": 0.48427492,
       "mapMarkerType": "Major",
-      "location": 47
+      "location": 39
     },
     {
       "text": "McCarthy Fields",
@@ -489,21 +489,21 @@
       "x": 0.6262762,
       "y": 0.71746904,
       "mapMarkerType": "Major",
-      "location": 53
+      "location": 45
     },
     {
       "text": "Scarp of Ambrose",
       "x": 0.4770394,
       "y": 0.37934086,
       "mapMarkerType": "Major",
-      "location": 49
+      "location": 41
     },
     {
       "text": "Scythe",
       "x": 0.78855526,
       "y": 0.34850213,
       "mapMarkerType": "Major",
-      "location": 51
+      "location": 43
     },
     {
       "text": "Sickle Hill",
@@ -528,7 +528,7 @@
       "x": 0.6119086,
       "y": 0.40515536,
       "mapMarkerType": "Major",
-      "location": 52
+      "location": 44
     },
     {
       "text": "The Bay of Artemis",
@@ -541,7 +541,7 @@
       "x": 0.49903932,
       "y": 0.20359577,
       "mapMarkerType": "Major",
-      "location": 50
+      "location": 42
     },
     {
       "text": "The Heart Road",
@@ -560,7 +560,7 @@
       "x": 0.4322609,
       "y": 0.6490256,
       "mapMarkerType": "Major",
-      "location": 48
+      "location": 40
     },
     {
       "text": "The Mirror",
@@ -591,7 +591,7 @@
       "x": 0.25413433,
       "y": 0.2014643,
       "mapMarkerType": "Major",
-      "location": 46
+      "location": 38
     },
     {
       "text": "The Winged Walk",
@@ -610,9 +610,9 @@
       "x": 0.4417568,
       "y": 0.8744741,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 36
     }
   ],
-  "lastUpdated": 1666274895925,
-  "version": 58
+  "lastUpdated": 1667336307046,
+  "version": 365
 }

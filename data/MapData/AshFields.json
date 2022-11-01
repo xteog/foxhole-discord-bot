@@ -151,6 +151,20 @@
     },
     {
       "teamId": "COLONIALS",
+      "iconType": 59,
+      "x": 0.16138893,
+      "y": 0.6423766,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 59,
+      "x": 0.7441769,
+      "y": 0.22222064,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 17,
       "x": 0.5431967,
       "y": 0.54501057,
@@ -310,28 +324,28 @@
       "x": 0.5143172,
       "y": 0.5525154,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 38
     },
     {
       "text": "Camp Omega",
       "x": 0.7096968,
       "y": 0.12712017,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 44
     },
     {
       "text": "Cometa",
       "x": 0.27839515,
       "y": 0.22447485,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 40
     },
     {
       "text": "Electi",
       "x": 0.46130008,
       "y": 0.133538,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 39
     },
     {
       "text": "Gunslinger's Pass",
@@ -362,7 +376,7 @@
       "x": 0.71663564,
       "y": 0.72119087,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 43
     },
     {
       "text": "Tar Creek",
@@ -375,14 +389,14 @@
       "x": 0.75574505,
       "y": 0.42160434,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 41
     },
     {
       "text": "The Calamity",
       "x": 0.26671404,
       "y": 0.44761574,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 42
     },
     {
       "text": "The Red River",
@@ -409,6 +423,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1666283349487,
-  "version": 64
+  "lastUpdated": 1667334005646,
+  "version": 22
 }

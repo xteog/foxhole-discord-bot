@@ -88,13 +88,6 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 40,
-      "x": 0.123553544,
-      "y": 0.4780716,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
       "iconType": 38,
       "x": 0.5809442,
       "y": 0.8852897,
@@ -180,15 +173,15 @@
     {
       "teamId": "WARDENS",
       "iconType": 33,
-      "x": 0.17227317,
-      "y": 0.4367275,
+      "x": 0.5994435,
+      "y": 0.78384846,
       "flags": 0
     },
     {
       "teamId": "WARDENS",
       "iconType": 33,
-      "x": 0.5994435,
-      "y": 0.78384846,
+      "x": 0.17227317,
+      "y": 0.4367275,
       "flags": 0
     },
     {
@@ -291,7 +284,7 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 58,
+      "iconType": 56,
       "x": 0.17519066,
       "y": 0.4598348,
       "flags": 8
@@ -330,6 +323,13 @@
       "x": 0.6941384,
       "y": 0.6512489,
       "flags": 8
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 40,
+      "x": 0.123553544,
+      "y": 0.4780716,
+      "flags": 0
     }
   ],
   "mapTextItems": [
@@ -350,49 +350,49 @@
       "x": 0.8647111,
       "y": 0.41167375,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 42
     },
     {
       "text": "Fort Rider",
       "x": 0.35139802,
       "y": 0.85675204,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 43
     },
     {
       "text": "Great Warden Dam",
       "x": 0.6554019,
       "y": 0.35621113,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 41
     },
     {
       "text": "Hungry Wolf",
       "x": 0.17645623,
       "y": 0.46003953,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 40
     },
     {
       "text": "Little Lamb",
       "x": 0.5877111,
       "y": 0.81540585,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 38
     },
     {
       "text": "Sickleshire",
       "x": 0.69961804,
       "y": 0.65790194,
       "mapMarkerType": "Major",
-      "location": 46
+      "location": 45
     },
     {
       "text": "Slipgate Outpost",
       "x": 0.40390867,
       "y": 0.38564897,
       "mapMarkerType": "Major",
-      "location": 45
+      "location": 44
     },
     {
       "text": "Snakewall",
@@ -405,7 +405,7 @@
       "x": 0.40042853,
       "y": 0.6461763,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 39
     },
     {
       "text": "The Hunting Grounds",
@@ -420,6 +420,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1666210381534,
-  "version": 8
+  "lastUpdated": 1667335864271,
+  "version": 291
 }

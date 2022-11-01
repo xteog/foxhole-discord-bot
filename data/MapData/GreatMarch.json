@@ -40,15 +40,15 @@
     {
       "teamId": "NONE",
       "iconType": 40,
-      "x": 0.25301516,
-      "y": 0.5185651,
+      "x": 0.5656551,
+      "y": 0.64441323,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 40,
-      "x": 0.5656551,
-      "y": 0.64441323,
+      "x": 0.25301516,
+      "y": 0.5185651,
       "flags": 0
     },
     {
@@ -82,15 +82,15 @@
     {
       "teamId": "NONE",
       "iconType": 32,
-      "x": 0.2607251,
-      "y": 0.5176422,
+      "x": 0.27635348,
+      "y": 0.16573228,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 32,
-      "x": 0.27635348,
-      "y": 0.16573228,
+      "x": 0.2607251,
+      "y": 0.5176422,
       "flags": 0
     },
     {
@@ -133,6 +133,13 @@
       "iconType": 17,
       "x": 0.5549948,
       "y": 0.6298259,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 37,
+      "x": 0.53481,
+      "y": 0.7746112,
       "flags": 0
     },
     {
@@ -285,23 +292,16 @@
     {
       "teamId": "COLONIALS",
       "iconType": 47,
-      "x": 0.6972011,
-      "y": 0.11994077,
-      "flags": 8
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 47,
       "x": 0.37090838,
       "y": 0.36109838,
       "flags": 8
     },
     {
-      "teamId": "NONE",
-      "iconType": 37,
-      "x": 0.53481,
-      "y": 0.7746112,
-      "flags": 0
+      "teamId": "COLONIALS",
+      "iconType": 47,
+      "x": 0.6972011,
+      "y": 0.11994077,
+      "flags": 8
     }
   ],
   "mapTextItems": [
@@ -323,7 +323,7 @@
       "x": 0.77124,
       "y": 0.46152595,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 40
     },
     {
       "text": "Eristown",
@@ -372,14 +372,14 @@
       "x": 0.24598461,
       "y": 0.5040848,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 38
     },
     {
       "text": "Lionsfort",
       "x": 0.69568443,
       "y": 0.12216068,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 42
     },
     {
       "text": "Milowood",
@@ -398,7 +398,7 @@
       "x": 0.6058823,
       "y": 0.22973543,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 35
     },
     {
       "text": "Remnant Acreage",
@@ -411,7 +411,7 @@
       "x": 0.5511068,
       "y": 0.43947107,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 36
     },
     {
       "text": "Schala Estate",
@@ -436,7 +436,7 @@
       "x": 0.537554,
       "y": 0.6178947,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 39
     },
     {
       "text": "The Black Wing",
@@ -473,7 +473,7 @@
       "x": 0.40979624,
       "y": 0.8734635,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 37
     },
     {
       "text": "The White Wing",
@@ -492,7 +492,7 @@
       "x": 0.31300274,
       "y": 0.19231363,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 34
     },
     {
       "text": "Zealous Approach",
@@ -501,6 +501,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1666266859405,
-  "version": 41
+  "lastUpdated": 1667312882389,
+  "version": 25
 }

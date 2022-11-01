@@ -158,6 +158,13 @@
     },
     {
       "teamId": "COLONIALS",
+      "iconType": 37,
+      "x": 0.7195022,
+      "y": 0.45276722,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 34,
       "x": 0.80388165,
       "y": 0.5761321,
@@ -215,13 +222,6 @@
     {
       "teamId": "COLONIALS",
       "iconType": 35,
-      "x": 0.83456385,
-      "y": 0.6151475,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 35,
       "x": 0.51900184,
       "y": 0.21904759,
       "flags": 0
@@ -231,13 +231,6 @@
       "iconType": 35,
       "x": 0.2030589,
       "y": 0.40051538,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 35,
-      "x": 0.78096426,
-      "y": 0.5516124,
       "flags": 0
     },
     {
@@ -277,7 +270,7 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 58,
+      "iconType": 56,
       "x": 0.8324176,
       "y": 0.5671958,
       "flags": 41
@@ -319,9 +312,16 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 37,
-      "x": 0.7195022,
-      "y": 0.45276722,
+      "iconType": 35,
+      "x": 0.83456385,
+      "y": 0.6151475,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.78096426,
+      "y": 0.5516124,
       "flags": 0
     }
   ],
@@ -349,14 +349,14 @@
       "x": 0.6572052,
       "y": 0.39019576,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 40
     },
     {
       "text": "Headsman's Villa",
       "x": 0.18828769,
       "y": 0.44380325,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 37
     },
     {
       "text": "Mount Talio",
@@ -369,14 +369,14 @@
       "x": 0.34306777,
       "y": 0.6204324,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 39
     },
     {
       "text": "Second Man",
       "x": 0.73613465,
       "y": 0.14634983,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 42
     },
     {
       "text": "Tears of Tethys",
@@ -389,21 +389,21 @@
       "x": 0.8318112,
       "y": 0.5674859,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 38
     },
     {
       "text": "The Routed",
       "x": 0.496249,
       "y": 0.18280289,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 36
     },
     {
       "text": "The Tusk",
       "x": 0.29128292,
       "y": 0.17811885,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 43
     },
     {
       "text": "The Wary Nymphae",
@@ -416,9 +416,9 @@
       "x": 0.57632715,
       "y": 0.8555667,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 41
     }
   ],
-  "lastUpdated": 1666257299428,
-  "version": 22
+  "lastUpdated": 1667336023865,
+  "version": 52
 }

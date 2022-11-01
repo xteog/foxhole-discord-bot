@@ -68,15 +68,15 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.2043918,
-      "y": 0.39931884,
+      "x": 0.5857937,
+      "y": 0.18290523,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.21670085,
-      "y": 0.39610246,
+      "x": 0.60365444,
+      "y": 0.16468078,
       "flags": 0
     },
     {
@@ -101,10 +101,24 @@
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 39,
-      "x": 0.20340459,
-      "y": 0.34537554,
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.21670085,
+      "y": 0.39610246,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.2043918,
+      "y": 0.39931884,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.2844573,
+      "y": 0.8178435,
       "flags": 0
     },
     {
@@ -115,24 +129,24 @@
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 59,
-      "x": 0.16801837,
-      "y": 0.47731647,
+      "teamId": "COLONIALS",
+      "iconType": 39,
+      "x": 0.20340459,
+      "y": 0.34537554,
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 59,
-      "x": 0.15692715,
-      "y": 0.47936106,
+      "teamId": "COLONIALS",
+      "iconType": 11,
+      "x": 0.30705127,
+      "y": 0.7987079,
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 59,
-      "x": 0.14514095,
-      "y": 0.57981867,
+      "teamId": "COLONIALS",
+      "iconType": 60,
+      "x": 0.58262396,
+      "y": 0.87545145,
       "flags": 0
     },
     {
@@ -143,10 +157,17 @@
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 18,
-      "x": 0.18442251,
-      "y": 0.32613453,
+      "teamId": "COLONIALS",
+      "iconType": 33,
+      "x": 0.32180145,
+      "y": 0.7875715,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 33,
+      "x": 0.5848359,
+      "y": 0.26738614,
       "flags": 0
     },
     {
@@ -172,9 +193,44 @@
     },
     {
       "teamId": "COLONIALS",
+      "iconType": 18,
+      "x": 0.30004522,
+      "y": 0.84368813,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 18,
+      "x": 0.18442251,
+      "y": 0.32613453,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 18,
+      "x": 0.52045876,
+      "y": 0.85219336,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 18,
+      "x": 0.44220898,
+      "y": 0.93287873,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 28,
       "x": 0.65685356,
       "y": 0.6084646,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 28,
+      "x": 0.41892356,
+      "y": 0.52266586,
       "flags": 0
     },
     {
@@ -185,21 +241,49 @@
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
+      "iconType": 18,
+      "x": 0.28067335,
+      "y": 0.85074526,
+      "flags": 4
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.5418317,
+      "y": 0.5984095,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.36398038,
+      "y": 0.79735136,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.5866598,
+      "y": 0.17244838,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 35,
       "x": 0.2734551,
       "y": 0.29280752,
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 52,
       "x": 0.18767786,
       "y": 0.3065313,
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 53,
       "x": 0.2130699,
       "y": 0.3185539,
@@ -214,20 +298,13 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 56,
+      "iconType": 58,
       "x": 0.5953421,
       "y": 0.24608661,
       "flags": 8
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 56,
-      "x": 0.33043855,
-      "y": 0.8057894,
-      "flags": 8
-    },
-    {
-      "teamId": "WARDENS",
       "iconType": 58,
       "x": 0.24400268,
       "y": 0.33234283,
@@ -242,13 +319,20 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 57,
+      "iconType": 58,
+      "x": 0.33043855,
+      "y": 0.8057894,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
       "x": 0.53989124,
       "y": 0.63773024,
       "flags": 8
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 45,
       "x": 0.16551383,
       "y": 0.50796336,
@@ -270,27 +354,6 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 28,
-      "x": 0.41892356,
-      "y": 0.52266586,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 11,
-      "x": 0.30705127,
-      "y": 0.7987079,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.2844573,
-      "y": 0.8178435,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
       "iconType": 38,
       "x": 0.61158055,
       "y": 0.7694761,
@@ -302,83 +365,6 @@
       "x": 0.6046075,
       "y": 0.7720458,
       "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.5857937,
-      "y": 0.18290523,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.60365444,
-      "y": 0.16468078,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 33,
-      "x": 0.32180145,
-      "y": 0.7875715,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 33,
-      "x": 0.5848359,
-      "y": 0.26738614,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 18,
-      "x": 0.44220898,
-      "y": 0.93287873,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 18,
-      "x": 0.28067335,
-      "y": 0.85074526,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 18,
-      "x": 0.52045876,
-      "y": 0.85219336,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 18,
-      "x": 0.30004522,
-      "y": 0.84368813,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.5418317,
-      "y": 0.5984095,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.5866598,
-      "y": 0.17244838,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.36398038,
-      "y": 0.79735136,
-      "flags": 0
     }
   ],
   "mapTextItems": [
@@ -387,7 +373,7 @@
       "x": 0.33879337,
       "y": 0.91907495,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 49
     },
     {
       "text": "Argosa",
@@ -412,7 +398,7 @@
       "x": 0.3415074,
       "y": 0.7991088,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 45
     },
     {
       "text": "Chamil Ravine",
@@ -437,7 +423,7 @@
       "x": 0.62136436,
       "y": 0.80811846,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 44
     },
     {
       "text": "Kolas",
@@ -474,14 +460,14 @@
       "x": 0.5415761,
       "y": 0.6364856,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 46
     },
     {
       "text": "Protos",
       "x": 0.1703909,
       "y": 0.5030786,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 47
     },
     {
       "text": "Saegio",
@@ -494,14 +480,14 @@
       "x": 0.5933204,
       "y": 0.24777809,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 42
     },
     {
       "text": "The Axehead",
       "x": 0.24177985,
       "y": 0.33301017,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 43
     },
     {
       "text": "The Dice Road",
@@ -514,7 +500,7 @@
       "x": 0.6615385,
       "y": 0.8981667,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 48
     },
     {
       "text": "The Kris Ford",
@@ -541,6 +527,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1666283313594,
-  "version": 607
+  "lastUpdated": 1667327936861,
+  "version": 93
 }

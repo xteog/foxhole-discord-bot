@@ -158,13 +158,6 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 59,
-      "x": 0.5750968,
-      "y": 0.31655708,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
       "iconType": 34,
       "x": 0.5337785,
       "y": 0.35583547,
@@ -175,6 +168,13 @@
       "iconType": 33,
       "x": 0.27190548,
       "y": 0.72046334,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 33,
+      "x": 0.29545674,
+      "y": 0.07475145,
       "flags": 0
     },
     {
@@ -284,6 +284,13 @@
     },
     {
       "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.2749239,
+      "y": 0.0974354,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 58,
       "x": 0.5272376,
       "y": 0.33832207,
@@ -298,7 +305,7 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 57,
+      "iconType": 58,
       "x": 0.3076558,
       "y": 0.09509289,
       "flags": 8
@@ -347,23 +354,9 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 33,
-      "x": 0.29545674,
-      "y": 0.07475145,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
       "iconType": 18,
       "x": 0.35066894,
       "y": 0.12088166,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.2749239,
-      "y": 0.0974354,
       "flags": 0
     }
   ],
@@ -373,7 +366,7 @@
       "x": 0.30793568,
       "y": 0.09539125,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 43
     },
     {
       "text": "Cirris Valve",
@@ -392,21 +385,21 @@
       "x": 0.25516355,
       "y": 0.7106062,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 42
     },
     {
       "text": "Liar's Haven",
       "x": 0.6746311,
       "y": 0.6596021,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 45
     },
     {
       "text": "Lost Airchal",
       "x": 0.60527116,
       "y": 0.09963542,
       "mapMarkerType": "Major",
-      "location": 46
+      "location": 47
     },
     {
       "text": "Plana Fada",
@@ -419,7 +412,7 @@
       "x": 0.715016,
       "y": 0.31315425,
       "mapMarkerType": "Major",
-      "location": 48
+      "location": 49
     },
     {
       "text": "Sclera",
@@ -444,21 +437,21 @@
       "x": 0.40114728,
       "y": 0.43872398,
       "mapMarkerType": "Major",
-      "location": 47
+      "location": 48
     },
     {
       "text": "The Gale",
       "x": 0.48670572,
       "y": 0.7953114,
       "mapMarkerType": "Major",
-      "location": 45
+      "location": 46
     },
     {
       "text": "The Iris",
       "x": 0.6266644,
       "y": 0.48053998,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 44
     },
     {
       "text": "The Outwood",
@@ -471,9 +464,9 @@
       "x": 0.52295,
       "y": 0.37489086,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 41
     }
   ],
-  "lastUpdated": 1666274353139,
-  "version": 24
+  "lastUpdated": 1667327234373,
+  "version": 23
 }

@@ -61,15 +61,15 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.6542913,
-      "y": 0.67563003,
+      "x": 0.6609517,
+      "y": 0.67811656,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.6609517,
-      "y": 0.67811656,
+      "x": 0.64326245,
+      "y": 0.14719673,
       "flags": 0
     },
     {
@@ -117,8 +117,8 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.64326245,
-      "y": 0.14719673,
+      "x": 0.6542913,
+      "y": 0.67563003,
       "flags": 0
     },
     {
@@ -131,8 +131,8 @@
     {
       "teamId": "COLONIALS",
       "iconType": 60,
-      "x": 0.550824,
-      "y": 0.5156904,
+      "x": 0.17530255,
+      "y": 0.43987107,
       "flags": 0
     },
     {
@@ -147,13 +147,6 @@
       "iconType": 59,
       "x": 0.2687486,
       "y": 0.6141589,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 59,
-      "x": 0.17530252,
-      "y": 0.43987107,
       "flags": 0
     },
     {
@@ -242,6 +235,20 @@
     },
     {
       "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.29659617,
+      "y": 0.20919815,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.25690275,
+      "y": 0.27458,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 58,
       "x": 0.3270634,
       "y": 0.5042822,
@@ -277,7 +284,7 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 56,
+      "iconType": 58,
       "x": 0.27540454,
       "y": 0.22465473,
       "flags": 8
@@ -306,30 +313,16 @@
     {
       "teamId": "COLONIALS",
       "iconType": 47,
-      "x": 0.15611213,
-      "y": 0.5520258,
-      "flags": 8
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 47,
       "x": 0.8390266,
       "y": 0.54753554,
       "flags": 8
     },
     {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.29659617,
-      "y": 0.20919815,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.25690275,
-      "y": 0.27458,
-      "flags": 0
+      "teamId": "COLONIALS",
+      "iconType": 47,
+      "x": 0.15611213,
+      "y": 0.5520258,
+      "flags": 8
     }
   ],
   "mapTextItems": [
@@ -344,21 +337,21 @@
       "x": 0.8178504,
       "y": 0.38884524,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 36
     },
     {
       "text": "Atropos' Fate",
       "x": 0.5730031,
       "y": 0.7843336,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 42
     },
     {
       "text": "Clotho's Refuge",
       "x": 0.61337584,
       "y": 0.32398352,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 41
     },
     {
       "text": "Dredgefield",
@@ -377,14 +370,14 @@
       "x": 0.15671077,
       "y": 0.5505076,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 45
     },
     {
       "text": "Hermit's Rest",
       "x": 0.67122585,
       "y": 0.6176634,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 39
     },
     {
       "text": "Lachesis' Tally ",
@@ -404,7 +397,7 @@
       "x": 0.395983,
       "y": 0.8252861,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 38
     },
     {
       "text": "Steely Fields",
@@ -417,7 +410,7 @@
       "x": 0.6767252,
       "y": 0.1845278,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 37
     },
     {
       "text": "Terrapin Woods",
@@ -436,7 +429,7 @@
       "x": 0.27597004,
       "y": 0.2246597,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 40
     },
     {
       "text": "The Frontier",
@@ -467,14 +460,14 @@
       "x": 0.34593302,
       "y": 0.51468116,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 35
     },
     {
       "text": "Vagrant Bastion",
       "x": 0.5076587,
       "y": 0.1616039,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 43
     },
     {
       "text": "Wasting Holt",
@@ -489,6 +482,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1666278143617,
-  "version": 55
+  "lastUpdated": 1667298326647,
+  "version": 40
 }

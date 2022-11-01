@@ -46,7 +46,8 @@ class MyClient(discord.Client):
               l = len(oldData['mapItems'])
               for i in range(l):
                 j = search_item(oldData['mapItems'][i], newData['mapItems'])
-                if newData['mapItems'][j]['teamId'] != oldData['mapItems'][i]['teamId'] and newData['mapItems'][j]['flags'] != 4 and newData['mapItems'][j]['flags'] != 5:
+                flag = convert_to_bin(newData['mapItems'][j]['flags'])
+                if newData['mapItems'][j]['teamId'] != oldData['mapItems'][i]['teamId'] and flag[3] != '1':
                   list.append(j)
 
             if len(list) > 0:
@@ -66,7 +67,8 @@ class MyClient(discord.Client):
                 icon = defs.ICON_ID[newData[i]['iconType']]
                 
                 j = search_item(newData[i], oldData)
-                message, color = switch(map, newData[i]['teamId'], oldData[j]['teamId'], i, newData[i]['flags'])
+                flag = convert_to_bin(newData[i]['flags'])
+                message, color = switch(map, newData[i]['teamId'], oldData[j]['teamId'], i, flag)
 
                 if color:
                   color = 0x65875E
@@ -118,6 +120,13 @@ class MyClient(discord.Client):
     msg = message.content
 
 
+def convert_to_bin(n):
+  b = bin(n).replace('0b', '')[::-1]
+  b += '0' * (6 - len(b))
+  b = b[::-1]
+  return b
+
+
 def updt():
   #updateMapL()
   mapName = defs.MAP_NAME
@@ -146,22 +155,30 @@ def switch(map, newTeam, oldTeam, index, flag):
   
   message = ' di ' + message + '{}'
   msg = [message, message]
-  if flag == 41:
+  if flag[5] == '1':
     msg[0] = message + '\nLa regione {} è stata persa!'.format(map)
     msg[1] = message + '\nLa regione {} è stata conquistata!'.format(map)
 
+
+
   try:
     #icona vicina a dove
-    if newTeam == 'NONE':
-      if oldTeam == 'COLONIALS':
-        return msg[0].format(' è stato distrutto dai Wardens'), 0
+    if flag[1] != '1':
+      if newTeam == 'NONE':
+        if oldTeam == 'COLONIALS':
+          return msg[0].format(' è stato distrutto dai Wardens'), 0
+        else:
+          return msg[1].format(' è stato distrutto dai Colonials'), 1
       else:
-        return msg[1].format(' è stato distrutto dai Colonials'), 1
+        if newTeam == 'COLONIALS':
+          return msg[1].format(' è stato conquistato dai Colonials'), 1
+        else:
+          return msg[0].format(' è stato conquistato dai Wardens'), 0
     else:
-      if newTeam == 'COLONIALS':
-        return msg[1].format(' è stato conquistato dai Colonials'), 1
-      else:
-        return msg[0].format(' è stato conquistato dai Wardens'), 0
+      if oldTeam == 'COLONIALS':
+          return msg[0].format(' ha fatto BOOM!'), 0
+        else:
+          return msg[1].format(' ha fatto BOOM!'), 1
   except:
     print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n', msg, '\n')
     client.get_channel(defs.DB['errorChannel']).send(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n', msg, '\n')
@@ -311,6 +328,8 @@ async def reset(interaction: discord.Interaction):
 
   #DB['startWar'] = requests.get(DB['warReport']).json()['conquestStartTime']
 
-
-updt()
-client.run(defs.DB['Token'])
+if __name__ == '__main__':
+  client = MyClient(intents=discord.Intents.default())
+  tree= app_commands.CommandTree(client)
+  #updt()
+  client.run(defs.DB['Token'])

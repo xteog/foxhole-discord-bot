@@ -110,15 +110,8 @@
     {
       "teamId": "COLONIALS",
       "iconType": 59,
-      "x": 0.46098322,
-      "y": 0.21271995,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 59,
-      "x": 0.45671335,
-      "y": 0.22109875,
+      "x": 0.6321171,
+      "y": 0.33558562,
       "flags": 0
     },
     {
@@ -131,8 +124,22 @@
     {
       "teamId": "COLONIALS",
       "iconType": 59,
-      "x": 0.44571233,
-      "y": 0.20181113,
+      "x": 0.78503114,
+      "y": 0.38941735,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 59,
+      "x": 0.3736037,
+      "y": 0.2349217,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 59,
+      "x": 0.7884318,
+      "y": 0.39881775,
       "flags": 0
     },
     {
@@ -310,21 +317,21 @@
       "x": 0.80842125,
       "y": 0.5582795,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 34
     },
     {
       "text": "Coaldrifter Stead",
       "x": 0.66231805,
       "y": 0.82284665,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 36
     },
     {
       "text": "Eastmarch",
       "x": 0.2335479,
       "y": 0.5278097,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 40
     },
     {
       "text": "Esterfal",
@@ -349,14 +356,14 @@
       "x": 0.4150385,
       "y": 0.20794752,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 38
     },
     {
       "text": "Singing Serpents",
       "x": 0.6632067,
       "y": 0.31274968,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 39
     },
     {
       "text": "Sop Fields",
@@ -369,7 +376,7 @@
       "x": 0.47195154,
       "y": 0.8008652,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 43
     },
     {
       "text": "Sprite's Game",
@@ -382,7 +389,7 @@
       "x": 0.5683618,
       "y": 0.52607054,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 37
     },
     {
       "text": "The Other Vein",
@@ -395,7 +402,7 @@
       "x": 0.63300836,
       "y": 0.16928926,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 35
     },
     {
       "text": "The Turtlerocks",
@@ -408,7 +415,7 @@
       "x": 0.38150814,
       "y": 0.5121856,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 41
     },
     {
       "text": "The Willow Wood",
@@ -421,16 +428,16 @@
       "x": 0.36351255,
       "y": 0.715022,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 33
     },
     {
       "text": "Wisp's Warning",
       "x": 0.33081633,
       "y": 0.29379123,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 42
     }
   ],
-  "lastUpdated": 1666274881123,
-  "version": 75
+  "lastUpdated": 1667328972795,
+  "version": 15
 }
