@@ -98,7 +98,7 @@
       "iconType": 56,
       "x": 0.48602152,
       "y": 0.42252004,
-      "flags": 41
+      "flags": 9
     },
     {
       "teamId": "COLONIALS",
@@ -264,7 +264,7 @@
       "x": 0.5025071,
       "y": 0.43424636,
       "mapMarkerType": "Major",
-      "location": 13
+      "location": 14
     },
     {
       "text": "Lake Severspring",
@@ -375,6 +375,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667335653036,
-  "version": 402
+  "lastUpdated": 1667340534896,
+  "version": 415
 }

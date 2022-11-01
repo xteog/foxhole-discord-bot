@@ -172,13 +172,6 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 33,
-      "x": 0.6450023,
-      "y": 0.7927612,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
       "iconType": 18,
       "x": 0.7169975,
       "y": 0.075949036,
@@ -407,6 +400,13 @@
       "x": 0.48080972,
       "y": 0.1657336,
       "flags": 8
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 33,
+      "x": 0.6450023,
+      "y": 0.7927612,
+      "flags": 0
     }
   ],
   "mapTextItems": [
@@ -421,7 +421,7 @@
       "x": 0.9117557,
       "y": 0.51201063,
       "mapMarkerType": "Major",
-      "location": 56
+      "location": 55
     },
     {
       "text": "Castor",
@@ -446,7 +446,7 @@
       "x": 0.49749142,
       "y": 0.16744888,
       "mapMarkerType": "Major",
-      "location": 57
+      "location": 56
     },
     {
       "text": "Grisly Refuge",
@@ -459,7 +459,7 @@
       "x": 0.6686882,
       "y": 0.773776,
       "mapMarkerType": "Major",
-      "location": 50
+      "location": 49
     },
     {
       "text": "Kofteri Channel",
@@ -472,7 +472,7 @@
       "x": 0.32835937,
       "y": 0.89686215,
       "mapMarkerType": "Major",
-      "location": 54
+      "location": 53
     },
     {
       "text": "Martius",
@@ -515,14 +515,14 @@
       "x": 0.79465634,
       "y": 0.6755905,
       "mapMarkerType": "Major",
-      "location": 51
+      "location": 50
     },
     {
       "text": "Reliqua",
       "x": 0.6536689,
       "y": 0.21361786,
       "mapMarkerType": "Major",
-      "location": 55
+      "location": 54
     },
     {
       "text": "Sandalwood Beach",
@@ -547,7 +547,7 @@
       "x": 0.60323334,
       "y": 0.42578885,
       "mapMarkerType": "Major",
-      "location": 53
+      "location": 52
     },
     {
       "text": "Skull Beach",
@@ -560,7 +560,7 @@
       "x": 0.51089185,
       "y": 0.624818,
       "mapMarkerType": "Major",
-      "location": 52
+      "location": 51
     },
     {
       "text": "The Dirk",
@@ -579,9 +579,9 @@
       "x": 0.85254693,
       "y": 0.3931426,
       "mapMarkerType": "Major",
-      "location": 49
+      "location": 48
     }
   ],
-  "lastUpdated": 1667334782292,
-  "version": 98
+  "lastUpdated": 1667341836255,
+  "version": 100
 }

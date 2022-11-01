@@ -215,7 +215,8 @@ def search_item(item, data):
 def search_faction(data):
   found = -1
   for i in range(len(data)):
-    if data[i]['flags'] == 41:
+    flag = convert_to_bin(data[i]['flags'])
+    if flag[5] == '1':
       found = i
   
   if found != -1:

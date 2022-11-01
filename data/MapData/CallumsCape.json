@@ -158,6 +158,13 @@
     },
     {
       "teamId": "WARDENS",
+      "iconType": 60,
+      "x": 0.54146564,
+      "y": 0.5903584,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
       "iconType": 59,
       "x": 0.7593148,
       "y": 0.6723605,
@@ -366,21 +373,21 @@
       "x": 0.3986264,
       "y": 0.23518516,
       "mapMarkerType": "Major",
-      "location": 45
+      "location": 46
     },
     {
       "text": "Camp Hollow",
       "x": 0.75129753,
       "y": 0.2829856,
       "mapMarkerType": "Major",
-      "location": 49
+      "location": 50
     },
     {
       "text": "Holdout",
       "x": 0.70983833,
       "y": 0.5703603,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 45
     },
     {
       "text": "Hollowhill",
@@ -393,21 +400,21 @@
       "x": 0.4794494,
       "y": 0.8495265,
       "mapMarkerType": "Major",
-      "location": 48
+      "location": 49
     },
     {
       "text": "Lookout",
       "x": 0.75171673,
       "y": 0.7793463,
       "mapMarkerType": "Major",
-      "location": 46
+      "location": 47
     },
     {
       "text": "Naofa",
       "x": 0.14666781,
       "y": 0.503729,
       "mapMarkerType": "Major",
-      "location": 47
+      "location": 48
     },
     {
       "text": "Princefal Burn",
@@ -420,7 +427,7 @@
       "x": 0.23736292,
       "y": 0.7437504,
       "mapMarkerType": "Major",
-      "location": 50
+      "location": 51
     },
     {
       "text": "The Dreg",
@@ -459,6 +466,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667323296429,
-  "version": 56
+  "lastUpdated": 1667341560559,
+  "version": 60
 }

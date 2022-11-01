@@ -277,13 +277,6 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 45,
-      "x": 0.6431343,
-      "y": 0.07365192,
-      "flags": 8
-    },
-    {
-      "teamId": "WARDENS",
       "iconType": 46,
       "x": 0.24578369,
       "y": 0.43925974,
@@ -312,6 +305,13 @@
     },
     {
       "teamId": "NONE",
+      "iconType": 45,
+      "x": 0.6431343,
+      "y": 0.07365192,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
       "iconType": 47,
       "x": 0.37591818,
       "y": 0.8966251,
@@ -331,14 +331,14 @@
       "x": 0.64305896,
       "y": 0.06935562,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 35
     },
     {
       "text": "Gravekeeper's Holdfast",
       "x": 0.4243501,
       "y": 0.68474805,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 41
     },
     {
       "text": "Headstone",
@@ -392,7 +392,7 @@
       "x": 0.22631325,
       "y": 0.2707589,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 42
     },
     {
       "text": "Riverhill",
@@ -430,7 +430,7 @@
       "x": 0.24432048,
       "y": 0.43665987,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 39
     },
     {
       "text": "The Wind Hills",
@@ -444,7 +444,7 @@
       "x": 0.77282596,
       "y": 0.7926232,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 40
     },
     {
       "text": "Wiccwood",
@@ -453,6 +453,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667335954933,
-  "version": 133
+  "lastUpdated": 1667342222974,
+  "version": 151
 }

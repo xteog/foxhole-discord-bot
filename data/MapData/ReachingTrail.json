@@ -123,10 +123,10 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 35,
-      "x": 0.34101012,
-      "y": 0.7204225,
-      "flags": 0
+      "iconType": 56,
+      "x": 0.543078,
+      "y": 0.67843205,
+      "flags": 4
     },
     {
       "teamId": "WARDENS",
@@ -150,6 +150,13 @@
       "flags": 41
     },
     {
+      "teamId": "WARDENS",
+      "iconType": 56,
+      "x": 0.15210344,
+      "y": 0.36358878,
+      "flags": 8
+    },
+    {
       "teamId": "COLONIALS",
       "iconType": 56,
       "x": 0.8392175,
@@ -159,8 +166,8 @@
     {
       "teamId": "COLONIALS",
       "iconType": 56,
-      "x": 0.15210344,
-      "y": 0.36358878,
+      "x": 0.70331603,
+      "y": 0.38726288,
       "flags": 8
     },
     {
@@ -168,6 +175,13 @@
       "iconType": 56,
       "x": 0.4481316,
       "y": 0.3247305,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 45,
+      "x": 0.44212052,
+      "y": 0.9175624,
       "flags": 8
     },
     {
@@ -256,27 +270,6 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 45,
-      "x": 0.44212052,
-      "y": 0.9175624,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 56,
-      "x": 0.70331603,
-      "y": 0.38726288,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 56,
-      "x": 0.543078,
-      "y": 0.67843205,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
       "iconType": 56,
       "x": 0.37480512,
       "y": 0.7449996,
@@ -323,6 +316,13 @@
       "x": 0.14389616,
       "y": 0.44018567,
       "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.34101012,
+      "y": 0.7204225,
+      "flags": 0
     }
   ],
   "mapTextItems": [
@@ -331,7 +331,7 @@
       "x": 0.44412765,
       "y": 0.3227743,
       "mapMarkerType": "Major",
-      "location": 23
+      "location": 24
     },
     {
       "text": "Camp Eos",
@@ -368,7 +368,7 @@
       "x": 0.15061852,
       "y": 0.36391303,
       "mapMarkerType": "Major",
-      "location": 22
+      "location": 21
     },
     {
       "text": "Elksford",
@@ -394,14 +394,14 @@
       "x": 0.70212996,
       "y": 0.8482764,
       "mapMarkerType": "Major",
-      "location": 24
+      "location": 26
     },
     {
       "text": "Harpy",
       "x": 0.44333068,
       "y": 0.9163655,
       "mapMarkerType": "Major",
-      "location": 24
+      "location": 25
     },
     {
       "text": "Hookhall",
@@ -420,14 +420,14 @@
       "x": 0.70420206,
       "y": 0.3878927,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 23
     },
     {
       "text": "Limestone Holdfast",
       "x": 0.29389253,
       "y": 0.15557751,
       "mapMarkerType": "Major",
-      "location": 25
+      "location": 27
     },
     {
       "text": "Mac Conaill's Pass",
@@ -440,14 +440,14 @@
       "x": 0.8401006,
       "y": 0.53316337,
       "mapMarkerType": "Major",
-      "location": 21
+      "location": 22
     },
     {
       "text": "Nightchurch",
       "x": 0.37822467,
       "y": 0.74487805,
       "mapMarkerType": "Major",
-      "location": 20
+      "location": 25
     },
     {
       "text": "Pitfall",
@@ -466,7 +466,7 @@
       "x": 0.54468614,
       "y": 0.67606056,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 28
     },
     {
       "text": "Scorpion",
@@ -479,7 +479,7 @@
       "x": 0.74158484,
       "y": 0.5578975,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 28
     },
     {
       "text": "The Bait",
@@ -554,6 +554,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667335919766,
-  "version": 393
+  "lastUpdated": 1667342581755,
+  "version": 436
 }

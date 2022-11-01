@@ -236,6 +236,13 @@
     {
       "teamId": "WARDENS",
       "iconType": 28,
+      "x": 0.640971,
+      "y": 0.43382138,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 28,
       "x": 0.5254052,
       "y": 0.49994925,
       "flags": 0
@@ -245,6 +252,13 @@
       "iconType": 28,
       "x": 0.64565635,
       "y": 0.22690324,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 28,
+      "x": 0.22371623,
+      "y": 0.510616,
       "flags": 0
     },
     {
@@ -318,13 +332,6 @@
       "flags": 8
     },
     {
-      "teamId": "COLONIALS",
-      "iconType": 56,
-      "x": 0.7848051,
-      "y": 0.5246711,
-      "flags": 8
-    },
-    {
       "teamId": "WARDENS",
       "iconType": 58,
       "x": 0.38916466,
@@ -337,13 +344,6 @@
       "x": 0.4635182,
       "y": 0.5267577,
       "flags": 41
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 56,
-      "x": 0.39192638,
-      "y": 0.7305457,
-      "flags": 8
     },
     {
       "teamId": "WARDENS",
@@ -365,27 +365,6 @@
       "x": 0.2945573,
       "y": 0.45483953,
       "flags": 8
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 47,
-      "x": 0.6756619,
-      "y": 0.64609945,
-      "flags": 8
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 28,
-      "x": 0.22371623,
-      "y": 0.510616,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 28,
-      "x": 0.640971,
-      "y": 0.43382138,
-      "flags": 0
     },
     {
       "teamId": "NONE",
@@ -420,6 +399,27 @@
       "iconType": 33,
       "x": 0.36748582,
       "y": 0.25986293,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 47,
+      "x": 0.6756619,
+      "y": 0.64609945,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 56,
+      "x": 0.7848051,
+      "y": 0.5246711,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 56,
+      "x": 0.39192638,
+      "y": 0.7305457,
       "flags": 0
     },
     {
@@ -463,7 +463,7 @@
       "x": 0.38920873,
       "y": 0.73095393,
       "mapMarkerType": "Major",
-      "location": 48
+      "location": 50
     },
     {
       "text": "Bident Crossroads",
@@ -476,7 +476,7 @@
       "x": 0.38849574,
       "y": 0.3066156,
       "mapMarkerType": "Major",
-      "location": 46
+      "location": 47
     },
     {
       "text": "Cat Step",
@@ -495,7 +495,7 @@
       "x": 0.46337467,
       "y": 0.52302,
       "mapMarkerType": "Major",
-      "location": 47
+      "location": 48
     },
     {
       "text": "Fort Ember",
@@ -509,7 +509,7 @@
       "x": 0.77422845,
       "y": 0.5360584,
       "mapMarkerType": "Major",
-      "location": 45
+      "location": 46
     },
     {
       "text": "Heart of Rites",
@@ -547,7 +547,7 @@
       "x": 0.6703404,
       "y": 0.20176351,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 45
     },
     {
       "text": "Peripti Landing",
@@ -579,14 +579,14 @@
       "x": 0.67093605,
       "y": 0.6439194,
       "mapMarkerType": "Major",
-      "location": 52
+      "location": 50
     },
     {
       "text": "The Three Sisters",
       "x": 0.684986,
       "y": 0.3528056,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 46
     },
     {
       "text": "Torch of Demeter",
@@ -595,6 +595,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667335971233,
-  "version": 61
+  "lastUpdated": 1667342423192,
+  "version": 136
 }

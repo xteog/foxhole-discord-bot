@@ -159,13 +159,6 @@
     {
       "teamId": "COLONIALS",
       "iconType": 56,
-      "x": 0.19712242,
-      "y": 0.2771197,
-      "flags": 8
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 56,
       "x": 0.36178783,
       "y": 0.7547044,
       "flags": 8
@@ -231,6 +224,13 @@
       "iconType": 17,
       "x": 0.35394865,
       "y": 0.7420829,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 56,
+      "x": 0.19712242,
+      "y": 0.2771197,
       "flags": 0
     },
     {
@@ -348,7 +348,7 @@
       "x": 0.35385895,
       "y": 0.7248818,
       "mapMarkerType": "Major",
-      "location": 23
+      "location": 22
     },
     {
       "text": "Lingering Lashes",
@@ -380,14 +380,14 @@
       "x": 0.5252302,
       "y": 0.6481513,
       "mapMarkerType": "Major",
-      "location": 24
+      "location": 23
     },
     {
       "text": "Sc\u00e1th Passing",
       "x": 0.34909955,
       "y": 0.53184307,
       "mapMarkerType": "Major",
-      "location": 27
+      "location": 26
     },
     {
       "text": "Sioc Approach",
@@ -406,7 +406,7 @@
       "x": 0.19406947,
       "y": 0.33073047,
       "mapMarkerType": "Major",
-      "location": 22
+      "location": 26
     },
     {
       "text": "Soured Fields",
@@ -419,7 +419,7 @@
       "x": 0.45544657,
       "y": 0.7847246,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 25
     },
     {
       "text": "The Key",
@@ -438,14 +438,14 @@
       "x": 0.72713715,
       "y": 0.68313295,
       "mapMarkerType": "Major",
-      "location": 25
+      "location": 24
     },
     {
       "text": "The Procession",
       "x": 0.7513888,
       "y": 0.43929663,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 27
     },
     {
       "text": "The Rust Road",
@@ -485,6 +485,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667335844600,
-  "version": 623
+  "lastUpdated": 1667340544622,
+  "version": 627
 }

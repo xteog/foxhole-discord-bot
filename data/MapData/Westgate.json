@@ -122,6 +122,13 @@
       "flags": 0
     },
     {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.8761802,
+      "y": 0.44467622,
+      "flags": 0
+    },
+    {
       "teamId": "COLONIALS",
       "iconType": 39,
       "x": 0.6551737,
@@ -259,13 +266,6 @@
       "iconType": 53,
       "x": 0.59991884,
       "y": 0.7233288,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.8761802,
-      "y": 0.44467622,
       "flags": 0
     },
     {
@@ -462,7 +462,7 @@
       "x": 0.46443552,
       "y": 0.27771717,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 31
     },
     {
       "text": "Inkwell Lane",
@@ -487,35 +487,35 @@
       "x": 0.64355624,
       "y": 0.41088805,
       "mapMarkerType": "Major",
-      "location": 24
+      "location": 25
     },
     {
       "text": "Longstone",
       "x": 0.6454746,
       "y": 0.7234395,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 29
     },
     {
       "text": "Lord's Mouth",
       "x": 0.82933867,
       "y": 0.4307491,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 27
     },
     {
       "text": "Lost Partition",
       "x": 0.8150013,
       "y": 0.5756538,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 33
     },
     {
       "text": "Rancher's Fast",
       "x": 0.69447815,
       "y": 0.18181983,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 34
     },
     {
       "text": "Reaver's Cove",
@@ -534,7 +534,7 @@
       "x": 0.23537217,
       "y": 0.26691732,
       "mapMarkerType": "Major",
-      "location": 25
+      "location": 26
     },
     {
       "text": "S\u00edoch\u00e1na Valley",
@@ -571,7 +571,7 @@
       "x": 0.3637351,
       "y": 0.1061458,
       "mapMarkerType": "Major",
-      "location": 27
+      "location": 28
     },
     {
       "text": "The Hem",
@@ -620,7 +620,7 @@
       "x": 0.59599173,
       "y": 0.56367874,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 30
     },
     {
       "text": "Wire Road",
@@ -633,16 +633,16 @@
       "x": 0.29039592,
       "y": 0.81640434,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 32
     },
     {
       "text": "Zeus' Demise",
       "x": 0.4019617,
       "y": 0.7723668,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 35
     }
   ],
-  "lastUpdated": 1667336242709,
-  "version": 427
+  "lastUpdated": 1667342208916,
+  "version": 453
 }
