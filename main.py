@@ -176,9 +176,9 @@ def switch(map, newTeam, oldTeam, index, flag):
           return msg[0].format(' è stato conquistato dai Wardens'), 0
     else:
       if oldTeam == 'COLONIALS':
-          return msg[0].format(' ha fatto BOOM!'), 0
-        else:
-          return msg[1].format(' ha fatto BOOM!'), 1
+        return msg[0].format(' ha fatto BOOM!'), 0
+      else:
+        return msg[1].format(' ha fatto BOOM!'), 1
   except:
     print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n', msg, '\n')
     client.get_channel(defs.DB['errorChannel']).send(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n', msg, '\n')
