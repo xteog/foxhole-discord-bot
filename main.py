@@ -267,9 +267,7 @@ if __name__ == '__main__':
   client = MyClient(intents=discord.Intents.default())
   tree= app_commands.CommandTree(client)
   updt()
-  client.run(defs.DB['Token'])
-
-
+  
   @tree.command(name='presenze', description='Crea un annuncio per reclutare', guild=discord.Object(id=client.server))
   @discord.app_commands.describe(mode='Vuoi creare un nuovo annuncio o stampare la lista delle presenze?')
   @discord.app_commands.choices(mode=[
@@ -347,3 +345,4 @@ if __name__ == '__main__':
 
     #DB['startWar'] = requests.get(DB['warReport']).json()['conquestStartTime']
 
+  client.run(defs.DB['Token'])

@@ -131,13 +131,6 @@
     {
       "teamId": "WARDENS",
       "iconType": 35,
-      "x": 0.40008572,
-      "y": 0.7482736,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 35,
       "x": 0.4232666,
       "y": 0.48534837,
       "flags": 0
@@ -316,6 +309,13 @@
       "x": 0.33866987,
       "y": 0.17896526,
       "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.40008572,
+      "y": 0.7482736,
+      "flags": 0
     }
   ],
   "mapTextItems": [
@@ -330,7 +330,7 @@
       "x": 0.73673666,
       "y": 0.7660624,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 28
     },
     {
       "text": "Gallant Gough Boulevard",
@@ -343,14 +343,14 @@
       "x": 0.35991466,
       "y": 0.58879375,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 29
     },
     {
       "text": "Lathair",
       "x": 0.7258961,
       "y": 0.3119082,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 27
     },
     {
       "text": "Merciful Strait",
@@ -375,14 +375,14 @@
       "x": 0.8370126,
       "y": 0.4868126,
       "mapMarkerType": "Major",
-      "location": 22
+      "location": 21
     },
     {
       "text": "Rotdust",
       "x": 0.5856841,
       "y": 0.15178874,
       "mapMarkerType": "Major",
-      "location": 23
+      "location": 22
     },
     {
       "text": "Solas Burn",
@@ -395,7 +395,7 @@
       "x": 0.22958569,
       "y": 0.62841123,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 29
     },
     {
       "text": "The Drone",
@@ -408,7 +408,7 @@
       "x": 0.40840903,
       "y": 0.7184508,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 25
     },
     {
       "text": "The Great Scale",
@@ -421,21 +421,21 @@
       "x": 0.38268816,
       "y": 0.8845894,
       "mapMarkerType": "Major",
-      "location": 27
+      "location": 26
     },
     {
       "text": "The Long Whine",
       "x": 0.35783502,
       "y": 0.209964,
       "mapMarkerType": "Major",
-      "location": 23
+      "location": 22
     },
     {
       "text": "The Prairie Bazaar",
       "x": 0.6143232,
       "y": 0.7404008,
       "mapMarkerType": "Major",
-      "location": 24
+      "location": 23
     },
     {
       "text": "The River Mercy",
@@ -448,9 +448,9 @@
       "x": 0.46410957,
       "y": 0.45022747,
       "mapMarkerType": "Major",
-      "location": 25
+      "location": 24
     }
   ],
-  "lastUpdated": 1667384113575,
-  "version": 1031
+  "lastUpdated": 1667386935601,
+  "version": 1035
 }

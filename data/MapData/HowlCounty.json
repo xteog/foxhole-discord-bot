@@ -157,24 +157,10 @@
       "flags": 0
     },
     {
-      "teamId": "COLONIALS",
-      "iconType": 27,
-      "x": 0.5072157,
-      "y": 0.41324982,
-      "flags": 0
-    },
-    {
       "teamId": "WARDENS",
       "iconType": 58,
       "x": 0.58699214,
       "y": 0.8203939,
-      "flags": 8
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 56,
-      "x": 0.17519066,
-      "y": 0.4598348,
       "flags": 8
     },
     {
@@ -189,6 +175,20 @@
       "iconType": 45,
       "x": 0.8696847,
       "y": 0.41455504,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 46,
+      "x": 0.40207046,
+      "y": 0.38336754,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 46,
+      "x": 0.3443274,
+      "y": 0.85582066,
       "flags": 8
     },
     {
@@ -235,6 +235,13 @@
     },
     {
       "teamId": "NONE",
+      "iconType": 27,
+      "x": 0.5072157,
+      "y": 0.41324982,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
       "iconType": 17,
       "x": 0.7107488,
       "y": 0.30437547,
@@ -263,23 +270,16 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 46,
-      "x": 0.3443274,
-      "y": 0.85582066,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 46,
-      "x": 0.40207046,
-      "y": 0.38336754,
+      "iconType": 56,
+      "x": 0.4006652,
+      "y": 0.64490956,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 56,
-      "x": 0.4006652,
-      "y": 0.64490956,
+      "x": 0.17519066,
+      "y": 0.4598348,
       "flags": 0
     },
     {
@@ -350,35 +350,35 @@
       "x": 0.8647111,
       "y": 0.41167375,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 24
     },
     {
       "text": "Fort Rider",
       "x": 0.35139802,
       "y": 0.85675204,
       "mapMarkerType": "Major",
-      "location": 23
+      "location": 26
     },
     {
       "text": "Great Warden Dam",
       "x": 0.6554019,
       "y": 0.35621113,
       "mapMarkerType": "Major",
-      "location": 25
+      "location": 23
     },
     {
       "text": "Hungry Wolf",
       "x": 0.17645623,
       "y": 0.46003953,
       "mapMarkerType": "Major",
-      "location": 24
+      "location": 25
     },
     {
       "text": "Little Lamb",
       "x": 0.5877111,
       "y": 0.81540585,
       "mapMarkerType": "Major",
-      "location": 23
+      "location": 22
     },
     {
       "text": "Sickleshire",
@@ -392,7 +392,7 @@
       "x": 0.40390867,
       "y": 0.38564897,
       "mapMarkerType": "Major",
-      "location": 24
+      "location": 25
     },
     {
       "text": "Snakewall",
@@ -405,7 +405,7 @@
       "x": 0.40042853,
       "y": 0.6461763,
       "mapMarkerType": "Major",
-      "location": 23
+      "location": 26
     },
     {
       "text": "The Hunting Grounds",
@@ -420,6 +420,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667384645279,
-  "version": 825
+  "lastUpdated": 1667387333317,
+  "version": 846
 }

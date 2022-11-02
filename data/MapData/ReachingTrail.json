@@ -123,9 +123,23 @@
     },
     {
       "teamId": "WARDENS",
+      "iconType": 56,
+      "x": 0.543078,
+      "y": 0.67843205,
+      "flags": 4
+    },
+    {
+      "teamId": "WARDENS",
       "iconType": 45,
       "x": 0.44212052,
       "y": 0.9175624,
+      "flags": 4
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 46,
+      "x": 0.70440733,
+      "y": 0.8502494,
       "flags": 4
     },
     {
@@ -134,20 +148,6 @@
       "x": 0.37080652,
       "y": 0.51586705,
       "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 56,
-      "x": 0.543078,
-      "y": 0.67843205,
-      "flags": 8
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 56,
-      "x": 0.15210344,
-      "y": 0.36358878,
-      "flags": 8
     },
     {
       "teamId": "COLONIALS",
@@ -168,13 +168,6 @@
       "iconType": 56,
       "x": 0.4481316,
       "y": 0.3247305,
-      "flags": 8
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 46,
-      "x": 0.70440733,
-      "y": 0.8502494,
       "flags": 8
     },
     {
@@ -266,6 +259,13 @@
       "iconType": 56,
       "x": 0.70331603,
       "y": 0.38726288,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 56,
+      "x": 0.15210344,
+      "y": 0.36358878,
       "flags": 0
     },
     {
@@ -368,7 +368,7 @@
       "x": 0.15061852,
       "y": 0.36391303,
       "mapMarkerType": "Major",
-      "location": 20
+      "location": 22
     },
     {
       "text": "Elksford",
@@ -394,14 +394,14 @@
       "x": 0.70212996,
       "y": 0.8482764,
       "mapMarkerType": "Major",
-      "location": 24
+      "location": 21
     },
     {
       "text": "Harpy",
       "x": 0.44333068,
       "y": 0.9163655,
       "mapMarkerType": "Major",
-      "location": 19
+      "location": 22
     },
     {
       "text": "Hookhall",
@@ -447,7 +447,7 @@
       "x": 0.37822467,
       "y": 0.74487805,
       "mapMarkerType": "Major",
-      "location": 19
+      "location": 22
     },
     {
       "text": "Pitfall",
@@ -466,7 +466,7 @@
       "x": 0.54468614,
       "y": 0.67606056,
       "mapMarkerType": "Major",
-      "location": 19
+      "location": 22
     },
     {
       "text": "Scorpion",
@@ -554,6 +554,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667385107687,
-  "version": 685
+  "lastUpdated": 1667387007684,
+  "version": 695
 }

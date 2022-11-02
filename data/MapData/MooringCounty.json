@@ -290,7 +290,7 @@
       "flags": 8
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 46,
       "x": 0.7697609,
       "y": 0.7909584,
@@ -453,6 +453,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667383615186,
-  "version": 278
+  "lastUpdated": 1667386591190,
+  "version": 287
 }
