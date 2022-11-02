@@ -208,13 +208,6 @@
     {
       "teamId": "COLONIALS",
       "iconType": 59,
-      "x": 0.53910005,
-      "y": 0.39388785,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 59,
       "x": 0.36199483,
       "y": 0.115549326,
       "flags": 0
@@ -413,14 +406,14 @@
       "x": 0.39372203,
       "y": 0.40942293,
       "mapMarkerType": "Major",
-      "location": 53
+      "location": 52
     },
     {
       "text": "Barrony Ranch",
       "x": 0.3733477,
       "y": 0.1098376,
       "mapMarkerType": "Major",
-      "location": 52
+      "location": 51
     },
     {
       "text": "Barrony Road",
@@ -445,7 +438,7 @@
       "x": 0.24315597,
       "y": 0.43437782,
       "mapMarkerType": "Major",
-      "location": 48
+      "location": 47
     },
     {
       "text": "Erimos Ranch",
@@ -458,14 +451,14 @@
       "x": 0.75807965,
       "y": 0.3792637,
       "mapMarkerType": "Major",
-      "location": 55
+      "location": 54
     },
     {
       "text": "Greenfield Orchard",
       "x": 0.7317328,
       "y": 0.20453982,
       "mapMarkerType": "Major",
-      "location": 46
+      "location": 45
     },
     {
       "text": "Harvester's Range",
@@ -508,7 +501,7 @@
       "x": 0.8278165,
       "y": 0.4906847,
       "mapMarkerType": "Major",
-      "location": 47
+      "location": 46
     },
     {
       "text": "Pandora Compound",
@@ -521,7 +514,7 @@
       "x": 0.65262276,
       "y": 0.8350459,
       "mapMarkerType": "Major",
-      "location": 49
+      "location": 48
     },
     {
       "text": "Providence Field",
@@ -534,14 +527,14 @@
       "x": 0.6491603,
       "y": 0.4668125,
       "mapMarkerType": "Major",
-      "location": 51
+      "location": 50
     },
     {
       "text": "The Breach",
       "x": 0.36424437,
       "y": 0.2708485,
       "mapMarkerType": "Major",
-      "location": 50
+      "location": 49
     },
     {
       "text": "The Fuming Pen",
@@ -560,7 +553,7 @@
       "x": 0.54745007,
       "y": 0.24971269,
       "mapMarkerType": "Major",
-      "location": 54
+      "location": 53
     },
     {
       "text": "The Rollcage",
@@ -587,6 +580,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667338514552,
-  "version": 28
+  "lastUpdated": 1667384411282,
+  "version": 45
 }

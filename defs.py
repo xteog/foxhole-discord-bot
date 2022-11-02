@@ -15,7 +15,7 @@ DB = {
 	'warReport': 'https://war-service-live.foxholeservices.com/api/worldconquest/war',
 	'Token': 'ODgxNjMyODI5NTQ3NjQyOTcy.GCb_U4.AcOcHxTXWm0jU2YVo4MziJ1PosDHj2LGxDUCmg',
 	'startWar': 1664389802386,
-  'iconFilter': [45, 46, 47, 56, 57, 58, 59, 60],
+  'iconFilter': [45, 46, 47, 56, 57, 58, 59, 60, 37],
   'permission': [493028834640396289, 256556507460534273, 296350639611445248, 353826723550461972, 329637567693848580, 305342466545025025],
   'emojis': {
               'ColonialLogo': ['ColonialFaction', 1030064520418295818], 

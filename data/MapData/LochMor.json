@@ -80,6 +80,13 @@
       "flags": 0
     },
     {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.17602023,
+      "y": 0.52461195,
+      "flags": 0
+    },
+    {
       "teamId": "COLONIALS",
       "iconType": 28,
       "x": 0.50903887,
@@ -98,7 +105,7 @@
       "iconType": 56,
       "x": 0.48602152,
       "y": 0.42252004,
-      "flags": 9
+      "flags": 41
     },
     {
       "teamId": "COLONIALS",
@@ -147,13 +154,6 @@
       "iconType": 38,
       "x": 0.6477338,
       "y": 0.17167453,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.17602023,
-      "y": 0.52461195,
       "flags": 0
     },
     {
@@ -283,14 +283,14 @@
       "x": 0.20417798,
       "y": 0.5151306,
       "mapMarkerType": "Major",
-      "location": 18
+      "location": 19
     },
     {
       "text": "Mercy's Wish",
       "x": 0.45450157,
       "y": 0.13036008,
       "mapMarkerType": "Major",
-      "location": 12
+      "location": 13
     },
     {
       "text": "Missing Bones",
@@ -303,7 +303,7 @@
       "x": 0.77075344,
       "y": 0.5080013,
       "mapMarkerType": "Major",
-      "location": 14
+      "location": 15
     },
     {
       "text": "Ousterdown",
@@ -352,21 +352,21 @@
       "x": 0.5841027,
       "y": 0.75919765,
       "mapMarkerType": "Major",
-      "location": 15
+      "location": 16
     },
     {
       "text": "Tomb of the First",
       "x": 0.26635438,
       "y": 0.20696227,
       "mapMarkerType": "Major",
-      "location": 17
+      "location": 18
     },
     {
       "text": "Westmarch",
       "x": 0.62941134,
       "y": 0.15675731,
       "mapMarkerType": "Major",
-      "location": 16
+      "location": 17
     },
     {
       "text": "Widow's Wail",
@@ -375,6 +375,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667340534896,
-  "version": 415
+  "lastUpdated": 1667383939545,
+  "version": 457
 }

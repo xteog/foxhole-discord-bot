@@ -130,6 +130,13 @@
     },
     {
       "teamId": "COLONIALS",
+      "iconType": 39,
+      "x": 0.66272277,
+      "y": 0.17271972,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 17,
       "x": 0.51785827,
       "y": 0.79419154,
@@ -145,9 +152,16 @@
     {
       "teamId": "COLONIALS",
       "iconType": 18,
+      "x": 0.71848255,
+      "y": 0.16782372,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 18,
       "x": 0.7333309,
       "y": 0.50530934,
-      "flags": 4
+      "flags": 0
     },
     {
       "teamId": "COLONIALS",
@@ -249,23 +263,9 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 39,
-      "x": 0.66272277,
-      "y": 0.17271972,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
       "iconType": 33,
       "x": 0.27078268,
       "y": 0.55164945,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 18,
-      "x": 0.71848255,
-      "y": 0.16782372,
       "flags": 0
     },
     {
@@ -315,7 +315,7 @@
       "x": 0.27000988,
       "y": 0.52244484,
       "mapMarkerType": "Major",
-      "location": 24
+      "location": 26
     },
     {
       "text": "Dullahan's Crest",
@@ -334,21 +334,21 @@
       "x": 0.5164818,
       "y": 0.7780801,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 28
     },
     {
       "text": "Frostmarch",
       "x": 0.15492144,
       "y": 0.4631941,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 33
     },
     {
       "text": "Huntsfort",
       "x": 0.48584694,
       "y": 0.5349745,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 31
     },
     {
       "text": "Kirkyard",
@@ -361,14 +361,14 @@
       "x": 0.34740227,
       "y": 0.688721,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 32
     },
     {
       "text": "Port of Rime",
       "x": 0.68206143,
       "y": 0.12976617,
       "mapMarkerType": "Major",
-      "location": 27
+      "location": 29
     },
     {
       "text": "Revenant's Path",
@@ -387,14 +387,14 @@
       "x": 0.38944197,
       "y": 0.30851248,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 34
     },
     {
       "text": "Spirit Watch",
       "x": 0.6523898,
       "y": 0.7255189,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 30
     },
     {
       "text": "The Ivory Bank",
@@ -431,14 +431,14 @@
       "x": 0.46095482,
       "y": 0.157184,
       "mapMarkerType": "Major",
-      "location": 23
+      "location": 25
     },
     {
       "text": "Wightwalk",
       "x": 0.69054574,
       "y": 0.49786863,
       "mapMarkerType": "Major",
-      "location": 25
+      "location": 27
     },
     {
       "text": "Wraith's Gate",
@@ -447,6 +447,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667342519410,
-  "version": 104
+  "lastUpdated": 1667358926962,
+  "version": 112
 }

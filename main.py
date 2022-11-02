@@ -34,7 +34,7 @@ class MyClient(discord.Client):
       await asyncio.sleep(10)
       try:
         mapName = get_topic(self.get_channel(defs.DB['eventThread']))
-        for map in mapName:
+        for map in defs.MAP_NAME:
           list = []
           data = downloadData(map, 1)
           newData = data
@@ -47,7 +47,7 @@ class MyClient(discord.Client):
               for i in range(l):
                 j = search_item(oldData['mapItems'][i], newData['mapItems'])
                 flag = convert_to_bin(newData['mapItems'][j]['flags'])
-                if newData['mapItems'][j]['teamId'] != oldData['mapItems'][i]['teamId'] and flag[3] != '1':
+                if newData['mapItems'][j]['teamId'] != oldData['mapItems'][i]['teamId'] and flag[3] != '1' and (map in mapName or flag[1] == '1'):
                   list.append(j)
 
             if len(list) > 0:
@@ -148,10 +148,12 @@ def updt():
 def switch(map, newTeam, oldTeam, index, flag):
   message = ''
   data = read(defs.DB['mapData'].format(map))
-
+  nuke = False
   for item in data['mapTextItems']:
     if item['mapMarkerType'] == 'Major' and item['location'] == index:
       message = item['text']
+      if item['text'] == 'RocketSite':
+        nuke = True
   
   message = ' di ' + message + '{}'
   msg = [message, message]
@@ -175,10 +177,16 @@ def switch(map, newTeam, oldTeam, index, flag):
         else:
           return msg[0].format(' è stato conquistato dai Wardens'), 0
     else:
-      if oldTeam == 'COLONIALS':
-        return msg[0].format(' ha fatto BOOM!'), 0
+      if nuke:
+        if newTeam == 'COLONIALS':
+          return msg[1].format(' è stata lanciata!'), 1
+        else:
+          return msg[0].format(' è stata lanciata!'), 0
       else:
-        return msg[1].format(' ha fatto BOOM!'), 1
+        if oldTeam == 'COLONIALS':
+          return msg[0].format(' ha fatto boom'), 0
+        else:
+          return msg[1].format(' ha fatto boom'), 1
   except:
     print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n', msg, '\n')
     client.get_channel(defs.DB['errorChannel']).send(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n', msg, '\n')
@@ -246,10 +254,13 @@ def loading(i, len):
   return str
 
 
-client = MyClient(intents=discord.Intents.default())
-tree= app_commands.CommandTree(client)
-
 #@tree.command(name='help', description='test', guild=discord.Object(id=client.server))
+
+if __name__ == '__main__':
+  client = MyClient(intents=discord.Intents.default())
+  tree= app_commands.CommandTree(client)
+  updt()
+  client.run(defs.DB['Token'])
 
 
 @tree.command(name='presenze', description='Crea un annuncio per reclutare', guild=discord.Object(id=client.server))
@@ -329,8 +340,3 @@ async def reset(interaction: discord.Interaction):
 
   #DB['startWar'] = requests.get(DB['warReport']).json()['conquestStartTime']
 
-if __name__ == '__main__':
-  client = MyClient(intents=discord.Intents.default())
-  tree= app_commands.CommandTree(client)
-  updt()
-  client.run(defs.DB['Token'])
