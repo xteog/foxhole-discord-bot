@@ -77,12 +77,19 @@ class MyClient(discord.Client):
                 
                 description = icon + message
                 embed=discord.Embed(title=description, color=color)
+                
                 if newData[i]['teamId'] == 'COLONIALS':
-                  changeColor(Image.open(defs.DB['iconImage'].format(icon)), True).save(defs.PATH + '/data/tempIcon.png')
+                  color = 1
+                  if flag[1] == '1':
+                    color = 2
+                  changeColor(Image.open(defs.DB['iconImage'].format(icon)), color).save(defs.PATH + '/data/tempIcon.png')
                   fileIcon = discord.File(defs.PATH + '/data/tempIcon.png')
                   embed.set_image(url='attachment://tempIcon.png'.format(icon))
                 elif newData[i]['teamId'] == 'WARDENS':
-                  changeColor(Image.open(defs.DB['iconImage'].format(icon)), False).save(defs.PATH + '/data/tempIcon.png')
+                  color = 0
+                  if flag[1] == '1':
+                    color = 2
+                  changeColor(Image.open(defs.DB['iconImage'].format(icon)), color).save(defs.PATH + '/data/tempIcon.png')
                   fileIcon = discord.File(defs.PATH + '/data/tempIcon.png')
                   embed.set_image(url='attachment://tempIcon.png'.format(icon))
                 else:
@@ -263,80 +270,80 @@ if __name__ == '__main__':
   client.run(defs.DB['Token'])
 
 
-@tree.command(name='presenze', description='Crea un annuncio per reclutare', guild=discord.Object(id=client.server))
-@discord.app_commands.describe(mode='Vuoi creare un nuovo annuncio o stampare la lista delle presenze?')
-@discord.app_commands.choices(mode=[
-  discord.app_commands.Choice(name='new', value=0),
-  discord.app_commands.Choice(name='list_users', value=1)
-])
-async def presenze(interaction: discord.Interaction, mode: discord.app_commands.Choice[int]):
-  if interaction.user.id in defs.DB['permission']:
-    if mode.value:
-      list = classes.get_presenze()
-      str = '\n'.join(list)
-      await interaction.response.send_message(str, ephemeral=True)
+  @tree.command(name='presenze', description='Crea un annuncio per reclutare', guild=discord.Object(id=client.server))
+  @discord.app_commands.describe(mode='Vuoi creare un nuovo annuncio o stampare la lista delle presenze?')
+  @discord.app_commands.choices(mode=[
+    discord.app_commands.Choice(name='new', value=0),
+    discord.app_commands.Choice(name='list_users', value=1)
+  ])
+  async def presenze(interaction: discord.Interaction, mode: discord.app_commands.Choice[int]):
+    if interaction.user.id in defs.DB['permission']:
+      if mode.value:
+        list = classes.get_presenze()
+        str = '\n'.join(list)
+        await interaction.response.send_message(str, ephemeral=True)
+      else:
+        await interaction.response.send_modal(classes.Presenze(  ))
     else:
-      await interaction.response.send_modal(classes.Presenze(  ))
-  else:
-    await interaction.response.send_message('Non hai i permessi', ephemeral=True)
+      await interaction.response.send_message('Non hai i permessi', ephemeral=True)
 
 
-@tree.command(name='annuncio', description='Crea un annuncio personalizzato', guild=discord.Object(id=client.server))
-@discord.app_commands.describe(
-  image="Vuoi inserire un'immagine? (Non ancora disponibile)"
-)
-@discord.app_commands.choices(image=[
-  discord.app_commands.Choice(name='yes', value=1),
-  discord.app_commands.Choice(name='no', value=0)
-])
-async def annuncio(interaction: discord.Interaction, image: discord.app_commands.Choice[int]):
-  if interaction.user.id in defs.DB['permission']:
-    await interaction.response.send_modal(classes.Annuncio(image))
-  else:
-    await interaction.response.send_message('Non hai i permessi', ephemeral=True)
-
-
-@tree.command(name='event_filter', description='Filtra gli eventi per regione', guild=discord.Object(id=client.server))
-async def filter(interaction: discord.Interaction):
-  if interaction.user.id in defs.DB['permission']:
-    view = discord.ui.View()
-    view.add_item(classes.EventFilter(client.get_channel(defs.DB['eventThread'])))
-    await interaction.response.send_message('Seleziona le regioni di interesse:', view=view, ephemeral=True)
-
-
-@tree.command(name='reset', description='Fai un reset del bot', guild=discord.Object(id=client.server))
-async def reset(interaction: discord.Interaction):
-  await client.change_presence(status=discord.Status.idle)
-  await interaction.response.defer(ephemeral=True, thinking=True)
-  #updateMapL()
-  mapName = defs.MAP_NAME
-
-  first = True
-  for map in mapName:
-    newData = downloadData(map, 2)
-    updateData(map, newData, 2)
-    setName(map)
-    if first:
-      str_1 = loading(mapName.index(map)+1, len(mapName))
-      await interaction.followup.send(f'Data {map} updated\n' + str_1)
-      first = False
+  @tree.command(name='annuncio', description='Crea un annuncio personalizzato', guild=discord.Object(id=client.server))
+  @discord.app_commands.describe(
+    image="Vuoi inserire un'immagine? (Non ancora disponibile)"
+  )
+  @discord.app_commands.choices(image=[
+    discord.app_commands.Choice(name='yes', value=1),
+    discord.app_commands.Choice(name='no', value=0)
+  ])
+  async def annuncio(interaction: discord.Interaction, image: discord.app_commands.Choice[int]):
+    if interaction.user.id in defs.DB['permission']:
+      await interaction.response.send_modal(classes.Annuncio(image))
     else:
-      str_1 = loading(mapName.index(map)+1, len(mapName))
-      await interaction.edit_original_response(content=f'Data {map} updated\n' + str_1)
-  print("Data updated")
-  str_1 = 'Data updated\n' + str_1 + '\n\n'
-  await interaction.edit_original_response(content=str_1)
+      await interaction.response.send_message('Non hai i permessi', ephemeral=True)
 
-  for map in mapName:
-    data = read(defs.DB['mapData'].format(map))
-    updateMap(map, data, -1)
-    str_2 = loading(mapName.index(map)+1, len(mapName))
-    await interaction.edit_original_response(content= str_1 + f'Map {map} updated\n' + str_2)
-  print("Maps updated")
-  str_2 = 'Maps updated\n' + str_2 + '\n\n'
-  await interaction.edit_original_response(content=str_1 + str_2 +'Reset e update dati effettuati')
-  await interaction.edit_original_response(content='Reset e update dati effettuati')
-  await client.change_presence(status=discord.Status.online)
 
-  #DB['startWar'] = requests.get(DB['warReport']).json()['conquestStartTime']
+  @tree.command(name='event_filter', description='Filtra gli eventi per regione', guild=discord.Object(id=client.server))
+  async def filter(interaction: discord.Interaction):
+    if interaction.user.id in defs.DB['permission']:
+      view = discord.ui.View()
+      view.add_item(classes.EventFilter(client.get_channel(defs.DB['eventThread'])))
+      await interaction.response.send_message('Seleziona le regioni di interesse:', view=view, ephemeral=True)
+
+
+  @tree.command(name='reset', description='Fai un reset del bot', guild=discord.Object(id=client.server))
+  async def reset(interaction: discord.Interaction):
+    await client.change_presence(status=discord.Status.idle)
+    await interaction.response.defer(ephemeral=True, thinking=True)
+    #updateMapL()
+    mapName = defs.MAP_NAME
+
+    first = True
+    for map in mapName:
+      newData = downloadData(map, 2)
+      updateData(map, newData, 2)
+      setName(map)
+      if first:
+        str_1 = loading(mapName.index(map)+1, len(mapName))
+        await interaction.followup.send(f'Data {map} updated\n' + str_1)
+        first = False
+      else:
+        str_1 = loading(mapName.index(map)+1, len(mapName))
+        await interaction.edit_original_response(content=f'Data {map} updated\n' + str_1)
+    print("Data updated")
+    str_1 = 'Data updated\n' + str_1 + '\n\n'
+    await interaction.edit_original_response(content=str_1)
+
+    for map in mapName:
+      data = read(defs.DB['mapData'].format(map))
+      updateMap(map, data, -1)
+      str_2 = loading(mapName.index(map)+1, len(mapName))
+      await interaction.edit_original_response(content= str_1 + f'Map {map} updated\n' + str_2)
+    print("Maps updated")
+    str_2 = 'Maps updated\n' + str_2 + '\n\n'
+    await interaction.edit_original_response(content=str_1 + str_2 +'Reset e update dati effettuati')
+    await interaction.edit_original_response(content='Reset e update dati effettuati')
+    await client.change_presence(status=discord.Status.online)
+
+    #DB['startWar'] = requests.get(DB['warReport']).json()['conquestStartTime']
 

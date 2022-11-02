@@ -74,10 +74,12 @@ def updateMap(map, data, index):
 
     
 def changeColor(img, color):
-	if color:
+	if color == 1:
 		color = (101, 135, 94)
-	else:
+	elif == 0:
 		color = (45, 108, 161)
+  else:
+    color = (255, 0, 0)
 
 	img = img.convert('RGBA')
 	for i in range(img.size[0]):
