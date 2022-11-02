@@ -76,8 +76,8 @@ def updateMap(map, data, index):
 def changeColor(img, color):
 	if color == 1:
 		color = (101, 135, 94)
-	elif color == 0:
-		color = (45, 108, 161)
+  elif color == 0:
+    color = (45, 108, 161)
   else:
     color = (255, 0, 0)
 
