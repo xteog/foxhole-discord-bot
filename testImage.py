@@ -74,22 +74,22 @@ def updateMap(map, data, index):
 
     
 def changeColor(img, color):
-	if color == 1:
-		color = (101, 135, 94)
+  if color == 1:
+    color = (101, 135, 94)
   elif color == 0:
     color = (45, 108, 161)
   else:
     color = (255, 0, 0)
 
-	img = img.convert('RGBA')
-	for i in range(img.size[0]):
-		for j in range(img.size[1]):
-			data = img.getpixel((i, j))
-			r = round(data[0] * color[0] / 255)
-			g = round(data[1] * color[1] / 255)
-			b = round(data[2] * color[2] / 255)
-			img.putpixel((i, j), (r, g, b, data[3]))
-	return img
+  img = img.convert('RGBA')
+  for i in range(img.size[0]):
+    for j in range(img.size[1]):
+      data = img.getpixel((i, j))
+      r = round(data[0] * color[0] / 255)
+      g = round(data[1] * color[1] / 255)
+      b = round(data[2] * color[2] / 255)
+      img.putpixel((i, j), (r, g, b, data[3]))
+  return img
 
 def addCircle(map, pos):
   mask = Image.open(defs.PATH + '/data/maskCircle.png')
