@@ -5,8 +5,22 @@
     {
       "teamId": "NONE",
       "iconType": 62,
-      "x": 0.7694743,
-      "y": 0.4419995,
+      "x": 0.21387227,
+      "y": 0.25196987,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 62,
+      "x": 0.69320506,
+      "y": 0.18569921,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 62,
+      "x": 0.3999942,
+      "y": 0.20271939,
       "flags": 0
     },
     {
@@ -18,30 +32,9 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 21,
-      "x": 0.39635402,
-      "y": 0.7764293,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 21,
-      "x": 0.3224324,
-      "y": 0.56172353,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 21,
-      "x": 0.21387227,
-      "y": 0.25196987,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 21,
-      "x": 0.8042891,
-      "y": 0.5911963,
+      "iconType": 23,
+      "x": 0.57537144,
+      "y": 0.81982183,
       "flags": 0
     },
     {
@@ -54,41 +47,27 @@
     {
       "teamId": "NONE",
       "iconType": 20,
-      "x": 0.3999942,
-      "y": 0.20271939,
+      "x": 0.39635402,
+      "y": 0.7764293,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 20,
-      "x": 0.57537144,
-      "y": 0.81982183,
+      "x": 0.3224324,
+      "y": 0.56172353,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 40,
-      "x": 0.75272274,
-      "y": 0.4101106,
+      "iconType": 20,
+      "x": 0.8042891,
+      "y": 0.5911963,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 40,
-      "x": 0.44884515,
-      "y": 0.17259422,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 40,
-      "x": 0.32877123,
-      "y": 0.6610838,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 40,
+      "iconType": 38,
       "x": 0.427404,
       "y": 0.4777981,
       "flags": 0
@@ -96,15 +75,8 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.441833,
-      "y": 0.17577246,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.7477925,
-      "y": 0.40400082,
+      "x": 0.34476656,
+      "y": 0.66468203,
       "flags": 0
     },
     {
@@ -124,8 +96,8 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.34476656,
-      "y": 0.66468203,
+      "x": 0.32877123,
+      "y": 0.6610838,
       "flags": 0
     },
     {
@@ -133,6 +105,34 @@
       "iconType": 38,
       "x": 0.4400694,
       "y": 0.47311112,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.7477925,
+      "y": 0.40400082,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.75272274,
+      "y": 0.4101106,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 32,
+      "x": 0.441833,
+      "y": 0.17577246,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 32,
+      "x": 0.44884515,
+      "y": 0.17259422,
       "flags": 0
     },
     {
@@ -154,13 +154,6 @@
       "iconType": 11,
       "x": 0.37638342,
       "y": 0.50607854,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 59,
-      "x": 0.650137,
-      "y": 0.60279095,
       "flags": 0
     },
     {
@@ -338,28 +331,28 @@
       "x": 0.26564604,
       "y": 0.27070302,
       "mapMarkerType": "Major",
-      "location": 45
+      "location": 44
     },
     {
       "text": "Cannonsmoke",
       "x": 0.44220516,
       "y": 0.64473647,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 41
     },
     {
       "text": "Climb",
       "x": 0.70969653,
       "y": 0.14353998,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 43
     },
     {
       "text": "Fort Matchwood",
       "x": 0.5452665,
       "y": 0.3911263,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 42
     },
     {
       "text": "Fragment Knolls",
@@ -378,21 +371,21 @@
       "x": 0.72171146,
       "y": 0.36718932,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 39
     },
     {
       "text": "Minos",
       "x": 0.36771578,
       "y": 0.47254315,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 38
     },
     {
       "text": "Penance",
       "x": 0.50271493,
       "y": 0.16619161,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 40
     },
     {
       "text": "Perish",
@@ -423,9 +416,9 @@
       "x": 0.77345693,
       "y": 0.56334525,
       "mapMarkerType": "Major",
-      "location": 46
+      "location": 45
     }
   ],
-  "lastUpdated": 1667386315250,
-  "version": 35
+  "lastUpdated": 1667900552875,
+  "version": 24
 }

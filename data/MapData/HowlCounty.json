@@ -12,36 +12,29 @@
     {
       "teamId": "NONE",
       "iconType": 62,
-      "x": 0.8879636,
-      "y": 0.4770344,
+      "x": 0.26093486,
+      "y": 0.4637867,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 21,
-      "x": 0.7251384,
-      "y": 0.23132752,
+      "iconType": 62,
+      "x": 0.68607414,
+      "y": 0.6848833,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 21,
-      "x": 0.3019024,
-      "y": 0.6747436,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 21,
+      "iconType": 62,
       "x": 0.37988946,
       "y": 0.4000858,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 21,
-      "x": 0.20819354,
-      "y": 0.68992794,
+      "iconType": 23,
+      "x": 0.38637376,
+      "y": 0.30075213,
       "flags": 0
     },
     {
@@ -54,34 +47,27 @@
     {
       "teamId": "NONE",
       "iconType": 20,
-      "x": 0.26093486,
-      "y": 0.4637867,
+      "x": 0.7251384,
+      "y": 0.23132752,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 20,
-      "x": 0.68607414,
-      "y": 0.6848833,
+      "x": 0.7679591,
+      "y": 0.7481054,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 40,
-      "x": 0.5927325,
-      "y": 0.8954642,
+      "iconType": 20,
+      "x": 0.3019024,
+      "y": 0.6747436,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 40,
-      "x": 0.7746947,
-      "y": 0.31774452,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 40,
+      "iconType": 38,
       "x": 0.7785622,
       "y": 0.322687,
       "flags": 0
@@ -89,29 +75,15 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.5809442,
-      "y": 0.8852897,
+      "x": 0.7746947,
+      "y": 0.31774452,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.7823887,
-      "y": 0.32747734,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.36125407,
-      "y": 0.6907297,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.36526906,
-      "y": 0.69566774,
+      "x": 0.123553544,
+      "y": 0.4780716,
       "flags": 0
     },
     {
@@ -126,6 +98,90 @@
       "iconType": 38,
       "x": 0.37598437,
       "y": 0.6999703,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.5927325,
+      "y": 0.8954642,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.36526906,
+      "y": 0.69566774,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.36125407,
+      "y": 0.6907297,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 32,
+      "x": 0.7823887,
+      "y": 0.32747734,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 32,
+      "x": 0.5809442,
+      "y": 0.8852897,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 39,
+      "x": 0.6969319,
+      "y": 0.2910977,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 19,
+      "x": 0.67292756,
+      "y": 0.3416182,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 11,
+      "x": 0.4259707,
+      "y": 0.62131894,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 17,
+      "x": 0.7107488,
+      "y": 0.30437547,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 34,
+      "x": 0.6786289,
+      "y": 0.29756513,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 34,
+      "x": 0.6766242,
+      "y": 0.31945783,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 33,
+      "x": 0.17227317,
+      "y": 0.4367275,
       "flags": 0
     },
     {
@@ -145,8 +201,29 @@
     {
       "teamId": "WARDENS",
       "iconType": 18,
+      "x": 0.6802918,
+      "y": 0.41028142,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
       "x": 0.6744367,
       "y": 0.4178591,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 12,
+      "x": 0.6987204,
+      "y": 0.3189155,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.6606295,
+      "y": 0.2796498,
       "flags": 0
     },
     {
@@ -158,23 +235,86 @@
     },
     {
       "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.18698996,
+      "y": 0.51337004,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.38294572,
+      "y": 0.6717408,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.71624094,
+      "y": 0.3535382,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 52,
+      "x": 0.69921887,
+      "y": 0.40080455,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 53,
+      "x": 0.66810733,
+      "y": 0.39630952,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 27,
+      "x": 0.5072157,
+      "y": 0.41324982,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
       "iconType": 58,
       "x": 0.58699214,
       "y": 0.8203939,
       "flags": 8
     },
     {
-      "teamId": "COLONIALS",
-      "iconType": 56,
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.4006652,
+      "y": 0.64490956,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.17519066,
+      "y": 0.4598348,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 58,
       "x": 0.6553357,
       "y": 0.35546395,
       "flags": 41
     },
     {
-      "teamId": "COLONIALS",
+      "teamId": "WARDENS",
       "iconType": 45,
       "x": 0.8696847,
       "y": 0.41455504,
+      "flags": 8
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 46,
+      "x": 0.3443274,
+      "y": 0.85582066,
       "flags": 8
     },
     {
@@ -186,150 +326,10 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 46,
-      "x": 0.3443274,
-      "y": 0.85582066,
-      "flags": 8
-    },
-    {
-      "teamId": "COLONIALS",
       "iconType": 47,
       "x": 0.6941384,
       "y": 0.6512489,
       "flags": 8
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 53,
-      "x": 0.66810733,
-      "y": 0.39630952,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 11,
-      "x": 0.4259707,
-      "y": 0.62131894,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 40,
-      "x": 0.123553544,
-      "y": 0.4780716,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 39,
-      "x": 0.6969319,
-      "y": 0.2910977,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 33,
-      "x": 0.17227317,
-      "y": 0.4367275,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 27,
-      "x": 0.5072157,
-      "y": 0.41324982,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 17,
-      "x": 0.7107488,
-      "y": 0.30437547,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 19,
-      "x": 0.67292756,
-      "y": 0.3416182,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 34,
-      "x": 0.6766242,
-      "y": 0.31945783,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 34,
-      "x": 0.6786289,
-      "y": 0.29756513,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 56,
-      "x": 0.4006652,
-      "y": 0.64490956,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 56,
-      "x": 0.17519066,
-      "y": 0.4598348,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 18,
-      "x": 0.6802918,
-      "y": 0.41028142,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 12,
-      "x": 0.6987204,
-      "y": 0.3189155,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.38294572,
-      "y": 0.6717408,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.18698996,
-      "y": 0.51337004,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.71624094,
-      "y": 0.3535382,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.6606295,
-      "y": 0.2796498,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 52,
-      "x": 0.69921887,
-      "y": 0.40080455,
-      "flags": 0
     }
   ],
   "mapTextItems": [
@@ -350,49 +350,49 @@
       "x": 0.8647111,
       "y": 0.41167375,
       "mapMarkerType": "Major",
-      "location": 24
+      "location": 43
     },
     {
       "text": "Fort Rider",
       "x": 0.35139802,
       "y": 0.85675204,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 44
     },
     {
       "text": "Great Warden Dam",
       "x": 0.6554019,
       "y": 0.35621113,
       "mapMarkerType": "Major",
-      "location": 23
+      "location": 42
     },
     {
       "text": "Hungry Wolf",
       "x": 0.17645623,
       "y": 0.46003953,
       "mapMarkerType": "Major",
-      "location": 25
+      "location": 41
     },
     {
       "text": "Little Lamb",
       "x": 0.5877111,
       "y": 0.81540585,
       "mapMarkerType": "Major",
-      "location": 22
+      "location": 39
     },
     {
       "text": "Sickleshire",
       "x": 0.69961804,
       "y": 0.65790194,
       "mapMarkerType": "Major",
-      "location": 27
+      "location": 46
     },
     {
       "text": "Slipgate Outpost",
       "x": 0.40390867,
       "y": 0.38564897,
       "mapMarkerType": "Major",
-      "location": 25
+      "location": 45
     },
     {
       "text": "Snakewall",
@@ -405,7 +405,7 @@
       "x": 0.40042853,
       "y": 0.6461763,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 40
     },
     {
       "text": "The Hunting Grounds",
@@ -420,6 +420,6 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667387333317,
-  "version": 846
+  "lastUpdated": 1667902482155,
+  "version": 88
 }

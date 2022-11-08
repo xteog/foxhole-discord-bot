@@ -1,3 +1,4 @@
+import main
 from testImage import highlight_name
 import defs
 import discord
@@ -146,8 +147,9 @@ class Annuncio(discord.ui.Modal, title='Annuncio'):
 
 
 class EventFilter(discord.ui.Select):
-    def __init__(self, channel):
-        self.channel = channel
+    def __init__(self, database, client):
+        self.database = database
+        self.client = client
         options = [discord.SelectOption(label='Tutte')]
         for map in defs.MAP_NAME[0:24]:
             desc = ''
@@ -169,14 +171,18 @@ class EventFilter(discord.ui.Select):
         with open(defs.DB['mapName'], 'w') as f:
             if 'Tutte' in self.values:
                 write(defs.DB['mapName'], defs.MAP_NAME)
-                await self.channel.edit(topic='Regioni di interesse:\nTutte')
+                self.database['map_filter'] = defs.MAP_NAME
+                await main.updt_database(self.database, self.client)
+                await self.client.eventChannel.edit(topic='Regioni di interesse:\nTutte')
                 await interaction.response.send_message('Regioni di interesse:\nTutte')
             else:
                 write(defs.DB['mapName'], self.values)
                 str = 'Regioni di interesse:\n' + self.values[0]
                 for i in range(1, len(self.values)):
                     str += ', ' + self.values[i]
-                await self.channel.edit(topic=str)
+                self.database['map_filter'] = self.values
+                await main.updt_database(self.database, self.client)
+                await self.client.eventChannel.edit(topic=str)
                 await interaction.response.send_message(str)
 
 

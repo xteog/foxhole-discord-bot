@@ -1,3 +1,4 @@
+import math
 from multiprocessing import Event
 import traceback
 import discord
@@ -9,12 +10,17 @@ import defs
 from PIL import Image
 import classes
 import asyncio
+import json
 
 
 class MyClient(discord.Client):
   def __init__(self, *args, **kwargs):
     super().__init__(*args, **kwargs)
     self.server = defs.DB['serverId']
+    self.errorChannel = None
+    self.depotChannel = None
+    self.eventChannel = None
+    self.dbChannel = None
 
 
   async def setup_hook(self) -> None:
@@ -23,101 +29,106 @@ class MyClient(discord.Client):
 
   async def on_ready(self):
     await tree.sync(guild = discord.Object(id=self.server))
-    print('We have logged in as {}'.format(self.user.name))
     await client.change_presence(status=discord.Status.online)
+    self.errorChannel = self.get_channel(defs.DB['errorChannel'])
+    self.depotChannel = self.get_channel(defs.DB['depotChannel'])
+    self.eventChannel = self.get_channel(defs.DB['eventChannel'])
+    self.dbChannel = self.get_channel(defs.DB['dataBaseChannel'])
+    print('We have logged in as {}'.format(self.user.name))
 
+
+  async def on_error(self):
+    print('Error')
+    await self.errorChannel.send(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
 
   async def background_task(self):
     await self.wait_until_ready()
+    await asyncio.sleep(30)
+    print('Background task started')
     while not self.is_closed():
-      
+      mapName = await get_database()
+      mapName = mapName['map_filter']
+      for map in defs.MAP_NAME:
+        list = []
+        newData = downloadData(map, 1)
+        oldData = read(defs.DB['mapData'].format(map))
+        
+        if newData['lastUpdated'] != oldData['lastUpdated']:
+          l = len(oldData['mapItems'])
+          for i in range(l):
+            j = search_item(oldData['mapItems'][i], newData['mapItems'])
+            flag = convert_to_bin(newData['mapItems'][j]['flags'])
+            if newData['mapItems'][j]['teamId'] != oldData['mapItems'][i]['teamId'] and flag[3] != '1' and (map in mapName or flag[1] == '1'):
+              list.append((i, j))
+
+        if len(list) > 0:
+          data = oldData
+          newData = newData['mapItems']
+          oldData = oldData['mapItems']
+          data['mapItems'] = newData
+          updateData(map, newData, 1)
+          updateMap(map, data, -1)
+          setName(map)
+          faction = search_faction(newData)
+          #TODO vanno aggioranti le locations prima di switch
+
+
+        for i, j in list:
+          if newData[j]['iconType'] in defs.DB['iconFilter']:
+
+            addCircle(map, (newData[j]['x'], newData[i]['y']))
+            icon = defs.ICON_ID[newData[j]['iconType']]
+            
+            flag = convert_to_bin(newData[j]['flags'])
+            if i == -1:
+              message, color = await switch(map, newData[j]['teamId'], '', j, flag)
+            elif j == -1:
+              message, color = await switch(map, '', oldData[i]['teamId'], j, flag)
+            else:
+              message, color = await switch(map, newData[j]['teamId'], oldData[i]['teamId'], j, flag)
+            
+            description = icon + message
+            embed=discord.Embed(title=description, color=color)
+            
+            if newData[j]['teamId'] == 'COLONIALS':
+              color = 1
+              if flag[1] == '1':
+                color = 2
+              changeColor(Image.open(defs.DB['iconImage'].format(icon)), color).save(defs.PATH + '/data/tempIcon.png')
+              fileIcon = discord.File(defs.PATH + '/data/tempIcon.png')
+              embed.set_image(url='attachment://tempIcon.png'.format(icon))
+            elif newData[j]['teamId'] == 'WARDENS':
+              color = 0
+              if flag[1] == '1':
+                color = 2
+              changeColor(Image.open(defs.DB['iconImage'].format(icon)), color).save(defs.PATH + '/data/tempIcon.png')
+              fileIcon = discord.File(defs.PATH + '/data/tempIcon.png')
+              embed.set_image(url='attachment://tempIcon.png'.format(icon))
+            else:
+              if flag[1] == '1':
+                changeColor(Image.open(defs.DB['iconImage'].format(icon)), 2).save(defs.PATH + '/data/tempIcon.png')
+              fileIcon = discord.File(defs.DB['iconImage'].format(icon))
+              embed.set_image(url='attachment://{}.png'.format(icon))
+            fileMap = discord.File(defs.PATH + '/data/tempImage.png')
+            
+            embed.set_thumbnail(url='attachment://tempImage.png')
+
+            if faction == None:
+              embed.set_author(name=map)
+              files = [fileMap, fileIcon]
+            else:
+              fileFaction = discord.File(defs.DB['iconImage'].format(faction))
+              embed.set_author(name=map, icon_url='attachment://{}.png'.format(faction))
+              files = [fileMap, fileIcon, fileFaction]
+
+            d, h, m = timeWar(data['lastUpdated'])
+            embed.set_footer(text = f'{d}d {h}h {m}m')
+
+            await client.eventChannel.send(files = files, embed=embed)
+
+        await asyncio.sleep(1)
       await asyncio.sleep(10)
-      try:
-        mapName = get_topic(self.get_channel(defs.DB['eventThread']))
-        for map in defs.MAP_NAME:
-          list = []
-          data = downloadData(map, 1)
-          newData = data
-          oldData = read(defs.DB['mapData'].format(map))
-          if oldData == 0: #aggiusta
-            updateData(map, newData, 1)
-          else:
-            if newData['lastUpdated'] != oldData['lastUpdated']:
-              l = len(oldData['mapItems'])
-              for i in range(l):
-                j = search_item(oldData['mapItems'][i], newData['mapItems'])
-                flag = convert_to_bin(newData['mapItems'][j]['flags'])
-                if newData['mapItems'][j]['teamId'] != oldData['mapItems'][i]['teamId'] and flag[3] != '1' and (map in mapName or flag[1] == '1'):
-                  list.append(j)
 
-            if len(list) > 0:
-              newData = newData['mapItems']
-              oldData = oldData['mapItems']
-              data = downloadData(map, 0)
-              data['mapItems'] = newData
-              updateData(map, newData, 1)
-              updateMap(map, data, -1)
-              faction = search_faction(newData)
-
-            for i in list:
-              if i >= 0 and newData[i]['iconType'] in defs.DB['iconFilter']:
-                channel = self.get_channel(defs.DB['eventThread'])
-
-                addCircle(map, (newData[i]['x'], newData[i]['y']))
-                icon = defs.ICON_ID[newData[i]['iconType']]
-                
-                j = search_item(newData[i], oldData)
-                flag = convert_to_bin(newData[i]['flags'])
-                message, color = switch(map, newData[i]['teamId'], oldData[j]['teamId'], i, flag)
-
-                if color:
-                  color = 0x65875E
-                else:
-                  color = 0x2D6CA1
-                
-                description = icon + message
-                embed=discord.Embed(title=description, color=color)
-                
-                if newData[i]['teamId'] == 'COLONIALS':
-                  color = 1
-                  if flag[1] == '1':
-                    color = 2
-                  changeColor(Image.open(defs.DB['iconImage'].format(icon)), color).save(defs.PATH + '/data/tempIcon.png')
-                  fileIcon = discord.File(defs.PATH + '/data/tempIcon.png')
-                  embed.set_image(url='attachment://tempIcon.png'.format(icon))
-                elif newData[i]['teamId'] == 'WARDENS':
-                  color = 0
-                  if flag[1] == '1':
-                    color = 2
-                  changeColor(Image.open(defs.DB['iconImage'].format(icon)), color).save(defs.PATH + '/data/tempIcon.png')
-                  fileIcon = discord.File(defs.PATH + '/data/tempIcon.png')
-                  embed.set_image(url='attachment://tempIcon.png'.format(icon))
-                else:
-                  fileIcon = discord.File(defs.DB['iconImage'].format(icon))
-                  embed.set_image(url='attachment://{}.png'.format(icon))
-                fileMap = discord.File(defs.PATH + '/data/tempImage.png')
-                
-                embed.set_thumbnail(url='attachment://tempImage.png')
-
-                if faction == None:
-                  embed.set_author(name=map)
-                  files = [fileMap, fileIcon]
-                else:
-                  fileFaction = discord.File(defs.DB['iconImage'].format(faction))
-                  embed.set_author(name=map, icon_url='attachment://{}.png'.format(faction))
-                  files = [fileMap, fileIcon, fileFaction]
-
-                d, h, m = timeWar(data['lastUpdated'])
-                embed.set_footer(text = f'{d}d {h}h {m}m')
-
-                await channel.send(files = files, embed=embed)
-
-
-          await asyncio.sleep(1)
-
-      except:
-        print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
-        self.get_channel(defs.DB['errorChannel']).send(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
 
   async def on_message(self, message):
     global presenze
@@ -152,62 +163,95 @@ def updt():
   #DB['startWar'] = requests.get(DB['warReport']).json()['conquestStartTime']
 
 
-def switch(map, newTeam, oldTeam, index, flag):
+async def switch(map, newTeam, oldTeam, index, flag):
+  collie = 0x65875E
+  warden = 0x2D6CA1
   message = ''
   data = read(defs.DB['mapData'].format(map))
   nuke = False
   for item in data['mapTextItems']:
     if item['mapMarkerType'] == 'Major' and item['location'] == index:
       message = item['text']
-      if item['text'] == 'RocketSite':
-        nuke = True
+  
+  if data['mapItems'][index]['iconType'] == 37:
+    type = 1
+  elif data['mapItems'][index]['iconType'] in (59, 60):
+    type = 2
+  else:
+    type = 0
   
   message = ' di ' + message + '{}'
   msg = [message, message]
-  if flag[5] == '1':
+  if flag[5] == '1' and newTeam != 'NONE':
     msg[0] = message + '\nLa regione {} è stata persa!'.format(map)
     msg[1] = message + '\nLa regione {} è stata conquistata!'.format(map)
 
-
-
   try:
-    #icona vicina a dove
-    if flag[1] != '1':
+    if type == 0:
       if newTeam == 'NONE':
-        if oldTeam == 'COLONIALS':
-          return msg[0].format(' è stato distrutto dai Wardens'), 0
+        if flag != '1':
+          if oldTeam == 'COLONIALS':
+            return msg[0].format(' è stato distrutto dai Wardens'), warden
+          else:
+            return msg[1].format(' è stato distrutto dai Colonials'), collie
         else:
-          return msg[1].format(' è stato distrutto dai Colonials'), 1
+          if oldTeam == 'COLONIALS':
+            return msg[0].format(' è stato distrutto da una nuke dei Wardens'), warden
+          else:
+            return msg[1].format(' è stato distrutto da una nuke dei Colonials'), collie
       else:
         if newTeam == 'COLONIALS':
-          return msg[1].format(' è stato conquistato dai Colonials'), 1
+          return msg[1].format(' è stato conquistato dai Colonials'), collie
         else:
-          return msg[0].format(' è stato conquistato dai Wardens'), 0
+          return msg[0].format(' è stato conquistato dai Wardens'), warden
+    elif type == 1:
+      print()
+    elif type == 2:
+      if newTeam == 'NONE':
+        if flag != '1':
+          if oldTeam == 'COLONIALS':
+            return msg[0].format(' è stato distrutto dai Wardens'), warden
+          else:
+            return msg[1].format(' è stato distrutto dai Colonials'), collie
+        else:
+          if oldTeam == 'COLONIALS':
+            return msg[0].format(' è stato distrutto da una nuke dei Wardens'), warden
+          else:
+            return msg[1].format(' è stato distrutto da una nuke dei Colonials'), collie
+      else:
+        if newTeam == 'COLONIALS':
+          return msg[1].format(' è stato costruito dai Colonials'), collie
+        else:
+          return msg[0].format(' è stato costruito dai Wardens'), warden
+
+
+    if flag[1] != '1':
+
+
+      if newTeam == 'NONE':
+        if oldTeam == 'COLONIALS':
+          return msg[0].format(' è stato distrutto dai Wardens'), warden
+        else:
+          return msg[1].format(' è stato distrutto dai Colonials'), collie
+      else:
+        if newTeam == 'COLONIALS':
+          return msg[1].format(' è stato conquistato dai Colonials'), collie
+        else:
+          return msg[0].format(' è stato conquistato dai Wardens'), warden
     else:
       if nuke:
         if newTeam == 'COLONIALS':
-          return msg[1].format(' è stata lanciata!'), 1
+          return msg[1].format(' è stata armata'), collie
         else:
-          return msg[0].format(' è stata lanciata!'), 0
+          return msg[0].format(' è stata armata'), warden
       else:
         if oldTeam == 'COLONIALS':
-          return msg[0].format(' ha fatto boom'), 0
+          return msg[0].format(' è stato distrutto da un nuke!'), collie
         else:
-          return msg[1].format(' ha fatto boom'), 1
+          return msg[1].format(' è stato distrutto da un nuke!'), warden
   except:
     print(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n', msg, '\n')
-    client.get_channel(defs.DB['errorChannel']).send(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n', msg, '\n')
-
-
-def get_topic(channel):
-  str = channel.topic
-  str = str.split('\n')[1]
-  list = str.split(', ')
-  maps = []
-  for map in defs.MAP_NAME:
-    if map in list:
-      maps.append(map)
-  return maps
+    await client.errorChannel.send(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n', msg, '\n')
 
 
 def timeWar(end):
@@ -246,7 +290,6 @@ def search_faction(data):
   return str
     
 
-
 def loading(i, len):
   j = 0
   str = '|'
@@ -261,13 +304,94 @@ def loading(i, len):
   return str
 
 
-#@tree.command(name='help', description='test', guild=discord.Object(id=client.server))
+def lev_dist(s, t):
+
+    v0 = [i for i in range(len(t)+1)]
+    v1 = [0]*(len(t)+1)
+
+    for i in range(len(s)):
+        v1[0] = i + 1
+        for j in range(len(t)):
+            deletionCost = v0[j + 1] + 1
+            insertionCost = v1[j] + 1
+            if s[i] == t[j]:
+              substitutionCost = v0[j]
+            else:
+              substitutionCost = v0[j] + 1
+
+            v1[j + 1] = min(deletionCost, insertionCost, substitutionCost)
+
+        temp = v0
+        v0 = v1
+        v1 = temp
+    return v0[-1]
+
+
+list = []
+for map in defs.MAP_NAME:
+    data = read(defs.DB['mapData'].format(map))
+    for i in range(len(data['mapItems'])):
+      if data['mapItems'][i]['iconType'] in [33, 52]:
+        min = 0
+        index = -1
+        for j in range(len(data['mapTextItems'])):
+          if data['mapTextItems'][j]['mapMarkerType'] == 'Major':
+            d = math.sqrt((data['mapItems'][i]['x'] - data['mapTextItems'][j]['x']) ** 2 + (data['mapItems'][i]['y'] - data['mapTextItems'][j]['y']) ** 2)
+            if min > d or index == -1:
+              min = d
+              index = j
+        if index != -1:
+          icon = data['mapItems'][i]['iconType']
+          list.append([data['mapTextItems'][index]['text'], map, 0, icon])
+del min
+
+
+async def location_autocomplete(interaction: discord.Interaction, current: str):
+  for i in range(len(list)):
+    
+    list[i][2] = lev_dist(current.lower(), list[i][0][0:min(len(current), len(list[i][0]))].lower())
+  
+  list_f = []
+  for i in range(5):
+    minimum = 0
+    for j in range(len(list)):
+      if list[minimum][2] > list[j][2]:
+        minimum = j
+    list[minimum][2] = 100
+    list_f.append(app_commands.Choice(name=f"{list[minimum][0]} ({defs.ICON_ID[list[minimum][3]]})", value=json.dumps(list[minimum])))
+  return list_f
+
+
+async def get_database():
+  msg = await client.dbChannel.fetch_message(client.dbChannel.last_message_id)
+  return json.loads(msg.content)
+
+
+async def get_depot(interaction: discord.Interaction, current: str):
+  l = []
+  data = await get_database()
+  for i in range(len(data['depots'])):
+    l.append(app_commands.Choice(name=f"{defs.ICON_ID[data['depots'][i]['iconType']]} a {data['depots'][i]['location']}({data['depots'][i]['map']})", value=i))
+  return l
+
+
+async def updt_database(data, client):
+  msg = await client.dbChannel.fetch_message(client.dbChannel.last_message_id)
+  if msg == None:
+    await client.dbChannel.send(content=json.dumps(data, indent=2))
+  else:
+    await msg.delete()
+    await client.dbChannel.send(content=json.dumps(data, indent=2))
+
 
 if __name__ == '__main__':
-  client = MyClient(intents=discord.Intents.default())
+  intents = discord.Intents.default()
+  intents.message_content = True
+  client = MyClient(intents=intents)
   tree= app_commands.CommandTree(client)
   updt()
   
+
   @tree.command(name='presenze', description='Crea un annuncio per reclutare', guild=discord.Object(id=client.server))
   @discord.app_commands.describe(mode='Vuoi creare un nuovo annuncio o stampare la lista delle presenze?')
   @discord.app_commands.choices(mode=[
@@ -305,12 +429,75 @@ if __name__ == '__main__':
   async def filter(interaction: discord.Interaction):
     if interaction.user.id in defs.DB['permission']:
       view = discord.ui.View()
-      view.add_item(classes.EventFilter(client.get_channel(defs.DB['eventThread'])))
+      view.add_item(classes.EventFilter(await get_database(), client))
       await interaction.response.send_message('Seleziona le regioni di interesse:', view=view, ephemeral=True)
+
+
+  @tree.command(name='depot_add', description='Aggiungi i dati di un deposito', guild=discord.Object(id=client.server))
+  @discord.app_commands.describe(
+    location='Inserisci la zona del depot',
+    name='Inserisci il nome della stockpile riservata',
+    passcode='Inserisci il codice della stockpile',
+    desc='Inserisci una descrizione (opzionale)'
+  )
+  @discord.app_commands.autocomplete(location=location_autocomplete)
+  async def deposito(interaction: discord.Interaction, location: str, name: str, passcode: str, desc: str=''):
+    data = await get_database()
+    location = json.loads(location)
+    data['depots'].append({'iconType': location[3], 'location': location[0], 'map': location[1], 'name': name, 'passcode':passcode, 'desc':desc})
+    depots = data['depots']
+
+    embed = discord.Embed(title='Lista depositi', description='Usa `/depot_add` per aggiungere un nuovo deposito.')
+    for d in depots:
+      emoji = defs.DB['emojis'][str(d['iconType'])]
+      embed.add_field(name=f"<:{emoji[0]}:{emoji[1]}> {defs.ICON_ID[d['iconType']]} a {d['location']}({d['map']})", value=f"Nome: `{d['name']}`\nPasscode: `{d['passcode']}`\n{d['desc']}", inline=False)
+
+    async for msg in client.depotChannel.history(limit=100):
+      if msg.id == data['depotListMsg']:
+        await msg.delete()
+    
+    await interaction.response.send_message('Deposito aggiunto', ephemeral=True)
+    await client.depotChannel.send(embed=embed)
+    data['depotListMsg'] = client.depotChannel.last_message_id
+
+    await updt_database(data, client)
+
+
+
+  @tree.command(name='depot_remove', description='Elimina un deposito', guild=discord.Object(id=client.server))
+  @discord.app_commands.describe(
+    depot='Seleziona un deposito da eliminare'
+  )
+  @discord.app_commands.autocomplete(depot=get_depot)
+  async def deposito(interaction: discord.Interaction, depot: int):
+    data = await get_database()
+    data['depots'].remove(data['depots'][depot])
+    depots = data['depots']
+
+    embed = discord.Embed(title='Lista depositi', description='Usa `/depot_add` per aggiungere un nuovo deposito.')
+    for d in depots:
+      emoji = defs.DB['emojis'][str(d['iconType'])]
+      embed.add_field(name=f"<:{emoji[0]}:{emoji[1]}> {defs.ICON_ID[d['iconType']]} a {d['location']} ({d['map']})", value=f"Nome: `{d['name']}`\nPasscode: `{d['passcode']}`\n{d['desc']}", inline=False)
+
+    async for msg in client.depotChannel.history(limit=100):
+      if msg.id == data['depotListMsg']:
+        await msg.delete()
+    
+    await interaction.response.send_message('Deposito rimosso', ephemeral=True)
+    await client.depotChannel.send(embed=embed)
+    data['depotListMsg'] = client.depotChannel.last_message_id
+
+    await updt_database(data, client)
 
 
   @tree.command(name='reset', description='Fai un reset del bot', guild=discord.Object(id=client.server))
   async def reset(interaction: discord.Interaction):
+    msg = await client.depotChannel.fetch_message(1038500564675346615)
+    await msg.delete()
+    msg = await client.depotChannel.fetch_message(1039483434516615190)
+    await msg.delete()
+    msg = await client.depotChannel.fetch_message(1039483519333842994)
+    await msg.delete()
     await client.change_presence(status=discord.Status.idle)
     await interaction.response.defer(ephemeral=True, thinking=True)
     #updateMapL()
@@ -344,5 +531,9 @@ if __name__ == '__main__':
     await client.change_presence(status=discord.Status.online)
 
     #DB['startWar'] = requests.get(DB['warReport']).json()['conquestStartTime']
+  
+  @tree.error
+  async def on_error(interaction: discord.Interaction, error: discord.app_commands.AppCommandError):
+    await client.errorChannel.send(error)
 
   client.run(defs.DB['Token'])

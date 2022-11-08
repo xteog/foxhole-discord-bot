@@ -1,4 +1,4 @@
-PATH = '.'
+PATH = '/app'
 DB = {
 	'mapName': PATH + '/data/mapName.json',
 	'iconId': PATH + '/data/iconId.json',
@@ -8,9 +8,11 @@ DB = {
 	'serverIcon': PATH + '/data/serverIcon.png',
 	'dynamicData': 'https://war-service-live.foxholeservices.com/api/worldconquest/maps/{}/dynamic/public',
 	'staticData': 'https://war-service-live.foxholeservices.com/api/worldconquest/maps/{}/static',
-	'eventThread': 1032345776300490882,
-  'serverId': 844513454835499041, #881632566589915177,
-  'errorThread': 1032428103861026897,
+	'eventChannel': 1032345776300490882,
+  'depotChannel': 856644848933011487,
+  'dataBaseChannel': 1038431534606209134,
+  'serverId': 844513454835499041,
+  'errorChannel': 1032428103861026897,
 	'mapReport': 'https://war-service-live.foxholeservices.com/api/worldconquest/warReport/{}',
 	'warReport': 'https://war-service-live.foxholeservices.com/api/worldconquest/war',
 	'Token': 'ODgxNjMyODI5NTQ3NjQyOTcy.GCb_U4.AcOcHxTXWm0jU2YVo4MziJ1PosDHj2LGxDUCmg',
@@ -20,6 +22,8 @@ DB = {
   'emojis': {
               'ColonialLogo': ['ColonialFaction', 1030064520418295818], 
               'WardenLogo': ['WardenFaction', 1030064521588506655],
+              '33': ['StorageFacilityColonial', 1039239759266062457],
+              '52': ['SeaportColonial', 1039239757533810749],
               '45': ['RelicBase', 1031540708978458674],
               '45C': ['RelicBaseColonial', 1030505659222986813],
               '45W': ['RelicBaseWarden', 1030505660317712459],
