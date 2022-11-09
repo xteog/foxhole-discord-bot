@@ -16,7 +16,7 @@ def updateData(map, newData, opt):
 
   write(defs.DB['mapData'].format(map), data)
 
-def downloadData(map, opt):
+def downloadData(map, opt, etag='"-1"'):
   url = [defs.DB['staticData'], defs.DB['dynamicData']]
   data = [0, 0, 0]
     
@@ -26,10 +26,17 @@ def downloadData(map, opt):
   if opt == 0:
     data = requests.get(url[0].format(map)).json()
   elif opt == 1:
-    data = requests.get(url[1].format(map)).json()
+    response, status = requests.get(url[1].format(map), headers={"If-None-Match": etag})
+    if status == 200:
+      data = response.json()
+      data['ETag'] = response.headers['ETag']
+    elif status == 304:
+      data = None
   elif opt == 2:
     static = requests.get(url[0].format(map)).json()
-    dynamic = requests.get(url[1].format(map)).json()
+    response = requests.get(url[1].format(map))
+    dynamic = response.json()
+    dynamic['Etag'] = response.headers['ETag']
     dynamic['mapTextItems'] = static['mapTextItems']
     data = dynamic
 

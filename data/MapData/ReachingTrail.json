@@ -110,13 +110,6 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.3551193,
-      "y": 0.7659329,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
       "x": 0.13617668,
       "y": 0.4275585,
       "flags": 0
@@ -284,6 +277,13 @@
     },
     {
       "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.3551193,
+      "y": 0.7659329,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
       "iconType": 37,
       "x": 0.29706043,
       "y": 0.7078255,
@@ -296,7 +296,7 @@
       "x": 0.44412765,
       "y": 0.3227743,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 32
     },
     {
       "text": "Camp Eos",
@@ -333,14 +333,14 @@
       "x": 0.15061852,
       "y": 0.36391303,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 34
     },
     {
       "text": "Elksford",
       "x": 0.33049652,
       "y": 0.4971746,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 29
     },
     {
       "text": "Featherfield",
@@ -359,14 +359,14 @@
       "x": 0.70212996,
       "y": 0.8482764,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 36
     },
     {
       "text": "Harpy",
       "x": 0.44333068,
       "y": 0.9163655,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 35
     },
     {
       "text": "Hookhall",
@@ -385,14 +385,14 @@
       "x": 0.70420206,
       "y": 0.3878927,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 33
     },
     {
       "text": "Limestone Holdfast",
       "x": 0.29389253,
       "y": 0.15557751,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 38
     },
     {
       "text": "Mac Conaill's Pass",
@@ -405,14 +405,14 @@
       "x": 0.8401006,
       "y": 0.53316337,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 31
     },
     {
       "text": "Nightchurch",
       "x": 0.37822467,
       "y": 0.74487805,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 28
     },
     {
       "text": "Pitfall",
@@ -431,7 +431,7 @@
       "x": 0.54468614,
       "y": 0.67606056,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 30
     },
     {
       "text": "Scorpion",
@@ -444,7 +444,7 @@
       "x": 0.74158484,
       "y": 0.5578975,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 37
     },
     {
       "text": "The Bait",
@@ -519,6 +519,7 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667903899081,
-  "version": 118
+  "lastUpdated": 1667948179005,
+  "version": 239,
+  "Etag": "\"239\""
 }

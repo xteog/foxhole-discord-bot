@@ -45,15 +45,19 @@ class MyClient(discord.Client):
     await self.wait_until_ready()
     await asyncio.sleep(30)
     print('Background task started')
+
     while not self.is_closed():
       mapName = await get_database()
       mapName = mapName['map_filter']
       for map in defs.MAP_NAME:
         list = []
-        newData = downloadData(map, 1)
         oldData = read(defs.DB['mapData'].format(map))
-        
-        if newData['lastUpdated'] != oldData['lastUpdated']:
+        newData = downloadData(map, 1, oldData['Etag'])
+
+        if newData != None:
+          data = await get_database()
+          data['download'] += 1
+          await updt_database(data, self)
           l = len(oldData['mapItems'])
           for i in range(l):
             j = search_item(oldData['mapItems'][i], newData['mapItems'])
@@ -62,11 +66,11 @@ class MyClient(discord.Client):
               list.append((i, j))
 
         if len(list) > 0:
-          data = oldData
+          data = newData
           newData = newData['mapItems']
           oldData = oldData['mapItems']
           data['mapItems'] = newData
-          updateData(map, newData, 1)
+          updateData(map, data, 2)
           updateMap(map, data, -1)
           setName(map)
           faction = search_faction(newData)
@@ -492,12 +496,6 @@ if __name__ == '__main__':
 
   @tree.command(name='reset', description='Fai un reset del bot', guild=discord.Object(id=client.server))
   async def reset(interaction: discord.Interaction):
-    msg = await client.depotChannel.fetch_message(1038500564675346615)
-    await msg.delete()
-    msg = await client.depotChannel.fetch_message(1039483434516615190)
-    await msg.delete()
-    msg = await client.depotChannel.fetch_message(1039483519333842994)
-    await msg.delete()
     await client.change_presence(status=discord.Status.idle)
     await interaction.response.defer(ephemeral=True, thinking=True)
     #updateMapL()

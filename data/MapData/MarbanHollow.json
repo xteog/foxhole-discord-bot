@@ -94,6 +94,13 @@
       "flags": 0
     },
     {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.7308563,
+      "y": 0.17182231,
+      "flags": 0
+    },
+    {
       "teamId": "WARDENS",
       "iconType": 39,
       "x": 0.53449374,
@@ -239,13 +246,6 @@
       "x": 0.80080825,
       "y": 0.47224522,
       "flags": 8
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.7308563,
-      "y": 0.17182231,
-      "flags": 0
     }
   ],
   "mapTextItems": [
@@ -266,7 +266,7 @@
       "x": 0.6373692,
       "y": 0.4179943,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 32
     },
     {
       "text": "Deepfleet Valley",
@@ -285,7 +285,7 @@
       "x": 0.6407603,
       "y": 0.8987701,
       "mapMarkerType": "Major",
-      "location": 27
+      "location": 28
     },
     {
       "text": "Lockheed Breakers",
@@ -304,7 +304,7 @@
       "x": 0.51757264,
       "y": 0.5214072,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 29
     },
     {
       "text": "Mount Mac Tire",
@@ -317,14 +317,14 @@
       "x": 0.71036744,
       "y": 0.11743515,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 30
     },
     {
       "text": "Oster Wall",
       "x": 0.7994043,
       "y": 0.47127146,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 34
     },
     {
       "text": "Pilgrimage",
@@ -337,7 +337,7 @@
       "x": 0.22553757,
       "y": 0.2721918,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 33
     },
     {
       "text": "Slender Cove",
@@ -368,9 +368,10 @@
       "x": 0.3551116,
       "y": 0.7273359,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 31
     }
   ],
-  "lastUpdated": 1667907637395,
-  "version": 293
+  "lastUpdated": 1667949437556,
+  "version": 416,
+  "Etag": "\"416\""
 }

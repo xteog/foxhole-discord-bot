@@ -179,7 +179,7 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 56,
+      "iconType": 57,
       "x": 0.3605468,
       "y": 0.21137291,
       "flags": 8
@@ -423,6 +423,7 @@
       "location": 29
     }
   ],
-  "lastUpdated": 1667904533062,
-  "version": 86
+  "lastUpdated": 1667940692991,
+  "version": 113,
+  "Etag": "\"113\""
 }

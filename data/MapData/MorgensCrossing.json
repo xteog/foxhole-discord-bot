@@ -158,6 +158,13 @@
     },
     {
       "teamId": "WARDENS",
+      "iconType": 37,
+      "x": 0.49012032,
+      "y": 0.44990277,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
       "iconType": 34,
       "x": 0.63141024,
       "y": 0.10899468,
@@ -288,13 +295,6 @@
       "x": 0.60870737,
       "y": 0.85149014,
       "flags": 8
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 37,
-      "x": 0.49012032,
-      "y": 0.44990277,
-      "flags": 0
     }
   ],
   "mapTextItems": [
@@ -303,14 +303,14 @@
       "x": 0.5831203,
       "y": 0.14839464,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 38
     },
     {
       "text": "Bastard's Block",
       "x": 0.60732245,
       "y": 0.3378211,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 40
     },
     {
       "text": "Callum's Descent",
@@ -329,21 +329,21 @@
       "x": 0.3591508,
       "y": 0.121744014,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 39
     },
     {
       "text": "Lividus",
       "x": 0.61497265,
       "y": 0.5383431,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 36
     },
     {
       "text": "Quietus",
       "x": 0.29447103,
       "y": 0.36270502,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 37
     },
     {
       "text": "Rising Calm",
@@ -374,9 +374,10 @@
       "x": 0.6094126,
       "y": 0.8513195,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 41
     }
   ],
-  "lastUpdated": 1667905019905,
-  "version": 64
+  "lastUpdated": 1667950373915,
+  "version": 97,
+  "Etag": "\"97\""
 }

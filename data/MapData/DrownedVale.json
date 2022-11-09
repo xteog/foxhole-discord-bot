@@ -87,6 +87,27 @@
       "flags": 0
     },
     {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.36002526,
+      "y": 0.72508705,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 39,
+      "x": 0.5644424,
+      "y": 0.58112377,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 34,
+      "x": 0.548507,
+      "y": 0.56823903,
+      "flags": 0
+    },
+    {
       "teamId": "WARDENS",
       "iconType": 33,
       "x": 0.4383599,
@@ -119,6 +140,13 @@
       "iconType": 35,
       "x": 0.64016753,
       "y": 0.864507,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 52,
+      "x": 0.55002874,
+      "y": 0.60511833,
       "flags": 0
     },
     {
@@ -215,29 +243,8 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.36002526,
-      "y": 0.72508705,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
       "x": 0.39856812,
       "y": 0.23455893,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 39,
-      "x": 0.5644424,
-      "y": 0.58112377,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 34,
-      "x": 0.548507,
-      "y": 0.56823903,
       "flags": 0
     },
     {
@@ -267,13 +274,6 @@
       "x": 0.5182901,
       "y": 0.5974323,
       "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 52,
-      "x": 0.55002874,
-      "y": 0.60511833,
-      "flags": 0
     }
   ],
   "mapTextItems": [
@@ -282,21 +282,21 @@
       "x": 0.80842125,
       "y": 0.5582795,
       "mapMarkerType": "Major",
-      "location": 19
+      "location": 23
     },
     {
       "text": "Coaldrifter Stead",
       "x": 0.66231805,
       "y": 0.82284665,
       "mapMarkerType": "Major",
-      "location": 21
+      "location": 25
     },
     {
       "text": "Eastmarch",
       "x": 0.2335479,
       "y": 0.5278097,
       "mapMarkerType": "Major",
-      "location": 25
+      "location": 29
     },
     {
       "text": "Esterfal",
@@ -321,14 +321,14 @@
       "x": 0.4150385,
       "y": 0.20794752,
       "mapMarkerType": "Major",
-      "location": 22
+      "location": 26
     },
     {
       "text": "Singing Serpents",
       "x": 0.6632067,
       "y": 0.31274968,
       "mapMarkerType": "Major",
-      "location": 24
+      "location": 28
     },
     {
       "text": "Sop Fields",
@@ -341,7 +341,7 @@
       "x": 0.47195154,
       "y": 0.8008652,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 32
     },
     {
       "text": "Sprite's Game",
@@ -354,7 +354,7 @@
       "x": 0.5683618,
       "y": 0.52607054,
       "mapMarkerType": "Major",
-      "location": 23
+      "location": 27
     },
     {
       "text": "The Other Vein",
@@ -367,7 +367,7 @@
       "x": 0.63300836,
       "y": 0.16928926,
       "mapMarkerType": "Major",
-      "location": 20
+      "location": 24
     },
     {
       "text": "The Turtlerocks",
@@ -380,7 +380,7 @@
       "x": 0.38150814,
       "y": 0.5121856,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 30
     },
     {
       "text": "The Willow Wood",
@@ -393,16 +393,17 @@
       "x": 0.36351255,
       "y": 0.715022,
       "mapMarkerType": "Major",
-      "location": 18
+      "location": 22
     },
     {
       "text": "Wisp's Warning",
       "x": 0.33081633,
       "y": 0.29379123,
       "mapMarkerType": "Major",
-      "location": 27
+      "location": 31
     }
   ],
-  "lastUpdated": 1667893332576,
-  "version": 172
+  "lastUpdated": 1667949932947,
+  "version": 237,
+  "Etag": "\"237\""
 }
