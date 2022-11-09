@@ -75,20 +75,6 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.77989984,
-      "y": 0.68702537,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.7810866,
-      "y": 0.6686761,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
       "x": 0.80949235,
       "y": 0.26425487,
       "flags": 0
@@ -192,6 +178,13 @@
       "flags": 0
     },
     {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.37174794,
+      "y": 0.7166492,
+      "flags": 8
+    },
+    {
       "teamId": "WARDENS",
       "iconType": 35,
       "x": 0.5286723,
@@ -270,16 +263,23 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 33,
-      "x": 0.18699402,
-      "y": 0.32167327,
+      "iconType": 38,
+      "x": 0.77989984,
+      "y": 0.68702537,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.37174794,
-      "y": 0.7166492,
+      "iconType": 38,
+      "x": 0.7810866,
+      "y": 0.6686761,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 33,
+      "x": 0.18699402,
+      "y": 0.32167327,
       "flags": 0
     },
     {
@@ -341,14 +341,14 @@
       "x": 0.51669085,
       "y": 0.13976866,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 27
     },
     {
       "text": "Crumbling Post",
       "x": 0.35385895,
       "y": 0.7248818,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 25
     },
     {
       "text": "Lingering Lashes",
@@ -367,7 +367,7 @@
       "x": 0.56270015,
       "y": 0.42374668,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 28
     },
     {
       "text": "Lost Tops",
@@ -380,14 +380,14 @@
       "x": 0.5252302,
       "y": 0.6481513,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 33
     },
     {
       "text": "Sc\u00e1th Passing",
       "x": 0.34909955,
       "y": 0.53184307,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 35
     },
     {
       "text": "Sioc Approach",
@@ -406,7 +406,7 @@
       "x": 0.19406947,
       "y": 0.33073047,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 30
     },
     {
       "text": "Soured Fields",
@@ -419,7 +419,7 @@
       "x": 0.45544657,
       "y": 0.7847246,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 34
     },
     {
       "text": "The Key",
@@ -438,14 +438,14 @@
       "x": 0.72713715,
       "y": 0.68313295,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 31
     },
     {
       "text": "The Procession",
       "x": 0.7513888,
       "y": 0.43929663,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 36
     },
     {
       "text": "The Rust Road",
@@ -476,7 +476,7 @@
       "x": 0.7634679,
       "y": 0.2669874,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 29
     },
     {
       "text": "Winding Crag",
@@ -485,7 +485,7 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667951701350,
-  "version": 305,
-  "Etag": "\"305\""
+  "lastUpdated": 1668006629372,
+  "version": 486,
+  "ETag": "\"486\""
 }

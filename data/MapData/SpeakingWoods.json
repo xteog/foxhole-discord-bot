@@ -129,20 +129,6 @@
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 33,
-      "x": 0.30292612,
-      "y": 0.48836178,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 33,
-      "x": 0.6072089,
-      "y": 0.5815435,
-      "flags": 0
-    },
-    {
       "teamId": "COLONIALS",
       "iconType": 28,
       "x": 0.71298283,
@@ -150,31 +136,10 @@
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 35,
-      "x": 0.5206044,
-      "y": 0.54761904,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 35,
-      "x": 0.31990436,
-      "y": 0.40272734,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 58,
+      "teamId": "COLONIALS",
+      "iconType": 56,
       "x": 0.5613984,
       "y": 0.54402184,
-      "flags": 8
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 58,
-      "x": 0.3061331,
-      "y": 0.47478852,
       "flags": 8
     },
     {
@@ -185,7 +150,14 @@
       "flags": 41
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
+      "iconType": 56,
+      "x": 0.3061331,
+      "y": 0.47478852,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 45,
       "x": 0.45838177,
       "y": 0.22304893,
@@ -242,6 +214,20 @@
     },
     {
       "teamId": "NONE",
+      "iconType": 33,
+      "x": 0.6072089,
+      "y": 0.5815435,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 33,
+      "x": 0.30292612,
+      "y": 0.48836178,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
       "iconType": 18,
       "x": 0.6940931,
       "y": 0.31527314,
@@ -277,6 +263,20 @@
     },
     {
       "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.5206044,
+      "y": 0.54761904,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.31990436,
+      "y": 0.40272734,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
       "iconType": 52,
       "x": 0.69973373,
       "y": 0.2966192,
@@ -301,21 +301,21 @@
       "x": 0.74179506,
       "y": 0.8028215,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 24
     },
     {
       "text": "Hush",
       "x": 0.45665428,
       "y": 0.22281247,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 22
     },
     {
       "text": "Inari Base",
       "x": 0.74317586,
       "y": 0.15739217,
       "mapMarkerType": "Major",
-      "location": 27
+      "location": 23
     },
     {
       "text": "Mount Rell",
@@ -346,38 +346,38 @@
       "x": 0.5626012,
       "y": 0.5431819,
       "mapMarkerType": "Major",
-      "location": 23
+      "location": 19
     },
     {
       "text": "Stem",
       "x": 0.39363724,
       "y": 0.71316886,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 25
     },
     {
       "text": "The Filament",
       "x": 0.30684024,
       "y": 0.47614998,
       "mapMarkerType": "Major",
-      "location": 24
+      "location": 21
     },
     {
       "text": "Tine",
       "x": 0.62117475,
       "y": 0.32557455,
       "mapMarkerType": "Major",
-      "location": 25
+      "location": 20
     },
     {
       "text": "Wound",
       "x": 0.88332975,
       "y": 0.4517844,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 26
     }
   ],
-  "lastUpdated": 1667951338065,
-  "version": 223,
-  "Etag": "\"223\""
+  "lastUpdated": 1668007136133,
+  "version": 304,
+  "ETag": "\"304\""
 }

@@ -116,6 +116,13 @@
     },
     {
       "teamId": "WARDENS",
+      "iconType": 18,
+      "x": 0.62182194,
+      "y": 0.71171963,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
       "iconType": 35,
       "x": 0.80386156,
       "y": 0.60538495,
@@ -249,13 +256,6 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 18,
-      "x": 0.62182194,
-      "y": 0.71171963,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
       "iconType": 35,
       "x": 0.3734476,
       "y": 0.7792203,
@@ -282,21 +282,21 @@
       "x": 0.80842125,
       "y": 0.5582795,
       "mapMarkerType": "Major",
-      "location": 23
+      "location": 24
     },
     {
       "text": "Coaldrifter Stead",
       "x": 0.66231805,
       "y": 0.82284665,
       "mapMarkerType": "Major",
-      "location": 25
+      "location": 26
     },
     {
       "text": "Eastmarch",
       "x": 0.2335479,
       "y": 0.5278097,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 30
     },
     {
       "text": "Esterfal",
@@ -321,14 +321,14 @@
       "x": 0.4150385,
       "y": 0.20794752,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 27
     },
     {
       "text": "Singing Serpents",
       "x": 0.6632067,
       "y": 0.31274968,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 29
     },
     {
       "text": "Sop Fields",
@@ -341,7 +341,7 @@
       "x": 0.47195154,
       "y": 0.8008652,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 33
     },
     {
       "text": "Sprite's Game",
@@ -354,7 +354,7 @@
       "x": 0.5683618,
       "y": 0.52607054,
       "mapMarkerType": "Major",
-      "location": 27
+      "location": 28
     },
     {
       "text": "The Other Vein",
@@ -367,7 +367,7 @@
       "x": 0.63300836,
       "y": 0.16928926,
       "mapMarkerType": "Major",
-      "location": 24
+      "location": 25
     },
     {
       "text": "The Turtlerocks",
@@ -380,7 +380,7 @@
       "x": 0.38150814,
       "y": 0.5121856,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 31
     },
     {
       "text": "The Willow Wood",
@@ -393,17 +393,17 @@
       "x": 0.36351255,
       "y": 0.715022,
       "mapMarkerType": "Major",
-      "location": 22
+      "location": 23
     },
     {
       "text": "Wisp's Warning",
       "x": 0.33081633,
       "y": 0.29379123,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 32
     }
   ],
-  "lastUpdated": 1667949932947,
-  "version": 237,
-  "Etag": "\"237\""
+  "lastUpdated": 1668006287288,
+  "version": 301,
+  "ETag": "\"301\""
 }

@@ -109,6 +109,13 @@
     },
     {
       "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.5805763,
+      "y": 0.5312271,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
       "iconType": 32,
       "x": 0.7130174,
       "y": 0.69386095,
@@ -126,6 +133,13 @@
       "iconType": 39,
       "x": 0.44075105,
       "y": 0.52547973,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 11,
+      "x": 0.4577052,
+      "y": 0.41354725,
       "flags": 0
     },
     {
@@ -164,17 +178,17 @@
       "flags": 0
     },
     {
-      "teamId": "NONE",
+      "teamId": "COLONIALS",
       "iconType": 35,
       "x": 0.44159108,
       "y": 0.5016087,
       "flags": 8
     },
     {
-      "teamId": "NONE",
+      "teamId": "COLONIALS",
       "iconType": 35,
-      "x": 0.37046832,
-      "y": 0.4817444,
+      "x": 0.39120063,
+      "y": 0.4231158,
       "flags": 8
     },
     {
@@ -199,10 +213,17 @@
       "flags": 0
     },
     {
-      "teamId": "NONE",
+      "teamId": "COLONIALS",
       "iconType": 35,
-      "x": 0.39120063,
-      "y": 0.4231158,
+      "x": 0.37046832,
+      "y": 0.4817444,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.4511699,
+      "y": 0.4338345,
       "flags": 8
     },
     {
@@ -214,7 +235,7 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 56,
+      "iconType": 57,
       "x": 0.54768586,
       "y": 0.49890614,
       "flags": 8
@@ -284,20 +305,6 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 11,
-      "x": 0.4577052,
-      "y": 0.41354725,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.5805763,
-      "y": 0.5312271,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
       "iconType": 33,
       "x": 0.3065375,
       "y": 0.2222808,
@@ -327,13 +334,6 @@
     {
       "teamId": "NONE",
       "iconType": 35,
-      "x": 0.4511699,
-      "y": 0.4338345,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
       "x": 0.35122746,
       "y": 0.2635266,
       "flags": 0
@@ -345,7 +345,7 @@
       "x": 0.4065897,
       "y": 0.4973474,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 38
     },
     {
       "text": "Biting Tarn",
@@ -370,7 +370,7 @@
       "x": 0.72561765,
       "y": 0.7220242,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 35
     },
     {
       "text": "Callahan's Belt",
@@ -383,14 +383,14 @@
       "x": 0.5475686,
       "y": 0.4907771,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 33
     },
     {
       "text": "Callahan's Gate",
       "x": 0.62483287,
       "y": 0.110333465,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 37
     },
     {
       "text": "Carpal Trail",
@@ -433,7 +433,7 @@
       "x": 0.46120775,
       "y": 0.26207438,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 42
     },
     {
       "text": "Jaspar Range",
@@ -446,7 +446,7 @@
       "x": 0.24296169,
       "y": 0.5517707,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 36
     },
     {
       "text": "Mandible Crossroads",
@@ -495,7 +495,7 @@
       "x": 0.27335224,
       "y": 0.7215378,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 40
     },
     {
       "text": "Sunhaven Gateway",
@@ -556,7 +556,7 @@
       "x": 0.4651194,
       "y": 0.6297798,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 39
     },
     {
       "text": "The Plaza",
@@ -569,14 +569,14 @@
       "x": 0.4569705,
       "y": 0.8376134,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 32
     },
     {
       "text": "The Salt March",
       "x": 0.82289404,
       "y": 0.48192352,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 41
     },
     {
       "text": "The Salt Trail",
@@ -595,7 +595,7 @@
       "x": 0.30697387,
       "y": 0.23582822,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 34
     },
     {
       "text": "The Steppes",
@@ -604,7 +604,7 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667950102351,
-  "version": 128,
-  "Etag": "\"128\""
+  "lastUpdated": 1668005694347,
+  "version": 186,
+  "ETag": "\"186\""
 }

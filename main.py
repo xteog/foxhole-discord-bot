@@ -49,10 +49,10 @@ class MyClient(discord.Client):
     while not self.is_closed():
       mapName = await get_database()
       mapName = mapName['map_filter']
-      for map in defs.MAP_NAME:
+      for map in mapName:
         list = []
         oldData = read(defs.DB['mapData'].format(map))
-        newData = downloadData(map, 1, oldData['Etag'])
+        newData = downloadData(map, 1, oldData['ETag'])
 
         if newData != None:
           data = await get_database()
@@ -67,9 +67,10 @@ class MyClient(discord.Client):
 
         if len(list) > 0:
           data = newData
+          data['mapTextItems'] = oldData['mapTextItems']
           newData = newData['mapItems']
           oldData = oldData['mapItems']
-          data['mapItems'] = newData
+          
           updateData(map, data, 2)
           updateMap(map, data, -1)
           setName(map)
@@ -496,6 +497,9 @@ if __name__ == '__main__':
 
   @tree.command(name='reset', description='Fai un reset del bot', guild=discord.Object(id=client.server))
   async def reset(interaction: discord.Interaction):
+    data = await get_database()
+    data['download'] = 0
+    await updt_database(data, client)
     await client.change_presence(status=discord.Status.idle)
     await interaction.response.defer(ephemeral=True, thinking=True)
     #updateMapL()

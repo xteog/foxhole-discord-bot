@@ -26,17 +26,17 @@ def downloadData(map, opt, etag='"-1"'):
   if opt == 0:
     data = requests.get(url[0].format(map)).json()
   elif opt == 1:
-    response, status = requests.get(url[1].format(map), headers={"If-None-Match": etag})
-    if status == 200:
+    response = requests.get(url[1].format(map), headers={"If-None-Match": etag})
+    if response.status_code == 200:
       data = response.json()
       data['ETag'] = response.headers['ETag']
-    elif status == 304:
+    elif response.status_code == 304:
       data = None
   elif opt == 2:
     static = requests.get(url[0].format(map)).json()
     response = requests.get(url[1].format(map))
     dynamic = response.json()
-    dynamic['Etag'] = response.headers['ETag']
+    dynamic['ETag'] = response.headers['ETag']
     dynamic['mapTextItems'] = static['mapTextItems']
     data = dynamic
 
