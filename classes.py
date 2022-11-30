@@ -127,7 +127,6 @@ class Annuncio(discord.ui.Modal, title='Annuncio'):
         self.add_item(self.titolo)
         self.add_item(self.descrizione)
 
-
     async def on_submit(self, interaction: discord.Interaction):
         embed = discord.Embed(title=self.titolo.value, description=self.descrizione.value, color=0xFAA81A)
         embed.set_author(name=interaction.user.name, icon_url=interaction.user.avatar.url)
@@ -184,6 +183,41 @@ class EventFilter(discord.ui.Select):
                 await main.updt_database(self.database, self.client)
                 await self.client.eventChannel.edit(topic=str)
                 await interaction.response.send_message(str)
+
+
+class DepotEmbed(discord.Embed):
+    def __init__(self, group, depots):
+        super().__init__(title=f'Lista Depositi', description='Prima di interagire guardare la descrizione di questo canale.')
+        for d in depots:
+            if d['group'] == group:
+                emoji = defs.DB['emojis'][str(d['iconType'])]
+                self.add_field(name=f"<:{emoji[0]}:{emoji[1]}> {defs.ICON_ID[d['iconType']]} a {d['location']}({d['map']})", value=f"Nome: `{d['name']}`\nPasscode: `{d['passcode']}`\n{d['desc']}", inline=False)
+
+
+class DepotButton(discord.ui.Button):
+    def __init__(self, group, depots, disabled=True):
+        self.group = group
+        self.depots = depots
+        super().__init__(label=self.group, custom_id=self.group, style=discord.ButtonStyle.secondary, disabled=disabled)
+
+    async def callback(self, interaction: discord.Interaction):
+        embed, view = view_depots(self.group, self.depots)
+        await interaction.response.edit_message(embed=embed, view=view)
+     
+
+def view_depots(group, depots):
+    embed = DepotEmbed(group, depots)
+    view = discord.ui.View(timeout=None)
+    groups = []
+    for d in depots:
+        if not(d['group'] in groups):
+            if d['group'] == group:
+                disabled = True
+            else:
+                disabled = False
+            groups.append(d['group'])
+            view.add_item(DepotButton(d['group'], depots, disabled))
+    return embed, view
 
 
 def make_view(map, region):

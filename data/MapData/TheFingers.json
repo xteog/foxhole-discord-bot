@@ -151,6 +151,13 @@
     },
     {
       "teamId": "WARDENS",
+      "iconType": 60,
+      "x": 0.23890242,
+      "y": 0.31960526,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
       "iconType": 34,
       "x": 0.7947373,
       "y": 0.58519363,
@@ -159,15 +166,15 @@
     {
       "teamId": "WARDENS",
       "iconType": 33,
-      "x": 0.17137448,
-      "y": 0.48764682,
+      "x": 0.51370853,
+      "y": 0.1908515,
       "flags": 0
     },
     {
       "teamId": "WARDENS",
       "iconType": 33,
-      "x": 0.51370853,
-      "y": 0.1908515,
+      "x": 0.17137448,
+      "y": 0.48764682,
       "flags": 0
     },
     {
@@ -328,14 +335,14 @@
       "x": 0.6572052,
       "y": 0.39019576,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 39
     },
     {
       "text": "Headsman's Villa",
       "x": 0.18828769,
       "y": 0.44380325,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 36
     },
     {
       "text": "Mount Talio",
@@ -348,14 +355,14 @@
       "x": 0.34306777,
       "y": 0.6204324,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 38
     },
     {
       "text": "Second Man",
       "x": 0.73613465,
       "y": 0.14634983,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 41
     },
     {
       "text": "Tears of Tethys",
@@ -368,21 +375,21 @@
       "x": 0.8318112,
       "y": 0.5674859,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 37
     },
     {
       "text": "The Routed",
       "x": 0.496249,
       "y": 0.18280289,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 35
     },
     {
       "text": "The Tusk",
       "x": 0.29128292,
       "y": 0.17811885,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 42
     },
     {
       "text": "The Wary Nymphae",
@@ -395,10 +402,10 @@
       "x": 0.57632715,
       "y": 0.8555667,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 40
     }
   ],
-  "lastUpdated": 1668003857114,
-  "version": 113,
-  "ETag": "\"113\""
+  "lastUpdated": 1668548322018,
+  "version": 87,
+  "ETag": "\"87\""
 }

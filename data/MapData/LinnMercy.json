@@ -161,13 +161,34 @@
       "iconType": 35,
       "x": 0.4232666,
       "y": 0.48534837,
-      "flags": 8
+      "flags": 0
     },
     {
       "teamId": "COLONIALS",
       "iconType": 35,
       "x": 0.43662974,
       "y": 0.4009635,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.80377287,
+      "y": 0.45556104,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.33866987,
+      "y": 0.17896526,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.53697443,
+      "y": 0.13599576,
       "flags": 8
     },
     {
@@ -175,6 +196,13 @@
       "iconType": 52,
       "x": 0.50187093,
       "y": 0.53807735,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 53,
+      "x": 0.4992536,
+      "y": 0.5121075,
       "flags": 0
     },
     {
@@ -221,7 +249,7 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 57,
+      "iconType": 58,
       "x": 0.46525207,
       "y": 0.45190126,
       "flags": 41
@@ -256,37 +284,9 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 53,
-      "x": 0.4992536,
-      "y": 0.5121075,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
       "iconType": 38,
       "x": 0.37003756,
       "y": 0.7459849,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.80377287,
-      "y": 0.45556104,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.53697443,
-      "y": 0.13599576,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.33866987,
-      "y": 0.17896526,
       "flags": 0
     }
   ],
@@ -302,7 +302,7 @@
       "x": 0.73673666,
       "y": 0.7660624,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 38
     },
     {
       "text": "Gallant Gough Boulevard",
@@ -315,14 +315,14 @@
       "x": 0.35991466,
       "y": 0.58879375,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 39
     },
     {
       "text": "Lathair",
       "x": 0.7258961,
       "y": 0.3119082,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 37
     },
     {
       "text": "Merciful Strait",
@@ -347,14 +347,14 @@
       "x": 0.8370126,
       "y": 0.4868126,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 30
     },
     {
       "text": "Rotdust",
       "x": 0.5856841,
       "y": 0.15178874,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 33
     },
     {
       "text": "Solas Burn",
@@ -367,7 +367,7 @@
       "x": 0.22958569,
       "y": 0.62841123,
       "mapMarkerType": "Major",
-      "location": 25
+      "location": 29
     },
     {
       "text": "The Drone",
@@ -380,7 +380,7 @@
       "x": 0.40840903,
       "y": 0.7184508,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 34
     },
     {
       "text": "The Great Scale",
@@ -393,21 +393,21 @@
       "x": 0.38268816,
       "y": 0.8845894,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 36
     },
     {
       "text": "The Long Whine",
       "x": 0.35783502,
       "y": 0.209964,
       "mapMarkerType": "Major",
-      "location": 27
+      "location": 31
     },
     {
       "text": "The Prairie Bazaar",
       "x": 0.6143232,
       "y": 0.7404008,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 32
     },
     {
       "text": "The River Mercy",
@@ -420,10 +420,10 @@
       "x": 0.46410957,
       "y": 0.45022747,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 35
     }
   ],
-  "lastUpdated": 1668000694879,
-  "version": 131,
-  "ETag": "\"131\""
+  "lastUpdated": 1668524948522,
+  "version": 38,
+  "ETag": "\"38\""
 }

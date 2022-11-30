@@ -47,27 +47,6 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.2256388,
-      "y": 0.6453737,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.21977729,
-      "y": 0.6469813,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.3436582,
-      "y": 0.69414175,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
       "x": 0.41443315,
       "y": 0.15633991,
       "flags": 0
@@ -82,12 +61,19 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.33380508,
-      "y": 0.6888679,
+      "x": 0.6156473,
+      "y": 0.1582527,
       "flags": 0
     },
     {
-      "teamId": "COLONIALS",
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.6220915,
+      "y": 0.15682454,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
       "iconType": 39,
       "x": 0.40474552,
       "y": 0.7120642,
@@ -108,13 +94,6 @@
       "flags": 0
     },
     {
-      "teamId": "COLONIALS",
-      "iconType": 18,
-      "x": 0.36996937,
-      "y": 0.6651275,
-      "flags": 0
-    },
-    {
       "teamId": "WARDENS",
       "iconType": 18,
       "x": 0.38619062,
@@ -122,31 +101,10 @@
       "flags": 0
     },
     {
-      "teamId": "COLONIALS",
-      "iconType": 18,
-      "x": 0.3888179,
-      "y": 0.6435075,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
+      "teamId": "WARDENS",
       "iconType": 12,
       "x": 0.38834205,
       "y": 0.7001915,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 35,
-      "x": 0.4344188,
-      "y": 0.7216431,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 35,
-      "x": 0.43528366,
-      "y": 0.62496644,
       "flags": 0
     },
     {
@@ -171,24 +129,10 @@
       "flags": 0
     },
     {
-      "teamId": "COLONIALS",
-      "iconType": 35,
-      "x": 0.19603992,
-      "y": 0.61021215,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
+      "teamId": "WARDENS",
       "iconType": 52,
       "x": 0.49071085,
       "y": 0.70928216,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 53,
-      "x": 0.4806988,
-      "y": 0.68226033,
       "flags": 0
     },
     {
@@ -213,25 +157,18 @@
       "flags": 8
     },
     {
-      "teamId": "COLONIALS",
-      "iconType": 58,
+      "teamId": "WARDENS",
+      "iconType": 56,
       "x": 0.23114212,
       "y": 0.606565,
       "flags": 8
     },
     {
-      "teamId": "COLONIALS",
-      "iconType": 58,
+      "teamId": "WARDENS",
+      "iconType": 57,
       "x": 0.43875578,
       "y": 0.6739673,
       "flags": 41
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 45,
-      "x": 0.22227478,
-      "y": 0.35469195,
-      "flags": 8
     },
     {
       "teamId": "WARDENS",
@@ -263,16 +200,79 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.6156473,
-      "y": 0.1582527,
+      "iconType": 53,
+      "x": 0.4806988,
+      "y": 0.68226033,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.6220915,
-      "y": 0.15682454,
+      "x": 0.33380508,
+      "y": 0.6888679,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.2256388,
+      "y": 0.6453737,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.3436582,
+      "y": 0.69414175,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.21977729,
+      "y": 0.6469813,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 45,
+      "x": 0.22227478,
+      "y": 0.35469195,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 18,
+      "x": 0.36996937,
+      "y": 0.6651275,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 18,
+      "x": 0.3888179,
+      "y": 0.6435075,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.19603992,
+      "y": 0.61021215,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.4344188,
+      "y": 0.7216431,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 35,
+      "x": 0.43528366,
+      "y": 0.62496644,
       "flags": 0
     }
   ],
@@ -306,14 +306,14 @@
       "x": 0.84196997,
       "y": 0.38732836,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 24
     },
     {
       "text": "Gorgon Grove",
       "x": 0.22335887,
       "y": 0.35604578,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 21
     },
     {
       "text": "Hades Ladder",
@@ -332,7 +332,7 @@
       "x": 0.47156802,
       "y": 0.4749517,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 25
     },
     {
       "text": "Manky Hills",
@@ -345,28 +345,28 @@
       "x": 0.21630011,
       "y": 0.60432374,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 22
     },
     {
       "text": "Savages",
       "x": 0.39030778,
       "y": 0.1846902,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 21
     },
     {
       "text": "Silk Farms",
       "x": 0.4394004,
       "y": 0.66509956,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 23
     },
     {
       "text": "Simo's Run",
       "x": 0.71478575,
       "y": 0.8589753,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 27
     },
     {
       "text": "Southreach",
@@ -379,7 +379,7 @@
       "x": 0.6211396,
       "y": 0.3829189,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 26
     },
     {
       "text": "The Blue",
@@ -404,7 +404,7 @@
       "x": 0.6505256,
       "y": 0.15729238,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 20
     },
     {
       "text": "The Plunging",
@@ -417,7 +417,7 @@
       "x": 0.69273907,
       "y": 0.6221794,
       "mapMarkerType": "Major",
-      "location": 27
+      "location": 19
     },
     {
       "text": "Widow's Web",
@@ -426,7 +426,7 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1668000911422,
-  "version": 382,
-  "ETag": "\"382\""
+  "lastUpdated": 1668549775409,
+  "version": 467,
+  "ETag": "\"467\""
 }

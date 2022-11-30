@@ -1,4 +1,4 @@
-PATH = '/app'
+PATH = '.'
 DB = {
 	'mapName': PATH + '/data/mapName.json',
 	'iconId': PATH + '/data/iconId.json',
@@ -8,10 +8,10 @@ DB = {
 	'serverIcon': PATH + '/data/serverIcon.png',
 	'dynamicData': 'https://war-service-live.foxholeservices.com/api/worldconquest/maps/{}/dynamic/public',
 	'staticData': 'https://war-service-live.foxholeservices.com/api/worldconquest/maps/{}/static',
-	'eventChannel': 1032345776300490882,
-  'depotChannel': 856644848933011487,
+	'eventChannel': 881662982160003113,
+  'depotChannel': 1032325211883835402,
   'dataBaseChannel': 1038431534606209134,
-  'serverId': 844513454835499041,
+  'serverId': 881632566589915177,
   'errorChannel': 1032428103861026897,
 	'mapReport': 'https://war-service-live.foxholeservices.com/api/worldconquest/warReport/{}',
 	'warReport': 'https://war-service-live.foxholeservices.com/api/worldconquest/war',
@@ -99,7 +99,6 @@ MAP_NAME = [
   "Westgate",
   "Oarbreaker",
   "Acrithia",
-  
   "LochMor",
   "AllodsBight",
   "Kalokai",
@@ -128,3 +127,45 @@ MAP_NAME = [
   "CallahansPassage",
   "WeatheredExpanse"
 ]
+
+MAP_SIZE = (5632, 6216)
+
+MAP_POSITION = {
+  "TheFingers": (4608, 2220),
+  "GreatMarch": (2304, 1776),
+  "TempestIsland": (4608, 3108),
+  "MarbanHollow": (3072, 3996),
+  "DeadLands": (2304, 3552),
+  "Heartlands": (1536, 2220),
+  "EndlessShore": (3840, 3552),
+  "Westgate": (768, 2664),
+  "Oarbreaker": (0, 3996),
+  "Acrithia": (3072, 1332),
+  "LochMor": (1536, 3108),
+  "AllodsBight": (3840, 2664),
+  "Kalokai": (2304, 888),
+  "RedRiver": (1536, 1332),
+  "Origin": (0, 2220),
+  "ShackledChasm": (3072, 2220),
+  "Terminus": (3840, 1776),
+  "AshFields": (768, 1776),
+  "LinnMercy": (1536, 3996),
+  "Godcrofts": (4608, 3996),
+  "FishermansRow": (0, 3108),
+  "UmbralWildwood": (2304, 2664),
+  "DrownedVale": (3072, 3108),
+  "FarranacCoast": (768, 3552),
+  "BasinSionnach": (2304, 6216),
+  "SpeakingWoods": (1536, 5772),
+  "HowlCounty": (3072, 5772),
+  "CallumsCape": (768, 5328),
+  "ReachingTrail": (2304, 5328),
+  "ClansheadValley": (3840, 5328),
+  "NevishLine": (0, 4884),
+  "MooringCounty": (1536, 4884),
+  "ViperPit": (3072, 4884),
+  "MorgensCrossing": (4608, 4884),
+  "Stonecradle": (768, 4440),
+  "CallahansPassage": (2304, 4440),
+  "WeatheredExpanse": (3840, 4440)
+}

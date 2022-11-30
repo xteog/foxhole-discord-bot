@@ -1,8 +1,10 @@
 from PIL import Image, ImageDraw, ImageFont
 from testRequest import read
+from scipy.spatial import Voronoi
+import numpy as np
 import defs
 
-def updateMap(map, data, index):
+def updateMap(map, data, index=-1):
   iconId = defs.ICON_ID
   with Image.open(defs.PATH + '/Map/Map{}.png'.format(map)) as background:
     bg_w, bg_h = background.size
@@ -72,6 +74,43 @@ def updateMap(map, data, index):
     #print(map + " updated")
 
 
+def paste_icon(backgrond, item, index=-1):
+  x = round(item['x'] * bg_w)
+  y = round(item['y'] * bg_h)
+  icon = iconId[item['iconType']]
+
+  with Image.open(defs.DB['iconImage'].format(icon)) as img:
+    
+    img_w, img_h = img.size
+    if item['flags'] == 0 and index != data['mapItems'].index(item):
+      img_w = img_w * 2 // 3
+      img_h = img_h * 2 // 3
+      img = img.resize((img_w, img_h))
+    elif index != data['mapItems'].index(item):
+      img_w = img_w * 3 // 4
+      img_h = img_h * 3 // 4
+      img = img.resize((img_w, img_h))
+    offset = (x - img_w // 2, y - img_h // 2)
+
+    if item['flags'] == 41:
+      ico = Image.open(defs.DB['iconImage'].format('Victory'))
+      ico_w, ico_h = ico.size
+      img_trans = Image.new(mode="RGBA", size=ico.size, color=(255, 255, 255, 0))
+      img_trans.paste(img, ((ico_w-img_w)//2, (ico_h-img_h)//2))
+      ico.paste(img_trans, (0, 0), img_trans)
+      img = ico
+      
+    if item['teamId'] == "COLONIALS":
+      img = changeColor(img, 1)
+    elif item['teamId'] == "WARDENS":
+      img = changeColor(img, 0)
+
+    img_trans = Image.new(mode="RGBA", size=background.size, color=(255, 255, 255, 0))
+    img_trans.paste(img, offset)
+    background.paste(img_trans, (0, 0), img_trans)
+    if item['flags'] == 41:
+      ico.close()
+
     
 def changeColor(img, color):
   if color == 1:
@@ -131,3 +170,118 @@ def highlight_name(map, i):
     background = Image.alpha_composite(img, txt)
 
   background.save(defs.PATH + '/data/tempImage.png')
+
+def voronoi_finite_polygons_2d(vor, radius=None):
+    if vor.points.shape[1] != 2:
+        raise ValueError("Requires 2D input")
+
+    new_regions = []
+    new_vertices = vor.vertices.tolist()
+
+    center = vor.points.mean(axis=0)
+    if radius is None:
+        radius = vor.points.ptp().max()*2
+
+    # Construct a map containing all ridges for a given point
+    all_ridges = {}
+    for (p1, p2), (v1, v2) in zip(vor.ridge_points, vor.ridge_vertices):
+        all_ridges.setdefault(p1, []).append((p2, v1, v2))
+        all_ridges.setdefault(p2, []).append((p1, v1, v2))
+
+    # Reconstruct infinite regions
+    for p1, region in enumerate(vor.point_region):
+        vertices = vor.regions[region]
+
+        if all(v >= 0 for v in vertices):
+            # finite region
+            new_regions.append(vertices)
+            continue
+
+        # reconstruct a non-finite region
+        ridges = all_ridges[p1]
+        new_region = [v for v in vertices if v >= 0]
+
+        for p2, v1, v2 in ridges:
+            if v2 < 0:
+                v1, v2 = v2, v1
+            if v1 >= 0:
+                # finite ridge: already in the region
+                continue
+
+            # Compute the missing endpoint of an infinite ridge
+
+            t = vor.points[p2] - vor.points[p1] # tangent
+            t /= np.linalg.norm(t)
+            n = np.array([-t[1], t[0]])  # normal
+
+            midpoint = vor.points[[p1, p2]].mean(axis=0)
+            direction = np.sign(np.dot(midpoint - center, n)) * n
+            far_point = vor.vertices[v2] + direction * radius
+
+            new_region.append(len(new_vertices))
+            new_vertices.append(far_point.tolist())
+
+        # sort region counterclockwise
+        vs = np.asarray([new_vertices[v] for v in new_region])
+        c = vs.mean(axis=0)
+        angles = np.arctan2(vs[:,1] - c[1], vs[:,0] - c[0])
+        new_region = np.array(new_region)[np.argsort(angles)]
+
+        # finish
+        new_regions.append(new_region.tolist())
+
+    return new_regions, np.asarray(new_vertices)
+
+
+def drawVoronoi(map, img):
+  data = read(defs.DB['mapData'].format(map))['mapItems']
+  border = Image.new("RGBA", img.size, (255, 255, 255, 0))
+  points = []
+  faction = []
+
+  for item in data:
+    if item['iconType'] in [45, 46, 47, 56, 57, 58]:
+      img_w, img_h = img.size
+      x = round(item['x'] * img_w)
+      y = round(item['y'] * img_h)
+      if item['teamId'] == 'COLONIALS':
+        faction.append(1)
+      elif item['teamId'] == 'WARDENS':
+        faction.append(2)
+      else:
+        faction.append(0)
+      points.append([x, y])
+
+  vor = Voronoi(points)
+  regions, vertices = voronoi_finite_polygons_2d(vor)
+  draw = ImageDraw.Draw(border, 'RGBA')
+
+  for reg in regions:
+    polygon = []
+    for i in reg:
+      polygon.append((vertices[i][0], vertices[i][1]))
+
+    color = (200, 200, 200, 125)
+    if faction[regions.index(reg)] == 1:
+      color = (0, 255, 0, 125)
+    if faction[regions.index(reg)] == 2:
+      color = (0, 0, 255, 125)
+    draw.polygon(polygon, fill=color, outline ="black", width=2)
+
+  out = Image.alpha_composite(img, border)
+
+  return out
+
+
+def group_maps():
+  bg = Image.new('RGBA', defs.MAP_SIZE, (0, 0, 0, 0))
+  for map in defs.MAP_NAME:
+    with Image.open(defs.PATH + '/Map/Map{}.png'.format(map)) as img:
+      out = drawVoronoi(map, img)
+      x = defs.MAP_POSITION[map][0]
+      y = defs.MAP_POSITION[map][1] * -1 + defs.MAP_SIZE[1]
+      bg.paste(out, (x, y), img)
+  bg.show()
+
+if __name__ == '__main__':
+  group_maps()

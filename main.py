@@ -29,11 +29,24 @@ class MyClient(discord.Client):
 
   async def on_ready(self):
     await tree.sync(guild = discord.Object(id=self.server))
-    await client.change_presence(status=discord.Status.online)
+    
     self.errorChannel = self.get_channel(defs.DB['errorChannel'])
     self.depotChannel = self.get_channel(defs.DB['depotChannel'])
     self.eventChannel = self.get_channel(defs.DB['eventChannel'])
     self.dbChannel = self.get_channel(defs.DB['dataBaseChannel'])
+    
+    db = await get_database()
+    db['map_filter'] = ["DrownedVale", "AllodsBight", "EndlessShore", "MarbanHollow", "DeadLands", "UmbralWildwood", "ShackledChasm"]
+    str = 'Regioni di interesse:\n' + db['map_filter'][0]
+    for i in range(1, len(db['map_filter'])):
+      str += ', ' + db['map_filter'][i]
+    await updt_database(db, self)
+    #await self.eventChannel.edit(topic=str)
+
+    embed, view = classes.view_depots(db['depots'][0]['group'], db['depots'])
+    client.add_view(view)
+
+    await client.change_presence(status=discord.Status.online)
     print('We have logged in as {}'.format(self.user.name))
 
 
@@ -49,6 +62,10 @@ class MyClient(discord.Client):
     while not self.is_closed():
       mapName = await get_database()
       mapName = mapName['map_filter']
+      str = 'Regioni di interesse:\n' + mapName[0]
+      for i in range(1, len(mapName)):
+          str += ', ' + mapName[i]
+      await self.client.eventChannel.edit(topic=str)
       for map in mapName:
         list = []
         oldData = read(defs.DB['mapData'].format(map))
@@ -81,7 +98,7 @@ class MyClient(discord.Client):
         for i, j in list:
           if newData[j]['iconType'] in defs.DB['iconFilter']:
 
-            addCircle(map, (newData[j]['x'], newData[i]['y']))
+            addCircle(map, (newData[j]['x'], newData[j]['y']))
             icon = defs.ICON_ID[newData[j]['iconType']]
             
             flag = convert_to_bin(newData[j]['flags'])
@@ -376,7 +393,7 @@ async def get_depot(interaction: discord.Interaction, current: str):
   l = []
   data = await get_database()
   for i in range(len(data['depots'])):
-    l.append(app_commands.Choice(name=f"{defs.ICON_ID[data['depots'][i]['iconType']]} a {data['depots'][i]['location']}({data['depots'][i]['map']})", value=i))
+    l.append(app_commands.Choice(name=f"{data['depots'][i]['name']} a {data['depots'][i]['location']}({data['depots'][i]['map']})", value=i))
   return l
 
 
@@ -385,8 +402,13 @@ async def updt_database(data, client):
   if msg == None:
     await client.dbChannel.send(content=json.dumps(data, indent=2))
   else:
-    await msg.delete()
     await client.dbChannel.send(content=json.dumps(data, indent=2))
+    await msg.delete()
+
+
+async def deletemessage(id):
+    msg = await client.dbChannel.fetch_message(id)
+    await msg.delete()
 
 
 if __name__ == '__main__':
@@ -394,8 +416,7 @@ if __name__ == '__main__':
   intents.message_content = True
   client = MyClient(intents=intents)
   tree= app_commands.CommandTree(client)
-  updt()
-  
+  #updt()
 
   @tree.command(name='presenze', description='Crea un annuncio per reclutare', guild=discord.Object(id=client.server))
   @discord.app_commands.describe(mode='Vuoi creare un nuovo annuncio o stampare la lista delle presenze?')
@@ -410,7 +431,7 @@ if __name__ == '__main__':
         str = '\n'.join(list)
         await interaction.response.send_message(str, ephemeral=True)
       else:
-        await interaction.response.send_modal(classes.Presenze(  ))
+        await interaction.response.send_modal(classes.Presenze())
     else:
       await interaction.response.send_message('Non hai i permessi', ephemeral=True)
 
@@ -446,23 +467,21 @@ if __name__ == '__main__':
     desc='Inserisci una descrizione (opzionale)'
   )
   @discord.app_commands.autocomplete(location=location_autocomplete)
-  async def deposito(interaction: discord.Interaction, location: str, name: str, passcode: str, desc: str=''):
+  async def deposito(interaction: discord.Interaction, location: str, name: str, passcode: str, group: str='Altro', desc: str=''):
     data = await get_database()
     location = json.loads(location)
-    data['depots'].append({'iconType': location[3], 'location': location[0], 'map': location[1], 'name': name, 'passcode':passcode, 'desc':desc})
+    data['depots'].append({'iconType': location[3], 'location': location[0], 'map': location[1], 'name': name, 'passcode':passcode, 'group':group, 'desc':desc})
     depots = data['depots']
+    
+    embed, view = classes.view_depots(depots[0]['group'], depots)
 
-    embed = discord.Embed(title='Lista depositi', description='Usa `/depot_add` per aggiungere un nuovo deposito.')
-    for d in depots:
-      emoji = defs.DB['emojis'][str(d['iconType'])]
-      embed.add_field(name=f"<:{emoji[0]}:{emoji[1]}> {defs.ICON_ID[d['iconType']]} a {d['location']}({d['map']})", value=f"Nome: `{d['name']}`\nPasscode: `{d['passcode']}`\n{d['desc']}", inline=False)
+    await interaction.response.send_message(embed=embed, view=view)
+    await interaction.followup.send(f'Deposito a {location[0]} aggiunto', ephemeral=True)
+    #await client.depotChannel.send(embed=embed)
 
     async for msg in client.depotChannel.history(limit=100):
       if msg.id == data['depotListMsg']:
         await msg.delete()
-    
-    await interaction.response.send_message('Deposito aggiunto', ephemeral=True)
-    await client.depotChannel.send(embed=embed)
     data['depotListMsg'] = client.depotChannel.last_message_id
 
     await updt_database(data, client)
@@ -476,20 +495,19 @@ if __name__ == '__main__':
   @discord.app_commands.autocomplete(depot=get_depot)
   async def deposito(interaction: discord.Interaction, depot: int):
     data = await get_database()
+    loc = data['depots'][depot]['location']
     data['depots'].remove(data['depots'][depot])
     depots = data['depots']
 
-    embed = discord.Embed(title='Lista depositi', description='Usa `/depot_add` per aggiungere un nuovo deposito.')
-    for d in depots:
-      emoji = defs.DB['emojis'][str(d['iconType'])]
-      embed.add_field(name=f"<:{emoji[0]}:{emoji[1]}> {defs.ICON_ID[d['iconType']]} a {d['location']} ({d['map']})", value=f"Nome: `{d['name']}`\nPasscode: `{d['passcode']}`\n{d['desc']}", inline=False)
+    embed, view = classes.view_depots(depots[0]['group'], depots)
+
+    await interaction.response.send_message(embed=embed, view=view)
+    await interaction.followup.send(f"Deposito a {loc} rimosso", ephemeral=True)
+    #await client.depotChannel.send(embed=embed)
 
     async for msg in client.depotChannel.history(limit=100):
       if msg.id == data['depotListMsg']:
         await msg.delete()
-    
-    await interaction.response.send_message('Deposito rimosso', ephemeral=True)
-    await client.depotChannel.send(embed=embed)
     data['depotListMsg'] = client.depotChannel.last_message_id
 
     await updt_database(data, client)
@@ -498,6 +516,7 @@ if __name__ == '__main__':
   @tree.command(name='reset', description='Fai un reset del bot', guild=discord.Object(id=client.server))
   async def reset(interaction: discord.Interaction):
     data = await get_database()
+
     data['download'] = 0
     await updt_database(data, client)
     await client.change_presence(status=discord.Status.idle)
@@ -523,7 +542,7 @@ if __name__ == '__main__':
 
     for map in mapName:
       data = read(defs.DB['mapData'].format(map))
-      updateMap(map, data, -1)
+      updateMap(map, data)
       str_2 = loading(mapName.index(map)+1, len(mapName))
       await interaction.edit_original_response(content= str_1 + f'Map {map} updated\n' + str_2)
     print("Maps updated")
