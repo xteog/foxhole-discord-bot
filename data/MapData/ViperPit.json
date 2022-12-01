@@ -5,6 +5,20 @@
     {
       "teamId": "NONE",
       "iconType": 62,
+      "x": 0.7434936,
+      "y": 0.34582388,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 62,
+      "x": 0.44533557,
+      "y": 0.8578284,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 62,
       "x": 0.56128794,
       "y": 0.60659426,
       "flags": 0
@@ -12,43 +26,15 @@
     {
       "teamId": "NONE",
       "iconType": 62,
-      "x": 0.29055285,
-      "y": 0.36941534,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 62,
-      "x": 0.46572873,
-      "y": 0.7106351,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 62,
-      "x": 0.7389203,
-      "y": 0.4997009,
+      "x": 0.4049613,
+      "y": 0.10682255,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 23,
-      "x": 0.6198279,
-      "y": 0.9066294,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 20,
-      "x": 0.20710641,
-      "y": 0.72384876,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 20,
-      "x": 0.44533557,
-      "y": 0.8578284,
+      "x": 0.46572873,
+      "y": 0.7106351,
       "flags": 0
     },
     {
@@ -56,6 +42,34 @@
       "iconType": 20,
       "x": 0.53995377,
       "y": 0.1468991,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.6198279,
+      "y": 0.9066294,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.7389203,
+      "y": 0.4997009,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.6448788,
+      "y": 0.6735125,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.6424914,
+      "y": 0.6653863,
       "flags": 0
     },
     {
@@ -75,34 +89,6 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.42886582,
-      "y": 0.42824784,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.1740297,
-      "y": 0.57850397,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.17301829,
-      "y": 0.5894613,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.6424914,
-      "y": 0.6653863,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
       "x": 0.8232721,
       "y": 0.4905845,
       "flags": 0
@@ -116,6 +102,20 @@
     },
     {
       "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.42886582,
+      "y": 0.42824784,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.17301829,
+      "y": 0.5894613,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
       "iconType": 32,
       "x": 0.42317373,
       "y": 0.42654002,
@@ -124,22 +124,8 @@
     {
       "teamId": "NONE",
       "iconType": 32,
-      "x": 0.6448788,
-      "y": 0.6735125,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 39,
-      "x": 0.2726083,
-      "y": 0.44996992,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 19,
-      "x": 0.22596861,
-      "y": 0.5138109,
+      "x": 0.1740297,
+      "y": 0.57850397,
       "flags": 0
     },
     {
@@ -151,16 +137,9 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 17,
-      "x": 0.26491278,
-      "y": 0.45863575,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
       "iconType": 34,
-      "x": 0.26553714,
-      "y": 0.44979778,
+      "x": 0.24546556,
+      "y": 0.5082224,
       "flags": 0
     },
     {
@@ -168,13 +147,6 @@
       "iconType": 34,
       "x": 0.23719072,
       "y": 0.51204133,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 34,
-      "x": 0.24546556,
-      "y": 0.5082224,
       "flags": 0
     },
     {
@@ -208,22 +180,8 @@
     {
       "teamId": "WARDENS",
       "iconType": 12,
-      "x": 0.24403778,
-      "y": 0.4499537,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 12,
       "x": 0.27505374,
       "y": 0.42568254,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 51,
-      "x": 0.23709564,
-      "y": 0.4904185,
       "flags": 0
     },
     {
@@ -378,7 +336,7 @@
       "x": 0.38273838,
       "y": 0.82834363,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 37
     },
     {
       "text": "Deadsteps",
@@ -391,7 +349,7 @@
       "x": 0.816489,
       "y": 0.5138778,
       "mapMarkerType": "Major",
-      "location": 45
+      "location": 39
     },
     {
       "text": "Earl's Welcome",
@@ -404,14 +362,14 @@
       "x": 0.5321962,
       "y": 0.5375857,
       "mapMarkerType": "Major",
-      "location": 48
+      "location": 42
     },
     {
       "text": "Fort Viper",
       "x": 0.3418565,
       "y": 0.599041,
       "mapMarkerType": "Major",
-      "location": 49
+      "location": 43
     },
     {
       "text": "Hardcaps",
@@ -424,7 +382,7 @@
       "x": 0.28270397,
       "y": 0.548087,
       "mapMarkerType": "Major",
-      "location": 47
+      "location": 41
     },
     {
       "text": "Lake Mioira",
@@ -437,7 +395,7 @@
       "x": 0.6234502,
       "y": 0.71039724,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 38
     },
     {
       "text": "Path of the Charmed",
@@ -450,7 +408,7 @@
       "x": 0.44389725,
       "y": 0.3511407,
       "mapMarkerType": "Major",
-      "location": 46
+      "location": 40
     },
     {
       "text": "Snakehead Lake",
@@ -469,7 +427,7 @@
       "x": 0.26904154,
       "y": 0.8157426,
       "mapMarkerType": "Major",
-      "location": 50
+      "location": 44
     },
     {
       "text": "The Lady's Lake",
@@ -502,7 +460,7 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1668005053608,
-  "version": 178,
-  "ETag": "\"178\""
+  "lastUpdated": 1669919943875,
+  "version": 142,
+  "ETag": "\"142\""
 }

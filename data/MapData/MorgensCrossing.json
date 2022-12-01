@@ -4,44 +4,37 @@
   "mapItems": [
     {
       "teamId": "NONE",
-      "iconType": 62,
-      "x": 0.6531814,
-      "y": 0.880487,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 62,
-      "x": 0.5395268,
-      "y": 0.80824673,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 62,
-      "x": 0.33391342,
-      "y": 0.44750264,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 62,
+      "iconType": 61,
       "x": 0.37469882,
       "y": 0.18872914,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 21,
-      "x": 0.62131727,
-      "y": 0.20881991,
+      "iconType": 61,
+      "x": 0.574377,
+      "y": 0.08106875,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 21,
+      "iconType": 61,
+      "x": 0.49209708,
+      "y": 0.32739234,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
       "x": 0.82385415,
       "y": 0.49411607,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 23,
+      "x": 0.59478706,
+      "y": 0.5759818,
       "flags": 0
     },
     {
@@ -54,8 +47,8 @@
     {
       "teamId": "NONE",
       "iconType": 20,
-      "x": 0.574377,
-      "y": 0.08106875,
+      "x": 0.62131727,
+      "y": 0.20881991,
       "flags": 0
     },
     {
@@ -67,14 +60,14 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 40,
-      "x": 0.6654579,
-      "y": 0.5525658,
+      "iconType": 20,
+      "x": 0.33391342,
+      "y": 0.44750264,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 40,
+      "iconType": 38,
       "x": 0.6034673,
       "y": 0.332435,
       "flags": 0
@@ -82,8 +75,8 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.5127929,
-      "y": 0.10582404,
+      "x": 0.5246894,
+      "y": 0.10656842,
       "flags": 0
     },
     {
@@ -96,8 +89,22 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.5246894,
-      "y": 0.10656842,
+      "x": 0.5127929,
+      "y": 0.10582404,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.6654579,
+      "y": 0.5525658,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.25968823,
+      "y": 0.30831778,
       "flags": 0
     },
     {
@@ -116,21 +123,14 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 38,
+      "iconType": 32,
       "x": 0.25416064,
       "y": 0.30603603,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.25968823,
-      "y": 0.30831778,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
+      "iconType": 32,
       "x": 0.24870521,
       "y": 0.30378404,
       "flags": 0
@@ -154,13 +154,6 @@
       "iconType": 17,
       "x": 0.6172161,
       "y": 0.14576717,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 37,
-      "x": 0.49012032,
-      "y": 0.44990277,
       "flags": 0
     },
     {
@@ -295,6 +288,13 @@
       "x": 0.60870737,
       "y": 0.85149014,
       "flags": 8
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 37,
+      "x": 0.49012032,
+      "y": 0.44990277,
+      "flags": 0
     }
   ],
   "mapTextItems": [
@@ -303,14 +303,14 @@
       "x": 0.5831203,
       "y": 0.14839464,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 37
     },
     {
       "text": "Bastard's Block",
       "x": 0.60732245,
       "y": 0.3378211,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 39
     },
     {
       "text": "Callum's Descent",
@@ -329,21 +329,21 @@
       "x": 0.3591508,
       "y": 0.121744014,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 38
     },
     {
       "text": "Lividus",
       "x": 0.61497265,
       "y": 0.5383431,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 35
     },
     {
       "text": "Quietus",
       "x": 0.29447103,
       "y": 0.36270502,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 36
     },
     {
       "text": "Rising Calm",
@@ -374,10 +374,10 @@
       "x": 0.6094126,
       "y": 0.8513195,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 40
     }
   ],
-  "lastUpdated": 1668006771917,
-  "version": 165,
-  "ETag": "\"165\""
+  "lastUpdated": 1669902484480,
+  "version": 134,
+  "ETag": "\"134\""
 }

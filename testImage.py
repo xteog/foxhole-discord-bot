@@ -3,6 +3,7 @@ from testRequest import read
 from scipy.spatial import Voronoi
 import numpy as np
 import defs
+import math
 
 def updateMap(map, data, index=-1):
   iconId = defs.ICON_ID
@@ -77,7 +78,7 @@ def updateMap(map, data, index=-1):
 def paste_icon(backgrond, item, index=-1):
   x = round(item['x'] * bg_w)
   y = round(item['y'] * bg_h)
-  icon = iconId[item['iconType']]
+  icon = defs.ICON_ID[item['iconType']]
 
   with Image.open(defs.DB['iconImage'].format(icon)) as img:
     
@@ -233,7 +234,8 @@ def voronoi_finite_polygons_2d(vor, radius=None):
     return new_regions, np.asarray(new_vertices)
 
 
-def drawVoronoi(map, img):
+def drawVoronoi(map):
+  img = Image.open(defs.PATH + '/Map/Map{}.png'.format(map))
   data = read(defs.DB['mapData'].format(map))['mapItems']
   border = Image.new("RGBA", img.size, (255, 255, 255, 0))
   points = []
@@ -261,27 +263,90 @@ def drawVoronoi(map, img):
     for i in reg:
       polygon.append((vertices[i][0], vertices[i][1]))
 
-    color = (200, 200, 200, 125)
+    color = (200, 200, 200, 50)
     if faction[regions.index(reg)] == 1:
-      color = (0, 255, 0, 125)
+      color = (141, 192, 0, 50)
     if faction[regions.index(reg)] == 2:
-      color = (0, 0, 255, 125)
+      color = (2, 109, 188, 50)
     draw.polygon(polygon, fill=color, outline ="black", width=2)
 
-  out = Image.alpha_composite(img, border)
+  bg =  Image.new(mode="RGBA", size=img.size, color=(255, 255, 255, 0))
+  bg.paste(border, img)
+  out = Image.alpha_composite(img, bg) 
 
-  return out
+  out.save(defs.PATH + '/data/tempVoronoi.png')
 
 
-def group_maps():
+def paste_depot(items):
+  with Image.open(defs.PATH + '/data/FullMap.png') as bg:
+    for item in items:
+      offset = defs.MAP_POSITION[item['map']]
+
+      x = round(item['x'] * defs.REGION_SIZE[0]) + offset[0]
+      y = round(item['y'] * defs.REGION_SIZE[1]) + offset[1]
+
+      icon = defs.ICON_ID[item['iconType']]
+
+      with Image.open(defs.DB['iconImage'].format(icon)) as img:
+        img_w, img_h = img.size
+
+        off = (x - img_w // 2, y - img_h // 2)
+          
+        img = changeColor(img, 1)
+
+        img_trans = Image.new(mode="RGBA", size=bg.size, color=(255, 255, 255, 0))
+        img_trans.paste(img, off)
+        bg.paste(img_trans, (0, 0), img_trans)
+    return bg
+
+
+def create_fullmap():
   bg = Image.new('RGBA', defs.MAP_SIZE, (0, 0, 0, 0))
   for map in defs.MAP_NAME:
-    with Image.open(defs.PATH + '/Map/Map{}.png'.format(map)) as img:
-      out = drawVoronoi(map, img)
-      x = defs.MAP_POSITION[map][0]
-      y = defs.MAP_POSITION[map][1] * -1 + defs.MAP_SIZE[1]
-      bg.paste(out, (x, y), img)
-  bg.show()
+    drawVoronoi(map)
+    x = defs.MAP_POSITION[map][0]
+    y = defs.MAP_POSITION[map][1] * -1 + defs.MAP_SIZE[1]
+    img = Image.open(defs.DB['mapImage'].format(map))
+    out = Image.open(defs.PATH + '/data/tempVoronoi.png')
+    bg.paste(out, (x, y), img)
+    img.close()
+    out.close()
 
-if __name__ == '__main__':
-  group_maps()
+  
+  bg.save(defs.PATH + '/data/FullMap.png')
+
+
+def paste_items_fullmap(items, crop=False):
+
+  img = paste_depot(items)
+
+  if crop:
+    xMean = 0
+    yMean = 0
+    for item in items:
+      offset = defs.MAP_POSITION[item['map']]
+      x = item['x'] * defs.REGION_SIZE[0] + offset[0]
+      y = item['y'] * defs.REGION_SIZE[1] + offset[1]
+      xMean += x  / len(items)
+      yMean += y / len(items)
+
+    max_d = -1
+    for i in range(len(items)):
+      offset = defs.MAP_POSITION[items[i]['map']]
+      x = items[i]['x'] * defs.REGION_SIZE[0] + offset[0]
+      y = items[i]['y'] * defs.REGION_SIZE[1] + offset[1]
+      d = math.sqrt((xMean - x) ** 2 + (yMean - y) ** 2)
+      if max_d < d:
+        max_d = d
+        index_max = i
+
+    offset = defs.MAP_POSITION[items[index_max]['map']]
+    x = items[index_max]['x'] * defs.REGION_SIZE[0] + offset[0]
+    y = items[index_max]['y'] * defs.REGION_SIZE[1] + offset[1]
+    new_w = abs(xMean - x) + 200
+    new_h = abs(yMean - y) + 200
+    new_size = max(new_w, new_h)
+
+    img = img.crop((xMean - new_size, yMean - new_size, xMean + new_size, yMean + new_size))
+    img = img.resize((img.size[0] // 2, img.size[1] // 2), Image.ANTIALIAS)
+  img.save(defs.PATH + '/data/tempFullMap.png')

@@ -4,79 +4,58 @@
   "mapItems": [
     {
       "teamId": "NONE",
-      "iconType": 62,
-      "x": 0.4379406,
-      "y": 0.64064634,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 62,
-      "x": 0.15643384,
-      "y": 0.6269618,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 62,
+      "iconType": 61,
       "x": 0.44802865,
       "y": 0.88609993,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 62,
-      "x": 0.3238098,
-      "y": 0.4125529,
+      "iconType": 61,
+      "x": 0.82161593,
+      "y": 0.6331351,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 62,
+      "iconType": 61,
       "x": 0.55253893,
       "y": 0.54925925,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 62,
+      "iconType": 61,
+      "x": 0.3238098,
+      "y": 0.4125529,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 23,
+      "x": 0.15643384,
+      "y": 0.6269618,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.6376325,
+      "y": 0.42206565,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.4379406,
+      "y": 0.64064634,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
       "x": 0.6370888,
       "y": 0.70329124,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 20,
-      "x": 0.6880639,
-      "y": 0.31859788,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 20,
-      "x": 0.26724657,
-      "y": 0.17069392,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.86671275,
-      "y": 0.5429474,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.869023,
-      "y": 0.5329453,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.5669964,
-      "y": 0.7113208,
       "flags": 0
     },
     {
@@ -89,8 +68,15 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.3451181,
-      "y": 0.5325018,
+      "x": 0.43769777,
+      "y": 0.31125546,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.3551193,
+      "y": 0.7659329,
       "flags": 0
     },
     {
@@ -103,8 +89,15 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.43769777,
-      "y": 0.31125546,
+      "x": 0.3451181,
+      "y": 0.5325018,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.869023,
+      "y": 0.5329453,
       "flags": 0
     },
     {
@@ -117,8 +110,36 @@
     {
       "teamId": "NONE",
       "iconType": 38,
+      "x": 0.5669964,
+      "y": 0.7113208,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 32,
       "x": 0.13645872,
       "y": 0.43940014,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 32,
+      "x": 0.86671275,
+      "y": 0.5429474,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 39,
+      "x": 0.45813623,
+      "y": 0.34975725,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 19,
+      "x": 0.43272385,
+      "y": 0.38144228,
       "flags": 0
     },
     {
@@ -130,9 +151,37 @@
     },
     {
       "teamId": "WARDENS",
+      "iconType": 17,
+      "x": 0.46007308,
+      "y": 0.32707208,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 37,
+      "x": 0.29706043,
+      "y": 0.7078255,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 34,
+      "x": 0.4516623,
+      "y": 0.36613575,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 34,
+      "x": 0.4469763,
+      "y": 0.38458696,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
       "iconType": 33,
-      "x": 0.4709184,
-      "y": 0.34759852,
+      "x": 0.3877119,
+      "y": 0.7469151,
       "flags": 0
     },
     {
@@ -140,6 +189,27 @@
       "iconType": 33,
       "x": 0.5657784,
       "y": 0.68223727,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 33,
+      "x": 0.4709184,
+      "y": 0.34759852,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 12,
+      "x": 0.4565106,
+      "y": 0.35863176,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 51,
+      "x": 0.46048728,
+      "y": 0.38430437,
       "flags": 0
     },
     {
@@ -175,6 +245,13 @@
       "iconType": 35,
       "x": 0.762725,
       "y": 0.3840681,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 35,
+      "x": 0.14389616,
+      "y": 0.44018567,
       "flags": 0
     },
     {
@@ -222,8 +299,8 @@
     {
       "teamId": "WARDENS",
       "iconType": 58,
-      "x": 0.4481316,
-      "y": 0.3247305,
+      "x": 0.15210344,
+      "y": 0.36358878,
       "flags": 8
     },
     {
@@ -234,14 +311,14 @@
       "flags": 8
     },
     {
-      "teamId": "COLONIALS",
-      "iconType": 56,
-      "x": 0.15210344,
-      "y": 0.36358878,
+      "teamId": "WARDENS",
+      "iconType": 58,
+      "x": 0.4481316,
+      "y": 0.3247305,
       "flags": 8
     },
     {
-      "teamId": "COLONIALS",
+      "teamId": "WARDENS",
       "iconType": 45,
       "x": 0.44212052,
       "y": 0.9175624,
@@ -267,27 +344,6 @@
       "x": 0.29298434,
       "y": 0.15638539,
       "flags": 8
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.3551193,
-      "y": 0.7659329,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 37,
-      "x": 0.29706043,
-      "y": 0.7078255,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.14389616,
-      "y": 0.44018567,
-      "flags": 0
     }
   ],
   "mapTextItems": [
@@ -296,7 +352,7 @@
       "x": 0.44412765,
       "y": 0.3227743,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 44
     },
     {
       "text": "Camp Eos",
@@ -333,14 +389,14 @@
       "x": 0.15061852,
       "y": 0.36391303,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 42
     },
     {
       "text": "Elksford",
       "x": 0.33049652,
       "y": 0.4971746,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 39
     },
     {
       "text": "Featherfield",
@@ -359,14 +415,14 @@
       "x": 0.70212996,
       "y": 0.8482764,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 46
     },
     {
       "text": "Harpy",
       "x": 0.44333068,
       "y": 0.9163655,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 45
     },
     {
       "text": "Hookhall",
@@ -385,14 +441,14 @@
       "x": 0.70420206,
       "y": 0.3878927,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 43
     },
     {
       "text": "Limestone Holdfast",
       "x": 0.29389253,
       "y": 0.15557751,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 48
     },
     {
       "text": "Mac Conaill's Pass",
@@ -405,14 +461,14 @@
       "x": 0.8401006,
       "y": 0.53316337,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 41
     },
     {
       "text": "Nightchurch",
       "x": 0.37822467,
       "y": 0.74487805,
       "mapMarkerType": "Major",
-      "location": 27
+      "location": 38
     },
     {
       "text": "Pitfall",
@@ -431,7 +487,7 @@
       "x": 0.54468614,
       "y": 0.67606056,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 40
     },
     {
       "text": "Scorpion",
@@ -444,7 +500,7 @@
       "x": 0.74158484,
       "y": 0.5578975,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 47
     },
     {
       "text": "The Bait",
@@ -519,7 +575,7 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1668006702920,
-  "version": 422,
-  "ETag": "\"422\""
+  "lastUpdated": 1669922729217,
+  "version": 95,
+  "ETag": "\"95\""
 }

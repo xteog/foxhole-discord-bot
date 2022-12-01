@@ -5,8 +5,15 @@
     {
       "teamId": "NONE",
       "iconType": 62,
-      "x": 0.530991,
-      "y": 0.8442226,
+      "x": 0.6886921,
+      "y": 0.46887997,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 62,
+      "x": 0.4230732,
+      "y": 0.72900635,
       "flags": 0
     },
     {
@@ -25,13 +32,6 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 62,
-      "x": 0.4230732,
-      "y": 0.72900635,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
       "iconType": 23,
       "x": 0.34816563,
       "y": 0.11602006,
@@ -40,8 +40,8 @@
     {
       "teamId": "NONE",
       "iconType": 20,
-      "x": 0.55921334,
-      "y": 0.31922296,
+      "x": 0.3103965,
+      "y": 0.5100408,
       "flags": 0
     },
     {
@@ -54,8 +54,22 @@
     {
       "teamId": "NONE",
       "iconType": 20,
-      "x": 0.26758635,
-      "y": 0.2436707,
+      "x": 0.530991,
+      "y": 0.8442226,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.7203148,
+      "y": 0.41045237,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.8178694,
+      "y": 0.5077687,
       "flags": 0
     },
     {
@@ -75,34 +89,6 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.63300216,
-      "y": 0.80279803,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.36264816,
-      "y": 0.23492251,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.7203148,
-      "y": 0.41045237,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.72260636,
-      "y": 0.41759607,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
       "x": 0.2304616,
       "y": 0.47613987,
       "flags": 0
@@ -110,36 +96,36 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.8178694,
-      "y": 0.5077687,
+      "x": 0.22374271,
+      "y": 0.47236624,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 32,
+      "iconType": 38,
       "x": 0.638196,
       "y": 0.80817467,
       "flags": 0
     },
     {
       "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.63300216,
+      "y": 0.80279803,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
       "iconType": 32,
-      "x": 0.22374271,
-      "y": 0.47236624,
+      "x": 0.72260636,
+      "y": 0.41759607,
       "flags": 0
     },
     {
-      "teamId": "COLONIALS",
-      "iconType": 39,
-      "x": 0.55687875,
-      "y": 0.49006712,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 19,
-      "x": 0.5758518,
-      "y": 0.48851538,
+      "teamId": "NONE",
+      "iconType": 32,
+      "x": 0.36264816,
+      "y": 0.23492251,
       "flags": 0
     },
     {
@@ -151,16 +137,9 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 17,
-      "x": 0.568803,
-      "y": 0.4678464,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
       "iconType": 34,
-      "x": 0.55650884,
-      "y": 0.52839583,
+      "x": 0.545614,
+      "y": 0.50764734,
       "flags": 0
     },
     {
@@ -168,13 +147,6 @@
       "iconType": 34,
       "x": 0.5453505,
       "y": 0.4837032,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 34,
-      "x": 0.545614,
-      "y": 0.50764734,
       "flags": 0
     },
     {
@@ -194,22 +166,8 @@
     {
       "teamId": "COLONIALS",
       "iconType": 12,
-      "x": 0.5732518,
-      "y": 0.5176467,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 12,
       "x": 0.54444724,
       "y": 0.45485583,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 51,
-      "x": 0.5700035,
-      "y": 0.5363333,
       "flags": 0
     },
     {
@@ -231,6 +189,13 @@
       "iconType": 35,
       "x": 0.6646957,
       "y": 0.4356884,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.57395345,
+      "y": 0.51803905,
       "flags": 0
     },
     {
@@ -364,14 +329,14 @@
       "x": 0.39372203,
       "y": 0.40942293,
       "mapMarkerType": "Major",
-      "location": 47
+      "location": 42
     },
     {
       "text": "Barrony Ranch",
       "x": 0.3733477,
       "y": 0.1098376,
       "mapMarkerType": "Major",
-      "location": 45
+      "location": 40
     },
     {
       "text": "Barrony Road",
@@ -396,7 +361,7 @@
       "x": 0.24315597,
       "y": 0.43437782,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 36
     },
     {
       "text": "Erimos Ranch",
@@ -409,14 +374,14 @@
       "x": 0.75807965,
       "y": 0.3792637,
       "mapMarkerType": "Major",
-      "location": 48
+      "location": 43
     },
     {
       "text": "Greenfield Orchard",
       "x": 0.7317328,
       "y": 0.20453982,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 34
     },
     {
       "text": "Harvester's Range",
@@ -459,7 +424,7 @@
       "x": 0.8278165,
       "y": 0.4906847,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 35
     },
     {
       "text": "Pandora Compound",
@@ -472,7 +437,7 @@
       "x": 0.65262276,
       "y": 0.8350459,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 37
     },
     {
       "text": "Providence Field",
@@ -485,14 +450,14 @@
       "x": 0.6491603,
       "y": 0.4668125,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 39
     },
     {
       "text": "The Breach",
       "x": 0.36424437,
       "y": 0.2708485,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 38
     },
     {
       "text": "The Fuming Pen",
@@ -511,7 +476,7 @@
       "x": 0.54745007,
       "y": 0.24971269,
       "mapMarkerType": "Major",
-      "location": 46
+      "location": 41
     },
     {
       "text": "The Rollcage",
@@ -538,7 +503,7 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1668541005596,
-  "version": 30,
-  "ETag": "\"30\""
+  "lastUpdated": 1669800523226,
+  "version": 54,
+  "ETag": "\"54\""
 }

@@ -5,22 +5,22 @@
     {
       "teamId": "NONE",
       "iconType": 61,
-      "x": 0.3550817,
-      "y": 0.8626851,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 61,
-      "x": 0.59904265,
-      "y": 0.7576504,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 61,
       "x": 0.5552595,
       "y": 0.22210737,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.49756974,
+      "y": 0.53746825,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 61,
+      "x": 0.3550817,
+      "y": 0.8626851,
       "flags": 0
     },
     {
@@ -33,13 +33,6 @@
     {
       "teamId": "NONE",
       "iconType": 23,
-      "x": 0.2245317,
-      "y": 0.5737394,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 20,
       "x": 0.3360714,
       "y": 0.5409016,
       "flags": 0
@@ -47,15 +40,22 @@
     {
       "teamId": "NONE",
       "iconType": 20,
-      "x": 0.78507954,
-      "y": 0.5616143,
+      "x": 0.59904265,
+      "y": 0.7576504,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 20,
-      "x": 0.49756974,
-      "y": 0.53746825,
+      "x": 0.44422612,
+      "y": 0.2949546,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.2245317,
+      "y": 0.5737394,
       "flags": 0
     },
     {
@@ -68,8 +68,8 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.19818373,
-      "y": 0.52714574,
+      "x": 0.7952968,
+      "y": 0.34679604,
       "flags": 0
     },
     {
@@ -82,13 +82,6 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.7952968,
-      "y": 0.34679604,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
       "x": 0.34848115,
       "y": 0.55161226,
       "flags": 0
@@ -96,15 +89,22 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.64326245,
-      "y": 0.14719673,
+      "x": 0.19818373,
+      "y": 0.52714574,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.6609517,
-      "y": 0.67811656,
+      "x": 0.36666167,
+      "y": 0.800342,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.35698938,
+      "y": 0.79624695,
       "flags": 0
     },
     {
@@ -117,15 +117,15 @@
     {
       "teamId": "NONE",
       "iconType": 32,
-      "x": 0.36666167,
-      "y": 0.800342,
+      "x": 0.64326245,
+      "y": 0.14719673,
       "flags": 0
     },
     {
       "teamId": "NONE",
       "iconType": 32,
-      "x": 0.35698938,
-      "y": 0.79624695,
+      "x": 0.6609517,
+      "y": 0.67811656,
       "flags": 0
     },
     {
@@ -172,6 +172,13 @@
     },
     {
       "teamId": "COLONIALS",
+      "iconType": 52,
+      "x": 0.38494265,
+      "y": 0.5281526,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 53,
       "x": 0.36807582,
       "y": 0.48966938,
@@ -201,29 +208,43 @@
     {
       "teamId": "COLONIALS",
       "iconType": 35,
+      "x": 0.7189587,
+      "y": 0.15455404,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
+      "x": 0.7843395,
+      "y": 0.34234712,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 35,
       "x": 0.72513956,
       "y": 0.5972756,
       "flags": 0
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 56,
+      "iconType": 58,
       "x": 0.3270634,
       "y": 0.5042822,
       "flags": 8
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 56,
-      "x": 0.6773155,
-      "y": 0.18471293,
+      "iconType": 58,
+      "x": 0.8173422,
+      "y": 0.3911512,
       "flags": 8
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 56,
-      "x": 0.8173422,
-      "y": 0.3911512,
+      "iconType": 58,
+      "x": 0.6773155,
+      "y": 0.18471293,
       "flags": 8
     },
     {
@@ -281,27 +302,6 @@
       "x": 0.8390266,
       "y": 0.54753554,
       "flags": 8
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 52,
-      "x": 0.38494265,
-      "y": 0.5281526,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.7189587,
-      "y": 0.15455404,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 35,
-      "x": 0.7843395,
-      "y": 0.34234712,
-      "flags": 0
     }
   ],
   "mapTextItems": [
@@ -316,21 +316,21 @@
       "x": 0.8178504,
       "y": 0.38884524,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 33
     },
     {
       "text": "Atropos' Fate",
       "x": 0.5730031,
       "y": 0.7843336,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 39
     },
     {
       "text": "Clotho's Refuge",
       "x": 0.61337584,
       "y": 0.32398352,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 38
     },
     {
       "text": "Dredgefield",
@@ -349,21 +349,21 @@
       "x": 0.15671077,
       "y": 0.5505076,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 41
     },
     {
       "text": "Hermit's Rest",
       "x": 0.67122585,
       "y": 0.6176634,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 37
     },
     {
       "text": "Lachesis' Tally ",
       "x": 0.840556,
       "y": 0.54475015,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 42
     },
     {
       "text": "Leatherback Pathway",
@@ -376,7 +376,7 @@
       "x": 0.395983,
       "y": 0.8252861,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 35
     },
     {
       "text": "Steely Fields",
@@ -389,7 +389,7 @@
       "x": 0.6767252,
       "y": 0.1845278,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 34
     },
     {
       "text": "Terrapin Woods",
@@ -408,7 +408,7 @@
       "x": 0.27597004,
       "y": 0.2246597,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 36
     },
     {
       "text": "The Frontier",
@@ -439,14 +439,14 @@
       "x": 0.34593302,
       "y": 0.51468116,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 32
     },
     {
       "text": "Vagrant Bastion",
       "x": 0.5076587,
       "y": 0.1616039,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 40
     },
     {
       "text": "Wasting Holt",
@@ -461,7 +461,7 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1668547147270,
-  "version": 305,
-  "ETag": "\"305\""
+  "lastUpdated": 1669875990532,
+  "version": 105,
+  "ETag": "\"105\""
 }

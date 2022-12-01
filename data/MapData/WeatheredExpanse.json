@@ -4,58 +4,93 @@
   "mapItems": [
     {
       "teamId": "NONE",
-      "iconType": 62,
-      "x": 0.70185095,
-      "y": 0.6472965,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 23,
-      "x": 0.30004436,
-      "y": 0.62778324,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 21,
+      "iconType": 61,
       "x": 0.4156758,
       "y": 0.47350687,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 20,
-      "x": 0.1735562,
-      "y": 0.50169504,
+      "iconType": 61,
+      "x": 0.6844571,
+      "y": 0.20555916,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 20,
-      "x": 0.32390895,
-      "y": 0.3664403,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 20,
+      "iconType": 61,
       "x": 0.6547841,
       "y": 0.850989,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 40,
+      "iconType": 20,
+      "x": 0.30004436,
+      "y": 0.62778324,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.6585972,
+      "y": 0.35193485,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.24351548,
+      "y": 0.18790746,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 20,
+      "x": 0.70185095,
+      "y": 0.6472965,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.5398661,
+      "y": 0.81223786,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
       "x": 0.5387832,
       "y": 0.81922954,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 40,
+      "iconType": 38,
+      "x": 0.40579155,
+      "y": 0.20473361,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
       "x": 0.4118129,
       "y": 0.20958248,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.66249454,
+      "y": 0.45842758,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.6566884,
+      "y": 0.4653196,
       "flags": 0
     },
     {
@@ -75,8 +110,8 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.40579155,
-      "y": 0.20473361,
+      "x": 0.6502839,
+      "y": 0.21146062,
       "flags": 0
     },
     {
@@ -84,34 +119,6 @@
       "iconType": 38,
       "x": 0.6502839,
       "y": 0.21829082,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.66249454,
-      "y": 0.45842758,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.6566884,
-      "y": 0.4653196,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 32,
-      "x": 0.5398661,
-      "y": 0.81223786,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 32,
-      "x": 0.6502839,
-      "y": 0.21146062,
       "flags": 0
     },
     {
@@ -301,7 +308,7 @@
       "x": 0.27000988,
       "y": 0.52244484,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 32
     },
     {
       "text": "Dullahan's Crest",
@@ -320,21 +327,21 @@
       "x": 0.5164818,
       "y": 0.7780801,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 31
     },
     {
       "text": "Frostmarch",
       "x": 0.15492144,
       "y": 0.4631941,
       "mapMarkerType": "Major",
-      "location": 38
+      "location": 39
     },
     {
       "text": "Huntsfort",
       "x": 0.48584694,
       "y": 0.5349745,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 37
     },
     {
       "text": "Kirkyard",
@@ -347,14 +354,14 @@
       "x": 0.34740227,
       "y": 0.688721,
       "mapMarkerType": "Major",
-      "location": 37
+      "location": 38
     },
     {
       "text": "Port of Rime",
       "x": 0.68206143,
       "y": 0.12976617,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 35
     },
     {
       "text": "Revenant's Path",
@@ -373,14 +380,14 @@
       "x": 0.38944197,
       "y": 0.30851248,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 40
     },
     {
       "text": "Spirit Watch",
       "x": 0.6523898,
       "y": 0.7255189,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 36
     },
     {
       "text": "The Ivory Bank",
@@ -417,14 +424,14 @@
       "x": 0.46095482,
       "y": 0.157184,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 33
     },
     {
       "text": "Wightwalk",
       "x": 0.69054574,
       "y": 0.49786863,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 34
     },
     {
       "text": "Wraith's Gate",
@@ -433,7 +440,7 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1667984686625,
-  "version": 62,
-  "ETag": "\"62\""
+  "lastUpdated": 1669922791192,
+  "version": 415,
+  "ETag": "\"415\""
 }

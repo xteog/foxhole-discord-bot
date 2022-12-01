@@ -130,6 +130,8 @@ MAP_NAME = [
 
 MAP_SIZE = (5632, 6216)
 
+REGION_SIZE = (1024, 888)
+
 MAP_POSITION = {
   "TheFingers": (4608, 2220),
   "GreatMarch": (2304, 1776),

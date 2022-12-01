@@ -1,5 +1,6 @@
 import main
 from testImage import highlight_name
+import testImage
 import defs
 import discord
 from testRequest import read, write
@@ -185,6 +186,23 @@ class EventFilter(discord.ui.Select):
                 await interaction.response.send_message(str)
 
 
+class DepotModal(discord.ui.Modal, title='Dati Deposito'):
+    def __init__(self):
+        super().__init__()
+        self.group = discord.ui.TextInput(label="Gruppo", required=False, placeholder="Inserisci il nome del gruppo del deposito")
+        self.name = discord.ui.TextInput(label="Nome", placeholder="Inserisci il nome del deposito")
+        self.passcode = discord.ui.TextInput(label="Passcode", placeholder="Inserisci il codice del deposito del deposito")
+        self.desc = discord.ui.TextInput(label="Descrizione", required=False, placeholder="Inserisci la descrizione del deposito",  style=discord.TextStyle.paragraph)
+        self.add_item(self.group)
+        self.add_item(self.name)
+        self.add_item(self.passcode)
+        self.add_item(self.desc)
+
+    async def on_submit(self, interaction: discord.Interaction):
+        await interaction.response.send_message('Modal sent', ephemeral=True)
+        self.stop()
+
+
 class DepotEmbed(discord.Embed):
     def __init__(self, group, depots):
         super().__init__(title=f'Lista Depositi', description='Prima di interagire guardare la descrizione di questo canale.')
@@ -192,7 +210,9 @@ class DepotEmbed(discord.Embed):
             if d['group'] == group:
                 emoji = defs.DB['emojis'][str(d['iconType'])]
                 self.add_field(name=f"<:{emoji[0]}:{emoji[1]}> {defs.ICON_ID[d['iconType']]} a {d['location']}({d['map']})", value=f"Nome: `{d['name']}`\nPasscode: `{d['passcode']}`\n{d['desc']}", inline=False)
-
+        testImage.paste_items_fullmap(depots, True)
+        self.fileMap = discord.File(defs.PATH + '/data/tempFullMap.png')
+        self.set_image(url='attachment://tempFullMap.png')
 
 class DepotButton(discord.ui.Button):
     def __init__(self, group, depots, disabled=True):

@@ -5,6 +5,7 @@ import discord
 from discord import app_commands
 from testRequest import updateData, downloadData, updateMapL, read, setName
 from testImage import updateMap, addCircle, changeColor
+import testImage
 import time
 import defs
 from PIL import Image
@@ -43,17 +44,17 @@ class MyClient(discord.Client):
     await updt_database(db, self)
     #await self.eventChannel.edit(topic=str)
 
-    embed, view = classes.view_depots(db['depots'][0]['group'], db['depots'])
-    client.add_view(view)
+    if len(db['depots']) > 0:
+      embed, view = classes.view_depots(db['depots'][0]['group'], db['depots'])
+      client.add_view(view)
 
     await client.change_presence(status=discord.Status.online)
     print('We have logged in as {}'.format(self.user.name))
-
-
+    '''
   async def on_error(self):
     print('Error')
     await self.errorChannel.send(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
-
+  '''
   async def background_task(self):
     await self.wait_until_ready()
     await asyncio.sleep(30)
@@ -180,6 +181,7 @@ def updt():
   for map in mapName:
     data = read(defs.DB['mapData'].format(map))
     updateMap(map, data, -1)
+  testImage.create_fullmap()
   print("Maps updated")
 
   #DB['startWar'] = requests.get(DB['warReport']).json()['conquestStartTime']
@@ -364,13 +366,12 @@ for map in defs.MAP_NAME:
               index = j
         if index != -1:
           icon = data['mapItems'][i]['iconType']
-          list.append([data['mapTextItems'][index]['text'], map, 0, icon])
+          list.append([data['mapTextItems'][index]['text'], map, 0, icon, (data['mapItems'][i]['x'], data['mapItems'][i]['y'])])
 del min
 
 
 async def location_autocomplete(interaction: discord.Interaction, current: str):
   for i in range(len(list)):
-    
     list[i][2] = lev_dist(current.lower(), list[i][0][0:min(len(current), len(list[i][0]))].lower())
   
   list_f = []
@@ -461,21 +462,31 @@ if __name__ == '__main__':
 
   @tree.command(name='depot_add', description='Aggiungi i dati di un deposito', guild=discord.Object(id=client.server))
   @discord.app_commands.describe(
-    location='Inserisci la zona del depot',
-    name='Inserisci il nome della stockpile riservata',
-    passcode='Inserisci il codice della stockpile',
-    desc='Inserisci una descrizione (opzionale)'
+    location='Inserisci la posizione del deposito',
   )
   @discord.app_commands.autocomplete(location=location_autocomplete)
-  async def deposito(interaction: discord.Interaction, location: str, name: str, passcode: str, group: str='Altro', desc: str=''):
+  async def deposito(interaction: discord.Interaction, location: str):
+    modal = classes.DepotModal()
+    await interaction.response.send_modal(modal)
+    await modal.wait()
     data = await get_database()
     location = json.loads(location)
-    data['depots'].append({'iconType': location[3], 'location': location[0], 'map': location[1], 'name': name, 'passcode':passcode, 'group':group, 'desc':desc})
+    data['depots'].append({
+      'group': 'Altro' if modal.group.value=='' else modal.group.value, 
+      'iconType': location[3], 
+      'location': location[0], 
+      'map': location[1],
+      'x': location[4][0],
+      'y': location[4][1],
+      'name': modal.name.value, 
+      'passcode': modal.passcode.value, 
+      'desc': modal.desc.value
+    })
     depots = data['depots']
     
     embed, view = classes.view_depots(depots[0]['group'], depots)
 
-    await interaction.response.send_message(embed=embed, view=view)
+    await interaction.followup.send(file=embed.fileMap, embed=embed, view=view)
     await interaction.followup.send(f'Deposito a {location[0]} aggiunto', ephemeral=True)
     #await client.depotChannel.send(embed=embed)
 
@@ -485,7 +496,6 @@ if __name__ == '__main__':
     data['depotListMsg'] = client.depotChannel.last_message_id
 
     await updt_database(data, client)
-
 
 
   @tree.command(name='depot_remove', description='Elimina un deposito', guild=discord.Object(id=client.server))
@@ -499,9 +509,11 @@ if __name__ == '__main__':
     data['depots'].remove(data['depots'][depot])
     depots = data['depots']
 
+    await interaction.response.defer(thinking=True)
+
     embed, view = classes.view_depots(depots[0]['group'], depots)
 
-    await interaction.response.send_message(embed=embed, view=view)
+    await interaction.followup.send(file=embed.fileMap, embed=embed, view=view)
     await interaction.followup.send(f"Deposito a {loc} rimosso", ephemeral=True)
     #await client.depotChannel.send(embed=embed)
 
@@ -553,8 +565,10 @@ if __name__ == '__main__':
 
     #DB['startWar'] = requests.get(DB['warReport']).json()['conquestStartTime']
   
+  '''
   @tree.error
   async def on_error(interaction: discord.Interaction, error: discord.app_commands.AppCommandError):
     await client.errorChannel.send(error)
+  '''
 
   client.run(defs.DB['Token'])
