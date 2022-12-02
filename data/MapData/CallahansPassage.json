@@ -221,20 +221,6 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 57,
-      "x": 0.7307939,
-      "y": 0.66947925,
-      "flags": 8
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 56,
-      "x": 0.36178783,
-      "y": 0.7547044,
-      "flags": 8
-    },
-    {
-      "teamId": "WARDENS",
       "iconType": 58,
       "x": 0.5269085,
       "y": 0.60501665,
@@ -242,6 +228,20 @@
     },
     {
       "teamId": "WARDENS",
+      "iconType": 57,
+      "x": 0.7307939,
+      "y": 0.66947925,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 57,
+      "x": 0.36178783,
+      "y": 0.7547044,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 45,
       "x": 0.44807312,
       "y": 0.7688043,
@@ -348,7 +348,7 @@
       "x": 0.35385895,
       "y": 0.7248818,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 33
     },
     {
       "text": "Lingering Lashes",
@@ -380,7 +380,7 @@
       "x": 0.5252302,
       "y": 0.6481513,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 31
     },
     {
       "text": "Sc\u00e1th Passing",
@@ -438,7 +438,7 @@
       "x": 0.72713715,
       "y": 0.68313295,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 32
     },
     {
       "text": "The Procession",
@@ -485,7 +485,7 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1669921910305,
-  "version": 741,
-  "ETag": "\"741\""
+  "lastUpdated": 1670002275976,
+  "version": 22,
+  "ETag": "\"22\""
 }

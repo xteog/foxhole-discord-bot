@@ -159,6 +159,13 @@
     {
       "teamId": "WARDENS",
       "iconType": 18,
+      "x": 0.30004522,
+      "y": 0.84368813,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 18,
       "x": 0.25574863,
       "y": 0.82743526,
       "flags": 0
@@ -182,13 +189,6 @@
       "iconType": 18,
       "x": 0.2904848,
       "y": 0.84677964,
-      "flags": 0
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 18,
-      "x": 0.30004522,
-      "y": 0.84368813,
       "flags": 0
     },
     {
@@ -513,7 +513,7 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1669921271195,
-  "version": 475,
-  "ETag": "\"475\""
+  "lastUpdated": 1670002003302,
+  "version": 10,
+  "ETag": "\"10\""
 }

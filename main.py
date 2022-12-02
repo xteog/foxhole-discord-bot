@@ -3,8 +3,9 @@ from multiprocessing import Event
 import traceback
 import discord
 from discord import app_commands
-from testRequest import updateData, downloadData, updateMapL, read, setName
+from testRequest import updateData, downloadData, updateMapL, read, setName, write
 from testImage import updateMap, addCircle, changeColor
+import testImage
 import testImage
 import time
 import defs
@@ -12,12 +13,14 @@ from PIL import Image
 import classes
 import asyncio
 import json
+import datetime
 
 
 class MyClient(discord.Client):
   def __init__(self, *args, **kwargs):
     super().__init__(*args, **kwargs)
     self.server = defs.DB['serverId']
+    self.day = datetime.datetime.utcnow().day #+1
     self.errorChannel = None
     self.depotChannel = None
     self.eventChannel = None
@@ -35,6 +38,7 @@ class MyClient(discord.Client):
     self.depotChannel = self.get_channel(defs.DB['depotChannel'])
     self.eventChannel = self.get_channel(defs.DB['eventChannel'])
     self.dbChannel = self.get_channel(defs.DB['dataBaseChannel'])
+    self.bollettinoChannel = self.get_channel(defs.DB['bollettinoChannel'])
     
     db = await get_database()
     db['map_filter'] = ["DrownedVale", "AllodsBight", "EndlessShore", "MarbanHollow", "DeadLands", "UmbralWildwood", "ShackledChasm"]
@@ -55,12 +59,17 @@ class MyClient(discord.Client):
     print('Error')
     await self.errorChannel.send(time.asctime(time.localtime(time.time())) + '\n' + traceback.format_exc() + '\n')
   '''
+
+
   async def background_task(self):
     await self.wait_until_ready()
     await asyncio.sleep(30)
-    print('Background task started')
 
+    
+
+    print('Background task started')
     while not self.is_closed():
+      await send_bollettino()
       mapName = await get_database()
       mapName = mapName['map_filter']
       str = 'Regioni di interesse:\n' + mapName[0]
@@ -387,7 +396,9 @@ async def location_autocomplete(interaction: discord.Interaction, current: str):
 
 async def get_database():
   msg = await client.dbChannel.fetch_message(client.dbChannel.last_message_id)
-  return json.loads(msg.content)
+  await msg.attachments[0].save(defs.PATH + '/data/database.json')
+  file = read(defs.PATH + '/data/database.json')
+  return file
 
 
 async def get_depot(interaction: discord.Interaction, current: str):
@@ -400,16 +411,28 @@ async def get_depot(interaction: discord.Interaction, current: str):
 
 async def updt_database(data, client):
   msg = await client.dbChannel.fetch_message(client.dbChannel.last_message_id)
+  write(defs.PATH + '/data/database.json', data)
+  file = discord.File(defs.PATH + '/data/database.json')
   if msg == None:
-    await client.dbChannel.send(content=json.dumps(data, indent=2))
+    await client.dbChannel.send(file = file)
   else:
-    await client.dbChannel.send(content=json.dumps(data, indent=2))
+    await client.dbChannel.send(file = file)
     await msg.delete()
 
 
 async def deletemessage(id):
     msg = await client.dbChannel.fetch_message(id)
     await msg.delete()
+
+
+async def send_bollettino():
+  testImage.create_fullmap()
+
+  now = datetime.datetime.utcnow()
+  if now.day >= client.day and now.hour >= 7:
+    bol = classes.Bollettino()
+    await client.bollettinoChannel.send(embed=bol, file=bol.fileMap)
+    client.day += 1
 
 
 if __name__ == '__main__':
@@ -486,7 +509,8 @@ if __name__ == '__main__':
     
     embed, view = classes.view_depots(depots[0]['group'], depots)
 
-    await interaction.followup.send(file=embed.fileMap, embed=embed, view=view)
+    await client.depotChannel.send(file=embed.fileMap, embed=embed, view=view)
+    await modal.interaction.delete_original_response()
     await interaction.followup.send(f'Deposito a {location[0]} aggiunto', ephemeral=True)
     #await client.depotChannel.send(embed=embed)
 
@@ -509,11 +533,11 @@ if __name__ == '__main__':
     data['depots'].remove(data['depots'][depot])
     depots = data['depots']
 
-    await interaction.response.defer(thinking=True)
+    await interaction.response.defer(thinking=True, ephemeral=True)
 
     embed, view = classes.view_depots(depots[0]['group'], depots)
 
-    await interaction.followup.send(file=embed.fileMap, embed=embed, view=view)
+    await client.depotChannel.send(file=embed.fileMap, embed=embed, view=view)
     await interaction.followup.send(f"Deposito a {loc} rimosso", ephemeral=True)
     #await client.depotChannel.send(embed=embed)
 

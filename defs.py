@@ -11,6 +11,7 @@ DB = {
 	'eventChannel': 881662982160003113,
   'depotChannel': 1032325211883835402,
   'dataBaseChannel': 1038431534606209134,
+  'bollettinoChannel': 881662982160003113,
   'serverId': 881632566589915177,
   'errorChannel': 1032428103861026897,
 	'mapReport': 'https://war-service-live.foxholeservices.com/api/worldconquest/warReport/{}',
@@ -131,6 +132,7 @@ MAP_NAME = [
 MAP_SIZE = (5632, 6216)
 
 REGION_SIZE = (1024, 888)
+D_RESIZE = 400
 
 MAP_POSITION = {
   "TheFingers": (4608, 2220),

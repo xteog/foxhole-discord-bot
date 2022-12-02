@@ -199,20 +199,30 @@ class DepotModal(discord.ui.Modal, title='Dati Deposito'):
         self.add_item(self.desc)
 
     async def on_submit(self, interaction: discord.Interaction):
-        await interaction.response.send_message('Modal sent', ephemeral=True)
+        await interaction.response.defer(thinking=True, ephemeral=True)
+        self.interaction = interaction
         self.stop()
 
 
 class DepotEmbed(discord.Embed):
-    def __init__(self, group, depots):
+    def __init__(self, group, depots, callback):
         super().__init__(title=f'Lista Depositi', description='Prima di interagire guardare la descrizione di questo canale.')
         for d in depots:
             if d['group'] == group:
                 emoji = defs.DB['emojis'][str(d['iconType'])]
                 self.add_field(name=f"<:{emoji[0]}:{emoji[1]}> {defs.ICON_ID[d['iconType']]} a {d['location']}({d['map']})", value=f"Nome: `{d['name']}`\nPasscode: `{d['passcode']}`\n{d['desc']}", inline=False)
-        testImage.paste_items_fullmap(depots, True)
+        if callback == False:
+            testImage.paste_items_fullmap(depots, True)
         self.fileMap = discord.File(defs.PATH + '/data/tempFullMap.png')
         self.set_image(url='attachment://tempFullMap.png')
+
+
+class Bollettino(discord.Embed):
+    def __init__(self):
+        super().__init__(title=f'Bollettino Giornaliero', description='Prima di interagire guardare la descrizione di questo canale.')
+        self.fileMap = discord.File(defs.PATH + '/data/FullMap.png')
+        self.set_image(url='attachment://FullMap.png')
+
 
 class DepotButton(discord.ui.Button):
     def __init__(self, group, depots, disabled=True):
@@ -221,12 +231,12 @@ class DepotButton(discord.ui.Button):
         super().__init__(label=self.group, custom_id=self.group, style=discord.ButtonStyle.secondary, disabled=disabled)
 
     async def callback(self, interaction: discord.Interaction):
-        embed, view = view_depots(self.group, self.depots)
+        embed, view = view_depots(self.group, self.depots, True)
         await interaction.response.edit_message(embed=embed, view=view)
      
 
-def view_depots(group, depots):
-    embed = DepotEmbed(group, depots)
+def view_depots(group, depots, callback=False):
+    embed = DepotEmbed(group, depots, callback)
     view = discord.ui.View(timeout=None)
     groups = []
     for d in depots:

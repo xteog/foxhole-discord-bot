@@ -40,22 +40,8 @@
     {
       "teamId": "NONE",
       "iconType": 38,
-      "x": 0.55118304,
-      "y": 0.17086853,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
       "x": 0.5579757,
       "y": 0.7305367,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.5425551,
-      "y": 0.16482364,
       "flags": 0
     },
     {
@@ -88,6 +74,20 @@
     },
     {
       "teamId": "COLONIALS",
+      "iconType": 39,
+      "x": 0.4868112,
+      "y": 0.45804802,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 34,
+      "x": 0.485225,
+      "y": 0.48679855,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 33,
       "x": 0.5826239,
       "y": 0.6727005,
@@ -108,18 +108,25 @@
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 35,
-      "x": 0.53697443,
-      "y": 0.13599576,
-      "flags": 0
-    },
-    {
       "teamId": "COLONIALS",
       "iconType": 35,
       "x": 0.5835736,
       "y": 0.6808847,
       "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 52,
+      "x": 0.50187093,
+      "y": 0.53807735,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
+      "x": 0.6171802,
+      "y": 0.7410978,
+      "flags": 8
     },
     {
       "teamId": "COLONIALS",
@@ -129,24 +136,17 @@
       "flags": 8
     },
     {
-      "teamId": "WARDENS",
-      "iconType": 58,
+      "teamId": "COLONIALS",
+      "iconType": 56,
       "x": 0.5854038,
       "y": 0.1543734,
       "flags": 8
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 56,
       "x": 0.3605468,
       "y": 0.21137291,
-      "flags": 8
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 58,
-      "x": 0.6171802,
-      "y": 0.7410978,
       "flags": 8
     },
     {
@@ -175,6 +175,13 @@
       "iconType": 45,
       "x": 0.38053015,
       "y": 0.8801587,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 45,
+      "x": 0.7264921,
+      "y": 0.31508744,
       "flags": 8
     },
     {
@@ -214,23 +221,16 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 39,
-      "x": 0.4868112,
-      "y": 0.45804802,
+      "iconType": 38,
+      "x": 0.5425551,
+      "y": 0.16482364,
       "flags": 0
     },
     {
       "teamId": "NONE",
-      "iconType": 34,
-      "x": 0.485225,
-      "y": 0.48679855,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 45,
-      "x": 0.7264921,
-      "y": 0.31508744,
+      "iconType": 38,
+      "x": 0.55118304,
+      "y": 0.17086853,
       "flags": 0
     },
     {
@@ -284,9 +284,9 @@
     },
     {
       "teamId": "NONE",
-      "iconType": 52,
-      "x": 0.50187093,
-      "y": 0.53807735,
+      "iconType": 35,
+      "x": 0.53697443,
+      "y": 0.13599576,
       "flags": 0
     }
   ],
@@ -302,7 +302,7 @@
       "x": 0.73673666,
       "y": 0.7660624,
       "mapMarkerType": "Major",
-      "location": 25
+      "location": 26
     },
     {
       "text": "Gallant Gough Boulevard",
@@ -315,14 +315,14 @@
       "x": 0.35991466,
       "y": 0.58879375,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 27
     },
     {
       "text": "Lathair",
       "x": 0.7258961,
       "y": 0.3119082,
       "mapMarkerType": "Major",
-      "location": 17
+      "location": 25
     },
     {
       "text": "Merciful Strait",
@@ -347,14 +347,14 @@
       "x": 0.8370126,
       "y": 0.4868126,
       "mapMarkerType": "Major",
-      "location": 17
+      "location": 18
     },
     {
       "text": "Rotdust",
       "x": 0.5856841,
       "y": 0.15178874,
       "mapMarkerType": "Major",
-      "location": 18
+      "location": 19
     },
     {
       "text": "Solas Burn",
@@ -400,14 +400,14 @@
       "x": 0.35783502,
       "y": 0.209964,
       "mapMarkerType": "Major",
-      "location": 19
+      "location": 20
     },
     {
       "text": "The Prairie Bazaar",
       "x": 0.6143232,
       "y": 0.7404008,
       "mapMarkerType": "Major",
-      "location": 20
+      "location": 17
     },
     {
       "text": "The River Mercy",
@@ -423,7 +423,7 @@
       "location": 23
     }
   ],
-  "lastUpdated": 1669922466343,
-  "version": 942,
-  "ETag": "\"942\""
+  "lastUpdated": 1670002328876,
+  "version": 35,
+  "ETag": "\"35\""
 }

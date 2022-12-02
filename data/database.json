@@ -1,0 +1,103 @@
+{
+  "depots": [
+    {
+      "group": "ITALY",
+      "iconType": 52,
+      "location": "The Baths",
+      "map": "DrownedVale",
+      "x": 0.55002874,
+      "y": 0.60511833,
+      "name": "ITALY",
+      "passcode": "581713",
+      "desc": ""
+    },
+    {
+      "group": "ITALY",
+      "iconType": 52,
+      "location": "The Baths",
+      "map": "DrownedVale",
+      "x": 0.55002874,
+      "y": 0.60511833,
+      "name": "ITALY 2",
+      "passcode": "712454",
+      "desc": ""
+    },
+    {
+      "group": "ITALY",
+      "iconType": 52,
+      "location": "The Baths",
+      "map": "DrownedVale",
+      "x": 0.55002874,
+      "y": 0.60511833,
+      "name": "ITALY 3",
+      "passcode": "739616",
+      "desc": ""
+    },
+    {
+      "group": "ITALY",
+      "iconType": 52,
+      "location": "Saltbrook Channel",
+      "map": "EndlessShore",
+      "x": 0.37635487,
+      "y": 0.4064241,
+      "name": "ITALY",
+      "passcode": "555132",
+      "desc": ""
+    },
+    {
+      "group": "ITALY",
+      "iconType": 52,
+      "location": "Patridia",
+      "map": "Acrithia",
+      "x": 0.46368834,
+      "y": 0.6426477,
+      "name": "ITALY",
+      "passcode": "961638",
+      "desc": ""
+    },
+    {
+      "group": "NEP",
+      "iconType": 52,
+      "location": "The Baths",
+      "map": "DrownedVale",
+      "x": 0.55002874,
+      "y": 0.60511833,
+      "name": "NEP",
+      "passcode": "098697",
+      "desc": ""
+    },
+    {
+      "group": "NEP",
+      "iconType": 52,
+      "location": "The Baths",
+      "map": "DrownedVale",
+      "x": 0.55002874,
+      "y": 0.60511833,
+      "name": "NEP",
+      "passcode": "098697",
+      "desc": ""
+    },
+    {
+      "group": "Altro",
+      "iconType": 52,
+      "location": "Saltbrook Channel",
+      "map": "EndlessShore",
+      "x": 0.37635487,
+      "y": 0.4064241,
+      "name": "srfdgyh",
+      "passcode": "sgsfegrhtryj",
+      "desc": ""
+    }
+  ],
+  "depotListMsg": 1048331854710845531,
+  "map_filter": [
+    "DrownedVale",
+    "AllodsBight",
+    "EndlessShore",
+    "MarbanHollow",
+    "DeadLands",
+    "UmbralWildwood",
+    "ShackledChasm"
+  ],
+  "download": 13138
+}

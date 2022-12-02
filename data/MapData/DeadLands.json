@@ -138,15 +138,15 @@
     {
       "teamId": "COLONIALS",
       "iconType": 33,
-      "x": 0.74191934,
-      "y": 0.72230774,
+      "x": 0.40299416,
+      "y": 0.5016613,
       "flags": 0
     },
     {
       "teamId": "COLONIALS",
       "iconType": 33,
-      "x": 0.40299416,
-      "y": 0.5016613,
+      "x": 0.74191934,
+      "y": 0.72230774,
       "flags": 0
     },
     {
@@ -161,7 +161,7 @@
       "iconType": 35,
       "x": 0.5181109,
       "y": 0.49780697,
-      "flags": 8
+      "flags": 0
     },
     {
       "teamId": "COLONIALS",
@@ -221,16 +221,16 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 57,
-      "x": 0.32011017,
-      "y": 0.23638314,
+      "iconType": 58,
+      "x": 0.54768586,
+      "y": 0.49890614,
       "flags": 8
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 58,
-      "x": 0.54768586,
-      "y": 0.49890614,
+      "iconType": 57,
+      "x": 0.32011017,
+      "y": 0.23638314,
       "flags": 8
     },
     {
@@ -362,7 +362,7 @@
       "x": 0.5475686,
       "y": 0.4907771,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 31
     },
     {
       "text": "Callahan's Gate",
@@ -574,7 +574,7 @@
       "x": 0.30697387,
       "y": 0.23582822,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 32
     },
     {
       "text": "The Steppes",
@@ -583,7 +583,7 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1669916771036,
-  "version": 365,
-  "ETag": "\"365\""
+  "lastUpdated": 1669999232256,
+  "version": 7,
+  "ETag": "\"7\""
 }

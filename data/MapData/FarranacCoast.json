@@ -138,22 +138,8 @@
     {
       "teamId": "COLONIALS",
       "iconType": 18,
-      "x": 0.5747319,
-      "y": 0.69509035,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 18,
       "x": 0.58108944,
       "y": 0.62692016,
-      "flags": 0
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 18,
-      "x": 0.36822945,
-      "y": 0.84082,
       "flags": 0
     },
     {
@@ -166,8 +152,8 @@
     {
       "teamId": "COLONIALS",
       "iconType": 18,
-      "x": 0.5319899,
-      "y": 0.6734402,
+      "x": 0.36822945,
+      "y": 0.84082,
       "flags": 0
     },
     {
@@ -175,6 +161,20 @@
       "iconType": 18,
       "x": 0.4594351,
       "y": 0.729173,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 18,
+      "x": 0.5319899,
+      "y": 0.6734402,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 18,
+      "x": 0.5747319,
+      "y": 0.69509035,
       "flags": 0
     },
     {
@@ -278,6 +278,13 @@
     {
       "teamId": "COLONIALS",
       "iconType": 58,
+      "x": 0.7163114,
+      "y": 0.19734809,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 58,
       "x": 0.7033106,
       "y": 0.77943027,
       "flags": 8
@@ -294,13 +301,6 @@
       "iconType": 58,
       "x": 0.5859675,
       "y": 0.5672768,
-      "flags": 8
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 58,
-      "x": 0.7163114,
-      "y": 0.19734809,
       "flags": 8
     },
     {
@@ -430,14 +430,14 @@
       "x": 0.5860919,
       "y": 0.56278074,
       "mapMarkerType": "Major",
-      "location": 41
+      "location": 42
     },
     {
       "text": "Iuxta Homestead",
       "x": 0.7127172,
       "y": 0.19546622,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 39
     },
     {
       "text": "Kardia",
@@ -456,7 +456,7 @@
       "x": 0.70205057,
       "y": 0.7824685,
       "mapMarkerType": "Major",
-      "location": 39
+      "location": 40
     },
     {
       "text": "Mara",
@@ -603,10 +603,10 @@
       "x": 0.4417568,
       "y": 0.8744741,
       "mapMarkerType": "Major",
-      "location": 40
+      "location": 41
     }
   ],
-  "lastUpdated": 1669921875439,
-  "version": 202,
-  "ETag": "\"202\""
+  "lastUpdated": 1670001865938,
+  "version": 23,
+  "ETag": "\"23\""
 }

@@ -67,6 +67,13 @@
     },
     {
       "teamId": "NONE",
+      "iconType": 40,
+      "x": 0.57078266,
+      "y": 0.6832225,
+      "flags": 0
+    },
+    {
+      "teamId": "NONE",
       "iconType": 38,
       "x": 0.22408526,
       "y": 0.5719771,
@@ -136,10 +143,10 @@
       "flags": 0
     },
     {
-      "teamId": "COLONIALS",
+      "teamId": "WARDENS",
       "iconType": 28,
-      "x": 0.16933636,
-      "y": 0.5231626,
+      "x": 0.3373363,
+      "y": 0.7994652,
       "flags": 0
     },
     {
@@ -154,6 +161,13 @@
       "iconType": 28,
       "x": 0.6396039,
       "y": 0.22210479,
+      "flags": 0
+    },
+    {
+      "teamId": "WARDENS",
+      "iconType": 28,
+      "x": 0.16933636,
+      "y": 0.5231626,
       "flags": 0
     },
     {
@@ -179,13 +193,20 @@
     },
     {
       "teamId": "WARDENS",
+      "iconType": 46,
+      "x": 0.7726291,
+      "y": 0.46114996,
+      "flags": 4
+    },
+    {
+      "teamId": "WARDENS",
       "iconType": 53,
       "x": 0.41142872,
       "y": 0.5293891,
       "flags": 0
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 56,
       "x": 0.73236436,
       "y": 0.689709,
@@ -199,21 +220,21 @@
       "flags": 41
     },
     {
-      "teamId": "COLONIALS",
+      "teamId": "WARDENS",
       "iconType": 45,
       "x": 0.27581903,
       "y": 0.77085537,
       "flags": 8
     },
     {
-      "teamId": "COLONIALS",
+      "teamId": "WARDENS",
       "iconType": 45,
       "x": 0.55330217,
       "y": 0.69965583,
       "flags": 8
     },
     {
-      "teamId": "COLONIALS",
+      "teamId": "WARDENS",
       "iconType": 45,
       "x": 0.21562414,
       "y": 0.556145,
@@ -224,13 +245,6 @@
       "iconType": 46,
       "x": 0.5939755,
       "y": 0.10270665,
-      "flags": 8
-    },
-    {
-      "teamId": "WARDENS",
-      "iconType": 46,
-      "x": 0.7726291,
-      "y": 0.46114996,
       "flags": 8
     },
     {
@@ -246,20 +260,6 @@
       "x": 0.70174325,
       "y": 0.2071974,
       "flags": 8
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 28,
-      "x": 0.3373363,
-      "y": 0.7994652,
-      "flags": 0
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 40,
-      "x": 0.57078266,
-      "y": 0.6832225,
-      "flags": 0
     },
     {
       "teamId": "NONE",
@@ -296,7 +296,7 @@
       "x": 0.51059383,
       "y": 0.5146678,
       "mapMarkerType": "Major",
-      "location": 27
+      "location": 30
     },
     {
       "text": "Daihbi Point",
@@ -309,7 +309,7 @@
       "x": 0.73406035,
       "y": 0.69156134,
       "mapMarkerType": "Major",
-      "location": 26
+      "location": 29
     },
     {
       "text": "Longing",
@@ -322,21 +322,21 @@
       "x": 0.5624944,
       "y": 0.69426215,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 32
     },
     {
       "text": "The Dais",
       "x": 0.59315604,
       "y": 0.102234095,
       "mapMarkerType": "Major",
-      "location": 31
+      "location": 34
     },
     {
       "text": "The Heir's Knife",
       "x": 0.27641714,
       "y": 0.7720462,
       "mapMarkerType": "Major",
-      "location": 28
+      "location": 31
     },
     {
       "text": "The Loneliest Shore",
@@ -349,7 +349,7 @@
       "x": 0.41714057,
       "y": 0.8898146,
       "mapMarkerType": "Major",
-      "location": 33
+      "location": 35
     },
     {
       "text": "The Pram",
@@ -362,7 +362,7 @@
       "x": 0.701072,
       "y": 0.20528859,
       "mapMarkerType": "Major",
-      "location": 34
+      "location": 36
     },
     {
       "text": "The Roiling Comets",
@@ -381,17 +381,17 @@
       "x": 0.77552485,
       "y": 0.46081984,
       "mapMarkerType": "Major",
-      "location": 32
+      "location": 29
     },
     {
       "text": "World's End",
       "x": 0.2149299,
       "y": 0.55217665,
       "mapMarkerType": "Major",
-      "location": 30
+      "location": 33
     }
   ],
-  "lastUpdated": 1669922537293,
-  "version": 1670,
-  "ETag": "\"1670\""
+  "lastUpdated": 1670002199989,
+  "version": 24,
+  "ETag": "\"24\""
 }
