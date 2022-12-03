@@ -348,10 +348,43 @@ def paste_depot(items, size):
   return bg
 
 
-def create_fullmap():
+def paste_text_fullmap(items):
+  bg = Image.open(defs.PATH + '/data/FullMap.png')
+  txt = Image.new('RGBA', bg.size, (255,255,255,0))
+  draw = ImageDraw.Draw(txt)
+  myFont = ImageFont.truetype(defs.PATH + '/data/Clarendon.ttf', 25 * defs.REGION_SIZE[0] // (defs.D_RESIZE-50))
+
+  for item in items:
+    offset = defs.MAP_POSITION[item['map']]
+
+    x = offset[0]
+    y = defs.MAP_SIZE[1] - offset[1]
+
+    #Paste text
+    text = item['map']
+
+    size_txt = draw.textsize(text, font=myFont)
+    x = x - size_txt[0]//2
+    y = y - size_txt[1]//2
+
+    c = (0, 0, 0, 255)
+    draw.text((x-5, y-5), text, font=myFont, fill=c)
+    draw.text((x+5, y-5), text, font=myFont, fill=c)
+    draw.text((x-5, y+5), text, font=myFont, fill=c)
+    draw.text((x+5, y+5), text, font=myFont, fill=c)
+    draw.text((x, y), text, fill=(255, 255, 255, 255), font=myFont)
+
+  bg = Image.alpha_composite(bg, txt)
+
+  txt.close()
+
+  bg.save(defs.PATH + '/data/tempFullMap.png')
+
+
+def create_fullmap(mapOrigin):
   bg = Image.new('RGBA', defs.MAP_SIZE, (0, 0, 0, 0))
   for map in defs.MAP_NAME:
-    img = Image.open(defs.DB['mapImage'].format(map))
+    img = Image.open(mapOrigin.format(map))
     data = read(defs.DB['mapData'].format(map))['mapItems']
     vor = drawVoronoi(img, data)
     vor = add_border(vor)
@@ -363,6 +396,12 @@ def create_fullmap():
     img.close()
   
   bg.save(defs.PATH + '/data/FullMap.png')
+
+
+def resize_fullmap():
+  img = Image.open(defs.PATH + '/data/tempFullMap.png')
+  img = img.resize((img.size[0] // 2, img.size[1] // 2), Image.ANTIALIAS)
+  img.save(defs.PATH + '/data/tempFullMap.png')
 
 
 def paste_items_fullmap(items, crop=False):
@@ -395,8 +434,8 @@ def paste_items_fullmap(items, crop=False):
   img = paste_depot(items, int(new_size))
   
   img = img.crop((xMean - new_size, yMean - new_size, xMean + new_size, yMean + new_size))
-  img = img.resize((img.size[0] // 2, img.size[1] // 2), Image.ANTIALIAS)
   img.save(defs.PATH + '/data/tempFullMap.png')
+  resize_fullmap()
   img.close()
 
 

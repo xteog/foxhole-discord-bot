@@ -229,15 +229,15 @@
     {
       "teamId": "COLONIALS",
       "iconType": 53,
-      "x": 0.6128873,
-      "y": 0.34952813,
+      "x": 0.774925,
+      "y": 0.56217164,
       "flags": 0
     },
     {
       "teamId": "COLONIALS",
       "iconType": 53,
-      "x": 0.774925,
-      "y": 0.56217164,
+      "x": 0.6128873,
+      "y": 0.34952813,
       "flags": 0
     },
     {
@@ -398,7 +398,7 @@
       "location": 39
     }
   ],
-  "lastUpdated": 1669999078450,
-  "version": 8,
-  "ETag": "\"8\""
+  "lastUpdated": 1670041478450,
+  "version": 79,
+  "ETag": "\"79\""
 }

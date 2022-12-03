@@ -1,9 +1,8 @@
-import main
 from testImage import highlight_name
 import testImage
 import defs
 import discord
-from testRequest import read, write
+from testRequest import read, write, updt_database
 
 class JoinButton(discord.ui.View):
     def __init__(self, em):
@@ -220,7 +219,7 @@ class DepotEmbed(discord.Embed):
 class Bollettino(discord.Embed):
     def __init__(self):
         super().__init__(title=f'Bollettino Giornaliero', description='Prima di interagire guardare la descrizione di questo canale.')
-        self.fileMap = discord.File(defs.PATH + '/data/FullMap.png')
+        self.fileMap = discord.File(defs.PATH + '/data/tempFullMap.png')
         self.set_image(url='attachment://FullMap.png')
 
 

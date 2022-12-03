@@ -122,6 +122,13 @@
       "flags": 0
     },
     {
+      "teamId": "NONE",
+      "iconType": 38,
+      "x": 0.77331674,
+      "y": 0.47424197,
+      "flags": 0
+    },
+    {
       "teamId": "WARDENS",
       "iconType": 39,
       "x": 0.49551353,
@@ -193,13 +200,6 @@
     },
     {
       "teamId": "WARDENS",
-      "iconType": 46,
-      "x": 0.7726291,
-      "y": 0.46114996,
-      "flags": 4
-    },
-    {
-      "teamId": "WARDENS",
       "iconType": 53,
       "x": 0.41142872,
       "y": 0.5293891,
@@ -227,7 +227,7 @@
       "flags": 8
     },
     {
-      "teamId": "WARDENS",
+      "teamId": "COLONIALS",
       "iconType": 45,
       "x": 0.55330217,
       "y": 0.69965583,
@@ -250,6 +250,13 @@
     {
       "teamId": "COLONIALS",
       "iconType": 46,
+      "x": 0.7726291,
+      "y": 0.46114996,
+      "flags": 8
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 46,
       "x": 0.417413,
       "y": 0.8900543,
       "flags": 8
@@ -260,13 +267,6 @@
       "x": 0.70174325,
       "y": 0.2071974,
       "flags": 8
-    },
-    {
-      "teamId": "NONE",
-      "iconType": 38,
-      "x": 0.77331674,
-      "y": 0.47424197,
-      "flags": 0
     },
     {
       "teamId": "NONE",
@@ -349,7 +349,7 @@
       "x": 0.41714057,
       "y": 0.8898146,
       "mapMarkerType": "Major",
-      "location": 35
+      "location": 36
     },
     {
       "text": "The Pram",
@@ -362,7 +362,7 @@
       "x": 0.701072,
       "y": 0.20528859,
       "mapMarkerType": "Major",
-      "location": 36
+      "location": 37
     },
     {
       "text": "The Roiling Comets",
@@ -381,7 +381,7 @@
       "x": 0.77552485,
       "y": 0.46081984,
       "mapMarkerType": "Major",
-      "location": 29
+      "location": 35
     },
     {
       "text": "World's End",
@@ -391,7 +391,7 @@
       "location": 33
     }
   ],
-  "lastUpdated": 1670002199989,
-  "version": 24,
-  "ETag": "\"24\""
+  "lastUpdated": 1670065414048,
+  "version": 340,
+  "ETag": "\"340\""
 }

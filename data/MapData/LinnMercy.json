@@ -151,16 +151,9 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 56,
+      "iconType": 57,
       "x": 0.23162577,
       "y": 0.6297537,
-      "flags": 8
-    },
-    {
-      "teamId": "COLONIALS",
-      "iconType": 56,
-      "x": 0.41615328,
-      "y": 0.70517087,
       "flags": 8
     },
     {
@@ -169,6 +162,13 @@
       "x": 0.46525207,
       "y": 0.45190126,
       "flags": 41
+    },
+    {
+      "teamId": "COLONIALS",
+      "iconType": 57,
+      "x": 0.41615328,
+      "y": 0.70517087,
+      "flags": 8
     },
     {
       "teamId": "COLONIALS",
@@ -380,7 +380,7 @@
       "x": 0.40840903,
       "y": 0.7184508,
       "mapMarkerType": "Major",
-      "location": 22
+      "location": 23
     },
     {
       "text": "The Great Scale",
@@ -420,10 +420,10 @@
       "x": 0.46410957,
       "y": 0.45022747,
       "mapMarkerType": "Major",
-      "location": 23
+      "location": 22
     }
   ],
-  "lastUpdated": 1670002328876,
-  "version": 35,
-  "ETag": "\"35\""
+  "lastUpdated": 1670063444721,
+  "version": 95,
+  "ETag": "\"95\""
 }

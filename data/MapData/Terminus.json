@@ -158,6 +158,13 @@
     },
     {
       "teamId": "COLONIALS",
+      "iconType": 60,
+      "x": 0.35039544,
+      "y": 0.5616233,
+      "flags": 0
+    },
+    {
+      "teamId": "COLONIALS",
       "iconType": 17,
       "x": 0.49264652,
       "y": 0.701254,
@@ -357,14 +364,14 @@
       "x": 0.8574127,
       "y": 0.52306366,
       "mapMarkerType": "Major",
-      "location": 46
+      "location": 47
     },
     {
       "text": "Cerberus Wake",
       "x": 0.26287487,
       "y": 0.7303848,
       "mapMarkerType": "Major",
-      "location": 47
+      "location": 48
     },
     {
       "text": "Dogbone",
@@ -413,7 +420,7 @@
       "x": 0.4532967,
       "y": 0.7386244,
       "mapMarkerType": "Major",
-      "location": 43
+      "location": 44
     },
     {
       "text": "Three Siblings",
@@ -432,24 +439,24 @@
       "x": 0.34465387,
       "y": 0.0903161,
       "mapMarkerType": "Major",
-      "location": 45
+      "location": 46
     },
     {
       "text": "Warlord's Stead",
       "x": 0.25277558,
       "y": 0.35900182,
       "mapMarkerType": "Major",
-      "location": 42
+      "location": 43
     },
     {
       "text": "Winding Bolas",
       "x": 0.77879095,
       "y": 0.2834924,
       "mapMarkerType": "Major",
-      "location": 44
+      "location": 45
     }
   ],
-  "lastUpdated": 1670000009118,
-  "version": 17,
-  "ETag": "\"17\""
+  "lastUpdated": 1670047165377,
+  "version": 29,
+  "ETag": "\"29\""
 }

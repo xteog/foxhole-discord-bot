@@ -2,6 +2,7 @@ import requests
 import json
 import defs
 from math import sqrt
+import discord
 
 
 def updateData(map, newData, opt):
@@ -15,6 +16,7 @@ def updateData(map, newData, opt):
     data = newData
 
   write(defs.DB['mapData'].format(map), data)
+
 
 def downloadData(map, opt, etag='"-1"'):
   url = [defs.DB['staticData'], defs.DB['dynamicData']]
@@ -84,3 +86,19 @@ def read(path):
   with open(path, 'r') as f:
     file = f.read()
   return json.loads(file)
+
+async def get_database(client):
+  msg = await client.dbChannel.fetch_message(client.dbChannel.last_message_id)
+  await msg.attachments[0].save(defs.PATH + '/data/database.json')
+  file = read(defs.PATH + '/data/database.json')
+  return file
+
+async def updt_database(data, client):
+  msg = await client.dbChannel.fetch_message(client.dbChannel.last_message_id)
+  write(defs.PATH + '/data/database.json', data)
+  file = discord.File(defs.PATH + '/data/database.json')
+  if msg == None:
+    await client.dbChannel.send(file = file)
+  else:
+    await client.dbChannel.send(file = file)
+    await msg.delete()

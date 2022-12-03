@@ -186,7 +186,7 @@
     },
     {
       "teamId": "COLONIALS",
-      "iconType": 57,
+      "iconType": 58,
       "x": 0.45294976,
       "y": 0.12990755,
       "flags": 8
@@ -375,7 +375,7 @@
       "mapMarkerType": "Minor"
     }
   ],
-  "lastUpdated": 1669993341163,
-  "version": 5,
-  "ETag": "\"5\""
+  "lastUpdated": 1670025245675,
+  "version": 14,
+  "ETag": "\"14\""
 }
